@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Changelog · Arro</title>
+<meta name="description" content="Every release of Arro, the native Java IDE written in Rust: what is new, improved and fixed, with search and filters.">
+<link rel="canonical" href="https://pablosensei.github.io/arro/changelog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paweł Januszko">
+<meta property="og:title" content="Arro changelog">
+<meta property="og:description" content="Every release of Arro, the native Java IDE written in Rust.">
+<meta property="og:url" content="https://pablosensei.github.io/arro/changelog/">
+<meta property="og:image" content="https://pablosensei.github.io/assets/og/arro.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/arro/arro.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/arro/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>(function(){var d=document.documentElement;d.className=d.className.replace("no-js","js")+(document.visibilityState==="visible"?" motion":"");try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<script src="/assets/js/boxes.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/changelog.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar sticky">
+  <div class="wrap">
+    <a class="mark" href="/"><i aria-hidden="true"></i>Paweł Januszko</a>
+    <nav class="topnav" aria-label="Arro">
+        <a class="flap-arro" href="/arro/">Arro</a>
+        <a href="/arro/changelog/" aria-current="page">Changelog</a>
+        <a href="/arro/help/">Help</a>
+        <a href="/arro/roadmap/">Roadmap</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colours"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="page-h">
+    <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1 class="brand" id="page-h">Changelog</h1>
+      <p class="lede">All <span data-arro-count>18</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.17</span>, from <span data-arro-date>15 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <figure class="bars" id="bars" hidden>
+      <header>
+        <h2>Changes per release</h2>
+        <p>Select a release to jump to it.</p>
+      </header>
+      <div class="legend" aria-hidden="true"><span><i class="kind-mark" data-kind="new"></i>New</span><span><i class="kind-mark" data-kind="improved"></i>Improved</span><span><i class="kind-mark" data-kind="fixed"></i>Fixed</span><span><i class="kind-mark" data-kind="hood"></i>Under the hood</span></div>
+      <div class="bars-plot"></div>
+      <div class="bars-tip" role="status" aria-live="polite"></div>
+    </figure>
+
+    <div class="log-tools" role="search">
+      <label class="search">
+        <span class="visually-hidden">Search the changelog</span>
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4.5 4.5"/></svg>
+        <input type="search" id="q" placeholder="Search changes, for example debugger or Spring" autocomplete="off" spellcheck="false">
+      </label>
+      <div class="kinds" role="group" aria-label="Kinds of change">
+        <button class="kind-btn" type="button" data-kind="new" aria-pressed="true"><span class="kind-mark"></span>New <span class="n"></span></button>
+        <button class="kind-btn" type="button" data-kind="improved" aria-pressed="true"><span class="kind-mark"></span>Improved <span class="n"></span></button>
+        <button class="kind-btn" type="button" data-kind="fixed" aria-pressed="true"><span class="kind-mark"></span>Fixed <span class="n"></span></button>
+        <button class="kind-btn" type="button" data-kind="hood" aria-pressed="true"><span class="kind-mark"></span>Under the hood <span class="n"></span></button>
+      </div>
+      <p class="log-status" id="status" aria-live="polite"></p>
+    </div>
+
+    <div class="releases" id="releases">
+    <!-- releases:start -->
+    <article class="release is-latest" id="v0.1.17" data-version="0.1.17" data-total="22">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.17" aria-label="Link to Arro 0.1.17">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.17</h2>
+        <p class="rel-meta"><time datetime="2026-11-15T16:44:32Z">15 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.17">Release page</a></p>
+      </header>
+      <p class="rel-summary">Packages for Linux (.deb) and macOS (.dmg), a New Project wizard with Spring Initializr, terminal tabs and splits, run configurations with Before launch and Compound, class diagrams, a Resource Bundle editor, Structural Search and Replace, Create Test, a Services window, inspection settings, the code style of IntelliJ IDEA projects, and a deeper debugger.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">17</span></h3>
+        <ul>
+          <li data-text="resource bundle editor. a messages.properties file gets a bundle tab: every key of all locales in one table with a filter, a field per locale, missing translations marked, add, remove and rename a key in all files at once. edits go through the normal buffers, so undo and save work as in the text."><strong>Resource Bundle editor.</strong> A <code>messages*.properties</code> file gets a Bundle tab: every key of all locales in one table with a filter, a field per locale, missing translations marked, add, remove and rename a key in all files at once. Edits go through the normal buffers, so Undo and Save work as in the text.</li>
+          <li data-text="class diagram. show diagram (ctrl+alt+shift+u, or the menu of a class or a package folder) draws the class with its ancestors and project subclasses, or a whole package: fields, methods, inheritance, implementation and associations. pan, zoom, drag nodes, add a class, hide members, double-click to go to the source, export to svg."><strong>Class diagram.</strong> Show Diagram (Ctrl+Alt+Shift+U, or the menu of a class or a package folder) draws the class with its ancestors and project subclasses, or a whole package: fields, methods, inheritance, implementation and associations. Pan, zoom, drag nodes, add a class, hide members, double-click to go to the source, export to SVG.</li>
+          <li data-text="structural search and replace. search by a code template with $variables$, count, text and type filters, 15 ready templates, and a replace preview; results open in the find window."><strong>Structural Search and Replace.</strong> Search by a code template with <code>$variables$</code>, count, text and type filters, 15 ready templates, and a replace preview; results open in the Find window.</li>
+          <li data-text="create test. go to test on a class without tests offers create new test, also on alt+enter: junit 5, junit 4 or testng, class name, package, setup/teardown and the methods to test, with a fix button when the library is missing from the build."><strong>Create Test.</strong> Go to Test on a class without tests offers Create New Test, also on Alt+Enter: JUnit 5, JUnit 4 or TestNG, class name, package, setUp/tearDown and the methods to test, with a Fix button when the library is missing from the build.</li>
+          <li data-text="services window. run configurations next to docker: spring boot apps and other main classes with their state and port, start, stop and restart, the console and actuator of the same run, open in the browser or in the http client."><strong>Services window.</strong> Run configurations next to Docker: Spring Boot apps and other main classes with their state and port, start, stop and restart, the console and Actuator of the same run, open in the browser or in the HTTP client.</li>
+          <li data-text="run configurations in depth. before launch steps (build, a maven goal or gradle task, another configuration), compound configurations that start and stop several together, allow multiple instances with a stop and rerun question otherwise, an environment file (.env) per configuration, and stop that cancels a launch still being prepared. the test window can rerun the last tests after each save (auto) and keeps the last 10 runs in history."><strong>Run configurations in depth.</strong> Before launch steps (build, a Maven goal or Gradle task, another configuration), Compound configurations that start and stop several together, Allow multiple instances with a Stop and Rerun question otherwise, an environment file (<code>.env</code>) per configuration, and Stop that cancels a launch still being prepared. The test window can rerun the last tests after each save (Auto) and keeps the last 10 runs in History.</li>
+          <li data-text="inspection settings. settings → editor → inspections lists the checks of arro and the java compiler: turn each one on or off and choose its level, saved in the project. alt+enter on a warning can suppress it for the statement, method or class, disable the check or open its setting."><strong>Inspection settings.</strong> Settings → Editor → Inspections lists the checks of Arro and the Java compiler: turn each one on or off and choose its level, saved in the project. Alt+Enter on a warning can suppress it for the statement, method or class, disable the check or open its setting.</li>
+          <li data-text="coming from intellij idea. a project with .idea/codestyles/project.xml keeps its style: indents, tabs and the right margin in the editor, and the java formatter and import order through the language server. .editorconfig still wins, and settings → editor → code style shows which file is used, with a use arro settings button. file → manage ide settings exports and imports the settings, keymap and templates of arro as one zip, without passwords and tokens."><strong>Coming from IntelliJ IDEA.</strong> A project with <code>.idea/codeStyles/Project.xml</code> keeps its style: indents, tabs and the right margin in the editor, and the Java formatter and import order through the language server. <code>.editorconfig</code> still wins, and Settings → Editor → Code Style shows which file is used, with a Use Arro settings button. File → Manage IDE Settings exports and imports the settings, keymap and templates of Arro as one zip, without passwords and tokens.</li>
+          <li data-text="dependency updates. pom.xml, build.gradle(.kts) and libs.versions.toml mark versions with a newer stable release; alt+enter updates to the latest or the latest patch, and version completion lists what the repository has."><strong>Dependency updates.</strong> <code>pom.xml</code>, <code>build.gradle(.kts)</code> and <code>libs.versions.toml</code> mark versions with a newer stable release; Alt+Enter updates to the latest or the latest patch, and version completion lists what the repository has.</li>
+          <li data-text="http client and curl. pasting a curl command into an .http file turns it into a request; copy as curl goes the other way (bash or cmd). response handler scripts, multipart bodies and comparing two responses."><strong>HTTP client and cURL.</strong> Pasting a <code>curl</code> command into an <code>.http</code> file turns it into a request; Copy as cURL goes the other way (bash or cmd). Response handler scripts, multipart bodies and comparing two responses.</li>
+          <li data-text="git history of a selection or a method. show history for selection and for method, with the diff of each commit; git submodules are recognized and updated together with the project."><strong>Git history of a selection or a method.</strong> Show History for Selection and for Method, with the diff of each commit; Git submodules are recognized and updated together with the project.</li>
+          <li data-text="new project wizard. java projects with maven or gradle (groovy or kotlin dsl), a jdk from the ones found, sample code and groupid/artifactid/version; spring boot projects from spring initializr with a searchable dependency list; empty projects; an optional git repository. also from file → new → project... in an open window."><strong>New Project wizard.</strong> Java projects with Maven or Gradle (Groovy or Kotlin DSL), a JDK from the ones found, sample code and GroupId/ArtifactId/Version; Spring Boot projects from Spring Initializr with a searchable dependency list; empty projects; an optional Git repository. Also from File → New → Project... in an open window.</li>
+          <li data-text="terminal tabs and splits. several sessions as tabs (ctrl+shift+t, rename, alt+left/right) with a shell picker (powershell, cmd, git bash, wsl; $shell, bash, zsh, fish), split right and split down, ctrl+f through the whole scrollback with case and regex, ctrl+click on urls, file paths with a line, compiler output and java stack frames, mouse selection with copy and paste, and tabs restored after a restart. open in terminal on a project folder opens a tab there."><strong>Terminal tabs and splits.</strong> Several sessions as tabs (Ctrl+Shift+T, rename, Alt+Left/Right) with a shell picker (PowerShell, cmd, Git Bash, WSL; <code>$SHELL</code>, bash, zsh, fish), Split Right and Split Down, Ctrl+F through the whole scrollback with case and regex, Ctrl+click on URLs, file paths with a line, compiler output and Java stack frames, mouse selection with copy and paste, and tabs restored after a restart. Open in Terminal on a project folder opens a tab there.</li>
+          <li data-text="appearance modes. view → appearance: full screen, distraction free, zen and presentation modes, toggles for the toolbar, tool window bars, status bar, breadcrumbs, line numbers, gutter icons, indent guides and sticky lines, and zoom ide (ctrl+alt+shift+= / - / 0)."><strong>Appearance modes.</strong> View → Appearance: Full Screen, Distraction Free, Zen and Presentation modes, toggles for the toolbar, tool window bars, status bar, breadcrumbs, line numbers, gutter icons, indent guides and sticky lines, and Zoom IDE (Ctrl+Alt+Shift+= / - / 0).</li>
+          <li data-text="packages for linux and macos. a .deb for debian and ubuntu (sudo apt install ./arro_0.1.17_amd64.deb: arro in /opt/arro, arro on the path, a menu shortcut) and a .dmg for macos. a package installation gets a link to the new package when an update comes out; the zip and tar.gz archives keep updating themselves."><strong>Packages for Linux and macOS.</strong> A <code>.deb</code> for Debian and Ubuntu (<code>sudo apt install ./arro_0.1.17_amd64.deb</code>: Arro in <code>/opt/arro</code>, <code>arro</code> on the path, a menu shortcut) and a <code>.dmg</code> for macOS. A package installation gets a link to the new package when an update comes out; the zip and tar.gz archives keep updating themselves.</li>
+          <li data-text="macos and linux integration. on macos the arro application menu (about, settings, hide, services, quit) and the window menu work as in other mac apps. folders and java, kotlin, gradle, maven, markdown, yaml, json and xml files open from finder or the file manager with open with, and arro &lt;path&gt; hands the path to the running arro instead of starting a second copy (--new-instance starts one anyway). linux keeps its cache in $xdg_cache_home and groups its windows under the arro icon."><strong>macOS and Linux integration.</strong> On macOS the Arro application menu (About, Settings, Hide, Services, Quit) and the Window menu work as in other Mac apps. Folders and Java, Kotlin, Gradle, Maven, Markdown, YAML, JSON and XML files open from Finder or the file manager with Open With, and <code>arro &lt;path&gt;</code> hands the path to the running Arro instead of starting a second copy (<code>--new-instance</code> starts one anyway). Linux keeps its cache in <code>$XDG_CACHE_HOME</code> and groups its windows under the Arro icon.</li>
+          <li data-text="debugger. mark object (f11) labels an object in all views, copy stack, library frames folded into one line, inline watches on a line, and type renderers."><strong>Debugger.</strong> Mark Object (F11) labels an object in all views, Copy Stack, library frames folded into one line, inline watches on a line, and type renderers.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">2</span></h3>
+        <ul>
+          <li data-text="stack trace analysis shows project frames at once and fills library frames in after.">Stack trace analysis shows project frames at once and fills library frames in after.</li>
+          <li data-text="the database and jshell windows no longer poll when nothing is connected.">The Database and JShell windows no longer poll when nothing is connected.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the editor context menu has its separator before copy path again.">The editor context menu has its separator before Copy Path again.</li>
+          <li data-text="file → exit asks about unsaved edits made in the resource bundle table for files without a tab, names them, and saves or drops them as chosen.">File → Exit asks about unsaved edits made in the Resource Bundle table for files without a tab, names them, and saves or drops them as chosen.</li>
+          <li data-text="several window tests that failed only under heavy machine load are stable now.">Several window tests that failed only under heavy machine load are stable now.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.16" data-version="0.1.16" data-total="21">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.16" aria-label="Link to Arro 0.1.16">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.16</h2>
+        <p class="rel-meta"><time datetime="2026-11-14T22:14:41Z">14 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.16">Release page</a></p>
+      </header>
+      <p class="rel-summary">The biggest batch so far: Spring support, a database console, a profiler, JShell, a dependency analyzer, stack trace analysis and a live Actuator tab for Spring Boot apps.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">16</span></h3>
+        <ul>
+          <li data-text="spring configuration files. application.properties and application.yml get completion, hover documentation, ctrl+b and checks for unknown or deprecated keys and wrong boolean or enum values, from the configuration metadata of the jars and the build output on the class path."><strong>Spring configuration files.</strong> <code>application.properties</code> and <code>application.yml</code> get completion, hover documentation, Ctrl+B and checks for unknown or deprecated keys and wrong boolean or enum values, from the configuration metadata of the jars and the build output on the class path.</li>
+          <li data-text="beans window and injection navigation. components, configuration classes, @bean methods and spring data repositories of the project; gutter marks on injection points and beans go to the candidates."><strong>Beans window and injection navigation.</strong> Components, configuration classes, <code>@Bean</code> methods and Spring Data repositories of the project; gutter marks on injection points and beans go to the candidates.</li>
+          <li data-text="endpoints window. every @requestmapping, @getmapping and friends with its http method and full path; a gutter mark on each handler; one click writes the request into an .http file of the http client."><strong>Endpoints window.</strong> Every <code>@RequestMapping</code>, <code>@GetMapping</code> and friends with its HTTP method and full path; a gutter mark on each handler; one click writes the request into an <code>.http</code> file of the HTTP client.</li>
+          <li data-text="spring data jpa. repository method names like findbylastnamestartingwith complete properties and operators from the entity, mark an unknown property and a wrong number of parameters, and ctrl+b goes to the field. jpql in @query (text blocks too) is highlighted, completes entities and properties after an alias, checks them and the :name parameters."><strong>Spring Data JPA.</strong> Repository method names like <code>findByLastNameStartingWith</code> complete properties and operators from the entity, mark an unknown property and a wrong number of parameters, and Ctrl+B goes to the field. JPQL in <code>@Query</code> (text blocks too) is highlighted, completes entities and properties after an alias, checks them and the <code>:name</code> parameters.</li>
+          <li data-text="actuator tab for spring boot. a running spring boot app gets an actuator tab next to its console with live health, beans, mappings and environment, a green dot when the app has started, a jump from a bean or handler to its code, and a hint when an endpoint is not exposed."><strong>Actuator tab for Spring Boot.</strong> A running Spring Boot app gets an Actuator tab next to its console with live Health, Beans, Mappings and Environment, a green dot when the app has started, a jump from a bean or handler to its code, and a hint when an endpoint is not exposed.</li>
+          <li data-text="message bundles. keys in getmessage, resourcebundle.getstring, validation message = &quot;{…}&quot; and thymeleaf #{…} go to their line in messages.properties with ctrl+b, complete, show every locale on hover, and warn when missing, with a create property fix. property files mark unused keys and missing translations; find usages and rename work on a key."><strong>Message bundles.</strong> Keys in <code>getMessage</code>, <code>ResourceBundle.getString</code>, validation <code>message = &quot;{…}&quot;</code> and Thymeleaf <code>#{…}</code> go to their line in <code>messages*.properties</code> with Ctrl+B, complete, show every locale on hover, and warn when missing, with a Create property fix. Property files mark unused keys and missing translations; Find Usages and Rename work on a key.</li>
+          <li data-text="database window. jdbc data sources (postgresql, mysql, mariadb, h2, sqlite and any driver jar), found from spring.datasource too; a schema tree, an sql console with ctrl+enter and results in a grid."><strong>Database window.</strong> JDBC data sources (PostgreSQL, MySQL, MariaDB, H2, SQLite and any driver jar), found from <code>spring.datasource</code> too; a schema tree, an SQL console with Ctrl+Enter and results in a grid.</li>
+          <li data-text="profiler. run with profiler records a java flight recorder file: cpu and allocations as a flame graph, a call tree and a method list, allocated types by weight, and a thread timeline where a dragged range filters the graphs. tests (run tests with profiler) and maven/gradle tasks such as test, spring-boot:run and bootrun can be profiled too; opening a .jfr file works as well."><strong>Profiler.</strong> Run with Profiler records a Java Flight Recorder file: CPU and allocations as a flame graph, a call tree and a method list, Allocated Types by weight, and a thread timeline where a dragged range filters the graphs. Tests (Run Tests with Profiler) and Maven/Gradle tasks such as <code>test</code>, <code>spring-boot:run</code> and <code>bootRun</code> can be profiled too; opening a <code>.jfr</code> file works as well.</li>
+          <li data-text="jshell console. jshell console (view → tool windows or find action) opens a .jsh scratch per module on its class path: ctrl+enter runs the selection or the whole file, results show as <!-- releases:start --> ==&gt; 42, with stop, reset and completion from jshell."><strong>JShell console.</strong> JShell Console (View → Tool Windows or Find Action) opens a <code>.jsh</code> scratch per module on its class path: Ctrl+Enter runs the selection or the whole file, results show as <code><!-- releases:start --> ==&gt; 42</code>, with Stop, Reset and completion from JShell.</li>
+          <li data-text="dependency analyzer. the maven and gradle dependency tree with conflicts, the version that won, the path that brought each dependency, and an exclude action."><strong>Dependency Analyzer.</strong> The Maven and Gradle dependency tree with conflicts, the version that won, the path that brought each dependency, and an Exclude action.</li>
+          <li data-text="library sources. download sources for all libraries or one class, choose sources for a jar, and an option to fetch sources on import."><strong>Library sources.</strong> Download Sources for all libraries or one class, Choose Sources for a jar, and an option to fetch sources on import.</li>
+          <li data-text="analyze stack trace and thread dumps. paste a stack trace or a jstack dump to get clickable frames, threads by state and a deadlock mark; dump threads in the run window reads a running jvm with jcmd."><strong>Analyze Stack Trace and thread dumps.</strong> Paste a stack trace or a <code>jstack</code> dump to get clickable frames, threads by state and a deadlock mark; Dump Threads in the Run window reads a running JVM with <code>jcmd</code>.</li>
+          <li data-text="debugger values inline. variable values appear at the end of the lines during a debug session (can be turned off); remote jvm debug attaches to a running jvm."><strong>Debugger values inline.</strong> Variable values appear at the end of the lines during a debug session (can be turned off); Remote JVM Debug attaches to a running JVM.</li>
+          <li data-text="actions on save. reformat (whole file or changed lines) and optimize imports on save, per file mask."><strong>Actions on Save.</strong> Reformat (whole file or changed lines) and optimize imports on save, per file mask.</li>
+          <li data-text="compare with clipboard in the editor menu and find action."><strong>Compare with Clipboard</strong> in the editor menu and Find Action.</li>
+          <li data-text="markdown preview pictures from the project and the web, and the preview mode of each file is remembered."><strong>Markdown preview pictures</strong> from the project and the web, and the preview mode of each file is remembered.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">2</span></h3>
+        <ul>
+          <li data-text="new tool window icons for database, http client and endpoints; the switcher lists the new windows.">New tool window icons for Database, HTTP Client and Endpoints; the Switcher lists the new windows.</li>
+          <li data-text="search everywhere and go to class on a small project answer in the same frame.">Search Everywhere and Go to Class on a small project answer in the same frame.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="typing in a large merge result no longer eats memory: the editor counts the widest line once per frame and caches it.">Typing in a large merge result no longer eats memory: the editor counts the widest line once per frame and caches it.</li>
+          <li data-text="the debugger adapter closes cleanly when its last session ends.">The debugger adapter closes cleanly when its last session ends.</li>
+          <li data-text="linux and macos: the whole test suite is green on both systems.">Linux and macOS: the whole test suite is green on both systems.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.15" data-version="0.1.15" data-total="12">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.15" aria-label="Link to Arro 0.1.15">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.15</h2>
+        <p class="rel-meta"><time datetime="2026-11-14T14:14:33Z">14 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.15">Release page</a></p>
+      </header>
+      <p class="rel-summary">Coverage, an HTTP client and interactive rebase; the Debug and Services windows are rebuilt; Linux and macOS get fixes and are now tested before every release.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">6</span></h3>
+        <ul>
+          <li data-text="run with coverage. runs and test runs (maven, gradle, a main class) can collect coverage with jacoco. the gutter marks covered, partly covered and missed lines, with the hit count on hover; the coverage window lists packages and classes with class, method, line and branch percentages; the project tree shows the line percentage. ctrl+alt+f6 shows or hides it."><strong>Run with Coverage.</strong> Runs and test runs (Maven, Gradle, a main class) can collect coverage with JaCoCo. The gutter marks covered, partly covered and missed lines, with the hit count on hover; the Coverage window lists packages and classes with Class, Method, Line and Branch percentages; the project tree shows the line percentage. Ctrl+Alt+F6 shows or hides it.</li>
+          <li data-text="http client. .http and .rest files run requests: a run icon on every request, ctrl+enter at the caret, {{variables}} from http-client.env.json with an environment list above the file, $uuid, $timestamp and $randomint. the http response window shows the status, headers and the body, json indented and coloured, and keeps the last 50 responses. new → http request makes one."><strong>HTTP client.</strong> <code>.http</code> and <code>.rest</code> files run requests: a Run icon on every request, Ctrl+Enter at the caret, <code>{{variables}}</code> from <code>http-client.env.json</code> with an environment list above the file, <code>$uuid</code>, <code>$timestamp</code> and <code>$randomInt</code>. The HTTP Response window shows the status, headers and the body, JSON indented and coloured, and keeps the last 50 responses. New → HTTP Request makes one.</li>
+          <li data-text="interactive rebase. interactively rebase from here in the git log commit menu: pick, edit, reword, squash, fixup and drop (keys p, e, r, s, f, d), alt+up and alt+down reorder, reword edits the message in place; edit and conflicts stop with continue rebase and abort."><strong>Interactive rebase.</strong> Interactively Rebase from Here in the Git Log commit menu: Pick, Edit, Reword, Squash, Fixup and Drop (keys P, E, R, S, F, D), Alt+Up and Alt+Down reorder, Reword edits the message in place; Edit and conflicts stop with Continue Rebase and Abort.</li>
+          <li data-text="markdown highlighting inside lines: bold, italic, strikethrough, inline code, links, and code blocks coloured in their own language."><strong>Markdown highlighting inside lines:</strong> bold, italic, strikethrough, inline code, links, and code blocks coloured in their own language.</li>
+          <li data-text="breakpoints that do not stop. in the properties of a breakpoint, turn suspend off and log a &quot;breakpoint hit&quot; message, the value of an expression, or both; shift+click in the gutter sets such a point."><strong>Breakpoints that do not stop.</strong> In the properties of a breakpoint, turn Suspend off and log a &quot;Breakpoint hit&quot; message, the value of an expression, or both; Shift+click in the gutter sets such a point.</li>
+          <li data-text="readme on first open. a project opened for the first time shows its readme as a preview (settings → project can turn it off)."><strong>README on first open.</strong> A project opened for the first time shows its README as a preview (Settings → Project can turn it off).</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">2</span></h3>
+        <ul>
+          <li data-text="debug window rebuilt like idea: an icon toolbar (rerun, resume, pause, stop, step over, step into, step out, run to cursor, drop frame, evaluate, view breakpoints), debugger and console tabs, frames beside variables and watch with a movable divider."><strong>Debug window</strong> rebuilt like IDEA: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.</li>
+          <li data-text="services window rebuilt like idea: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, dashboard and console tabs, a right-click menu (start, stop, restart, remove, show logs, exec, copy container id; up, down, restart, stop for a project) and a movable divider."><strong>Services window</strong> rebuilt like IDEA: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">4</span></h3>
+        <ul>
+          <li data-text="on linux and macos, saving a read-only file replaced it silently; it now fails as on windows.">On Linux and macOS, saving a read-only file replaced it silently; it now fails as on Windows.</li>
+          <li data-text="field watchpoints now stop on the real java debugger; they used to stay unverified.">Field watchpoints now stop on the real Java debugger; they used to stay unverified.</li>
+          <li data-text="one file no longer opens in two tabs when its path is typed in another case (windows, macos).">One file no longer opens in two tabs when its path is typed in another case (Windows, macOS).</li>
+          <li data-text="the macos app now carries the maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.">The macOS app now carries the Maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.14" data-version="0.1.14" data-total="10">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.14" aria-label="Link to Arro 0.1.14">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.14</h2>
+        <p class="rel-meta"><time datetime="2026-11-14T00:19:57Z">14 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.14">Release page</a></p>
+      </header>
+      <p class="rel-summary">Git grows up, the debugger learns new breakpoints, and Markdown gets a preview.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">9</span></h3>
+        <ul>
+          <li data-text="three-way merge. merge… in the conflicts window (or a double click) opens yours, result and theirs side by side. non-conflicting changes are already applied; take or drop each chunk with the arrows and the cross, walk the conflicts with f7 and shift+f7. apply asks first if conflicts are left, writes the file in its own encoding and line endings only if it did not change on disk meanwhile, and only then marks it resolved. cancel leaves the file and the index alone."><strong>Three-way merge.</strong> Merge… in the Conflicts window (or a double click) opens Yours, Result and Theirs side by side. Non-conflicting changes are already applied; take or drop each chunk with the arrows and the cross, walk the conflicts with F7 and Shift+F7. Apply asks first if conflicts are left, writes the file in its own encoding and line endings only if it did not change on disk meanwhile, and only then marks it resolved. Cancel leaves the file and the index alone.</li>
+          <li data-text="git annotate. annotate with git blame in the gutter menu shows the date and author of every line; hover for the full commit, click to open it in git log."><strong>Git Annotate.</strong> Annotate with Git Blame in the gutter menu shows the date and author of every line; hover for the full commit, click to open it in Git Log.</li>
+          <li data-text="branch graph in git log, with branch and tag labels and head marked."><strong>Branch graph in Git Log</strong>, with branch and tag labels and HEAD marked.</li>
+          <li data-text="commit actions in git log: copy revision number, checkout revision, new branch, new tag, cherry-pick, revert commit, reset current branch to here (soft, mixed, hard, keep) and compare with local."><strong>Commit actions in Git Log:</strong> Copy Revision Number, Checkout Revision, New Branch, New Tag, Cherry-Pick, Revert Commit, Reset Current Branch to Here (Soft, Mixed, Hard, Keep) and Compare with Local.</li>
+          <li data-text="debugger: method breakpoints (click the gutter on a method declaration), field watchpoints (on a field declaration or from variables) and drop frame."><strong>Debugger:</strong> method breakpoints (click the gutter on a method declaration), field watchpoints (on a field declaration or from Variables) and Drop Frame.</li>
+          <li data-text="refactor this (ctrl+alt+shift+t) lists every refactoring that applies at the caret, with its keys. new from the language server: extract interface and extract field with their dialogs, make static, surround with try/catch, convert to lambda and more."><strong>Refactor This</strong> (Ctrl+Alt+Shift+T) lists every refactoring that applies at the caret, with its keys. New from the language server: Extract Interface and Extract Field with their dialogs, Make Static, Surround with try/catch, Convert to lambda and more.</li>
+          <li data-text="markdown preview beside the editor, with editor only, editor and preview and preview only; it follows the editor scroll and opens links, project files and anchors."><strong>Markdown preview</strong> beside the editor, with Editor only, Editor and Preview and Preview only; it follows the editor scroll and opens links, project files and anchors.</li>
+          <li data-text="more highlighting: gradle scripts (groovy and kotlin), kotlin, groovy, toml, sql, html, css, javascript, typescript and markdown."><strong>More highlighting:</strong> Gradle scripts (Groovy and Kotlin), Kotlin, Groovy, TOML, SQL, HTML, CSS, JavaScript, TypeScript and Markdown.</li>
+          <li data-text="settings opens with the caret in its search field; the arrow keys walk the pages."><strong>Settings</strong> opens with the caret in its search field; the arrow keys walk the pages.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">1</span></h3>
+        <ul>
+          <li data-text="programs started from run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.">Programs started from Run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.13" data-version="0.1.13" data-total="6">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.13" aria-label="Link to Arro 0.1.13">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.13</h2>
+        <p class="rel-meta"><time datetime="2026-11-13T20:48:42Z">13 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.13">Release page</a></p>
+      </header>
+      <p class="rel-summary">A real Settings window, highlighting for the files around a project, the mouse side buttons, and a caret in every field.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">4</span></h3>
+        <ul>
+          <li data-text="settings is now a proper window: a title bar with a close button, move it by its title and resize it by its edges, and it opens where you left it during the session. a search field above the pages narrows them to the settings you look for and marks the matching rows."><strong>Settings</strong> is now a proper window: a title bar with a close button, move it by its title and resize it by its edges, and it opens where you left it during the session. A search field above the pages narrows them to the settings you look for and marks the matching rows.</li>
+          <li data-text="ok, cancel and apply in settings. changes wait until you press apply or ok; cancel, the close button, escape or a click outside leave your settings and the settings file as they were. theme, keymap and templates still apply at once, and the window says so."><strong>OK, Cancel and Apply</strong> in Settings. Changes wait until you press Apply or OK; Cancel, the close button, Escape or a click outside leave your settings and the settings file as they were. Theme, Keymap and templates still apply at once, and the window says so.</li>
+          <li data-text="highlighting for json, xml, yaml, shell scripts, windows batch files and .properties files, including pom.xml. json, xml and yaml fold, and ctrl+/ comments xml lines with &lt;!-- --&gt;."><strong>Highlighting for JSON, XML, YAML, shell scripts, Windows batch files and .properties files</strong>, including <code>pom.xml</code>. JSON, XML and YAML fold, and Ctrl+/ comments XML lines with <code>&lt;!-- --&gt;</code>.</li>
+          <li data-text="mouse back and forward buttons go back and forward through your places in the code, like ctrl+alt+left and ctrl+alt+right, anywhere in the window. over the documentation window they page its own history first."><strong>Mouse back and forward buttons</strong> go back and forward through your places in the code, like Ctrl+Alt+Left and Ctrl+Alt+Right, anywhere in the window. Over the Documentation window they page its own history first.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the caret was missing in many text fields, among them the commit message, new file and rename prompts, the merge conflict message, the git log filter, change signature, copy class, the settings fields, keymap search, templates, go to custom region, the start screen and the run and debug console input. all of them now show the caret and the selection, and the commit message shows each line on its own row."><strong>The caret was missing in many text fields</strong>, among them the commit message, New File and Rename prompts, the merge conflict message, the Git log filter, Change Signature, Copy Class, the Settings fields, Keymap search, templates, Go to Custom Region, the start screen and the Run and Debug console input. All of them now show the caret and the selection, and the commit message shows each line on its own row.</li>
+          <li data-text="the settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.">The settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.12" data-version="0.1.12" data-total="4">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.12" aria-label="Link to Arro 0.1.12">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.12</h2>
+        <p class="rel-meta"><time datetime="2026-11-13T17:45:28Z">13 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.12">Release page</a></p>
+      </header>
+      <p class="rel-summary">The terminal cleans up after itself, and releases are checked before they go out.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">1</span></h3>
+        <ul>
+          <li data-text="terminal: programs started in the terminal stop with it. with powershell 7 from the microsoft store a program could outlive its terminal, for example one started while the window was closing or one with a console of its own. window programs you start from the terminal, such as an editor or a browser, keep running after the terminal closes."><strong>Terminal:</strong> programs started in the terminal stop with it. With PowerShell 7 from the Microsoft Store a program could outlive its terminal, for example one started while the window was closing or one with a console of its own. Window programs you start from the terminal, such as an editor or a browser, keep running after the terminal closes.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">3</span></h3>
+        <ul>
+          <li data-text="every release is now a draft until its windows, linux and macos archives are all attached and checked, so a release never appears without its downloads.">Every release is now a draft until its Windows, Linux and macOS archives are all attached and checked, so a release never appears without its downloads.</li>
+          <li data-text="a live smoke run presses every button of the side stripes and closes the window with a program running in the terminal before each release.">A live smoke run presses every button of the side stripes and closes the window with a program running in the terminal before each release.</li>
+          <li data-text="the build only re-checks the parts of the project a change touches.">The build only re-checks the parts of the project a change touches.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.11" data-version="0.1.11" data-total="2">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.11" aria-label="Link to Arro 0.1.11">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.11</h2>
+        <p class="rel-meta"><time datetime="2026-11-13T14:11:04Z">13 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.11">Release page</a></p>
+      </header>
+      <p class="rel-summary">Two fixes in the window.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">2</span></h3>
+        <ul>
+          <li data-text="closing the window: the close button works while a program runs in the terminal. the program and its shell stop with the window; before, the window stayed until file &gt; exit."><strong>Closing the window:</strong> the close button works while a program runs in the terminal. The program and its shell stop with the window; before, the window stayed until File &gt; Exit.</li>
+          <li data-text="bookmarks and notifications: with no bookmarks, the bookmarks button opens its list with &quot;no bookmarks yet&quot; instead of a notification, so the notifications button no longer shows &quot;bookmarks&quot;. the bookmarks button is lit while its list is open, and a second press closes it."><strong>Bookmarks and Notifications:</strong> with no bookmarks, the Bookmarks button opens its list with &quot;No bookmarks yet&quot; instead of a notification, so the Notifications button no longer shows &quot;Bookmarks&quot;. The Bookmarks button is lit while its list is open, and a second press closes it.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.10" data-version="0.1.10" data-total="8">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.10" aria-label="Link to Arro 0.1.10">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.10</h2>
+        <p class="rel-meta"><time datetime="2026-11-13T13:22:40Z">13 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.10">Release page</a></p>
+      </header>
+      <p class="rel-summary">The Linux archive starts on Ubuntu 22.04 and newer, and the code no longer jumps while you type.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="linux: the archive is built against glibc 2.35, so it starts on ubuntu 22.04 and 24.04, debian 12 and newer systems. the 0.1.9 archive needed glibc 2.43 and failed with glibc_2.43 not found."><strong>Linux:</strong> the archive is built against glibc 2.35, so it starts on Ubuntu 22.04 and 24.04, Debian 12 and newer systems. The 0.1.9 archive needed glibc 2.43 and failed with <code>GLIBC_2.43 not found</code>.</li>
+          <li data-text="code vision: the &quot;usages&quot; and &quot;implementations&quot; rows above methods stay in place while you type; before, they vanished and came back on every key and the code jumped."><strong>Code Vision:</strong> the &quot;usages&quot; and &quot;implementations&quot; rows above methods stay in place while you type; before, they vanished and came back on every key and the code jumped.</li>
+          <li data-text="diff: the right side of a diff is the same document as the editor tab of the file, not a copy. edits in either show in both, revert works on the tab's text, and the file keeps its encoding, bom and line ends when a hunk is reverted after the tab is closed."><strong>Diff:</strong> the right side of a diff is the same document as the editor tab of the file, not a copy. Edits in either show in both, Revert works on the tab's text, and the file keeps its encoding, BOM and line ends when a hunk is reverted after the tab is closed.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>macOS <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the menu bar shows the keys of its items.">The menu bar shows the keys of its items.</li>
+          <li data-text="shift+cmd+up and shift+cmd+down move the line in the editor, as in intellij idea.">Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor, as in IntelliJ IDEA.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the linux download is smaller: the program no longer carries its debug info.">The Linux download is smaller: the program no longer carries its debug info.</li>
+          <li data-text="the language server and debugger clients are now tested against real servers for another language (python), to keep the core free of java-only assumptions.">The language server and debugger clients are now tested against real servers for another language (Python), to keep the core free of Java-only assumptions.</li>
+          <li data-text="the readme explains how to install on linux and macos.">The README explains how to install on Linux and macOS.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.9" data-version="0.1.9" data-total="6">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.9" aria-label="Link to Arro 0.1.9">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.9</h2>
+        <p class="rel-meta"><time datetime="2026-11-13T10:50:32Z">13 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.9">Release page</a></p>
+      </header>
+      <p class="rel-summary">Smaller fixes and groundwork for Linux and macOS.</p><p class="rel-note"><strong>Linux archive: needs glibc 2.43.</strong> The Linux build of 0.1.9 was made on a runner with glibc 2.43, so it does not start on Ubuntu 24.04, Debian 12 or other systems with an older glibc (<code>version 'GLIBC_2.43' not found</code>). The next release is built against glibc 2.35 and runs on Ubuntu 22.04 and newer.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">4</span></h3>
+        <ul>
+          <li data-text="terminal: the &quot;process finished&quot; line no longer goes missing when a program ends right as the terminal redraws."><strong>Terminal:</strong> the &quot;Process finished&quot; line no longer goes missing when a program ends right as the terminal redraws.</li>
+          <li data-text="tooltips: the delay before a tooltip appears is decided when the pointer enters a button, so it is right again in tool windows."><strong>Tooltips:</strong> the delay before a tooltip appears is decided when the pointer enters a button, so it is right again in tool windows.</li>
+          <li data-text="inspection: the rerun button follows the state of the last inspection."><strong>Inspection:</strong> the Rerun button follows the state of the last inspection.</li>
+          <li data-text="closing a project window releases its file watchers and tool windows."><strong>Closing a project window</strong> releases its file watchers and tool windows.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">2</span></h3>
+        <ul>
+          <li data-text="arro builds on systems without a release of its own, such as linux on arm; updates are turned off there.">Arro builds on systems without a release of its own, such as Linux on ARM; updates are turned off there.</li>
+          <li data-text="the release now builds a linux archive as well as the macos one. neither has been tried on a real machine yet, so windows remains the supported download.">The release now builds a Linux archive as well as the macOS one. Neither has been tried on a real machine yet, so Windows remains the supported download.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.8" data-version="0.1.8" data-total="5">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.8" aria-label="Link to Arro 0.1.8">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.8</h2>
+        <p class="rel-meta"><time datetime="2026-11-13T08:35:08Z">13 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.8">Release page</a></p>
+      </header>
+      <p class="rel-summary">Fixes for the window stripes of 0.1.7, a smarter Find in Files mask, and groundwork for Linux and macOS releases.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="tool window stripes: the lower group of the left stripe (run, debug, terminal, services, problems and the rest) is back at the bottom of the window. in 0.1.7 it moved to the top."><strong>Tool window stripes:</strong> the lower group of the left stripe (Run, Debug, Terminal, Services, Problems and the rest) is back at the bottom of the window. In 0.1.7 it moved to the top.</li>
+          <li data-text="ai sessions button: it opens the ai sessions even when the right dock last showed another tool window, such as tasks."><strong>AI Sessions button:</strong> it opens the AI sessions even when the right dock last showed another tool window, such as Tasks.</li>
+          <li data-text="find in files: the suggested file mask follows the files of the project when they arrive after the dialog opened, as long as you have not typed a mask yourself."><strong>Find in Files:</strong> the suggested file mask follows the files of the project when they arrive after the dialog opened, as long as you have not typed a mask yourself.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the updater picks the archive of the system it runs on, and the release can now carry linux and macos archives built by github actions. they are not tested on real machines yet, so windows remains the only supported download.">The updater picks the archive of the system it runs on, and the release can now carry Linux and macOS archives built by GitHub Actions. They are not tested on real machines yet, so Windows remains the only supported download.</li>
+          <li data-text="on macos the tool windows, run and debug use the keys of intellij idea for macos.">On macOS the tool windows, Run and Debug use the keys of IntelliJ IDEA for macOS.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.7" data-version="0.1.7" data-total="3">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.7" aria-label="Link to Arro 0.1.7">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.7</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T23:06:14Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.7">Release page</a></p>
+      </header>
+      <p class="rel-summary">A lighter keystroke and a steadier Search Everywhere.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">1</span></h3>
+        <ul>
+          <li data-text="typing: a keystroke or a caret move now redraws only the editor. the title bar, the tool window stripes, the status bar, the tab bars and the open tool windows keep their last frame until they change themselves."><strong>Typing:</strong> a keystroke or a caret move now redraws only the editor. The title bar, the tool window stripes, the status bar, the tab bars and the open tool windows keep their last frame until they change themselves.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">1</span></h3>
+        <ul>
+          <li data-text="search everywhere: when a group of results arrives late, the row you moved to with the keys stays selected instead of jumping back to the first row."><strong>Search Everywhere:</strong> when a group of results arrives late, the row you moved to with the keys stays selected instead of jumping back to the first row.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">1</span></h3>
+        <ul>
+          <li data-text="arro is now built and tested on windows, linux and macos on every push, and several tests that failed only under load wait for the event they need instead of a clock. there is no macos or linux download yet.">Arro is now built and tested on Windows, Linux and macOS on every push, and several tests that failed only under load wait for the event they need instead of a clock. There is no macOS or Linux download yet.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.6" data-version="0.1.6" data-total="4">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.6" aria-label="Link to Arro 0.1.6">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.6</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T21:03:23Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.6">Release page</a></p>
+      </header>
+      <p class="rel-summary">Cleaner Run and Debug output, steadier hot swap, a lighter keystroke, and the first steps toward macOS.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">2</span></h3>
+        <ul>
+          <li data-text="run and debug output: when two processes write to one console — the build before a debug session and the program, or a test and its build — their unfinished lines no longer get glued into one line. stdout and stderr of one process stay apart too, in the run, debug and docker consoles."><strong>Run and Debug output:</strong> when two processes write to one console — the build before a debug session and the program, or a test and its build — their unfinished lines no longer get glued into one line. stdout and stderr of one process stay apart too, in the Run, Debug and Docker consoles.</li>
+          <li data-text="hot swap: a class that the build writes while the debugger is still reloading the previous batch is no longer lost; the next build project reloads it."><strong>Hot swap:</strong> a class that the build writes while the debugger is still reloading the previous batch is no longer lost; the next <em>Build Project</em> reloads it.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">2</span></h3>
+        <ul>
+          <li data-text="typing and moving the caret now update only the status bar and the tab title instead of asking the whole window to redraw. more of this work is coming.">Typing and moving the caret now update only the status bar and the tab title instead of asking the whole window to redraw. More of this work is coming.</li>
+          <li data-text="macos groundwork: platform layer, a cmd keymap that follows intellij idea for macos, a native menu bar and an arro.app bundle. arro is now built and tested on windows, linux and macos on every push. there is no macos or linux download yet.">macOS groundwork: platform layer, a Cmd keymap that follows IntelliJ IDEA for macOS, a native menu bar and an <code>Arro.app</code> bundle. Arro is now built and tested on Windows, Linux and macOS on every push. There is no macOS or Linux download yet.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.5" data-version="0.1.5" data-total="5">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.5" aria-label="Link to Arro 0.1.5">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.5</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T19:49:32Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.5">Release page</a></p>
+      </header>
+      <p class="rel-summary">A diff that keeps out of your tab's way, a branch tree, recently edited files, and the groundwork for Linux.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">3</span></h3>
+        <ul>
+          <li data-text="diff has its own view: the right pane of a diff shares the text and undo history with the file's tab, but scrolling, carets and folds in the diff no longer move the tab. folding a block keeps the matching chunks level on both sides."><strong>Diff has its own view:</strong> the right pane of a diff shares the text and undo history with the file's tab, but scrolling, carets and folds in the diff no longer move the tab. Folding a block keeps the matching chunks level on both sides.</li>
+          <li data-text="recently edited files: show edited only in recent files (ctrl+e) and in the ctrl+tab switcher now lists files you edited recently, also after saving and after reopening the project. recently changed files in find action opens it directly."><strong>Recently edited files:</strong> <em>Show edited only</em> in Recent Files (Ctrl+E) and in the Ctrl+Tab switcher now lists files you edited recently, also after saving and after reopening the project. <em>Recently Changed Files</em> in Find Action opens it directly.</li>
+          <li data-text="branch tree: the git branches popup groups remote branches by remote and splits names like feature/login into folders. turn it off with group by directory in the popup menu or on the git settings page. ←/→ fold and unfold, the search opens folders with matches."><strong>Branch tree:</strong> the Git branches popup groups remote branches by remote and splits names like <code>feature/login</code> into folders. Turn it off with <em>Group by Directory</em> in the popup menu or on the Git settings page. ←/→ fold and unfold, the search opens folders with matches.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="hood">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Under the hood <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the process, terminal and file layers now build and pass their tests on linux. there is no linux download yet; it comes in a later release, together with macos.">The process, terminal and file layers now build and pass their tests on Linux. There is no Linux download yet; it comes in a later release, together with macOS.</li>
+          <li data-text="tests no longer leave temporary folders behind.">Tests no longer leave temporary folders behind.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.4" data-version="0.1.4" data-total="7">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.4" aria-label="Link to Arro 0.1.4">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.4</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T17:34:09Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.4">Release page</a></p>
+      </header>
+      <p class="rel-summary">Real editors in the diff, folder compare, input for programs under the debugger, and a proper Ctrl+Tab switcher.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">7</span></h3>
+        <ul>
+          <li data-text="diff panes are full editors: the right side is your file with everything the editor does — selection, undo, completion, multiple carets, search; the left side is read-only with syntax colors. empty filler rows keep matching chunks side by side, and the two panes scroll together."><strong>Diff panes are full editors:</strong> the right side is your file with everything the editor does — selection, undo, completion, multiple carets, search; the left side is read-only with syntax colors. Empty filler rows keep matching chunks side by side, and the two panes scroll together.</li>
+          <li data-text="local history side by side: a revision and the current file open in the same two-pane diff; revert takes the whole file back, &gt;&gt; one chunk."><strong>Local history side by side:</strong> a revision and the current file open in the same two-pane diff; <em>Revert</em> takes the whole file back, <code>&gt;&gt;</code> one chunk.</li>
+          <li data-text="compare folders: select two folders in the project tree and press ctrl+d (or compare with… on one). see files only on the left, only on the right, and different ones; open a pair in the diff with a double click; copy files across or delete extra ones (to the recycle bin, with confirmation)."><strong>Compare folders:</strong> select two folders in the project tree and press Ctrl+D (or <em>Compare With…</em> on one). See files only on the left, only on the right, and different ones; open a pair in the diff with a double click; copy files across or delete extra ones (to the Recycle Bin, with confirmation).</li>
+          <li data-text="debug console takes input: type a line and press enter to send it to the program under the debugger, the same as in the run console (history, ctrl+v line by line, ctrl+d or send eof)."><strong>Debug console takes input:</strong> type a line and press Enter to send it to the program under the debugger, the same as in the Run console (history, Ctrl+V line by line, Ctrl+D or <em>Send EOF</em>).</li>
+          <li data-text="switcher: hold ctrl and press tab to walk through open files and tool windows, release ctrl to open the one you picked; a quick ctrl+tab goes back to the previous tab."><strong>Switcher:</strong> hold Ctrl and press Tab to walk through open files and tool windows, release Ctrl to open the one you picked; a quick Ctrl+Tab goes back to the previous tab.</li>
+          <li data-text="search everywhere: ctrl+↓/↑ or pgdn/pgup jump between groups of results; tab completes / commands."><strong>Search Everywhere:</strong> Ctrl+↓/↑ or PgDn/PgUp jump between groups of results; Tab completes <code>/</code> commands.</li>
+          <li data-text="recent files (ctrl+e): show edited only. alt+↓ in a tool window lists its tabs."><strong>Recent Files (Ctrl+E):</strong> <em>Show edited only</em>. <strong>Alt+↓</strong> in a tool window lists its tabs.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.3" data-version="0.1.3" data-total="4">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.3" aria-label="Link to Arro 0.1.3">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.3</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T13:55:14Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.3">Release page</a></p>
+      </header>
+      <p class="rel-summary">Side-by-side diffs, Javadoc rendered right in the editor, and keyboard control of tool windows.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">3</span></h3>
+        <ul>
+          <li data-text="side-by-side diff: the version before on the left, yours on the right, with links between matching chunks, &gt;&gt; to take a chunk back, changed words marked inside lines, and the right side editable when it is your working file. switch back to the unified view from the diff header; ctrl+shift+tab moves between the panes, f7 / shift+f7 between changes."><strong>Side-by-side diff:</strong> the version before on the left, yours on the right, with links between matching chunks, <code>&gt;&gt;</code> to take a chunk back, changed words marked inside lines, and the right side editable when it is your working file. Switch back to the unified view from the diff header; Ctrl+Shift+Tab moves between the panes, F7 / Shift+F7 between changes.</li>
+          <li data-text="rendered javadoc: ctrl+alt+q or the gutter icon shows a documentation comment formatted in place — tags as lists, {@code} in monospace, clickable {@link}. settings → editor → render documentation comments turns it on for every comment. the file text does not change."><strong>Rendered Javadoc:</strong> Ctrl+Alt+Q or the gutter icon shows a documentation comment formatted in place — tags as lists, <code>{@code}</code> in monospace, clickable <code>{@link}</code>. <em>Settings → Editor → Render documentation comments</em> turns it on for every comment. The file text does not change.</li>
+          <li data-text="tool windows from the keyboard: ctrl+shift+arrows resize the focused tool window; numpad  expands a tree branch fully; reload all from disk (ctrl+alt+y) also refreshes the file index and git status."><strong>Tool windows from the keyboard:</strong> Ctrl+Shift+arrows resize the focused tool window; Numpad <code>*</code> expands a tree branch fully; <em>Reload All from Disk</em> (Ctrl+Alt+Y) also refreshes the file index and Git status.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">1</span></h3>
+        <ul>
+          <li data-text="a new or deleted pom.xml, build.gradle or settings.gradle (a new module) now reimports the project, the same as an edited one.">A new or deleted <code>pom.xml</code>, <code>build.gradle</code> or <code>settings.gradle</code> (a new module) now reimports the project, the same as an edited one.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.2" data-version="0.1.2" data-total="4">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.2" aria-label="Link to Arro 0.1.2">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.2</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T13:29:09Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.2">Release page</a></p>
+      </header>
+      <p class="rel-summary">A fix release for updates, plus input for programs you run.</p><p class="rel-note"><strong>If you have 0.1.0 or 0.1.1:</strong> their updater cannot download a release, so please download this zip by hand and unpack it over the old folder (or anywhere). From 0.1.2 on, updates install from inside Arro.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="updates: the release archive is now downloaded to disk as it arrives; before, every update stopped with &quot;the response body is larger than request limit&quot;."><strong>Updates:</strong> the release archive is now downloaded to disk as it arrives; before, every update stopped with &quot;the response body is larger than request limit&quot;.</li>
+          <li data-text="updates: arro checks for a new version on every start and twice a day while it is open, instead of once a day."><strong>Updates:</strong> Arro checks for a new version on every start and twice a day while it is open, instead of once a day.</li>
+          <li data-text="crash: opening a link (release notes in the update balloon and other links) no longer closes arro."><strong>Crash:</strong> opening a link (Release Notes in the update balloon and other links) no longer closes Arro.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">1</span></h3>
+        <ul>
+          <li data-text="run console takes input: type into the run console and press enter to send a line to your program's stdin; ↑/↓ browse what you sent; ctrl+d or send eof in the context menu closes the input. works for application runs, main from the gutter, spring-boot:run and bootrun."><strong>Run console takes input:</strong> type into the Run console and press Enter to send a line to your program's stdin; ↑/↓ browse what you sent; Ctrl+D or <em>Send EOF</em> in the context menu closes the input. Works for Application runs, <code>main</code> from the gutter, <code>spring-boot:run</code> and <code>bootRun</code>.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.1" data-version="0.1.1" data-total="6">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.1" aria-label="Link to Arro 0.1.1">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.1</h2>
+        <p class="rel-meta"><time datetime="2026-11-12T12:30:49Z">12 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.1">Release page</a></p>
+      </header>
+      <p class="rel-summary">Documentation you can read and copy, Code Vision, a real live template engine, new settings pages and a sturdier updater.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">4</span></h3>
+        <ul>
+          <li data-text="quick documentation (ctrl+q and hover): rendered javadoc with links, tables and code; select and copy any part of it; a second ctrl+q pins it to the new documentation tool window that follows the caret, with back and forward."><strong>Quick documentation (Ctrl+Q and hover):</strong> rendered Javadoc with links, tables and code; select and copy any part of it; a second Ctrl+Q pins it to the new <strong>Documentation</strong> tool window that follows the caret, with Back and Forward.</li>
+          <li data-text="code vision: &quot;n usages&quot; and &quot;n implementations&quot; above classes and methods, click to see them."><strong>Code Vision:</strong> &quot;N usages&quot; and &quot;N implementations&quot; above classes and methods, click to see them.</li>
+          <li data-text="live templates engine: expand with tab, enter or space per template; variable expressions like classname(), methodname(), date(), clipboard(), camelcase(...), concat(...); skip if defined."><strong>Live templates engine:</strong> expand with Tab, Enter or Space per template; variable expressions like <code>className()</code>, <code>methodName()</code>, <code>date()</code>, <code>clipboard()</code>, <code>camelCase(...)</code>, <code>concat(...)</code>; Skip if defined.</li>
+          <li data-text="settings: live templates, postfix completion and file and code templates pages; build tools (maven, gradle), version control and git, terminal."><strong>Settings:</strong> Live Templates, Postfix Completion and File and Code Templates pages; Build Tools (Maven, Gradle), Version Control and Git, Terminal.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">2</span></h3>
+        <ul>
+          <li data-text="editor: sticky lines no longer cut the first visible line; caret and selection around code vision rows."><strong>Editor:</strong> sticky lines no longer cut the first visible line; caret and selection around Code Vision rows.</li>
+          <li data-text="updates: the new version waits for the old one to close before it starts the language server, removes the tool folders of older releases, and picks the newest tool version by number."><strong>Updates:</strong> the new version waits for the old one to close before it starts the language server, removes the tool folders of older releases, and picks the newest tool version by number.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.0" data-version="0.1.0" data-total="6">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.0" aria-label="Link to Arro 0.1.0">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.0</h2>
+        <p class="rel-meta"><time datetime="2026-11-11T21:45:04Z">11 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.0">Release page</a></p>
+      </header>
+      <p class="rel-summary">Arro is a native Java IDE written in Rust: IntelliJ-style workflow and shortcuts, a GPU-rendered UI, and a fraction of the memory.</p>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">6</span></h3>
+        <ul>
+          <li data-text="editor: completion with auto-import, quick fixes, semantic highlighting, parameter name hints, a scroll bar with problem marks, live and postfix templates, folding, multiple carets."><strong>Editor:</strong> completion with auto-import, quick fixes, semantic highlighting, parameter name hints, a scroll bar with problem marks, live and postfix templates, folding, multiple carets.</li>
+          <li data-text="navigation and refactoring: search everywhere, go to class/file/symbol, find usages, call and type hierarchy, rename, extract, inline, change signature, safe delete."><strong>Navigation and refactoring:</strong> Search Everywhere, Go to Class/File/Symbol, Find Usages, call and type hierarchy, rename, extract, inline, change signature, safe delete.</li>
+          <li data-text="build and run: maven and gradle projects, run configurations, run marks for main and tests, a test tree with rerun of failures, lombok from the project dependencies."><strong>Build and run:</strong> Maven and Gradle projects, run configurations, run marks for <code>main</code> and tests, a test tree with rerun of failures, Lombok from the project dependencies.</li>
+          <li data-text="debugger: breakpoints, stepping, evaluation, hot swap, virtual threads."><strong>Debugger:</strong> breakpoints, stepping, evaluation, hot swap, virtual threads.</li>
+          <li data-text="git: commit, diff, log, branches with merge, rebase and compare, shelf and stash, conflicts, local history."><strong>Git:</strong> commit, diff, log, branches with merge, rebase and compare, shelf and stash, conflicts, local history.</li>
+          <li data-text="everything else: terminal, docker services, project structure with the project jdk, editable keymap, dark and light themes, automatic updates."><strong>Everything else:</strong> terminal, Docker services, project structure with the project JDK, editable keymap, dark and light themes, automatic updates.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="limits">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Known limitations <span class="count">3</span></h3>
+        <ul>
+          <li data-text="windows 11 x86-64 only.">Windows 11 x86-64 only.</li>
+          <li data-text="the ai agent panel is not in this version yet.">The AI agent panel is not in this version yet.</li>
+          <li data-text="settings and data may move between versions.">Settings and data may move between versions.</li>
+        </ul>
+      </section>
+    </article>
+    <!-- releases:end -->
+    </div>
+    <p class="no-results" id="none" hidden>No change matches that search. Try a shorter word, or turn the kinds back on.</p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Paweł Januszko</h2>
+      <div class="barcode"><svg data-barcode="PABLOSENSEI" aria-hidden="true"></svg><span>Rust &amp; Java · native desktop tools</span></div>
+      <small>© 2026 Paweł Januszko. Box art is drawn by your browser. Set in Archivo and JetBrains Mono.</small>
+    </div>
+    <div>
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/arro/">Arro</a></li>
+        <li><a href="/arro/changelog/">Arro changelog</a></li>
+        <li><a href="/arro/help/">Arro help</a></li>
+        <li><a href="/arro/roadmap/">Arro roadmap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elsewhere</h2>
+      <ul>
+        <li><a href="https://github.com/PabloSensei">GitHub</a></li>
+        <li><a href="https://github.com/PabloSensei/arro">Arro source</a></li>
+        <li><a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

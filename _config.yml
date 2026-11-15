@@ -1,0 +1,8 @@
+# GitHub Pages: publish the static site only.
+exclude:
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - scripts
+  - docs
+  - Gemfile

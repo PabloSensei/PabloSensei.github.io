@@ -1,0 +1,1690 @@
+{
+ "repo": "PabloSensei/arro",
+ "generatedAt": "2026-11-15T18:56:12.767Z",
+ "latest": {
+  "version": "0.1.17",
+  "tag": "v0.1.17",
+  "date": "2026-11-15T16:44:32Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.17",
+  "assets": [
+   {
+    "name": "arro-0.1.17-windows-x86_64.zip",
+    "os": "windows",
+    "label": "Windows 11 · x86-64 · zip",
+    "order": 0,
+    "size": 80934680,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-windows-x86_64.zip"
+   },
+   {
+    "name": "arro_0.1.17_amd64.deb",
+    "os": "linux",
+    "label": "Debian, Ubuntu · .deb",
+    "order": 1,
+    "size": 79913940,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro_0.1.17_amd64.deb"
+   },
+   {
+    "name": "arro-0.1.17-linux-x86_64.tar.gz",
+    "os": "linux",
+    "label": "Any glibc 2.35+ distro · tar.gz",
+    "order": 3,
+    "size": 90594422,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-linux-x86_64.tar.gz"
+   },
+   {
+    "name": "arro-0.1.17-macos-aarch64.dmg",
+    "os": "macos",
+    "label": "Apple silicon · .dmg",
+    "order": 4,
+    "size": 86522100,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-macos-aarch64.dmg"
+   },
+   {
+    "name": "arro-0.1.17-macos-aarch64.zip",
+    "os": "macos",
+    "label": "Apple silicon · zip",
+    "order": 5,
+    "size": 81312999,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-macos-aarch64.zip"
+   }
+  ]
+ },
+ "releases": [
+  {
+   "version": "0.1.17",
+   "tag": "v0.1.17",
+   "date": "2026-11-15T16:44:32Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.17",
+   "prerelease": false,
+   "summary": [
+    "Packages for Linux (.deb) and macOS (.dmg), a New Project wizard with Spring Initializr, terminal tabs and splits, run configurations with Before launch and Compound, class diagrams, a Resource Bundle editor, Structural Search and Replace, Create Test, a Services window, inspection settings, the code style of IntelliJ IDEA projects, and a deeper debugger."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Resource Bundle editor.</strong> A <code>messages*.properties</code> file gets a Bundle tab: every key of all locales in one table with a filter, a field per locale, missing translations marked, add, remove and rename a key in all files at once. Edits go through the normal buffers, so Undo and Save work as in the text.",
+       "text": "Resource Bundle editor. A messages.properties file gets a Bundle tab: every key of all locales in one table with a filter, a field per locale, missing translations marked, add, remove and rename a key in all files at once. Edits go through the normal buffers, so Undo and Save work as in the text.",
+       "lead": "Resource Bundle editor"
+      },
+      {
+       "html": "<strong>Class diagram.</strong> Show Diagram (Ctrl+Alt+Shift+U, or the menu of a class or a package folder) draws the class with its ancestors and project subclasses, or a whole package: fields, methods, inheritance, implementation and associations. Pan, zoom, drag nodes, add a class, hide members, double-click to go to the source, export to SVG.",
+       "text": "Class diagram. Show Diagram (Ctrl+Alt+Shift+U, or the menu of a class or a package folder) draws the class with its ancestors and project subclasses, or a whole package: fields, methods, inheritance, implementation and associations. Pan, zoom, drag nodes, add a class, hide members, double-click to go to the source, export to SVG.",
+       "lead": "Class diagram"
+      },
+      {
+       "html": "<strong>Structural Search and Replace.</strong> Search by a code template with <code>$variables$</code>, count, text and type filters, 15 ready templates, and a replace preview; results open in the Find window.",
+       "text": "Structural Search and Replace. Search by a code template with $variables$, count, text and type filters, 15 ready templates, and a replace preview; results open in the Find window.",
+       "lead": "Structural Search and Replace"
+      },
+      {
+       "html": "<strong>Create Test.</strong> Go to Test on a class without tests offers Create New Test, also on Alt+Enter: JUnit 5, JUnit 4 or TestNG, class name, package, setUp/tearDown and the methods to test, with a Fix button when the library is missing from the build.",
+       "text": "Create Test. Go to Test on a class without tests offers Create New Test, also on Alt+Enter: JUnit 5, JUnit 4 or TestNG, class name, package, setUp/tearDown and the methods to test, with a Fix button when the library is missing from the build.",
+       "lead": "Create Test"
+      },
+      {
+       "html": "<strong>Services window.</strong> Run configurations next to Docker: Spring Boot apps and other main classes with their state and port, start, stop and restart, the console and Actuator of the same run, open in the browser or in the HTTP client.",
+       "text": "Services window. Run configurations next to Docker: Spring Boot apps and other main classes with their state and port, start, stop and restart, the console and Actuator of the same run, open in the browser or in the HTTP client.",
+       "lead": "Services window"
+      },
+      {
+       "html": "<strong>Run configurations in depth.</strong> Before launch steps (build, a Maven goal or Gradle task, another configuration), Compound configurations that start and stop several together, Allow multiple instances with a Stop and Rerun question otherwise, an environment file (<code>.env</code>) per configuration, and Stop that cancels a launch still being prepared. The test window can rerun the last tests after each save (Auto) and keeps the last 10 runs in History.",
+       "text": "Run configurations in depth. Before launch steps (build, a Maven goal or Gradle task, another configuration), Compound configurations that start and stop several together, Allow multiple instances with a Stop and Rerun question otherwise, an environment file (.env) per configuration, and Stop that cancels a launch still being prepared. The test window can rerun the last tests after each save (Auto) and keeps the last 10 runs in History.",
+       "lead": "Run configurations in depth"
+      },
+      {
+       "html": "<strong>Inspection settings.</strong> Settings → Editor → Inspections lists the checks of Arro and the Java compiler: turn each one on or off and choose its level, saved in the project. Alt+Enter on a warning can suppress it for the statement, method or class, disable the check or open its setting.",
+       "text": "Inspection settings. Settings → Editor → Inspections lists the checks of Arro and the Java compiler: turn each one on or off and choose its level, saved in the project. Alt+Enter on a warning can suppress it for the statement, method or class, disable the check or open its setting.",
+       "lead": "Inspection settings"
+      },
+      {
+       "html": "<strong>Coming from IntelliJ IDEA.</strong> A project with <code>.idea/codeStyles/Project.xml</code> keeps its style: indents, tabs and the right margin in the editor, and the Java formatter and import order through the language server. <code>.editorconfig</code> still wins, and Settings → Editor → Code Style shows which file is used, with a Use Arro settings button. File → Manage IDE Settings exports and imports the settings, keymap and templates of Arro as one zip, without passwords and tokens.",
+       "text": "Coming from IntelliJ IDEA. A project with .idea/codeStyles/Project.xml keeps its style: indents, tabs and the right margin in the editor, and the Java formatter and import order through the language server. .editorconfig still wins, and Settings → Editor → Code Style shows which file is used, with a Use Arro settings button. File → Manage IDE Settings exports and imports the settings, keymap and templates of Arro as one zip, without passwords and tokens.",
+       "lead": "Coming from IntelliJ IDEA"
+      },
+      {
+       "html": "<strong>Dependency updates.</strong> <code>pom.xml</code>, <code>build.gradle(.kts)</code> and <code>libs.versions.toml</code> mark versions with a newer stable release; Alt+Enter updates to the latest or the latest patch, and version completion lists what the repository has.",
+       "text": "Dependency updates. pom.xml, build.gradle(.kts) and libs.versions.toml mark versions with a newer stable release; Alt+Enter updates to the latest or the latest patch, and version completion lists what the repository has.",
+       "lead": "Dependency updates"
+      },
+      {
+       "html": "<strong>HTTP client and cURL.</strong> Pasting a <code>curl</code> command into an <code>.http</code> file turns it into a request; Copy as cURL goes the other way (bash or cmd). Response handler scripts, multipart bodies and comparing two responses.",
+       "text": "HTTP client and cURL. Pasting a curl command into an .http file turns it into a request; Copy as cURL goes the other way (bash or cmd). Response handler scripts, multipart bodies and comparing two responses.",
+       "lead": "HTTP client and cURL"
+      },
+      {
+       "html": "<strong>Git history of a selection or a method.</strong> Show History for Selection and for Method, with the diff of each commit; Git submodules are recognized and updated together with the project.",
+       "text": "Git history of a selection or a method. Show History for Selection and for Method, with the diff of each commit; Git submodules are recognized and updated together with the project.",
+       "lead": "Git history of a selection or a method"
+      },
+      {
+       "html": "<strong>New Project wizard.</strong> Java projects with Maven or Gradle (Groovy or Kotlin DSL), a JDK from the ones found, sample code and GroupId/ArtifactId/Version; Spring Boot projects from Spring Initializr with a searchable dependency list; empty projects; an optional Git repository. Also from File → New → Project... in an open window.",
+       "text": "New Project wizard. Java projects with Maven or Gradle (Groovy or Kotlin DSL), a JDK from the ones found, sample code and GroupId/ArtifactId/Version; Spring Boot projects from Spring Initializr with a searchable dependency list; empty projects; an optional Git repository. Also from File → New → Project... in an open window.",
+       "lead": "New Project wizard"
+      },
+      {
+       "html": "<strong>Terminal tabs and splits.</strong> Several sessions as tabs (Ctrl+Shift+T, rename, Alt+Left/Right) with a shell picker (PowerShell, cmd, Git Bash, WSL; <code>$SHELL</code>, bash, zsh, fish), Split Right and Split Down, Ctrl+F through the whole scrollback with case and regex, Ctrl+click on URLs, file paths with a line, compiler output and Java stack frames, mouse selection with copy and paste, and tabs restored after a restart. Open in Terminal on a project folder opens a tab there.",
+       "text": "Terminal tabs and splits. Several sessions as tabs (Ctrl+Shift+T, rename, Alt+Left/Right) with a shell picker (PowerShell, cmd, Git Bash, WSL; $SHELL, bash, zsh, fish), Split Right and Split Down, Ctrl+F through the whole scrollback with case and regex, Ctrl+click on URLs, file paths with a line, compiler output and Java stack frames, mouse selection with copy and paste, and tabs restored after a restart. Open in Terminal on a project folder opens a tab there.",
+       "lead": "Terminal tabs and splits"
+      },
+      {
+       "html": "<strong>Appearance modes.</strong> View → Appearance: Full Screen, Distraction Free, Zen and Presentation modes, toggles for the toolbar, tool window bars, status bar, breadcrumbs, line numbers, gutter icons, indent guides and sticky lines, and Zoom IDE (Ctrl+Alt+Shift+= / - / 0).",
+       "text": "Appearance modes. View → Appearance: Full Screen, Distraction Free, Zen and Presentation modes, toggles for the toolbar, tool window bars, status bar, breadcrumbs, line numbers, gutter icons, indent guides and sticky lines, and Zoom IDE (Ctrl+Alt+Shift+= / - / 0).",
+       "lead": "Appearance modes"
+      },
+      {
+       "html": "<strong>Packages for Linux and macOS.</strong> A <code>.deb</code> for Debian and Ubuntu (<code>sudo apt install ./arro_0.1.17_amd64.deb</code>: Arro in <code>/opt/arro</code>, <code>arro</code> on the path, a menu shortcut) and a <code>.dmg</code> for macOS. A package installation gets a link to the new package when an update comes out; the zip and tar.gz archives keep updating themselves.",
+       "text": "Packages for Linux and macOS. A .deb for Debian and Ubuntu (sudo apt install ./arro_0.1.17_amd64.deb: Arro in /opt/arro, arro on the path, a menu shortcut) and a .dmg for macOS. A package installation gets a link to the new package when an update comes out; the zip and tar.gz archives keep updating themselves.",
+       "lead": "Packages for Linux and macOS"
+      },
+      {
+       "html": "<strong>macOS and Linux integration.</strong> On macOS the Arro application menu (About, Settings, Hide, Services, Quit) and the Window menu work as in other Mac apps. Folders and Java, Kotlin, Gradle, Maven, Markdown, YAML, JSON and XML files open from Finder or the file manager with Open With, and <code>arro &lt;path&gt;</code> hands the path to the running Arro instead of starting a second copy (<code>--new-instance</code> starts one anyway). Linux keeps its cache in <code>$XDG_CACHE_HOME</code> and groups its windows under the Arro icon.",
+       "text": "macOS and Linux integration. On macOS the Arro application menu (About, Settings, Hide, Services, Quit) and the Window menu work as in other Mac apps. Folders and Java, Kotlin, Gradle, Maven, Markdown, YAML, JSON and XML files open from Finder or the file manager with Open With, and arro <path> hands the path to the running Arro instead of starting a second copy (--new-instance starts one anyway). Linux keeps its cache in $XDG_CACHE_HOME and groups its windows under the Arro icon.",
+       "lead": "macOS and Linux integration"
+      },
+      {
+       "html": "<strong>Debugger.</strong> Mark Object (F11) labels an object in all views, Copy Stack, library frames folded into one line, inline watches on a line, and type renderers.",
+       "text": "Debugger. Mark Object (F11) labels an object in all views, Copy Stack, library frames folded into one line, inline watches on a line, and type renderers.",
+       "lead": "Debugger"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "Stack trace analysis shows project frames at once and fills library frames in after.",
+       "text": "Stack trace analysis shows project frames at once and fills library frames in after.",
+       "lead": null
+      },
+      {
+       "html": "The Database and JShell windows no longer poll when nothing is connected.",
+       "text": "The Database and JShell windows no longer poll when nothing is connected.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "The editor context menu has its separator before Copy Path again.",
+       "text": "The editor context menu has its separator before Copy Path again.",
+       "lead": null
+      },
+      {
+       "html": "File → Exit asks about unsaved edits made in the Resource Bundle table for files without a tab, names them, and saves or drops them as chosen.",
+       "text": "File → Exit asks about unsaved edits made in the Resource Bundle table for files without a tab, names them, and saves or drops them as chosen.",
+       "lead": null
+      },
+      {
+       "html": "Several window tests that failed only under heavy machine load are stable now.",
+       "text": "Several window tests that failed only under heavy machine load are stable now.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 17,
+    "improved": 2,
+    "fixed": 3,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.17-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 80934680,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.17_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 79913940,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro_0.1.17_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.17-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 90594422,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.17-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 86522100,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.17-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 81312999,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.16",
+   "tag": "v0.1.16",
+   "date": "2026-11-14T22:14:41Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.16",
+   "prerelease": false,
+   "summary": [
+    "The biggest batch so far: Spring support, a database console, a profiler, JShell, a dependency analyzer, stack trace analysis and a live Actuator tab for Spring Boot apps."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Spring configuration files.</strong> <code>application.properties</code> and <code>application.yml</code> get completion, hover documentation, Ctrl+B and checks for unknown or deprecated keys and wrong boolean or enum values, from the configuration metadata of the jars and the build output on the class path.",
+       "text": "Spring configuration files. application.properties and application.yml get completion, hover documentation, Ctrl+B and checks for unknown or deprecated keys and wrong boolean or enum values, from the configuration metadata of the jars and the build output on the class path.",
+       "lead": "Spring configuration files"
+      },
+      {
+       "html": "<strong>Beans window and injection navigation.</strong> Components, configuration classes, <code>@Bean</code> methods and Spring Data repositories of the project; gutter marks on injection points and beans go to the candidates.",
+       "text": "Beans window and injection navigation. Components, configuration classes, @Bean methods and Spring Data repositories of the project; gutter marks on injection points and beans go to the candidates.",
+       "lead": "Beans window and injection navigation"
+      },
+      {
+       "html": "<strong>Endpoints window.</strong> Every <code>@RequestMapping</code>, <code>@GetMapping</code> and friends with its HTTP method and full path; a gutter mark on each handler; one click writes the request into an <code>.http</code> file of the HTTP client.",
+       "text": "Endpoints window. Every @RequestMapping, @GetMapping and friends with its HTTP method and full path; a gutter mark on each handler; one click writes the request into an .http file of the HTTP client.",
+       "lead": "Endpoints window"
+      },
+      {
+       "html": "<strong>Spring Data JPA.</strong> Repository method names like <code>findByLastNameStartingWith</code> complete properties and operators from the entity, mark an unknown property and a wrong number of parameters, and Ctrl+B goes to the field. JPQL in <code>@Query</code> (text blocks too) is highlighted, completes entities and properties after an alias, checks them and the <code>:name</code> parameters.",
+       "text": "Spring Data JPA. Repository method names like findByLastNameStartingWith complete properties and operators from the entity, mark an unknown property and a wrong number of parameters, and Ctrl+B goes to the field. JPQL in @Query (text blocks too) is highlighted, completes entities and properties after an alias, checks them and the :name parameters.",
+       "lead": "Spring Data JPA"
+      },
+      {
+       "html": "<strong>Actuator tab for Spring Boot.</strong> A running Spring Boot app gets an Actuator tab next to its console with live Health, Beans, Mappings and Environment, a green dot when the app has started, a jump from a bean or handler to its code, and a hint when an endpoint is not exposed.",
+       "text": "Actuator tab for Spring Boot. A running Spring Boot app gets an Actuator tab next to its console with live Health, Beans, Mappings and Environment, a green dot when the app has started, a jump from a bean or handler to its code, and a hint when an endpoint is not exposed.",
+       "lead": "Actuator tab for Spring Boot"
+      },
+      {
+       "html": "<strong>Message bundles.</strong> Keys in <code>getMessage</code>, <code>ResourceBundle.getString</code>, validation <code>message = &quot;{…}&quot;</code> and Thymeleaf <code>#{…}</code> go to their line in <code>messages*.properties</code> with Ctrl+B, complete, show every locale on hover, and warn when missing, with a Create property fix. Property files mark unused keys and missing translations; Find Usages and Rename work on a key.",
+       "text": "Message bundles. Keys in getMessage, ResourceBundle.getString, validation message = \"{…}\" and Thymeleaf #{…} go to their line in messages.properties with Ctrl+B, complete, show every locale on hover, and warn when missing, with a Create property fix. Property files mark unused keys and missing translations; Find Usages and Rename work on a key.",
+       "lead": "Message bundles"
+      },
+      {
+       "html": "<strong>Database window.</strong> JDBC data sources (PostgreSQL, MySQL, MariaDB, H2, SQLite and any driver jar), found from <code>spring.datasource</code> too; a schema tree, an SQL console with Ctrl+Enter and results in a grid.",
+       "text": "Database window. JDBC data sources (PostgreSQL, MySQL, MariaDB, H2, SQLite and any driver jar), found from spring.datasource too; a schema tree, an SQL console with Ctrl+Enter and results in a grid.",
+       "lead": "Database window"
+      },
+      {
+       "html": "<strong>Profiler.</strong> Run with Profiler records a Java Flight Recorder file: CPU and allocations as a flame graph, a call tree and a method list, Allocated Types by weight, and a thread timeline where a dragged range filters the graphs. Tests (Run Tests with Profiler) and Maven/Gradle tasks such as <code>test</code>, <code>spring-boot:run</code> and <code>bootRun</code> can be profiled too; opening a <code>.jfr</code> file works as well.",
+       "text": "Profiler. Run with Profiler records a Java Flight Recorder file: CPU and allocations as a flame graph, a call tree and a method list, Allocated Types by weight, and a thread timeline where a dragged range filters the graphs. Tests (Run Tests with Profiler) and Maven/Gradle tasks such as test, spring-boot:run and bootRun can be profiled too; opening a .jfr file works as well.",
+       "lead": "Profiler"
+      },
+      {
+       "html": "<strong>JShell console.</strong> JShell Console (View → Tool Windows or Find Action) opens a <code>.jsh</code> scratch per module on its class path: Ctrl+Enter runs the selection or the whole file, results show as <code>$1 ==&gt; 42</code>, with Stop, Reset and completion from JShell.",
+       "text": "JShell console. JShell Console (View → Tool Windows or Find Action) opens a .jsh scratch per module on its class path: Ctrl+Enter runs the selection or the whole file, results show as $1 ==> 42, with Stop, Reset and completion from JShell.",
+       "lead": "JShell console"
+      },
+      {
+       "html": "<strong>Dependency Analyzer.</strong> The Maven and Gradle dependency tree with conflicts, the version that won, the path that brought each dependency, and an Exclude action.",
+       "text": "Dependency Analyzer. The Maven and Gradle dependency tree with conflicts, the version that won, the path that brought each dependency, and an Exclude action.",
+       "lead": "Dependency Analyzer"
+      },
+      {
+       "html": "<strong>Library sources.</strong> Download Sources for all libraries or one class, Choose Sources for a jar, and an option to fetch sources on import.",
+       "text": "Library sources. Download Sources for all libraries or one class, Choose Sources for a jar, and an option to fetch sources on import.",
+       "lead": "Library sources"
+      },
+      {
+       "html": "<strong>Analyze Stack Trace and thread dumps.</strong> Paste a stack trace or a <code>jstack</code> dump to get clickable frames, threads by state and a deadlock mark; Dump Threads in the Run window reads a running JVM with <code>jcmd</code>.",
+       "text": "Analyze Stack Trace and thread dumps. Paste a stack trace or a jstack dump to get clickable frames, threads by state and a deadlock mark; Dump Threads in the Run window reads a running JVM with jcmd.",
+       "lead": "Analyze Stack Trace and thread dumps"
+      },
+      {
+       "html": "<strong>Debugger values inline.</strong> Variable values appear at the end of the lines during a debug session (can be turned off); Remote JVM Debug attaches to a running JVM.",
+       "text": "Debugger values inline. Variable values appear at the end of the lines during a debug session (can be turned off); Remote JVM Debug attaches to a running JVM.",
+       "lead": "Debugger values inline"
+      },
+      {
+       "html": "<strong>Actions on Save.</strong> Reformat (whole file or changed lines) and optimize imports on save, per file mask.",
+       "text": "Actions on Save. Reformat (whole file or changed lines) and optimize imports on save, per file mask.",
+       "lead": "Actions on Save"
+      },
+      {
+       "html": "<strong>Compare with Clipboard</strong> in the editor menu and Find Action.",
+       "text": "Compare with Clipboard in the editor menu and Find Action.",
+       "lead": "Compare with Clipboard"
+      },
+      {
+       "html": "<strong>Markdown preview pictures</strong> from the project and the web, and the preview mode of each file is remembered.",
+       "text": "Markdown preview pictures from the project and the web, and the preview mode of each file is remembered.",
+       "lead": "Markdown preview pictures"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "New tool window icons for Database, HTTP Client and Endpoints; the Switcher lists the new windows.",
+       "text": "New tool window icons for Database, HTTP Client and Endpoints; the Switcher lists the new windows.",
+       "lead": null
+      },
+      {
+       "html": "Search Everywhere and Go to Class on a small project answer in the same frame.",
+       "text": "Search Everywhere and Go to Class on a small project answer in the same frame.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "Typing in a large merge result no longer eats memory: the editor counts the widest line once per frame and caches it.",
+       "text": "Typing in a large merge result no longer eats memory: the editor counts the widest line once per frame and caches it.",
+       "lead": null
+      },
+      {
+       "html": "The debugger adapter closes cleanly when its last session ends.",
+       "text": "The debugger adapter closes cleanly when its last session ends.",
+       "lead": null
+      },
+      {
+       "html": "Linux and macOS: the whole test suite is green on both systems.",
+       "text": "Linux and macOS: the whole test suite is green on both systems.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 16,
+    "improved": 2,
+    "fixed": 3,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.16-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 79333644,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.16/arro-0.1.16-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.16-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 88867234,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.16/arro-0.1.16-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.16-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 79651472,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.16/arro-0.1.16-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.15",
+   "tag": "v0.1.15",
+   "date": "2026-11-14T14:14:33Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.15",
+   "prerelease": false,
+   "summary": [
+    "Coverage, an HTTP client and interactive rebase; the Debug and Services windows are rebuilt; Linux and macOS get fixes and are now tested before every release."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Run with Coverage.</strong> Runs and test runs (Maven, Gradle, a main class) can collect coverage with JaCoCo. The gutter marks covered, partly covered and missed lines, with the hit count on hover; the Coverage window lists packages and classes with Class, Method, Line and Branch percentages; the project tree shows the line percentage. Ctrl+Alt+F6 shows or hides it.",
+       "text": "Run with Coverage. Runs and test runs (Maven, Gradle, a main class) can collect coverage with JaCoCo. The gutter marks covered, partly covered and missed lines, with the hit count on hover; the Coverage window lists packages and classes with Class, Method, Line and Branch percentages; the project tree shows the line percentage. Ctrl+Alt+F6 shows or hides it.",
+       "lead": "Run with Coverage"
+      },
+      {
+       "html": "<strong>HTTP client.</strong> <code>.http</code> and <code>.rest</code> files run requests: a Run icon on every request, Ctrl+Enter at the caret, <code>{{variables}}</code> from <code>http-client.env.json</code> with an environment list above the file, <code>$uuid</code>, <code>$timestamp</code> and <code>$randomInt</code>. The HTTP Response window shows the status, headers and the body, JSON indented and coloured, and keeps the last 50 responses. New → HTTP Request makes one.",
+       "text": "HTTP client. .http and .rest files run requests: a Run icon on every request, Ctrl+Enter at the caret, {{variables}} from http-client.env.json with an environment list above the file, $uuid, $timestamp and $randomInt. The HTTP Response window shows the status, headers and the body, JSON indented and coloured, and keeps the last 50 responses. New → HTTP Request makes one.",
+       "lead": "HTTP client"
+      },
+      {
+       "html": "<strong>Interactive rebase.</strong> Interactively Rebase from Here in the Git Log commit menu: Pick, Edit, Reword, Squash, Fixup and Drop (keys P, E, R, S, F, D), Alt+Up and Alt+Down reorder, Reword edits the message in place; Edit and conflicts stop with Continue Rebase and Abort.",
+       "text": "Interactive rebase. Interactively Rebase from Here in the Git Log commit menu: Pick, Edit, Reword, Squash, Fixup and Drop (keys P, E, R, S, F, D), Alt+Up and Alt+Down reorder, Reword edits the message in place; Edit and conflicts stop with Continue Rebase and Abort.",
+       "lead": "Interactive rebase"
+      },
+      {
+       "html": "<strong>Markdown highlighting inside lines:</strong> bold, italic, strikethrough, inline code, links, and code blocks coloured in their own language.",
+       "text": "Markdown highlighting inside lines: bold, italic, strikethrough, inline code, links, and code blocks coloured in their own language.",
+       "lead": "Markdown highlighting inside lines"
+      },
+      {
+       "html": "<strong>Breakpoints that do not stop.</strong> In the properties of a breakpoint, turn Suspend off and log a &quot;Breakpoint hit&quot; message, the value of an expression, or both; Shift+click in the gutter sets such a point.",
+       "text": "Breakpoints that do not stop. In the properties of a breakpoint, turn Suspend off and log a \"Breakpoint hit\" message, the value of an expression, or both; Shift+click in the gutter sets such a point.",
+       "lead": "Breakpoints that do not stop"
+      },
+      {
+       "html": "<strong>README on first open.</strong> A project opened for the first time shows its README as a preview (Settings → Project can turn it off).",
+       "text": "README on first open. A project opened for the first time shows its README as a preview (Settings → Project can turn it off).",
+       "lead": "README on first open"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "<strong>Debug window</strong> rebuilt like IDEA: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.",
+       "text": "Debug window rebuilt like IDEA: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.",
+       "lead": "Debug window"
+      },
+      {
+       "html": "<strong>Services window</strong> rebuilt like IDEA: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.",
+       "text": "Services window rebuilt like IDEA: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.",
+       "lead": "Services window"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "On Linux and macOS, saving a read-only file replaced it silently; it now fails as on Windows.",
+       "text": "On Linux and macOS, saving a read-only file replaced it silently; it now fails as on Windows.",
+       "lead": null
+      },
+      {
+       "html": "Field watchpoints now stop on the real Java debugger; they used to stay unverified.",
+       "text": "Field watchpoints now stop on the real Java debugger; they used to stay unverified.",
+       "lead": null
+      },
+      {
+       "html": "One file no longer opens in two tabs when its path is typed in another case (Windows, macOS).",
+       "text": "One file no longer opens in two tabs when its path is typed in another case (Windows, macOS).",
+       "lead": null
+      },
+      {
+       "html": "The macOS app now carries the Maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.",
+       "text": "The macOS app now carries the Maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 6,
+    "improved": 2,
+    "fixed": 4,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.15-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 77722263,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.15/arro-0.1.15-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.15-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 87124013,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.15/arro-0.1.15-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.15-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 77988159,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.15/arro-0.1.15-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.14",
+   "tag": "v0.1.14",
+   "date": "2026-11-14T00:19:57Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.14",
+   "prerelease": false,
+   "summary": [
+    "Git grows up, the debugger learns new breakpoints, and Markdown gets a preview."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Three-way merge.</strong> Merge… in the Conflicts window (or a double click) opens Yours, Result and Theirs side by side. Non-conflicting changes are already applied; take or drop each chunk with the arrows and the cross, walk the conflicts with F7 and Shift+F7. Apply asks first if conflicts are left, writes the file in its own encoding and line endings only if it did not change on disk meanwhile, and only then marks it resolved. Cancel leaves the file and the index alone.",
+       "text": "Three-way merge. Merge… in the Conflicts window (or a double click) opens Yours, Result and Theirs side by side. Non-conflicting changes are already applied; take or drop each chunk with the arrows and the cross, walk the conflicts with F7 and Shift+F7. Apply asks first if conflicts are left, writes the file in its own encoding and line endings only if it did not change on disk meanwhile, and only then marks it resolved. Cancel leaves the file and the index alone.",
+       "lead": "Three-way merge"
+      },
+      {
+       "html": "<strong>Git Annotate.</strong> Annotate with Git Blame in the gutter menu shows the date and author of every line; hover for the full commit, click to open it in Git Log.",
+       "text": "Git Annotate. Annotate with Git Blame in the gutter menu shows the date and author of every line; hover for the full commit, click to open it in Git Log.",
+       "lead": "Git Annotate"
+      },
+      {
+       "html": "<strong>Branch graph in Git Log</strong>, with branch and tag labels and HEAD marked.",
+       "text": "Branch graph in Git Log, with branch and tag labels and HEAD marked.",
+       "lead": "Branch graph in Git Log"
+      },
+      {
+       "html": "<strong>Commit actions in Git Log:</strong> Copy Revision Number, Checkout Revision, New Branch, New Tag, Cherry-Pick, Revert Commit, Reset Current Branch to Here (Soft, Mixed, Hard, Keep) and Compare with Local.",
+       "text": "Commit actions in Git Log: Copy Revision Number, Checkout Revision, New Branch, New Tag, Cherry-Pick, Revert Commit, Reset Current Branch to Here (Soft, Mixed, Hard, Keep) and Compare with Local.",
+       "lead": "Commit actions in Git Log"
+      },
+      {
+       "html": "<strong>Debugger:</strong> method breakpoints (click the gutter on a method declaration), field watchpoints (on a field declaration or from Variables) and Drop Frame.",
+       "text": "Debugger: method breakpoints (click the gutter on a method declaration), field watchpoints (on a field declaration or from Variables) and Drop Frame.",
+       "lead": "Debugger"
+      },
+      {
+       "html": "<strong>Refactor This</strong> (Ctrl+Alt+Shift+T) lists every refactoring that applies at the caret, with its keys. New from the language server: Extract Interface and Extract Field with their dialogs, Make Static, Surround with try/catch, Convert to lambda and more.",
+       "text": "Refactor This (Ctrl+Alt+Shift+T) lists every refactoring that applies at the caret, with its keys. New from the language server: Extract Interface and Extract Field with their dialogs, Make Static, Surround with try/catch, Convert to lambda and more.",
+       "lead": "Refactor This"
+      },
+      {
+       "html": "<strong>Markdown preview</strong> beside the editor, with Editor only, Editor and Preview and Preview only; it follows the editor scroll and opens links, project files and anchors.",
+       "text": "Markdown preview beside the editor, with Editor only, Editor and Preview and Preview only; it follows the editor scroll and opens links, project files and anchors.",
+       "lead": "Markdown preview"
+      },
+      {
+       "html": "<strong>More highlighting:</strong> Gradle scripts (Groovy and Kotlin), Kotlin, Groovy, TOML, SQL, HTML, CSS, JavaScript, TypeScript and Markdown.",
+       "text": "More highlighting: Gradle scripts (Groovy and Kotlin), Kotlin, Groovy, TOML, SQL, HTML, CSS, JavaScript, TypeScript and Markdown.",
+       "lead": "More highlighting"
+      },
+      {
+       "html": "<strong>Settings</strong> opens with the caret in its search field; the arrow keys walk the pages.",
+       "text": "Settings opens with the caret in its search field; the arrow keys walk the pages.",
+       "lead": "Settings"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "Programs started from Run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.",
+       "text": "Programs started from Run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 9,
+    "improved": 0,
+    "fixed": 1,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.14-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 76497094,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.14/arro-0.1.14-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.14-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 85863042,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.14/arro-0.1.14-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.14-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 76723046,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.14/arro-0.1.14-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.13",
+   "tag": "v0.1.13",
+   "date": "2026-11-13T20:48:42Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.13",
+   "prerelease": false,
+   "summary": [
+    "A real Settings window, highlighting for the files around a project, the mouse side buttons, and a caret in every field."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Settings</strong> is now a proper window: a title bar with a close button, move it by its title and resize it by its edges, and it opens where you left it during the session. A search field above the pages narrows them to the settings you look for and marks the matching rows.",
+       "text": "Settings is now a proper window: a title bar with a close button, move it by its title and resize it by its edges, and it opens where you left it during the session. A search field above the pages narrows them to the settings you look for and marks the matching rows.",
+       "lead": "Settings"
+      },
+      {
+       "html": "<strong>OK, Cancel and Apply</strong> in Settings. Changes wait until you press Apply or OK; Cancel, the close button, Escape or a click outside leave your settings and the settings file as they were. Theme, Keymap and templates still apply at once, and the window says so.",
+       "text": "OK, Cancel and Apply in Settings. Changes wait until you press Apply or OK; Cancel, the close button, Escape or a click outside leave your settings and the settings file as they were. Theme, Keymap and templates still apply at once, and the window says so.",
+       "lead": "OK, Cancel and Apply"
+      },
+      {
+       "html": "<strong>Highlighting for JSON, XML, YAML, shell scripts, Windows batch files and .properties files</strong>, including <code>pom.xml</code>. JSON, XML and YAML fold, and Ctrl+/ comments XML lines with <code>&lt;!-- --&gt;</code>.",
+       "text": "Highlighting for JSON, XML, YAML, shell scripts, Windows batch files and .properties files, including pom.xml. JSON, XML and YAML fold, and Ctrl+/ comments XML lines with <!-- -->.",
+       "lead": "Highlighting for JSON, XML, YAML, shell scripts, Windows batch files and .properties files"
+      },
+      {
+       "html": "<strong>Mouse back and forward buttons</strong> go back and forward through your places in the code, like Ctrl+Alt+Left and Ctrl+Alt+Right, anywhere in the window. Over the Documentation window they page its own history first.",
+       "text": "Mouse back and forward buttons go back and forward through your places in the code, like Ctrl+Alt+Left and Ctrl+Alt+Right, anywhere in the window. Over the Documentation window they page its own history first.",
+       "lead": "Mouse back and forward buttons"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>The caret was missing in many text fields</strong>, among them the commit message, New File and Rename prompts, the merge conflict message, the Git log filter, Change Signature, Copy Class, the Settings fields, Keymap search, templates, Go to Custom Region, the start screen and the Run and Debug console input. All of them now show the caret and the selection, and the commit message shows each line on its own row.",
+       "text": "The caret was missing in many text fields, among them the commit message, New File and Rename prompts, the merge conflict message, the Git log filter, Change Signature, Copy Class, the Settings fields, Keymap search, templates, Go to Custom Region, the start screen and the Run and Debug console input. All of them now show the caret and the selection, and the commit message shows each line on its own row.",
+       "lead": "The caret was missing in many text fields"
+      },
+      {
+       "html": "The settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.",
+       "text": "The settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 4,
+    "improved": 0,
+    "fixed": 2,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.13-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 74300926,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.13/arro-0.1.13-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.13-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 83636398,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.13/arro-0.1.13-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.13-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 74492067,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.13/arro-0.1.13-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.12",
+   "tag": "v0.1.12",
+   "date": "2026-11-13T17:45:28Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.12",
+   "prerelease": false,
+   "summary": [
+    "The terminal cleans up after itself, and releases are checked before they go out."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Terminal:</strong> programs started in the terminal stop with it. With PowerShell 7 from the Microsoft Store a program could outlive its terminal, for example one started while the window was closing or one with a console of its own. Window programs you start from the terminal, such as an editor or a browser, keep running after the terminal closes.",
+       "text": "Terminal: programs started in the terminal stop with it. With PowerShell 7 from the Microsoft Store a program could outlive its terminal, for example one started while the window was closing or one with a console of its own. Window programs you start from the terminal, such as an editor or a browser, keep running after the terminal closes.",
+       "lead": "Terminal"
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "Every release is now a draft until its Windows, Linux and macOS archives are all attached and checked, so a release never appears without its downloads.",
+       "text": "Every release is now a draft until its Windows, Linux and macOS archives are all attached and checked, so a release never appears without its downloads.",
+       "lead": null
+      },
+      {
+       "html": "A live smoke run presses every button of the side stripes and closes the window with a program running in the terminal before each release.",
+       "text": "A live smoke run presses every button of the side stripes and closes the window with a program running in the terminal before each release.",
+       "lead": null
+      },
+      {
+       "html": "The build only re-checks the parts of the project a change touches.",
+       "text": "The build only re-checks the parts of the project a change touches.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 0,
+    "fixed": 1,
+    "hood": 3,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.12-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73978275,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.12/arro-0.1.12-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.12-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 83287012,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.12/arro-0.1.12-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.12-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 74153429,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.12/arro-0.1.12-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.11",
+   "tag": "v0.1.11",
+   "date": "2026-11-13T14:11:04Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.11",
+   "prerelease": false,
+   "summary": [
+    "Two fixes in the window."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Closing the window:</strong> the close button works while a program runs in the terminal. The program and its shell stop with the window; before, the window stayed until File &gt; Exit.",
+       "text": "Closing the window: the close button works while a program runs in the terminal. The program and its shell stop with the window; before, the window stayed until File > Exit.",
+       "lead": "Closing the window"
+      },
+      {
+       "html": "<strong>Bookmarks and Notifications:</strong> with no bookmarks, the Bookmarks button opens its list with &quot;No bookmarks yet&quot; instead of a notification, so the Notifications button no longer shows &quot;Bookmarks&quot;. The Bookmarks button is lit while its list is open, and a second press closes it.",
+       "text": "Bookmarks and Notifications: with no bookmarks, the Bookmarks button opens its list with \"No bookmarks yet\" instead of a notification, so the Notifications button no longer shows \"Bookmarks\". The Bookmarks button is lit while its list is open, and a second press closes it.",
+       "lead": "Bookmarks and Notifications"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 0,
+    "fixed": 2,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.11-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73953827,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.11/arro-0.1.11-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.11-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 83277859,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.11/arro-0.1.11-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.11-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 74145663,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.11/arro-0.1.11-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.10",
+   "tag": "v0.1.10",
+   "date": "2026-11-13T13:22:40Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.10",
+   "prerelease": false,
+   "summary": [
+    "The Linux archive starts on Ubuntu 22.04 and newer, and the code no longer jumps while you type."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Linux:</strong> the archive is built against glibc 2.35, so it starts on Ubuntu 22.04 and 24.04, Debian 12 and newer systems. The 0.1.9 archive needed glibc 2.43 and failed with <code>GLIBC_2.43 not found</code>.",
+       "text": "Linux: the archive is built against glibc 2.35, so it starts on Ubuntu 22.04 and 24.04, Debian 12 and newer systems. The 0.1.9 archive needed glibc 2.43 and failed with GLIBC_2.43 not found.",
+       "lead": "Linux"
+      },
+      {
+       "html": "<strong>Code Vision:</strong> the &quot;usages&quot; and &quot;implementations&quot; rows above methods stay in place while you type; before, they vanished and came back on every key and the code jumped.",
+       "text": "Code Vision: the \"usages\" and \"implementations\" rows above methods stay in place while you type; before, they vanished and came back on every key and the code jumped.",
+       "lead": "Code Vision"
+      },
+      {
+       "html": "<strong>Diff:</strong> the right side of a diff is the same document as the editor tab of the file, not a copy. Edits in either show in both, Revert works on the tab's text, and the file keeps its encoding, BOM and line ends when a hunk is reverted after the tab is closed.",
+       "text": "Diff: the right side of a diff is the same document as the editor tab of the file, not a copy. Edits in either show in both, Revert works on the tab's text, and the file keeps its encoding, BOM and line ends when a hunk is reverted after the tab is closed.",
+       "lead": "Diff"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "macOS",
+     "items": [
+      {
+       "html": "The menu bar shows the keys of its items.",
+       "text": "The menu bar shows the keys of its items.",
+       "lead": null
+      },
+      {
+       "html": "Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor, as in IntelliJ IDEA.",
+       "text": "Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor, as in IntelliJ IDEA.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "The Linux download is smaller: the program no longer carries its debug info.",
+       "text": "The Linux download is smaller: the program no longer carries its debug info.",
+       "lead": null
+      },
+      {
+       "html": "The language server and debugger clients are now tested against real servers for another language (Python), to keep the core free of Java-only assumptions.",
+       "text": "The language server and debugger clients are now tested against real servers for another language (Python), to keep the core free of Java-only assumptions.",
+       "lead": null
+      },
+      {
+       "html": "The README explains how to install on Linux and macOS.",
+       "text": "The README explains how to install on Linux and macOS.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 2,
+    "fixed": 3,
+    "hood": 3,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.10-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73951054,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.10/arro-0.1.10-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.10-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 83271545,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.10/arro-0.1.10-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.10-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 74145040,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.10/arro-0.1.10-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.9",
+   "tag": "v0.1.9",
+   "date": "2026-11-13T10:50:32Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.9",
+   "prerelease": false,
+   "summary": [
+    "Smaller fixes and groundwork for Linux and macOS."
+   ],
+   "notes": [
+    "<strong>Linux archive: needs glibc 2.43.</strong> The Linux build of 0.1.9 was made on a runner with glibc 2.43, so it does not start on Ubuntu 24.04, Debian 12 or other systems with an older glibc (<code>version 'GLIBC_2.43' not found</code>). The next release is built against glibc 2.35 and runs on Ubuntu 22.04 and newer."
+   ],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Terminal:</strong> the &quot;Process finished&quot; line no longer goes missing when a program ends right as the terminal redraws.",
+       "text": "Terminal: the \"Process finished\" line no longer goes missing when a program ends right as the terminal redraws.",
+       "lead": "Terminal"
+      },
+      {
+       "html": "<strong>Tooltips:</strong> the delay before a tooltip appears is decided when the pointer enters a button, so it is right again in tool windows.",
+       "text": "Tooltips: the delay before a tooltip appears is decided when the pointer enters a button, so it is right again in tool windows.",
+       "lead": "Tooltips"
+      },
+      {
+       "html": "<strong>Inspection:</strong> the Rerun button follows the state of the last inspection.",
+       "text": "Inspection: the Rerun button follows the state of the last inspection.",
+       "lead": "Inspection"
+      },
+      {
+       "html": "<strong>Closing a project window</strong> releases its file watchers and tool windows.",
+       "text": "Closing a project window releases its file watchers and tool windows.",
+       "lead": "Closing a project window"
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "Arro builds on systems without a release of its own, such as Linux on ARM; updates are turned off there.",
+       "text": "Arro builds on systems without a release of its own, such as Linux on ARM; updates are turned off there.",
+       "lead": null
+      },
+      {
+       "html": "The release now builds a Linux archive as well as the macOS one. Neither has been tried on a real machine yet, so Windows remains the supported download.",
+       "text": "The release now builds a Linux archive as well as the macOS one. Neither has been tried on a real machine yet, so Windows remains the supported download.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 0,
+    "fixed": 4,
+    "hood": 2,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.9-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73898851,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.9/arro-0.1.9-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.9-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 160685853,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.9/arro-0.1.9-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.9-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 74102574,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.9/arro-0.1.9-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.8",
+   "tag": "v0.1.8",
+   "date": "2026-11-13T08:35:08Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.8",
+   "prerelease": false,
+   "summary": [
+    "Fixes for the window stripes of 0.1.7, a smarter Find in Files mask, and groundwork for Linux and macOS releases."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Tool window stripes:</strong> the lower group of the left stripe (Run, Debug, Terminal, Services, Problems and the rest) is back at the bottom of the window. In 0.1.7 it moved to the top.",
+       "text": "Tool window stripes: the lower group of the left stripe (Run, Debug, Terminal, Services, Problems and the rest) is back at the bottom of the window. In 0.1.7 it moved to the top.",
+       "lead": "Tool window stripes"
+      },
+      {
+       "html": "<strong>AI Sessions button:</strong> it opens the AI sessions even when the right dock last showed another tool window, such as Tasks.",
+       "text": "AI Sessions button: it opens the AI sessions even when the right dock last showed another tool window, such as Tasks.",
+       "lead": "AI Sessions button"
+      },
+      {
+       "html": "<strong>Find in Files:</strong> the suggested file mask follows the files of the project when they arrive after the dialog opened, as long as you have not typed a mask yourself.",
+       "text": "Find in Files: the suggested file mask follows the files of the project when they arrive after the dialog opened, as long as you have not typed a mask yourself.",
+       "lead": "Find in Files"
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "The updater picks the archive of the system it runs on, and the release can now carry Linux and macOS archives built by GitHub Actions. They are not tested on real machines yet, so Windows remains the only supported download.",
+       "text": "The updater picks the archive of the system it runs on, and the release can now carry Linux and macOS archives built by GitHub Actions. They are not tested on real machines yet, so Windows remains the only supported download.",
+       "lead": null
+      },
+      {
+       "html": "On macOS the tool windows, Run and Debug use the keys of IntelliJ IDEA for macOS.",
+       "text": "On macOS the tool windows, Run and Debug use the keys of IntelliJ IDEA for macOS.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 0,
+    "fixed": 3,
+    "hood": 2,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.8-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73904403,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.8/arro-0.1.8-windows-x86_64.zip"
+    },
+    {
+     "name": "arro-0.1.8-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 74058751,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.8/arro-0.1.8-macos-aarch64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.7",
+   "tag": "v0.1.7",
+   "date": "2026-11-12T23:06:14Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.7",
+   "prerelease": false,
+   "summary": [
+    "A lighter keystroke and a steadier Search Everywhere."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "<strong>Typing:</strong> a keystroke or a caret move now redraws only the editor. The title bar, the tool window stripes, the status bar, the tab bars and the open tool windows keep their last frame until they change themselves.",
+       "text": "Typing: a keystroke or a caret move now redraws only the editor. The title bar, the tool window stripes, the status bar, the tab bars and the open tool windows keep their last frame until they change themselves.",
+       "lead": "Typing"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Search Everywhere:</strong> when a group of results arrives late, the row you moved to with the keys stays selected instead of jumping back to the first row.",
+       "text": "Search Everywhere: when a group of results arrives late, the row you moved to with the keys stays selected instead of jumping back to the first row.",
+       "lead": "Search Everywhere"
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "Arro is now built and tested on Windows, Linux and macOS on every push, and several tests that failed only under load wait for the event they need instead of a clock. There is no macOS or Linux download yet.",
+       "text": "Arro is now built and tested on Windows, Linux and macOS on every push, and several tests that failed only under load wait for the event they need instead of a clock. There is no macOS or Linux download yet.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 1,
+    "fixed": 1,
+    "hood": 1,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.7-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73875714,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.7/arro-0.1.7-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.6",
+   "tag": "v0.1.6",
+   "date": "2026-11-12T21:03:23Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.6",
+   "prerelease": false,
+   "summary": [
+    "Cleaner Run and Debug output, steadier hot swap, a lighter keystroke, and the first steps toward macOS."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Run and Debug output:</strong> when two processes write to one console — the build before a debug session and the program, or a test and its build — their unfinished lines no longer get glued into one line. stdout and stderr of one process stay apart too, in the Run, Debug and Docker consoles.",
+       "text": "Run and Debug output: when two processes write to one console — the build before a debug session and the program, or a test and its build — their unfinished lines no longer get glued into one line. stdout and stderr of one process stay apart too, in the Run, Debug and Docker consoles.",
+       "lead": "Run and Debug output"
+      },
+      {
+       "html": "<strong>Hot swap:</strong> a class that the build writes while the debugger is still reloading the previous batch is no longer lost; the next <em>Build Project</em> reloads it.",
+       "text": "Hot swap: a class that the build writes while the debugger is still reloading the previous batch is no longer lost; the next Build Project reloads it.",
+       "lead": "Hot swap"
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "Typing and moving the caret now update only the status bar and the tab title instead of asking the whole window to redraw. More of this work is coming.",
+       "text": "Typing and moving the caret now update only the status bar and the tab title instead of asking the whole window to redraw. More of this work is coming.",
+       "lead": null
+      },
+      {
+       "html": "macOS groundwork: platform layer, a Cmd keymap that follows IntelliJ IDEA for macOS, a native menu bar and an <code>Arro.app</code> bundle. Arro is now built and tested on Windows, Linux and macOS on every push. There is no macOS or Linux download yet.",
+       "text": "macOS groundwork: platform layer, a Cmd keymap that follows IntelliJ IDEA for macOS, a native menu bar and an Arro.app bundle. Arro is now built and tested on Windows, Linux and macOS on every push. There is no macOS or Linux download yet.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 0,
+    "fixed": 2,
+    "hood": 2,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.6-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73852606,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.6/arro-0.1.6-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.5",
+   "tag": "v0.1.5",
+   "date": "2026-11-12T19:49:32Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.5",
+   "prerelease": false,
+   "summary": [
+    "A diff that keeps out of your tab's way, a branch tree, recently edited files, and the groundwork for Linux."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Diff has its own view:</strong> the right pane of a diff shares the text and undo history with the file's tab, but scrolling, carets and folds in the diff no longer move the tab. Folding a block keeps the matching chunks level on both sides.",
+       "text": "Diff has its own view: the right pane of a diff shares the text and undo history with the file's tab, but scrolling, carets and folds in the diff no longer move the tab. Folding a block keeps the matching chunks level on both sides.",
+       "lead": "Diff has its own view"
+      },
+      {
+       "html": "<strong>Recently edited files:</strong> <em>Show edited only</em> in Recent Files (Ctrl+E) and in the Ctrl+Tab switcher now lists files you edited recently, also after saving and after reopening the project. <em>Recently Changed Files</em> in Find Action opens it directly.",
+       "text": "Recently edited files: Show edited only in Recent Files (Ctrl+E) and in the Ctrl+Tab switcher now lists files you edited recently, also after saving and after reopening the project. Recently Changed Files in Find Action opens it directly.",
+       "lead": "Recently edited files"
+      },
+      {
+       "html": "<strong>Branch tree:</strong> the Git branches popup groups remote branches by remote and splits names like <code>feature/login</code> into folders. Turn it off with <em>Group by Directory</em> in the popup menu or on the Git settings page. ←/→ fold and unfold, the search opens folders with matches.",
+       "text": "Branch tree: the Git branches popup groups remote branches by remote and splits names like feature/login into folders. Turn it off with Group by Directory in the popup menu or on the Git settings page. ←/→ fold and unfold, the search opens folders with matches.",
+       "lead": "Branch tree"
+      }
+     ]
+    },
+    {
+     "kind": "hood",
+     "title": "Under the hood",
+     "items": [
+      {
+       "html": "The process, terminal and file layers now build and pass their tests on Linux. There is no Linux download yet; it comes in a later release, together with macOS.",
+       "text": "The process, terminal and file layers now build and pass their tests on Linux. There is no Linux download yet; it comes in a later release, together with macOS.",
+       "lead": null
+      },
+      {
+       "html": "Tests no longer leave temporary folders behind.",
+       "text": "Tests no longer leave temporary folders behind.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 3,
+    "improved": 0,
+    "fixed": 0,
+    "hood": 2,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.5-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73800293,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.5/arro-0.1.5-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.4",
+   "tag": "v0.1.4",
+   "date": "2026-11-12T17:34:09Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.4",
+   "prerelease": false,
+   "summary": [
+    "Real editors in the diff, folder compare, input for programs under the debugger, and a proper Ctrl+Tab switcher."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Diff panes are full editors:</strong> the right side is your file with everything the editor does — selection, undo, completion, multiple carets, search; the left side is read-only with syntax colors. Empty filler rows keep matching chunks side by side, and the two panes scroll together.",
+       "text": "Diff panes are full editors: the right side is your file with everything the editor does — selection, undo, completion, multiple carets, search; the left side is read-only with syntax colors. Empty filler rows keep matching chunks side by side, and the two panes scroll together.",
+       "lead": "Diff panes are full editors"
+      },
+      {
+       "html": "<strong>Local history side by side:</strong> a revision and the current file open in the same two-pane diff; <em>Revert</em> takes the whole file back, <code>&gt;&gt;</code> one chunk.",
+       "text": "Local history side by side: a revision and the current file open in the same two-pane diff; Revert takes the whole file back, >> one chunk.",
+       "lead": "Local history side by side"
+      },
+      {
+       "html": "<strong>Compare folders:</strong> select two folders in the project tree and press Ctrl+D (or <em>Compare With…</em> on one). See files only on the left, only on the right, and different ones; open a pair in the diff with a double click; copy files across or delete extra ones (to the Recycle Bin, with confirmation).",
+       "text": "Compare folders: select two folders in the project tree and press Ctrl+D (or Compare With… on one). See files only on the left, only on the right, and different ones; open a pair in the diff with a double click; copy files across or delete extra ones (to the Recycle Bin, with confirmation).",
+       "lead": "Compare folders"
+      },
+      {
+       "html": "<strong>Debug console takes input:</strong> type a line and press Enter to send it to the program under the debugger, the same as in the Run console (history, Ctrl+V line by line, Ctrl+D or <em>Send EOF</em>).",
+       "text": "Debug console takes input: type a line and press Enter to send it to the program under the debugger, the same as in the Run console (history, Ctrl+V line by line, Ctrl+D or Send EOF).",
+       "lead": "Debug console takes input"
+      },
+      {
+       "html": "<strong>Switcher:</strong> hold Ctrl and press Tab to walk through open files and tool windows, release Ctrl to open the one you picked; a quick Ctrl+Tab goes back to the previous tab.",
+       "text": "Switcher: hold Ctrl and press Tab to walk through open files and tool windows, release Ctrl to open the one you picked; a quick Ctrl+Tab goes back to the previous tab.",
+       "lead": "Switcher"
+      },
+      {
+       "html": "<strong>Search Everywhere:</strong> Ctrl+↓/↑ or PgDn/PgUp jump between groups of results; Tab completes <code>/</code> commands.",
+       "text": "Search Everywhere: Ctrl+↓/↑ or PgDn/PgUp jump between groups of results; Tab completes / commands.",
+       "lead": "Search Everywhere"
+      },
+      {
+       "html": "<strong>Recent Files (Ctrl+E):</strong> <em>Show edited only</em>. <strong>Alt+↓</strong> in a tool window lists its tabs.",
+       "text": "Recent Files (Ctrl+E): Show edited only. Alt+↓ in a tool window lists its tabs.",
+       "lead": "Recent Files (Ctrl+E)"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 7,
+    "improved": 0,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.4-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73783074,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.4/arro-0.1.4-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.3",
+   "tag": "v0.1.3",
+   "date": "2026-11-12T13:55:14Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.3",
+   "prerelease": false,
+   "summary": [
+    "Side-by-side diffs, Javadoc rendered right in the editor, and keyboard control of tool windows."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Side-by-side diff:</strong> the version before on the left, yours on the right, with links between matching chunks, <code>&gt;&gt;</code> to take a chunk back, changed words marked inside lines, and the right side editable when it is your working file. Switch back to the unified view from the diff header; Ctrl+Shift+Tab moves between the panes, F7 / Shift+F7 between changes.",
+       "text": "Side-by-side diff: the version before on the left, yours on the right, with links between matching chunks, >> to take a chunk back, changed words marked inside lines, and the right side editable when it is your working file. Switch back to the unified view from the diff header; Ctrl+Shift+Tab moves between the panes, F7 / Shift+F7 between changes.",
+       "lead": "Side-by-side diff"
+      },
+      {
+       "html": "<strong>Rendered Javadoc:</strong> Ctrl+Alt+Q or the gutter icon shows a documentation comment formatted in place — tags as lists, <code>{@code}</code> in monospace, clickable <code>{@link}</code>. <em>Settings → Editor → Render documentation comments</em> turns it on for every comment. The file text does not change.",
+       "text": "Rendered Javadoc: Ctrl+Alt+Q or the gutter icon shows a documentation comment formatted in place — tags as lists, {@code} in monospace, clickable {@link}. Settings → Editor → Render documentation comments turns it on for every comment. The file text does not change.",
+       "lead": "Rendered Javadoc"
+      },
+      {
+       "html": "<strong>Tool windows from the keyboard:</strong> Ctrl+Shift+arrows resize the focused tool window; Numpad <code>*</code> expands a tree branch fully; <em>Reload All from Disk</em> (Ctrl+Alt+Y) also refreshes the file index and Git status.",
+       "text": "Tool windows from the keyboard: Ctrl+Shift+arrows resize the focused tool window; Numpad  expands a tree branch fully; Reload All from Disk (Ctrl+Alt+Y) also refreshes the file index and Git status.",
+       "lead": "Tool windows from the keyboard"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "A new or deleted <code>pom.xml</code>, <code>build.gradle</code> or <code>settings.gradle</code> (a new module) now reimports the project, the same as an edited one.",
+       "text": "A new or deleted pom.xml, build.gradle or settings.gradle (a new module) now reimports the project, the same as an edited one.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 3,
+    "improved": 1,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.3-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73674177,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.3/arro-0.1.3-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.2",
+   "tag": "v0.1.2",
+   "date": "2026-11-12T13:29:09Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.2",
+   "prerelease": false,
+   "summary": [
+    "A fix release for updates, plus input for programs you run."
+   ],
+   "notes": [
+    "<strong>If you have 0.1.0 or 0.1.1:</strong> their updater cannot download a release, so please download this zip by hand and unpack it over the old folder (or anywhere). From 0.1.2 on, updates install from inside Arro."
+   ],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "<strong>Updates:</strong> the release archive is now downloaded to disk as it arrives; before, every update stopped with &quot;the response body is larger than request limit&quot;.",
+       "text": "Updates: the release archive is now downloaded to disk as it arrives; before, every update stopped with \"the response body is larger than request limit\".",
+       "lead": "Updates"
+      },
+      {
+       "html": "<strong>Updates:</strong> Arro checks for a new version on every start and twice a day while it is open, instead of once a day.",
+       "text": "Updates: Arro checks for a new version on every start and twice a day while it is open, instead of once a day.",
+       "lead": "Updates"
+      },
+      {
+       "html": "<strong>Crash:</strong> opening a link (Release Notes in the update balloon and other links) no longer closes Arro.",
+       "text": "Crash: opening a link (Release Notes in the update balloon and other links) no longer closes Arro.",
+       "lead": "Crash"
+      }
+     ]
+    },
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Run console takes input:</strong> type into the Run console and press Enter to send a line to your program's stdin; ↑/↓ browse what you sent; Ctrl+D or <em>Send EOF</em> in the context menu closes the input. Works for Application runs, <code>main</code> from the gutter, <code>spring-boot:run</code> and <code>bootRun</code>.",
+       "text": "Run console takes input: type into the Run console and press Enter to send a line to your program's stdin; ↑/↓ browse what you sent; Ctrl+D or Send EOF in the context menu closes the input. Works for Application runs, main from the gutter, spring-boot:run and bootRun.",
+       "lead": "Run console takes input"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 1,
+    "improved": 0,
+    "fixed": 3,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.2-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73569843,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.2/arro-0.1.2-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.1",
+   "tag": "v0.1.1",
+   "date": "2026-11-12T12:30:49Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.1",
+   "prerelease": false,
+   "summary": [
+    "Documentation you can read and copy, Code Vision, a real live template engine, new settings pages and a sturdier updater."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Quick documentation (Ctrl+Q and hover):</strong> rendered Javadoc with links, tables and code; select and copy any part of it; a second Ctrl+Q pins it to the new <strong>Documentation</strong> tool window that follows the caret, with Back and Forward.",
+       "text": "Quick documentation (Ctrl+Q and hover): rendered Javadoc with links, tables and code; select and copy any part of it; a second Ctrl+Q pins it to the new Documentation tool window that follows the caret, with Back and Forward.",
+       "lead": "Quick documentation (Ctrl+Q and hover)"
+      },
+      {
+       "html": "<strong>Code Vision:</strong> &quot;N usages&quot; and &quot;N implementations&quot; above classes and methods, click to see them.",
+       "text": "Code Vision: \"N usages\" and \"N implementations\" above classes and methods, click to see them.",
+       "lead": "Code Vision"
+      },
+      {
+       "html": "<strong>Live templates engine:</strong> expand with Tab, Enter or Space per template; variable expressions like <code>className()</code>, <code>methodName()</code>, <code>date()</code>, <code>clipboard()</code>, <code>camelCase(...)</code>, <code>concat(...)</code>; Skip if defined.",
+       "text": "Live templates engine: expand with Tab, Enter or Space per template; variable expressions like className(), methodName(), date(), clipboard(), camelCase(...), concat(...); Skip if defined.",
+       "lead": "Live templates engine"
+      },
+      {
+       "html": "<strong>Settings:</strong> Live Templates, Postfix Completion and File and Code Templates pages; Build Tools (Maven, Gradle), Version Control and Git, Terminal.",
+       "text": "Settings: Live Templates, Postfix Completion and File and Code Templates pages; Build Tools (Maven, Gradle), Version Control and Git, Terminal.",
+       "lead": "Settings"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "<strong>Editor:</strong> sticky lines no longer cut the first visible line; caret and selection around Code Vision rows.",
+       "text": "Editor: sticky lines no longer cut the first visible line; caret and selection around Code Vision rows.",
+       "lead": "Editor"
+      },
+      {
+       "html": "<strong>Updates:</strong> the new version waits for the old one to close before it starts the language server, removes the tool folders of older releases, and picks the newest tool version by number.",
+       "text": "Updates: the new version waits for the old one to close before it starts the language server, removes the tool folders of older releases, and picks the newest tool version by number.",
+       "lead": "Updates"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 4,
+    "improved": 2,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.1-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 73556677,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.1/arro-0.1.1-windows-x86_64.zip"
+    }
+   ]
+  },
+  {
+   "version": "0.1.0",
+   "tag": "v0.1.0",
+   "date": "2026-11-11T21:45:04Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.0",
+   "prerelease": false,
+   "summary": [
+    "Arro is a native Java IDE written in Rust: IntelliJ-style workflow and shortcuts, a GPU-rendered UI, and a fraction of the memory."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "Highlights",
+     "items": [
+      {
+       "html": "<strong>Editor:</strong> completion with auto-import, quick fixes, semantic highlighting, parameter name hints, a scroll bar with problem marks, live and postfix templates, folding, multiple carets.",
+       "text": "Editor: completion with auto-import, quick fixes, semantic highlighting, parameter name hints, a scroll bar with problem marks, live and postfix templates, folding, multiple carets.",
+       "lead": "Editor"
+      },
+      {
+       "html": "<strong>Navigation and refactoring:</strong> Search Everywhere, Go to Class/File/Symbol, Find Usages, call and type hierarchy, rename, extract, inline, change signature, safe delete.",
+       "text": "Navigation and refactoring: Search Everywhere, Go to Class/File/Symbol, Find Usages, call and type hierarchy, rename, extract, inline, change signature, safe delete.",
+       "lead": "Navigation and refactoring"
+      },
+      {
+       "html": "<strong>Build and run:</strong> Maven and Gradle projects, run configurations, run marks for <code>main</code> and tests, a test tree with rerun of failures, Lombok from the project dependencies.",
+       "text": "Build and run: Maven and Gradle projects, run configurations, run marks for main and tests, a test tree with rerun of failures, Lombok from the project dependencies.",
+       "lead": "Build and run"
+      },
+      {
+       "html": "<strong>Debugger:</strong> breakpoints, stepping, evaluation, hot swap, virtual threads.",
+       "text": "Debugger: breakpoints, stepping, evaluation, hot swap, virtual threads.",
+       "lead": "Debugger"
+      },
+      {
+       "html": "<strong>Git:</strong> commit, diff, log, branches with merge, rebase and compare, shelf and stash, conflicts, local history.",
+       "text": "Git: commit, diff, log, branches with merge, rebase and compare, shelf and stash, conflicts, local history.",
+       "lead": "Git"
+      },
+      {
+       "html": "<strong>Everything else:</strong> terminal, Docker services, project structure with the project JDK, editable keymap, dark and light themes, automatic updates.",
+       "text": "Everything else: terminal, Docker services, project structure with the project JDK, editable keymap, dark and light themes, automatic updates.",
+       "lead": "Everything else"
+      }
+     ]
+    },
+    {
+     "kind": "limits",
+     "title": "Known limitations",
+     "items": [
+      {
+       "html": "Windows 11 x86-64 only.",
+       "text": "Windows 11 x86-64 only.",
+       "lead": null
+      },
+      {
+       "html": "The AI agent panel is not in this version yet.",
+       "text": "The AI agent panel is not in this version yet.",
+       "lead": null
+      },
+      {
+       "html": "Settings and data may move between versions.",
+       "text": "Settings and data may move between versions.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 6,
+    "improved": 0,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 3
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.0-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 72954380,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.0/arro-0.1.0-windows-x86_64.zip"
+    }
+   ]
+  }
+ ]
+}

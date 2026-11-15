@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help · Arro</title>
+<meta name="description" content="How to install Arro on Windows, Linux and macOS, first steps, features by area, keyboard shortcuts, updates and known limitations.">
+<link rel="canonical" href="https://pablosensei.github.io/arro/help/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paweł Januszko">
+<meta property="og:title" content="Arro help">
+<meta property="og:description" content="Install Arro, first steps, features, shortcuts and limitations.">
+<meta property="og:url" content="https://pablosensei.github.io/arro/help/">
+<meta property="og:image" content="https://pablosensei.github.io/assets/og/arro.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/arro/arro.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/arro/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>(function(){var d=document.documentElement;d.className=d.className.replace("no-js","js")+(document.visibilityState==="visible"?" motion":"");try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<script src="/assets/js/boxes.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar sticky">
+  <div class="wrap">
+    <a class="mark" href="/"><i aria-hidden="true"></i>Paweł Januszko</a>
+    <nav class="topnav" aria-label="Arro">
+        <a class="flap-arro" href="/arro/">Arro</a>
+        <a href="/arro/changelog/">Changelog</a>
+        <a href="/arro/help/" aria-current="page">Help</a>
+        <a href="/arro/roadmap/">Roadmap</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colours"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="page-h">
+    <canvas data-art="arro" data-t="4.1" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1 class="brand" id="page-h">Help</h1>
+      <p class="lede">Install Arro, open your first project, and find your way around. If you know IntelliJ IDEA, most of it will feel familiar. Written for Arro <span class="mono" data-arro-version>0.1.17</span>.</p>
+    </div>
+  </section>
+
+  <div class="wrap doc">
+    <nav class="toc" aria-labelledby="toc-h">
+      <h2 class="label" id="toc-h">On this page</h2>
+      <ol>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#first-steps">First steps</a></li>
+        <li><a href="#features">Features by area</a></li>
+        <li><a href="#shortcuts">Shortcuts</a></li>
+        <li><a href="#updates">Updates</a></li>
+        <li><a href="#limitations">Limitations</a></li>
+        <li><a href="#build">Build from source</a></li>
+        <li><a href="#support">Getting help</a></li>
+      </ol>
+    </nav>
+
+    <div class="doc-body">
+      <section id="install" aria-labelledby="install-h">
+        <h2 class="brand" id="install-h">Install <a class="hash" href="#install" aria-label="Link to Install">#</a></h2>
+        <p>Download the package or archive for your system from the <a href="https://github.com/PabloSensei/arro/releases/latest">latest release</a>. Every file has a <code>.sha256</code> file next to it.</p>
+        <div class="callout-box">
+                    <p><strong>You need a JDK 25 or newer</strong> for the language server, for example <a href="https://adoptium.net/temurin/releases/?version=25&amp;package=jdk">Eclipse Temurin 25</a>. Your projects can still build on their own JDK, from 8 to 25. The Java language server and the debugger are already in the download.</p>
+        </div>
+
+        <div class="os-tabs">
+          <div role="tablist" aria-label="Operating system">
+            <button role="tab" type="button" id="tab-win" data-os="windows" aria-controls="install-windows" aria-selected="true">Windows</button>
+            <button role="tab" type="button" id="tab-linux" data-os="linux" aria-controls="install-linux" aria-selected="false" tabindex="-1">Linux</button>
+            <button role="tab" type="button" id="tab-mac" data-os="macos" aria-controls="install-macos" aria-selected="false" tabindex="-1">macOS</button>
+          </div>
+
+          <div role="tabpanel" id="install-windows" aria-labelledby="tab-win" tabindex="0">
+            <h3>Windows 11, x86-64</h3>
+            <ol class="stations">
+              <li>Download <code>arro-<span data-arro-version>0.1.17</span>-windows-x86_64.zip</code>.</li>
+              <li>Unpack it into a folder you can write to, so Arro can update itself there later.</li>
+              <li>Run <code>arro.exe</code> and open a folder with a Maven or Gradle project.</li>
+            </ol>
+            <p><code>run-arro.cmd</code> in the same folder finds the JDK and the bundled tools for you; starting <code>arro.exe</code> directly works too.</p>
+          </div>
+
+          <div role="tabpanel" id="install-linux" aria-labelledby="tab-linux" tabindex="0">
+            <h3>Linux, x86-64</h3>
+            <p>Arro needs glibc 2.35 or newer: Ubuntu 22.04, Debian 12, Fedora 36 or a later release.</p>
+            <h3>Debian and Ubuntu: the package</h3>
+            <ol class="stations">
+              <li>Download <code>arro_<span data-arro-version>0.1.17</span>_amd64.deb</code>.</li>
+              <li>Install it from the download folder:
+                <pre class="cmd"><code>sudo apt install ./arro_<span data-arro-version>0.1.17</span>_amd64.deb</code></pre>
+              </li>
+              <li>Start Arro from the application menu, or run <code>arro</code>.</li>
+            </ol>
+            <p>The package puts Arro in <code>/opt/arro</code>, adds <code>arro</code> to the path and a shortcut to the application menu. A newer version installs the same way. Arro cannot update a package installation by itself, so its update notice opens the release page.</p>
+            <h3>Other distributions: the archive</h3>
+            <ol class="stations">
+              <li>Unpack <code>arro-<span data-arro-version>0.1.17</span>-linux-x86_64.tar.gz</code>, for example into <code>~/opt</code>.</li>
+              <li>Run <code>./arro</code> from that folder.</li>
+              <li>For a shortcut in the application menu, run <code>./install.sh</code> and answer its question. It writes only to <code>~/.local/share</code> of your user; nothing is installed automatically.</li>
+            </ol>
+            <p>The window needs <code>libfontconfig</code>, <code>libwayland</code>, <code>libx11</code>, <code>libxcb</code> and <code>libxkbcommon</code> at run time. <code>README.txt</code> in the archive lists the JDK search paths and the servers it ships.</p>
+          </div>
+
+          <div role="tabpanel" id="install-macos" aria-labelledby="tab-mac" tabindex="0">
+            <h3>macOS, Apple silicon</h3>
+            <ol class="stations">
+              <li>Open <code>arro-<span data-arro-version>0.1.17</span>-macos-aarch64.dmg</code> and drag <strong>Arro</strong> into Applications. The <code>.zip</code> of the same bundle works too; it is what the built-in updater uses.</li>
+              <li>The build is signed ad hoc, not notarized, so Gatekeeper stops the first start. Control-click <code>Arro.app</code>, choose <strong>Open</strong> and confirm, or run:
+                <pre class="cmd"><code>xattr -dr com.apple.quarantine /Applications/Arro.app</code></pre>
+              </li>
+              <li>Open <code>Arro.app</code>. To open a project folder directly:
+                <pre class="cmd"><code>open Arro.app --args /work/shop</code></pre>
+              </li>
+            </ol>
+            <p>The published build is for Apple silicon. <code>README.txt</code> inside the bundle explains the JDK search and where Arro keeps its files.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="first-steps" aria-labelledby="first-h">
+        <h2 class="brand" id="first-h">First steps <a class="hash" href="#first-steps" aria-label="Link to First steps">#</a></h2>
+        <ol class="stations">
+          <li><strong>Open a project.</strong> Open a folder with a Maven or Gradle project. Arro imports it and starts the Eclipse JDT Language Server, which it watches and restarts for you.</li>
+          <li><strong>Or start a new one.</strong> File → New → Project creates a Java project with Maven or Gradle (Groovy or Kotlin DSL), a Spring Boot project from Spring Initializr with a searchable dependency list, or an empty project, with an optional Git repository.</li>
+          <li><strong>Find anything.</strong> Press <kbd>Shift</kbd> twice for Search Everywhere, <kbd>Ctrl+N</kbd> for a class, and <kbd>Alt+Enter</kbd> on anything underlined for fixes.</li>
+          <li><strong>Run it.</strong> Click the run mark in the gutter next to <code>main</code> or a test, or use a run configuration.</li>
+        </ol>
+        <h3>Coming from IntelliJ IDEA</h3>
+        <p>The shortcuts, menus and tool windows follow IntelliJ IDEA. A project with <code>.idea/codeStyles/Project.xml</code> keeps its style: indents, tabs and the right margin in the editor, and the Java formatter and import order through the language server. <code>.editorconfig</code> still wins, and Settings → Editor → Code Style shows which file is used.</p>
+        <p>File → Manage IDE Settings exports and imports Arro’s settings, keymap and templates as one zip, without passwords and tokens.</p>
+      </section>
+
+      <section id="features" aria-labelledby="features-h">
+        <h2 class="brand" id="features-h">Features by area <a class="hash" href="#features" aria-label="Link to Features by area">#</a></h2>
+
+        <h3>Editor</h3>
+        <p>Semantic highlighting, parameter name hints, folding, multiple carets, live and postfix templates, a scroll bar with problem marks, sticky lines, bookmarks, split editors, Compare with Clipboard, and actions on save that reformat and optimize imports. A Markdown preview shows images.</p>
+
+        <h3>Code intelligence</h3>
+        <p>Completion with auto-import, quick fixes on <kbd>Alt+Enter</kbd>, Find Usages, call and type hierarchy and class diagrams. Refactorings: rename, extract, inline, change signature and safe delete, all listed at the caret by Refactor This. Structural Search and Replace, reformat, optimize imports and Create Test.</p>
+        <p>Settings → Editor → Inspections lists the checks of Arro and the Java compiler; each can be turned on or off and given a level, saved in the project. <kbd>Alt+Enter</kbd> on a warning can suppress it for the statement, method or class.</p>
+
+        <h3>Run, test, debug</h3>
+        <ul>
+          <li>Run configurations with Before launch steps, Compound configurations, and an <code>.env</code> file per configuration.</li>
+          <li>A test tree with rerun of failures, tests rerun after each save, and a history of the last runs.</li>
+          <li>The debugger: breakpoints, stepping, evaluation, hot swap, values inline in the editor, remote JVM attach, marked objects, folded library frames, inline watches and virtual threads.</li>
+          <li>Analyze Stack Trace turns a pasted trace or thread dump into clickable frames; Dump Threads reads a running JVM.</li>
+          <li>The Services window shows every Spring Boot app and main class with its state and port.</li>
+        </ul>
+
+        <h3>Spring</h3>
+        <ul>
+          <li>Completion, hover and checks for <code>application.properties</code> and <code>.yml</code>, from the configuration metadata on your class path.</li>
+          <li>A Beans window with injection gutter marks, and an Endpoints window with every HTTP handler.</li>
+          <li>Spring Data JPA query methods and JPQL in <code>@Query</code>, completed and checked against your entities.</li>
+          <li>Message bundles linked to <code>getMessage</code>, validation messages and Thymeleaf <code>#{…}</code>.</li>
+          <li>A running Spring Boot app gets an Actuator tab with live Health, Beans, Mappings and Environment.</li>
+        </ul>
+
+        <h3>Tools in the window</h3>
+        <ul>
+          <li>A database console for JDBC sources with a schema tree; <kbd>Ctrl+Enter</kbd> runs a statement.</li>
+          <li>An HTTP client for <code>.http</code> files that turns pasted cURL into requests and back.</li>
+          <li>A profiler on Java Flight Recorder: CPU, allocations and a thread timeline, for apps, tests and Maven or Gradle tasks.</li>
+          <li>A JShell console on the class path of a module, a dependency analyzer for conflicts and duplicates, and newer dependency versions marked in <code>pom.xml</code> and Gradle files.</li>
+          <li>A table editor for <code>.properties</code> bundles of all locales, library sources on demand, and Docker services.</li>
+        </ul>
+
+        <h3>Git</h3>
+        <p>Commit, diff, log, branches with merge, rebase and compare, shelf and stash, conflict resolution, history of a selection or a method, submodules and local history.</p>
+
+        <h3>Terminal</h3>
+        <p>Sessions as tabs with a shell picker (PowerShell, cmd, Git Bash and WSL on Windows; your <code>$SHELL</code>, bash, zsh or fish elsewhere), Split Right and Split Down, search through the whole scrollback, and <kbd>Ctrl</kbd>+click on URLs, file paths with a line, compiler output and Java stack frames. Tabs come back after a restart.</p>
+
+        <h3>Settings and appearance</h3>
+        <p>Dark and light themes, a configurable keymap, and View → Appearance with Full Screen, Distraction Free, Zen and Presentation modes, toggles for the toolbar, status bar, breadcrumbs, line numbers and more, and Zoom IDE.</p>
+      </section>
+
+      <section id="shortcuts" aria-labelledby="shortcuts-h">
+        <h2 class="brand" id="shortcuts-h">Shortcuts <a class="hash" href="#shortcuts" aria-label="Link to Shortcuts">#</a></h2>
+        <p>Arro uses the IntelliJ IDEA keymap. These are the Windows and Linux keys; on macOS Arro follows the IntelliJ IDEA keymap for macOS, with <kbd>Cmd</kbd>. The keymap can be changed in Settings.</p>
+        <table class="keys">
+          <caption>A selection of keys from the README and release notes</caption>
+          <thead><tr><th scope="col">Keys</th><th scope="col">Action</th></tr></thead>
+          <tbody>
+            <tr><td><kbd>Shift</kbd> <kbd>Shift</kbd></td><td>Search Everywhere</td></tr>
+            <tr><td><kbd>Ctrl+N</kbd></td><td>Go to class</td></tr>
+            <tr><td><kbd>Ctrl+B</kbd></td><td>Go to declaration</td></tr>
+            <tr><td><kbd>Ctrl+E</kbd></td><td>Recent files</td></tr>
+            <tr><td><kbd>Ctrl+Tab</kbd></td><td>Switcher between open files and tool windows</td></tr>
+            <tr><td><kbd>Ctrl+Alt+Left</kbd> / <kbd>Ctrl+Alt+Right</kbd></td><td>Back and forward through your places in the code</td></tr>
+            <tr><td><kbd>Alt+Enter</kbd></td><td>Quick fixes and intentions</td></tr>
+            <tr><td><kbd>Ctrl+Q</kbd></td><td>Quick documentation; press again to pin it</td></tr>
+            <tr><td><kbd>Ctrl+Alt+L</kbd></td><td>Reformat code</td></tr>
+            <tr><td><kbd>Ctrl+Alt+Shift+T</kbd></td><td>Refactor This: every refactoring at the caret</td></tr>
+            <tr><td><kbd>Ctrl+Alt+Shift+U</kbd></td><td>Show class diagram</td></tr>
+            <tr><td><kbd>Shift+F10</kbd></td><td>Run</td></tr>
+            <tr><td><kbd>F11</kbd></td><td>Mark Object, in the debugger</td></tr>
+            <tr><td><kbd>F7</kbd> / <kbd>Shift+F7</kbd></td><td>Next and previous change or conflict, in a diff</td></tr>
+            <tr><td><kbd>Ctrl+Enter</kbd></td><td>Run the statement, request or snippet, in the database console, HTTP client and JShell</td></tr>
+            <tr><td><kbd>Ctrl+Shift+T</kbd></td><td>New tab, in the terminal</td></tr>
+            <tr><td><kbd>Ctrl+Alt+Y</kbd></td><td>Reload All from Disk</td></tr>
+            <tr><td><kbd>Ctrl+Alt+Shift+=</kbd> / <kbd>-</kbd> / <kbd>0</kbd></td><td>Zoom the IDE in, out, reset</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="updates" aria-labelledby="updates-h">
+        <h2 class="brand" id="updates-h">Updates <a class="hash" href="#updates" aria-label="Link to Updates">#</a></h2>
+        <p>Arro checks for updates once a day and can update itself; the check can be turned off in Settings. The updater takes the archive of the running system: the zip on Windows, the tar.gz on Linux, the whole <code>Arro.app</code> bundle on macOS.</p>
+        <p>Keep the folder you unpacked Arro into writable, otherwise the update stops with a message. A <code>.deb</code> installation is updated by installing the new package; its update notice opens the release page.</p>
+      </section>
+
+      <section id="limitations" aria-labelledby="limits-h">
+        <h2 class="brand" id="limits-h">Limitations <a class="hash" href="#limitations" aria-label="Link to Limitations">#</a></h2>
+        <p>Arro is an early preview. Expect rough edges, missing features and breaking changes between versions.</p>
+        <ul>
+          <li>Linux and macOS are early previews: they build and pass the tests, but fewer people use them than the Windows build.</li>
+          <li>The macOS build is not notarized, so the first start needs the step in the install guide.</li>
+          <li>Linux is built for x86-64 only, and the published macOS build is for Apple silicon.</li>
+          <li>There is no <code>.rpm</code>, Flatpak or Homebrew package yet. They are on the <a href="/arro/roadmap/">roadmap</a>.</li>
+          <li>On Linux the terminal uses the system pseudo terminal.</li>
+        </ul>
+      </section>
+
+      <section id="build" aria-labelledby="build-h">
+        <h2 class="brand" id="build-h">Build from source <a class="hash" href="#build" aria-label="Link to Build from source">#</a></h2>
+        <p>The Rust toolchain is pinned in <code>rust-toolchain.toml</code> of the <a href="https://github.com/PabloSensei/arro">repository</a>.</p>
+        <pre class="cmd"><code>cargo build --release -p ide
+cargo run -p xtask -- dist --out &lt;folder&gt;
+cargo run -p xtask -- dist --target linux --out &lt;folder&gt; --zip
+cargo run -p xtask -- dist --target macos --out &lt;folder&gt; --zip</code></pre>
+        <p style="margin-top:12px">Build <code>--target linux</code> and <code>--target macos</code> on their own system; the archives they write are the ones the updater looks for. <code>cargo run -p xtask -- ci</code> runs formatting, lints, tests, licence and architecture checks.</p>
+      </section>
+
+      <section id="support" aria-labelledby="support-h">
+        <h2 class="brand" id="support-h">Getting help <a class="hash" href="#support" aria-label="Link to Getting help">#</a></h2>
+        <p>Found a problem? <a href="https://github.com/PabloSensei/arro/issues/new">Open an issue on GitHub</a>; bug reports are very welcome. Arro is free; if it saves you time, you can support it through <a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a>.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Paweł Januszko</h2>
+      <div class="barcode"><svg data-barcode="PABLOSENSEI" aria-hidden="true"></svg><span>Rust &amp; Java · native desktop tools</span></div>
+      <small>© 2026 Paweł Januszko. Box art is drawn by your browser. Set in Archivo and JetBrains Mono.</small>
+    </div>
+    <div>
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/arro/">Arro</a></li>
+        <li><a href="/arro/changelog/">Arro changelog</a></li>
+        <li><a href="/arro/help/">Arro help</a></li>
+        <li><a href="/arro/roadmap/">Arro roadmap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elsewhere</h2>
+      <ul>
+        <li><a href="https://github.com/PabloSensei">GitHub</a></li>
+        <li><a href="https://github.com/PabloSensei/arro">Arro source</a></li>
+        <li><a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap · Arro</title>
+<meta name="description" content="What is being built for the next release of Arro, what comes next, and what comes later.">
+<link rel="canonical" href="https://pablosensei.github.io/arro/roadmap/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paweł Januszko">
+<meta property="og:title" content="Arro roadmap">
+<meta property="og:description" content="What is being built for the next release of Arro, and what comes after.">
+<meta property="og:url" content="https://pablosensei.github.io/arro/roadmap/">
+<meta property="og:image" content="https://pablosensei.github.io/assets/og/arro.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/arro/arro.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/arro/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>(function(){var d=document.documentElement;d.className=d.className.replace("no-js","js")+(document.visibilityState==="visible"?" motion":"");try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<script src="/assets/js/boxes.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar sticky">
+  <div class="wrap">
+    <a class="mark" href="/"><i aria-hidden="true"></i>Paweł Januszko</a>
+    <nav class="topnav" aria-label="Arro">
+        <a class="flap-arro" href="/arro/">Arro</a>
+        <a href="/arro/changelog/">Changelog</a>
+        <a href="/arro/help/">Help</a>
+        <a href="/arro/roadmap/" aria-current="page">Roadmap</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colours"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="page-h">
+    <canvas data-art="arro" data-t="2.8" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1 class="brand" id="page-h">Roadmap</h1>
+      <p class="lede">What is coming, in the order it is being built. No dates: a step is done when it is good, and it shows up in the <a href="/arro/changelog/">changelog</a>.</p>
+      <nav class="stage-links" aria-label="Roadmap stages"><a href="#now">In progress · next release</a>
+          <a href="#next">Next</a>
+          <a href="#later">Later</a></nav>
+    </div>
+  </section>
+
+  <div class="wrap ahead">
+    <section class="leg now" id="now" aria-labelledby="now-h">
+      <div class="leg-line" aria-hidden="true"><span class="node"></span></div>
+      <div class="leg-body">
+        <header class="reveal">
+          <h2 class="brand" id="now-h">In progress</h2>
+          <p class="sub">For the next release, after <span class="mono" data-arro-version>0.1.17</span></p>
+        </header>
+        <ul class="leg-items">
+          <li class="reveal"><h3>Spell checking</h3><p>Typos found in code and in comments.</p></li>
+          <li class="reveal"><h3>Kubernetes tool window</h3><p>Kubernetes inside the IDE, in its own tool window.</p></li>
+          <li class="reveal"><h3>Jakarta EE, Quarkus and Micronaut</h3><p>CDI beans, configuration and endpoints for these frameworks.</p></li>
+          <li class="reveal"><h3>Sequence diagrams</h3><p>A sequence diagram drawn from a method.</p></li>
+          <li class="reveal"><h3>RPM package and per-user install</h3><p>An <code>.rpm</code> for Fedora and related systems, and a per-user install from the Linux archive.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="leg next" id="next" aria-labelledby="next-h">
+      <div class="leg-line" aria-hidden="true"><span class="node"></span></div>
+      <div class="leg-body">
+        <header class="reveal">
+          <h2 class="brand" id="next-h">Next</h2>
+          <p class="sub">After that</p>
+        </header>
+        <ul class="leg-items">
+          <li class="reveal"><h3>Flatpak and Homebrew</h3><p>Packages for Flatpak on Linux and Homebrew on macOS.</p></li>
+          <li class="reveal"><h3>A notarized macOS build</h3><p>So the first start on a Mac needs no extra step.</p></li>
+          <li class="reveal"><h3>A responsiveness pass</h3><p>Measured latency budgets, and the work to meet them.</p></li>
+          <li class="reveal"><h3>Licence audit and NOTICE</h3><p>A full audit of third-party licences and a complete NOTICE file.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="leg later" id="later" aria-labelledby="later-h">
+      <div class="leg-line" aria-hidden="true"><span class="node"></span></div>
+      <div class="leg-body">
+        <header class="reveal">
+          <h2 class="brand" id="later-h">Later</h2>
+          <p class="sub">Further out</p>
+        </header>
+        <ul class="leg-items">
+          <li class="reveal"><h3>Arro’s own Java index</h3><p>Its own index, completion and diagnostics for Java.</p></li>
+          <li class="reveal"><h3>An AI assistant panel</h3><p>With a review step for the edits it proposes.</p></li>
+          <li class="reveal"><h3>Deeper Docker and agent tooling</h3><p>More of the container and agent workflow inside the IDE.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="reveal" style="color:var(--ink-2);max-width:60ch">Something missing that you need? <a href="https://github.com/PabloSensei/arro/issues/new">Open an issue</a> and say what you would use it for.</p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Paweł Januszko</h2>
+      <div class="barcode"><svg data-barcode="PABLOSENSEI" aria-hidden="true"></svg><span>Rust &amp; Java · native desktop tools</span></div>
+      <small>© 2026 Paweł Januszko. Box art is drawn by your browser. Set in Archivo and JetBrains Mono.</small>
+    </div>
+    <div>
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/arro/">Arro</a></li>
+        <li><a href="/arro/changelog/">Arro changelog</a></li>
+        <li><a href="/arro/help/">Arro help</a></li>
+        <li><a href="/arro/roadmap/">Arro roadmap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elsewhere</h2>
+      <ul>
+        <li><a href="https://github.com/PabloSensei">GitHub</a></li>
+        <li><a href="https://github.com/PabloSensei/arro">Arro source</a></li>
+        <li><a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paweł Januszko · Rust &amp; Java, native desktop tools</title>
+<meta name="description" content="Paweł Januszko, software engineer. Native desktop tools in Rust and Java: Arro, a Java IDE written in Rust; dictate, offline dictation on your own GPU; Tunetop; AI Translator.">
+<link rel="canonical" href="https://pablosensei.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paweł Januszko">
+<meta property="og:title" content="Paweł Januszko · Rust &amp; Java, native desktop tools">
+<meta property="og:description" content="Native desktop tools and local AI in Rust and Java: Arro, a Java IDE written in Rust, and other projects.">
+<meta property="og:url" content="https://pablosensei.github.io/">
+<meta property="og:image" content="https://pablosensei.github.io/assets/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>(function(){var d=document.documentElement;d.className=d.className.replace("no-js","js")+(document.visibilityState==="visible"?" motion":"");try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Paweł Januszko","url":"https://pablosensei.github.io/","jobTitle":"Software engineer","sameAs":["https://github.com/PabloSensei"]}</script>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/boxes.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <div class="topbar">
+    <div class="wrap">
+      <a class="mark" href="/"><i aria-hidden="true"></i>PabloSensei</a>
+      <nav class="topnav" aria-label="Site">
+        <a href="#arro">Projects</a>
+        <a href="/arro/">Arro</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/PabloSensei">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colours"></button>
+    </div>
+  </div>
+  <div class="wrap masthead">
+    <h1 class="brand"><span class="l1">Paweł</span> <span class="l2">Januszko</span></h1>
+    <p class="tagline">Rust &amp; Java · native desktop tools and local AI. <em>Small, fast programs you install and run on your own machine.</em></p>
+  </div>
+  <div class="shelf" aria-label="Projects">
+    <div class="shelf-row">
+<figure class="box" data-product="arro" style="--i:0">
+  <div class="box-stage">
+    <div class="box-floor" aria-hidden="true"></div>
+    <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="Arro box. Arrow keys turn it, Enter turns it over.">
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="arro"></canvas><div class="front-type"><div><div class="pname brand">Arro</div><div class="ptag">The Java IDE, native, written in Rust</div></div><div></div><div class="pfor">For Windows, Linux and&nbsp;macOS</div><span class="sticker"><small>Free</small><span class="mono"><span data-arro-version>0.1.17</span></span></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">Arro</div><ul class="checks"><li>IntelliJ keys and menus</li><li>GPU-rendered UI</li><li>Run, test, debug, Git</li></ul><p class="reqline"><b>Requires</b> Windows 11, Linux, macOS · JDK 25+</p><div class="barcode"><svg data-barcode="ARRO"></svg><span>ARRO <span data-arro-version>0.1.17</span></span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">Arro</span><span class="mono"><span data-arro-version>0.1.17</span></span></div></div>
+      <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Rust · GPUI</span></div></div>
+      <div class="face top" aria-hidden="true"><img src="/assets/img/arro/icon-256.png" alt=""></div>
+      <div class="face bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+  <figcaption class="box-caption">
+    <a class="pl" href="/arro/">Arro</a>
+    <span class="sub">Java IDE in Rust</span>
+    <span class="sub"><a href="https://github.com/PabloSensei/arro/releases/latest">Download <span data-arro-version>0.1.17</span></a></span>
+    <button class="turn-btn" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 2.5v3h-3"/></svg> Turn over</button>
+  </figcaption>
+</figure>
+<figure class="box" data-product="dictate" style="--i:1">
+  <div class="box-stage">
+    <div class="box-floor" aria-hidden="true"></div>
+    <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="dictate box. Arrow keys turn it, Enter turns it over.">
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="dictate"></canvas><div class="front-type"><div><div class="pname brand">dictate</div><div class="ptag">Offline push-to-talk dictation</div></div><div></div><div class="pfor">For Windows 10 · 11</div><span class="sticker"><small>No</small><small>network</small></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">dictate</div><ul class="checks"><li>Whisper on your own GPU</li><li>Types into any app</li><li>About 100 languages</li></ul><p class="reqline"><b>Requires</b> Windows 10 or 11 · NVIDIA RTX or any AVX2 CPU</p><div class="barcode"><svg data-barcode="DICTATE"></svg><span>DICTATE 0.1.0</span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">dictate</span><span class="mono">0.1.0</span></div></div>
+      <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Rust · whisper.cpp</span></div></div>
+      <div class="face top" aria-hidden="true"><img src="/assets/img/projects/dictate-logo.svg" alt=""></div>
+      <div class="face bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+  <figcaption class="box-caption">
+    <a class="pl" href="#dictate">dictate</a>
+    <span class="sub">Offline dictation</span>
+    <button class="turn-btn" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 2.5v3h-3"/></svg> Turn over</button>
+  </figcaption>
+</figure>
+<figure class="box" data-product="tunetop" style="--i:2">
+  <div class="box-stage">
+    <div class="box-floor" aria-hidden="true"></div>
+    <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="Tunetop box. Arrow keys turn it, Enter turns it over.">
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="tunetop"></canvas><div class="front-type"><div><div class="pname brand">Tunetop</div><div class="ptag">Always-on-top music widget</div></div><div></div><div class="pfor">For Windows 10 · 11</div><span class="sticker"><small>Any</small><small>player</small></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">Tunetop</div><ul class="checks"><li>Spotify, browsers, VLC and more</li><li>Skins and album colours</li><li>Synced lyrics</li></ul><p class="reqline"><b>Requires</b> Windows 10 or 11</p><div class="barcode"><svg data-barcode="TUNETOP"></svg><span>TUNETOP 1.3.0</span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">Tunetop</span><span class="mono">1.3.0</span></div></div>
+      <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Python</span></div></div>
+      <div class="face top" aria-hidden="true"><img src="/assets/img/projects/tunetop-icon-128.png" alt=""></div>
+      <div class="face bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+  <figcaption class="box-caption">
+    <a class="pl" href="#tunetop">Tunetop</a>
+    <span class="sub">Music widget</span>
+    <button class="turn-btn" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 2.5v3h-3"/></svg> Turn over</button>
+  </figcaption>
+</figure>
+<figure class="box" data-product="ai-translator" style="--i:3">
+  <div class="box-stage">
+    <div class="box-floor" aria-hidden="true"></div>
+    <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="AI Translator box. Arrow keys turn it, Enter turns it over.">
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="ai-translator"></canvas><div class="front-type"><div><div class="pname brand">AI Trans&shy;lator</div><div class="ptag">Gemini, Claude and OpenRouter</div></div><div></div><div class="pfor">Windows, macOS and&nbsp;Linux</div><span class="sticker"><small>30+</small><small>languages</small></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">AI Trans&shy;lator</div><ul class="checks"><li>Translate any selection</li><li>Text from screenshots</li><li>History and favourites</li></ul><p class="reqline"><b>Requires</b> An API key for Gemini, Anthropic or OpenRouter</p><div class="barcode"><svg data-barcode="TRANSLATOR"></svg><span>TRANSLATOR 2.0.1</span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">AI Translator</span><span class="mono">2.0.1</span></div></div>
+      <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Electron</span></div></div>
+      <div class="face top" aria-hidden="true"><img src="/assets/img/projects/translator-icon-128.png" alt=""></div>
+      <div class="face bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+  <figcaption class="box-caption">
+    <a class="pl" href="#ai-translator">AI Translator</a>
+    <span class="sub">Desktop translator</span>
+    <button class="turn-btn" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 2.5v3h-3"/></svg> Turn over</button>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="spread" data-product="arro" id="arro" aria-labelledby="arro-h">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="spread-id"><img src="/assets/img/arro/icon-256.png" width="64" height="64" alt=""><h2 class="brand" id="arro-h">Arro</h2></div>
+        <p class="kind">Rust · Windows, Linux and macOS · free</p>
+        <p class="pitch">A native Java IDE written in Rust. IntelliJ-style workflow and shortcuts, a GPU-rendered UI, and a fraction of the memory.</p>
+        <div class="panel"><ul class="checks">
+          <li><span><strong>Native and fast.</strong> Rust from top to bottom and a GPU-rendered UI on GPUI. No Electron, no web view.</span></li>
+          <li><span><strong>Feels like home for IntelliJ users.</strong> The same shortcuts, menus and tool windows.</span></li>
+          <li><span><strong>Never freezes on a tool.</strong> Builds, Git, the language server and the debugger run outside the UI thread.</span></li>
+          <li><span><strong>Moving fast.</strong> <span data-arro-count>18</span> releases so far; the latest, <span class="mono"><span data-arro-version>0.1.17</span></span>, came out on <span data-arro-date>15 Nov 2026</span>.</span></li>
+        </ul></div>
+        <p class="links"><a class="primary" href="/arro/">Open Arro <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10.5M9 3.8 13.2 8 9 12.2"/></svg></a><a href="https://github.com/PabloSensei/arro/releases/latest">Download <span class="mono"><span data-arro-version>0.1.17</span></span></a></p>
+      </div>
+      <div class="side reveal">
+        <figure class="plate"><div class="fit"><img src="/assets/img/arro/hero.webp" width="1600" height="1000" alt="Arro editing a Spring PetClinic controller: project tree, semantic highlighting, parameter hints" decoding="async"></div><figcaption><b>Arro</b> Editing a Spring PetClinic controller.</figcaption></figure>
+        <div class="meta-row">
+          <div class="requires"><p class="req-head">System requirements</p><dl><dt>Systems</dt><dd>Windows 11 x86-64; Linux x86-64 and macOS Apple silicon as previews</dd><dt>Java</dt><dd>JDK 25+ for the language server; projects on JDK 8 to 25</dd></dl></div>
+          <span class="sticker"><small>Free</small><span class="mono"><span data-arro-version>0.1.17</span></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="spread" data-product="dictate" id="dictate" aria-labelledby="dictate-h">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="spread-id"><img src="/assets/img/projects/dictate-logo.svg" width="64" height="64" alt=""><h2 class="brand" id="dictate-h">dictate</h2></div>
+        <p class="kind">Rust · whisper.cpp · CUDA · MIT licence</p>
+        <p class="pitch">Private, offline push-to-talk dictation. Hold a key, speak, let go: the text is typed into whatever app you are in.</p>
+        <div class="panel"><ul class="checks">
+          <li><span><strong>No network code at all.</strong> Block it in the firewall and it keeps working.</span></li>
+          <li><span><strong>About 0.16 s</strong> to recognise a five-second phrase on an RTX 4070 Ti with Whisper large-v3-turbo, measured by the author.</span></li>
+          <li><span>One exe, about 4,500 lines of Rust you can read in an evening. Voice activity detection, vocabulary hints, autocorrect rules.</span></li>
+        </ul></div>
+        <p class="links"><a class="primary" href="https://github.com/PabloSensei/dictate">Repository <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a><a href="https://github.com/PabloSensei/dictate/releases/latest">Download 0.1.0</a></p>
+      </div>
+      <div class="side reveal">
+        <figure class="plate"><div class="fit"><img src="/assets/img/projects/dictate-settings.webp" width="751" height="994" alt="dictate settings window with Controls, Recognition and Interface sections" decoding="async"></div><figcaption><b>Settings</b> Shortcut, hold or toggle, model hint, live text.</figcaption></figure>
+        <div class="meta-row">
+          <div class="requires"><p class="req-head">System requirements</p><dl><dt>System</dt><dd>Windows 10 or 11</dd><dt>Hardware</dt><dd>NVIDIA RTX 20 series or newer for the CUDA build, or any x64 CPU with AVX2</dd><dt>Network</dt><dd>None</dd></dl></div>
+          <span class="sticker"><small>Works</small><small>offline</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="spread" data-product="tunetop" id="tunetop" aria-labelledby="tunetop-h">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="spread-id"><img src="/assets/img/projects/tunetop-icon-128.png" width="64" height="64" alt=""><h2 class="brand" id="tunetop-h">Tunetop</h2></div>
+        <p class="kind">Python · Windows 10 and 11</p>
+        <p class="pitch">A small always-on-top music widget that controls any player through the Windows system media controls.</p>
+        <div class="panel"><ul class="checks">
+          <li><span><strong>Any player, no plugins.</strong> Spotify, browsers, foobar2000, AIMP, MusicBee, VLC and anything else on the system player.</span></li>
+          <li><span>Three views: full, a slim bar and cover only. Skins are a folder with a <code>skin.json</code>; colours can follow the album art.</span></li>
+          <li><span>Synced lyrics, per-player volume, global hotkeys, 13 interface languages.</span></li>
+        </ul></div>
+        <p class="links"><a class="primary" href="https://github.com/PabloSensei/tunetop">Repository <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a><a href="https://github.com/PabloSensei/tunetop/releases/latest">Download 1.3.0</a></p>
+      </div>
+      <div class="side reveal">
+        <figure class="plate"><div class="fit"><img src="/assets/img/projects/tunetop-skins.webp" width="806" height="526" alt="Tunetop in six bundled skins: dark, light, neon, glass, minimal dark and minimal light" decoding="async"></div><figcaption><b>Skins</b> Six bundled, or write your own.</figcaption></figure>
+        <div class="meta-row">
+          <div class="requires"><p class="req-head">System requirements</p><dl><dt>System</dt><dd>Windows 10 or 11</dd><dt>Players</dt><dd>Any app on the system media controls</dd></dl></div>
+          <span class="sticker"><small>6 skins</small><small>inside</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="spread" data-product="ai-translator" id="ai-translator" aria-labelledby="translator-h">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="spread-id"><img src="/assets/img/projects/translator-icon-128.png" width="64" height="64" alt=""><h2 class="brand" id="translator-h">AI Translator</h2></div>
+        <p class="kind">Electron · Windows, macOS and Linux</p>
+        <p class="pitch">A desktop translator on Gemini, Claude and OpenRouter: hotkeys, screenshots, styles and history.</p>
+        <div class="panel"><ul class="checks">
+          <li><span><strong>Select, press, read.</strong> Select text in any app and press <kbd>Ctrl+Shift+Y</kbd>, or paste a screenshot and the model reads the text in it.</span></li>
+          <li><span>Translate or Fix text modes, ten styles plus your own, results streamed word by word.</span></li>
+          <li><span>The last 100 translations with search, favourites and export to CSV, JSON or Markdown.</span></li>
+        </ul></div>
+        <p class="links"><a class="primary" href="https://github.com/PabloSensei/ai-translator">Repository <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a><a href="https://github.com/PabloSensei/ai-translator/releases/latest">Download 2.0.1</a></p>
+      </div>
+      <div class="side reveal">
+        <figure class="plate"><div class="fit"><img src="/assets/img/projects/translator-image.webp" width="1200" height="907" alt="AI Translator: a Japanese notice pasted as an image and translated into English" decoding="async"></div><figcaption><b>Screenshot</b> Text read from an image and translated.</figcaption></figure>
+        <div class="meta-row">
+          <div class="requires"><p class="req-head">System requirements</p><dl><dt>Systems</dt><dd>Windows, macOS, Linux</dd><dt>Account</dt><dd>An API key for Google Gemini, Anthropic or OpenRouter</dd></dl></div>
+          <span class="sticker"><small>30+</small><small>languages</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="colophon" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 class="h-section" id="about-h">About</h2>
+        <p class="label" style="margin-top:24px">Mostly working with</p>
+        <ul class="stack-list"><li>Rust</li><li>Java</li><li>Python</li><li>JavaScript / Electron</li><li>CUDA</li></ul>
+      </div>
+      <div class="reveal">
+        <p class="big">Software engineer. <em>Java backend by day;</em> in my own time I build small, fast native tools for the desktop, mostly in Rust, and keep AI running locally whenever I can.</p>
+        <ul class="go-list">
+          <li><a href="https://github.com/PabloSensei">GitHub <span>github.com/PabloSensei</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10.5M9 3.8 13.2 8 9 12.2"/></svg></a></li>
+          <li><a href="https://github.com/sponsors/PabloSensei">Sponsor Arro <span>GitHub Sponsors</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10.5M9 3.8 13.2 8 9 12.2"/></svg></a></li>
+          <li><a href="https://github.com/PabloSensei/arro/issues/new">Report an Arro bug <span>GitHub issues</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10.5M9 3.8 13.2 8 9 12.2"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Paweł Januszko</h2>
+      <div class="barcode"><svg data-barcode="PABLOSENSEI" aria-hidden="true"></svg><span>Rust &amp; Java · native desktop tools</span></div>
+      <small>© 2026 Paweł Januszko. Box art is drawn by your browser. Set in Archivo and JetBrains Mono.</small>
+    </div>
+    <div>
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/arro/">Arro</a></li>
+        <li><a href="/arro/changelog/">Arro changelog</a></li>
+        <li><a href="/arro/help/">Arro help</a></li>
+        <li><a href="/arro/roadmap/">Arro roadmap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elsewhere</h2>
+      <ul>
+        <li><a href="https://github.com/PabloSensei">GitHub</a></li>
+        <li><a href="https://github.com/PabloSensei/arro">Arro source</a></li>
+        <li><a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
