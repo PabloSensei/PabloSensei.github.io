@@ -1,55 +1,200 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-15T18:56:12.767Z",
+ "generatedAt": "2026-11-16T08:46:29.047Z",
  "latest": {
-  "version": "0.1.17",
-  "tag": "v0.1.17",
-  "date": "2026-11-15T16:44:32Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.17",
+  "version": "0.1.18",
+  "tag": "v0.1.18",
+  "date": "2026-11-16T08:46:15Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.18",
   "assets": [
    {
-    "name": "arro-0.1.17-windows-x86_64.zip",
+    "name": "arro-0.1.18-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 80934680,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-windows-x86_64.zip"
+    "size": 81811043,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.17_amd64.deb",
+    "name": "arro_0.1.18_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 79913940,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro_0.1.17_amd64.deb"
+    "size": 80448824,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro_0.1.18_amd64.deb"
    },
    {
-    "name": "arro-0.1.17-linux-x86_64.tar.gz",
+    "name": "arro-0.1.18-1.x86_64.rpm",
+    "os": "linux",
+    "label": "Fedora, RHEL, openSUSE · .rpm",
+    "order": 2,
+    "size": 91230814,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-1.x86_64.rpm"
+   },
+   {
+    "name": "arro-0.1.18-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 90594422,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-linux-x86_64.tar.gz"
+    "size": 91471073,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.17-macos-aarch64.dmg",
+    "name": "arro-0.1.18-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 86522100,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-macos-aarch64.dmg"
+    "size": 87491406,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.17-macos-aarch64.zip",
+    "name": "arro-0.1.18-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 81312999,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.17/arro-0.1.17-macos-aarch64.zip"
+    "size": 82201189,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.18",
+   "tag": "v0.1.18",
+   "date": "2026-11-16T08:46:15Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.18",
+   "prerelease": false,
+   "summary": [
+    "Spell checking, Kubernetes in the Services window, a table data editor, Jakarta EE, Quarkus and Micronaut, sequence diagrams, heap dump analysis, Flyway and Liquibase migrations, and an <code>.rpm</code> package for Fedora and openSUSE."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Spell checking.</strong> Typos in comments, Javadoc, string literals, declaration names, Markdown, <code>.properties</code>, YAML and XML comments get a green wavy underline. camelCase and snake_case words are split, and short words, URLs, paths and hex are skipped. Alt+Enter offers up to five replacements: a typo in a declaration is fixed through Rename, so its usages change too. You can also save the word to the project or application dictionary, or turn the check off. Words come from the system spell checker on Windows and macOS and from hunspell or <code>/usr/share/dict/words</code> on Linux. Settings → Editor → Spelling edits your dictionary, and the Typo inspection has its own level.",
+       "text": "Spell checking. Typos in comments, Javadoc, string literals, declaration names, Markdown, .properties, YAML and XML comments get a green wavy underline. camelCase and snake_case words are split, and short words, URLs, paths and hex are skipped. Alt+Enter offers up to five replacements: a typo in a declaration is fixed through Rename, so its usages change too. You can also save the word to the project or application dictionary, or turn the check off. Words come from the system spell checker on Windows and macOS and from hunspell or /usr/share/dict/words on Linux. Settings → Editor → Spelling edits your dictionary, and the Typo inspection has its own level.",
+       "lead": "Spell checking"
+      },
+      {
+       "html": "<strong>Kubernetes.</strong> The Services window has a Kubernetes node next to Docker: contexts and namespaces from your kubeconfig, then pods, deployments, stateful sets, services, config maps, secrets, ingresses, jobs and cron jobs with their state. Pod logs (also of the previous container), Describe, View YAML with edit and Apply, Delete, Restart, Scale, Port Forward and Exec in the terminal. Secret values stay hidden until you ask for one. A YAML manifest in the editor gets a gutter mark per document with Apply to Cluster, Diff with Cluster and Delete from Cluster. The cluster is polled only while the node is open, and Arro waits longer between tries when the cluster is unreachable. Settings → Tools → Kubernetes sets the paths to kubectl and kubeconfig.",
+       "text": "Kubernetes. The Services window has a Kubernetes node next to Docker: contexts and namespaces from your kubeconfig, then pods, deployments, stateful sets, services, config maps, secrets, ingresses, jobs and cron jobs with their state. Pod logs (also of the previous container), Describe, View YAML with edit and Apply, Delete, Restart, Scale, Port Forward and Exec in the terminal. Secret values stay hidden until you ask for one. A YAML manifest in the editor gets a gutter mark per document with Apply to Cluster, Diff with Cluster and Delete from Cluster. The cluster is polled only while the node is open, and Arro waits longer between tries when the cluster is unreachable. Settings → Tools → Kubernetes sets the paths to kubectl and kubeconfig.",
+       "lead": "Kubernetes"
+      },
+      {
+       "html": "<strong>Jakarta EE, Quarkus and Micronaut.</strong> The Beans window and the gutter injection marks now understand CDI scopes, <code>@Named</code>, custom qualifiers and <code>@Produces</code>, and Micronaut <code>@Singleton</code>, <code>@Prototype</code> and <code>@Factory</code> beans. Missing and ambiguous beans are reported at <code>@Inject</code>. <code>application.properties</code> and <code>.yml</code> get completion, hover and checks from Quarkus and Micronaut metadata, <code>@ConfigMapping</code> and <code>@ConfigProperties</code> classes, and Quarkus <code>%dev</code>/<code>%test</code>/<code>%prod</code> profiles. Keys in <code>@ConfigProperty</code> and <code>@Property</code> complete and navigate. The Endpoints window lists Micronaut controllers and Quarkus reactive routes on the right port. Quarkus modules get a Dev Mode run configuration.",
+       "text": "Jakarta EE, Quarkus and Micronaut. The Beans window and the gutter injection marks now understand CDI scopes, @Named, custom qualifiers and @Produces, and Micronaut @Singleton, @Prototype and @Factory beans. Missing and ambiguous beans are reported at @Inject. application.properties and .yml get completion, hover and checks from Quarkus and Micronaut metadata, @ConfigMapping and @ConfigProperties classes, and Quarkus %dev/%test/%prod profiles. Keys in @ConfigProperty and @Property complete and navigate. The Endpoints window lists Micronaut controllers and Quarkus reactive routes on the right port. Quarkus modules get a Dev Mode run configuration.",
+       "lead": "Jakarta EE, Quarkus and Micronaut"
+      },
+      {
+       "html": "<strong>Sequence diagram.</strong> Generate Sequence Diagram in the editor menu or Find Action draws the calls of a method. Project calls are followed to the depth you choose; library calls end at one external participant. Return values, activations, and <code>alt</code>/<code>opt</code>/<code>loop</code> frames come from <code>if</code>, <code>switch</code> and loops. Getters, setters, private methods and constructors can be filtered out. The diagram appears while it is still being built. Double-click a message to jump to the call; hide participants. Export to SVG, PlantUML or Mermaid.",
+       "text": "Sequence diagram. Generate Sequence Diagram in the editor menu or Find Action draws the calls of a method. Project calls are followed to the depth you choose; library calls end at one external participant. Return values, activations, and alt/opt/loop frames come from if, switch and loops. Getters, setters, private methods and constructors can be filtered out. The diagram appears while it is still being built. Double-click a message to jump to the call; hide participants. Export to SVG, PlantUML or Mermaid.",
+       "lead": "Sequence diagram"
+      },
+      {
+       "html": "<strong>Heap dumps.</strong> Capture Memory Snapshot in the Run, Debug and Profiler windows takes a heap dump of the running app with <code>jcmd</code>, and File → Open opens any <code>.hprof</code>. You get a class histogram with shallow and retained size, the dominator tree, the biggest objects and duplicate strings. Each instance shows its field values, references you can follow, and its shortest path to a GC root. The file is read in the background with progress and Cancel. Settings → Debugger sets the snapshot folder.",
+       "text": "Heap dumps. Capture Memory Snapshot in the Run, Debug and Profiler windows takes a heap dump of the running app with jcmd, and File → Open opens any .hprof. You get a class histogram with shallow and retained size, the dominator tree, the biggest objects and duplicate strings. Each instance shows its field values, references you can follow, and its shortest path to a GC root. The file is read in the background with progress and Cancel. Settings → Debugger sets the snapshot folder.",
+       "lead": "Heap dumps"
+      },
+      {
+       "html": "<strong>Flyway and Liquibase.</strong> The project tree and the Database window show a Migrations node: Flyway <code>V</code>/<code>U</code>/<code>R</code> scripts in version order, and Liquibase changelogs in XML, YAML, JSON or formatted SQL with their includes. With a database connected, each migration is marked applied, pending, failed or changed since it was applied. Duplicate versions, bad file names, edited applied migrations, missing includes and duplicate change sets are reported as inspections. Liquibase changelogs get completion of change sets and changes. Migrate, Info, Validate and Clean run through the Maven or Gradle plugin, and Clean asks first.",
+       "text": "Flyway and Liquibase. The project tree and the Database window show a Migrations node: Flyway V/U/R scripts in version order, and Liquibase changelogs in XML, YAML, JSON or formatted SQL with their includes. With a database connected, each migration is marked applied, pending, failed or changed since it was applied. Duplicate versions, bad file names, edited applied migrations, missing includes and duplicate change sets are reported as inspections. Liquibase changelogs get completion of change sets and changes. Migrate, Info, Validate and Clean run through the Maven or Gradle plugin, and Clean asks first.",
+       "lead": "Flyway and Liquibase"
+      },
+      {
+       "html": "<strong>Table data editor.</strong> Double-click a table in the Database window, or choose Open Data, to open its rows in a tab: pages of 500 rows, a <code>WHERE</code> filter, and sorting by a click on a column header. Edit cells, set <code>NULL</code>, add and delete rows. Submit (Ctrl+Enter) writes all edits in one transaction and rolls it back if a statement fails; Revert drops them. Closing a tab with unsaved edits asks first. Views, and tables without a key, are read-only. Copy cells as TSV, CSV or <code>INSERT</code> statements.",
+       "text": "Table data editor. Double-click a table in the Database window, or choose Open Data, to open its rows in a tab: pages of 500 rows, a WHERE filter, and sorting by a click on a column header. Edit cells, set NULL, add and delete rows. Submit (Ctrl+Enter) writes all edits in one transaction and rolls it back if a statement fails; Revert drops them. Closing a tab with unsaved edits asks first. Views, and tables without a key, are read-only. Copy cells as TSV, CSV or INSERT statements.",
+       "lead": "Table data editor"
+      },
+      {
+       "html": "<strong><code>.rpm</code> package and a home install on Linux.</strong> Fedora and openSUSE: <code>sudo dnf install ./arro-0.1.18-1.x86_64.rpm</code> puts Arro in <code>/opt/arro</code> with <code>arro</code> on the path and a menu shortcut. Without root, <code>./install.sh</code> from the <code>tar.gz</code> installs into <code>~/.local/share/arro</code> with a link in <code>~/.local/bin</code> and a menu entry, and <code>./install.sh --uninstall</code> removes it.",
+       "text": ".rpm package and a home install on Linux. Fedora and openSUSE: sudo dnf install ./arro-0.1.18-1.x86_64.rpm puts Arro in /opt/arro with arro on the path and a menu shortcut. Without root, ./install.sh from the tar.gz installs into ~/.local/share/arro with a link in ~/.local/bin and a menu entry, and ./install.sh --uninstall removes it.",
+       "lead": ".rpm package and a home install on Linux"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "On Windows and macOS the system spell checker runs on one dedicated thread. On macOS each request gets its own autorelease pool, and Arro falls back to hunspell when no English dictionary is installed.",
+       "text": "On Windows and macOS the system spell checker runs on one dedicated thread. On macOS each request gets its own autorelease pool, and Arro falls back to hunspell when no English dictionary is installed.",
+       "lead": null
+      },
+      {
+       "html": "The class diagram and the sequence diagram share the same pan, zoom and fit.",
+       "text": "The class diagram and the sequence diagram share the same pan, zoom and fit.",
+       "lead": null
+      },
+      {
+       "html": "Development builds take much less disk space.",
+       "text": "Development builds take much less disk space.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 8,
+    "improved": 3,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.18-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 81811043,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.18_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 80448824,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro_0.1.18_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.18-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 91230814,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.18-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 91471073,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.18-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 87491406,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.18-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 82201189,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.17",
    "tag": "v0.1.17",
