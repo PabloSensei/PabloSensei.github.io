@@ -1,63 +1,301 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-16T08:46:29.047Z",
+ "generatedAt": "2026-11-17T09:10:54.372Z",
  "latest": {
-  "version": "0.1.18",
-  "tag": "v0.1.18",
-  "date": "2026-11-16T08:46:15Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.18",
+  "version": "0.1.19",
+  "tag": "v0.1.19",
+  "date": "2026-11-17T09:10:25Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.19",
   "assets": [
    {
-    "name": "arro-0.1.18-windows-x86_64.zip",
+    "name": "arro-0.1.19-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 81811043,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-windows-x86_64.zip"
+    "size": 84565900,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.18_amd64.deb",
+    "name": "arro_0.1.19_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 80448824,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro_0.1.18_amd64.deb"
+    "size": 82530822,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro_0.1.19_amd64.deb"
    },
    {
-    "name": "arro-0.1.18-1.x86_64.rpm",
+    "name": "arro-0.1.19-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 91230814,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-1.x86_64.rpm"
+    "size": 94034385,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.18-linux-x86_64.tar.gz",
+    "name": "arro-0.1.19-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 91471073,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-linux-x86_64.tar.gz"
+    "size": 94340917,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.18-macos-aarch64.dmg",
+    "name": "arro-0.1.19-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 87491406,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-macos-aarch64.dmg"
+    "size": 90845927,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.18-macos-aarch64.zip",
+    "name": "arro-0.1.19-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 82201189,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.18/arro-0.1.18-macos-aarch64.zip"
+    "size": 85019965,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.19",
+   "tag": "v0.1.19",
+   "date": "2026-11-17T09:10:25Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.19",
+   "prerelease": false,
+   "summary": [
+    "Faster completion and navigation, themes you can pick and write yourself, a Git branches popup like IntelliJ IDEA's, highlighting for sixteen more languages, database drivers that download themselves, a lot of editor polish, and the first piece of the AI agent panel back in the build."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Themes.</strong> Seven built-in themes: Dark, Light, High Contrast, Retro, Nord, Mocha and Paper. Settings → Appearance shows them as cards for the light and dark system appearance, and <strong>Sync with OS</strong> follows the system's light or dark mode as it changes. Quick Switch Scheme (Ctrl+\\<code>) previews a theme as you move over it; Esc goes back. A theme is a short JSON file that can inherit from another one: drop it in the </code>themes<code> folder of your settings, or **Import…** an IntelliJ IDEA </code>.icls` color scheme.",
+       "text": "Themes. Seven built-in themes: Dark, Light, High Contrast, Retro, Nord, Mocha and Paper. Settings → Appearance shows them as cards for the light and dark system appearance, and Sync with OS follows the system's light or dark mode as it changes. Quick Switch Scheme (Ctrl+\\) previews a theme as you move over it; Esc goes back. A theme is a short JSON file that can inherit from another one: drop it in the themes folder of your settings, or Import… an IntelliJ IDEA .icls` color scheme.",
+       "lead": "Themes"
+      },
+      {
+       "html": "<strong>Git branches popup like IntelliJ IDEA's.</strong> Click the branch name in the title bar: a search field for branches and actions on top, then Update Project, Commit, Push, New Branch, Checkout Tag or Revision and Stash, then Recent, Local, Remote and Tags. Branch names fold into folders by their slashes (<code>feature/auth/login</code>), remote branches group by remote. Star your favourite branches; <code>main</code>, <code>master</code> and <code>develop</code> start as favourites. The arrow on a branch opens Checkout, New Branch from, Compare, Show Diff, Rebase, Merge, Push, Rename and Delete; the keyboard works throughout.",
+       "text": "Git branches popup like IntelliJ IDEA's. Click the branch name in the title bar: a search field for branches and actions on top, then Update Project, Commit, Push, New Branch, Checkout Tag or Revision and Stash, then Recent, Local, Remote and Tags. Branch names fold into folders by their slashes (feature/auth/login), remote branches group by remote. Star your favourite branches; main, master and develop start as favourites. The arrow on a branch opens Checkout, New Branch from, Compare, Show Diff, Rebase, Merge, Push, Rename and Delete; the keyboard works throughout.",
+       "lead": "Git branches popup like IntelliJ IDEA's"
+      },
+      {
+       "html": "<strong>Change marker popup.</strong> Hover or click the green or blue bar next to the line numbers to see the original text with the changed words marked, and to roll the change back, copy it, open the diff or jump to the next change. The scrollbar marks every change in the file. Marks now follow your edits right away, not after a save.",
+       "text": "Change marker popup. Hover or click the green or blue bar next to the line numbers to see the original text with the changed words marked, and to roll the change back, copy it, open the diff or jump to the next change. The scrollbar marks every change in the file. Marks now follow your edits right away, not after a save.",
+       "lead": "Change marker popup"
+      },
+      {
+       "html": "<strong>Syntax highlighting for sixteen more languages:</strong> Python, C, C++, C#, Go, Rust, Scala, PHP, Ruby, Swift, Lua, PowerShell, Protobuf, INI, diff and Makefile, with folding and indentation. Code blocks in Markdown are highlighted too.",
+       "text": "Syntax highlighting for sixteen more languages: Python, C, C++, C#, Go, Rust, Scala, PHP, Ruby, Swift, Lua, PowerShell, Protobuf, INI, diff and Makefile, with folding and indentation. Code blocks in Markdown are highlighted too.",
+       "lead": "Syntax highlighting for sixteen more languages"
+      },
+      {
+       "html": "<strong>Database drivers download themselves.</strong> A data source without a driver shows <strong>Download driver</strong>: the newest stable version comes from Maven Central, the official channel of the PostgreSQL, MySQL, MariaDB, SQLite, H2, SQL Server and Oracle drivers, its checksum is verified, and the jar is kept in Arro's data folder. You can pick another version. When a connection fails, Arro now says why: no driver, a refused password, a server that does not answer.",
+       "text": "Database drivers download themselves. A data source without a driver shows Download driver: the newest stable version comes from Maven Central, the official channel of the PostgreSQL, MySQL, MariaDB, SQLite, H2, SQL Server and Oracle drivers, its checksum is verified, and the jar is kept in Arro's data folder. You can pick another version. When a connection fails, Arro now says why: no driver, a refused password, a server that does not answer.",
+       "lead": "Database drivers download themselves"
+      },
+      {
+       "html": "<strong>Database passwords in the system keychain.</strong> <strong>Save password</strong> in a data source keeps the password in Windows Credential Manager, the macOS Keychain or the Linux Secret Service (<code>secret-tool</code> from <code>libsecret-tools</code>), never in a project file.",
+       "text": "Database passwords in the system keychain. Save password in a data source keeps the password in Windows Credential Manager, the macOS Keychain or the Linux Secret Service (secret-tool from libsecret-tools), never in a project file.",
+       "lead": "Database passwords in the system keychain"
+      },
+      {
+       "html": "<strong>File type icons</strong> for Python, C, C++, C#, Go, Rust, Scala, PHP, Ruby, Swift, Lua, PowerShell, Protobuf, Kotlin, Groovy, JavaScript, TypeScript, JSON, YAML, TOML, SQL, HTML, CSS, Markdown, shell scripts and Dockerfiles, in the project tree, tabs, Search Everywhere and Recent Files.",
+       "text": "File type icons for Python, C, C++, C#, Go, Rust, Scala, PHP, Ruby, Swift, Lua, PowerShell, Protobuf, Kotlin, Groovy, JavaScript, TypeScript, JSON, YAML, TOML, SQL, HTML, CSS, Markdown, shell scripts and Dockerfiles, in the project tree, tabs, Search Everywhere and Recent Files.",
+       "lead": "File type icons"
+      },
+      {
+       "html": "<strong>AI Sessions panel, early preview.</strong> The agent panel is back in the build: a chat with Claude Code or Codex through the Agent Client Protocol (Node.js is needed for <code>npx</code>), <code>@</code> mentions of project files, and a review of the agent's changes hunk by hunk. It is not finished, and we have not yet tried it with every agent; this is the first of several small steps.",
+       "text": "AI Sessions panel, early preview. The agent panel is back in the build: a chat with Claude Code or Codex through the Agent Client Protocol (Node.js is needed for npx), @ mentions of project files, and a review of the agent's changes hunk by hunk. It is not finished, and we have not yet tried it with every agent; this is the first of several small steps.",
+       "lead": "AI Sessions panel, early preview"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "<strong>Completion and navigation are much faster.</strong> Usage counts above declarations no longer search the whole project again on every key, which held completion back for seconds. On Spring PetClinic (our measurement): completion after a dot in about 0.3–0.6 s, the next letter in an open list in about 0.1 s, Ctrl+B in 0.1–0.3 s, a repeated Ctrl+B into the JDK in under 0.2 s. Ctrl+B and Ctrl+N use Arro's own index while the Java server is still importing, and the status bar shows that it is not ready yet.",
+       "text": "Completion and navigation are much faster. Usage counts above declarations no longer search the whole project again on every key, which held completion back for seconds. On Spring PetClinic (our measurement): completion after a dot in about 0.3–0.6 s, the next letter in an open list in about 0.1 s, Ctrl+B in 0.1–0.3 s, a repeated Ctrl+B into the JDK in under 0.2 s. Ctrl+B and Ctrl+N use Arro's own index while the Java server is still importing, and the status bar shows that it is not ready yet.",
+       "lead": "Completion and navigation are much faster"
+      },
+      {
+       "html": "<strong>Completion like IntelliJ IDEA.</strong> An exact match of what you typed comes first, then locals and fields, then common <code>java.lang</code> types, so <code>Str</code> gives <code>String</code> first. The list filters in place as you type, scrolls, takes the mouse (click to select, double-click to insert) and PgUp/PgDn/Home/End. Documentation of the selected item loads in the background. Stale requests are cancelled as you type.",
+       "text": "Completion like IntelliJ IDEA. An exact match of what you typed comes first, then locals and fields, then common java.lang types, so Str gives String first. The list filters in place as you type, scrolls, takes the mouse (click to select, double-click to insert) and PgUp/PgDn/Home/End. Documentation of the selected item loads in the background. Stale requests are cancelled as you type.",
+       "lead": "Completion like IntelliJ IDEA"
+      },
+      {
+       "html": "<strong>Ctrl+B</strong> jumps at once when there is one target and lists them when there are several; inside the current file it stays in the same tab, and Back returns. &quot;Cannot find declaration&quot; fades by itself.",
+       "text": "Ctrl+B jumps at once when there is one target and lists them when there are several; inside the current file it stays in the same tab, and Back returns. \"Cannot find declaration\" fades by itself.",
+       "lead": "Ctrl+B"
+      },
+      {
+       "html": "<strong>One editor popup at a time.</strong> Alt+Enter, completion, Parameter Info, documentation and notes no longer cover each other; Esc closes the topmost one, and switching tabs closes them.",
+       "text": "One editor popup at a time. Alt+Enter, completion, Parameter Info, documentation and notes no longer cover each other; Esc closes the topmost one, and switching tabs closes them.",
+       "lead": "One editor popup at a time"
+      },
+      {
+       "html": "<strong>Breakpoints on the line number.</strong> Click a line number to set or remove a breakpoint, drag over the numbers to select lines. Breakpoint icons no longer sit on the digits.",
+       "text": "Breakpoints on the line number. Click a line number to set or remove a breakpoint, drag over the numbers to select lines. Breakpoint icons no longer sit on the digits.",
+       "lead": "Breakpoints on the line number"
+      },
+      {
+       "html": "<strong>The line number column grows</strong> with the length of the file, so line 5238 is shown in full.",
+       "text": "The line number column grows with the length of the file, so line 5238 is shown in full.",
+       "lead": "The line number column grows"
+      },
+      {
+       "html": "<strong>Interface scale</strong> now scales the whole window on Windows — icons, panels, spacing and text. On macOS and Linux it scales text for now.",
+       "text": "Interface scale now scales the whole window on Windows — icons, panels, spacing and text. On macOS and Linux it scales text for now.",
+       "lead": "Interface scale"
+      },
+      {
+       "html": "<strong>Window title bar.</strong> Double-click the empty title bar to maximize and restore. On Linux with client-side decorations the window edges and corners resize the window. On Windows the minimize, maximize and close buttons keep working after the window is resized or snapped.",
+       "text": "Window title bar. Double-click the empty title bar to maximize and restore. On Linux with client-side decorations the window edges and corners resize the window. On Windows the minimize, maximize and close buttons keep working after the window is resized or snapped.",
+       "lead": "Window title bar"
+      },
+      {
+       "html": "<strong>Alt+Enter like IntelliJ IDEA.</strong> Quick fixes come first with a red bulb, intentions after them with a yellow one, and the change of the selected action is previewed on the right when the language server sends it. The same action is no longer listed twice. With nothing to offer, &quot;No actions available here&quot; fades by itself.",
+       "text": "Alt+Enter like IntelliJ IDEA. Quick fixes come first with a red bulb, intentions after them with a yellow one, and the change of the selected action is previewed on the right when the language server sends it. The same action is no longer listed twice. With nothing to offer, \"No actions available here\" fades by itself.",
+       "lead": "Alt+Enter like IntelliJ IDEA"
+      },
+      {
+       "html": "<strong>Selection.</strong> Dragging after a double-click selects whole words, after a triple-click whole lines.",
+       "text": "Selection. Dragging after a double-click selects whole words, after a triple-click whole lines.",
+       "lead": "Selection"
+      },
+      {
+       "html": "<strong>Ctrl+B on a declaration</strong> lists its usages, or jumps to the only one, as in IntelliJ IDEA.",
+       "text": "Ctrl+B on a declaration lists its usages, or jumps to the only one, as in IntelliJ IDEA.",
+       "lead": "Ctrl+B on a declaration"
+      },
+      {
+       "html": "<strong>Completion list:</strong> kind icons next to every entry (class, interface, enum, method, field, variable, keyword, template), and the documentation of the selected entry is rendered instead of shown as raw Markdown.",
+       "text": "Completion list: kind icons next to every entry (class, interface, enum, method, field, variable, keyword, template), and the documentation of the selected entry is rendered instead of shown as raw Markdown.",
+       "lead": "Completion list"
+      },
+      {
+       "html": "<strong>Auto-import</strong> puts the new import inside a folded import block, where it belongs.",
+       "text": "Auto-import puts the new import inside a folded import block, where it belongs.",
+       "lead": "Auto-import"
+      },
+      {
+       "html": "The Git change popup no longer takes the focus: keep typing, Esc or a click elsewhere closes it.",
+       "text": "The Git change popup no longer takes the focus: keep typing, Esc or a click elsewhere closes it.",
+       "lead": null
+      },
+      {
+       "html": "Search Everywhere, Go to Class and Go to File redraw at once as you type.",
+       "text": "Search Everywhere, Go to Class and Go to File redraw at once as you type.",
+       "lead": null
+      },
+      {
+       "html": "A shortcut such as Ctrl+\\` no longer types its character into the editor.",
+       "text": "A shortcut such as Ctrl+\\` no longer types its character into the editor.",
+       "lead": null
+      },
+      {
+       "html": "Pasting several lines into the terminal asks with <strong>Paste</strong> and <strong>Cancel</strong> buttons, next to the terminal.",
+       "text": "Pasting several lines into the terminal asks with Paste and Cancel buttons, next to the terminal.",
+       "lead": null
+      },
+      {
+       "html": "The Run/Debug Configurations dialog is larger, and its fields scroll above the buttons.",
+       "text": "The Run/Debug Configurations dialog is larger, and its fields scroll above the buttons.",
+       "lead": null
+      },
+      {
+       "html": "The branches popup shows an icon for Commit and one star per favourite branch.",
+       "text": "The branches popup shows an icon for Commit and one star per favourite branch.",
+       "lead": null
+      },
+      {
+       "html": "The editor redraws at once after the interface scale changes.",
+       "text": "The editor redraws at once after the interface scale changes.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "Dragging the last tab of a split editor group to another group no longer crashes Arro.",
+       "text": "Dragging the last tab of a split editor group to another group no longer crashes Arro.",
+       "lead": null
+      },
+      {
+       "html": "The third-party notices now name the libraries inside the bundled java-debug jar.",
+       "text": "The third-party notices now name the libraries inside the bundled java-debug jar.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 8,
+    "improved": 20,
+    "fixed": 2,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.19-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 84565900,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.19_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 82530822,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro_0.1.19_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.19-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 94034385,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.19-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 94340917,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.19-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 90845927,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.19-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 85019965,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.18",
    "tag": "v0.1.18",
