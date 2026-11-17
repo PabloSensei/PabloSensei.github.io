@@ -1,63 +1,242 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-17T09:10:54.372Z",
+ "generatedAt": "2026-11-17T19:54:06.588Z",
  "latest": {
-  "version": "0.1.19",
-  "tag": "v0.1.19",
-  "date": "2026-11-17T09:10:25Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.19",
+  "version": "0.1.20",
+  "tag": "v0.1.20",
+  "date": "2026-11-17T19:54:00Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.20",
   "assets": [
    {
-    "name": "arro-0.1.19-windows-x86_64.zip",
+    "name": "arro-0.1.20-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 84565900,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-windows-x86_64.zip"
+    "size": 85052759,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.19_amd64.deb",
+    "name": "arro_0.1.20_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 82530822,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro_0.1.19_amd64.deb"
+    "size": 82933280,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro_0.1.20_amd64.deb"
    },
    {
-    "name": "arro-0.1.19-1.x86_64.rpm",
+    "name": "arro-0.1.20-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 94034385,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-1.x86_64.rpm"
+    "size": 94513374,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.19-linux-x86_64.tar.gz",
+    "name": "arro-0.1.20-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 94340917,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-linux-x86_64.tar.gz"
+    "size": 94822340,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.19-macos-aarch64.dmg",
+    "name": "arro-0.1.20-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 90845927,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-macos-aarch64.dmg"
+    "size": 91359377,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.19-macos-aarch64.zip",
+    "name": "arro-0.1.20-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 85019965,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.19/arro-0.1.19-macos-aarch64.zip"
+    "size": 85489215,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.20",
+   "tag": "v0.1.20",
+   "date": "2026-11-17T19:54:00Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.20",
+   "prerelease": false,
+   "summary": [
+    "Arro is now free and open-source software under the GNU GPL, version 3 or later. This release also brings a Git window with a Log like IntelliJ IDEA's, the IntelliJ New UI icon set, a review of AI agent edits right in the editor, Maven that downloads itself, Java postfix templates, a much better Markdown preview and a long list of editor fixes."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Open source",
+     "items": [
+      {
+       "html": "<strong>Arro is licensed under GPL-3.0-or-later</strong>, every version including the earlier ones. Use it for anything, study and change it, share it; whoever shares a changed version shares its source too. Every build carries the license as <code>LICENSE.txt</code>.",
+       "text": "Arro is licensed under GPL-3.0-or-later, every version including the earlier ones. Use it for anything, study and change it, share it; whoever shares a changed version shares its source too. Every build carries the license as LICENSE.txt.",
+       "lead": "Arro is licensed under GPL-3.0-or-later"
+      }
+     ]
+    },
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>Git window like IntelliJ IDEA's.</strong> Alt+9 opens the Git window with <strong>Local Changes</strong> and <strong>Log</strong> tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (&quot;In N branches&quot;) on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.",
+       "text": "Git window like IntelliJ IDEA's. Alt+9 opens the Git window with Local Changes and Log tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (\"In N branches\") on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.",
+       "lead": "Git window like IntelliJ IDEA's"
+      },
+      {
+       "html": "<strong>IntelliJ New UI icons.</strong> Settings → Appearance → <strong>Icons</strong>: choose <strong>Arro</strong> or <strong>IntelliJ New UI</strong>; the whole window switches at once, in every theme. Your own icon set is a folder in <code>icons</code> of the settings folder.",
+       "text": "IntelliJ New UI icons. Settings → Appearance → Icons: choose Arro or IntelliJ New UI; the whole window switches at once, in every theme. Your own icon set is a folder in icons of the settings folder.",
+       "lead": "IntelliJ New UI icons"
+      },
+      {
+       "html": "<strong>Review AI agent edits in the editor.</strong> A file the agent changed shows each change next to the line numbers and on the scrollbar. Click a mark to see the old text and <strong>Accept</strong> or <strong>Reject</strong> that change; Ctrl+Z undoes a reject. A bar above the editor offers <strong>Accept All</strong>, <strong>Reject All</strong> and <strong>Review</strong>. The editor and the AI Sessions panel stay in sync. Binary files can be rolled back too.",
+       "text": "Review AI agent edits in the editor. A file the agent changed shows each change next to the line numbers and on the scrollbar. Click a mark to see the old text and Accept or Reject that change; Ctrl+Z undoes a reject. A bar above the editor offers Accept All, Reject All and Review. The editor and the AI Sessions panel stay in sync. Binary files can be rolled back too.",
+       "lead": "Review AI agent edits in the editor"
+      },
+      {
+       "html": "<strong>Ask AI from the editor.</strong> Ctrl+Alt+Shift+A or the editor menu sends the selection to the AI panel with your question.",
+       "text": "Ask AI from the editor. Ctrl+Alt+Shift+A or the editor menu sends the selection to the AI panel with your question.",
+       "lead": "Ask AI from the editor"
+      },
+      {
+       "html": "<strong>Maven that downloads itself.</strong> A project without <code>mvnw</code> and without Maven on the PATH no longer fails: Arro offers <strong>Download Maven</strong> (the latest Maven 3.9 from Maven Central, checksum verified, kept in Arro's data folder) or <strong>Choose Maven home…</strong>. Settings → Build Tools → Maven picks the home: the wrapper, a path, the downloaded copy or PATH. Nothing is written to the system PATH; a checkbox adds it to Arro's terminals.",
+       "text": "Maven that downloads itself. A project without mvnw and without Maven on the PATH no longer fails: Arro offers Download Maven (the latest Maven 3.9 from Maven Central, checksum verified, kept in Arro's data folder) or Choose Maven home…. Settings → Build Tools → Maven picks the home: the wrapper, a path, the downloaded copy or PATH. Nothing is written to the system PATH; a checkbox adds it to Arro's terminals.",
+       "lead": "Maven that downloads itself"
+      },
+      {
+       "html": "<strong>Java postfix templates like IntelliJ IDEA's.</strong> <code>.var</code>, <code>.field</code>, <code>.if</code>, <code>.else</code>, <code>.not</code>, <code>.null</code>, <code>.nn</code>, <code>.for</code>, <code>.fori</code>, <code>.forr</code>, <code>.iter</code>, <code>.while</code>, <code>.try</code>, <code>.twr</code>, <code>.return</code>, <code>.throw</code>, <code>.sout</code>, <code>.soutv</code>, <code>.serr</code>, <code>.par</code>, <code>.cast</code>, <code>.new</code>, <code>.lambda</code>, <code>.opt</code>, <code>.stream</code>, <code>.switch</code>, <code>.synchronized</code>, <code>.format</code>, <code>.arg</code> and <code>.inst</code>. Each appears only where it fits (<code>.for</code> on arrays and collections, <code>.not</code> on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.",
+       "text": "Java postfix templates like IntelliJ IDEA's. .var, .field, .if, .else, .not, .null, .nn, .for, .fori, .forr, .iter, .while, .try, .twr, .return, .throw, .sout, .soutv, .serr, .par, .cast, .new, .lambda, .opt, .stream, .switch, .synchronized, .format, .arg and .inst. Each appears only where it fits (.for on arrays and collections, .not on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.",
+       "lead": "Java postfix templates like IntelliJ IDEA's"
+      },
+      {
+       "html": "<strong>Project window toolbar.</strong> New, <strong>Select Opened File</strong> (Alt+F1), <strong>Expand All</strong>, <strong>Collapse All</strong>, view options with <strong>Always Select Opened File</strong>, and Hide.",
+       "text": "Project window toolbar. New, Select Opened File (Alt+F1), Expand All, Collapse All, view options with Always Select Opened File, and Hide.",
+       "lead": "Project window toolbar"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Improved",
+     "items": [
+      {
+       "html": "<strong>Markdown preview like IntelliJ IDEA's.</strong> HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing match IDEA, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <code>&lt;details&gt;</code> folds; reference links <code>[text][ref]</code> work; nested lists get their own markers.",
+       "text": "Markdown preview like IntelliJ IDEA's. HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing match IDEA, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <details> folds; reference links [text][ref] work; nested lists get their own markers.",
+       "lead": "Markdown preview like IntelliJ IDEA's"
+      },
+      {
+       "html": "<strong>Git branches popup</strong> no longer flickers under the mouse, and <strong>Branches…</strong> from the VCS menu (Alt+\\`) opens it under the branch name in the title bar.",
+       "text": "Git branches popup no longer flickers under the mouse, and Branches… from the VCS menu (Alt+\\`) opens it under the branch name in the title bar.",
+       "lead": "Git branches popup"
+      },
+      {
+       "html": "<strong>Tabs:</strong> opening a file or switching tabs scrolls the tab strip so the active tab is always visible.",
+       "text": "Tabs: opening a file or switching tabs scrolls the tab strip so the active tab is always visible.",
+       "lead": "Tabs"
+      },
+      {
+       "html": "<strong>Editor gutter like IntelliJ IDEA:</strong> click zones for change marks and fold arrows, Parameter Info and documentation placed and sized as in IDEA, and an Alt+Enter preview of the fix.",
+       "text": "Editor gutter like IntelliJ IDEA: click zones for change marks and fold arrows, Parameter Info and documentation placed and sized as in IDEA, and an Alt+Enter preview of the fix.",
+       "lead": "Editor gutter like IntelliJ IDEA"
+      },
+      {
+       "html": "<strong>Settings</strong> show the theme actually in use, and Javadoc labels in completion documentation sit on their own lines.",
+       "text": "Settings show the theme actually in use, and Javadoc labels in completion documentation sit on their own lines.",
+       "lead": "Settings"
+      },
+      {
+       "html": "<strong>Stripe icons</strong> are all grey now, and the Usages window has its icon.",
+       "text": "Stripe icons are all grey now, and the Usages window has its icon.",
+       "lead": "Stripe icons"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "The <strong>Hide</strong> button of tool windows disappeared under the mouse and did not react to clicks.",
+       "text": "The Hide button of tool windows disappeared under the mouse and did not react to clicks.",
+       "lead": null
+      },
+      {
+       "html": "Deleting a saved database password that was no longer in the keychain showed an error on Linux and macOS.",
+       "text": "Deleting a saved database password that was no longer in the keychain showed an error on Linux and macOS.",
+       "lead": null
+      },
+      {
+       "html": "The keyboard test no longer depends on the system keyboard layout.",
+       "text": "The keyboard test no longer depends on the system keyboard layout.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 7,
+    "improved": 7,
+    "fixed": 3,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.20-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 85052759,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.20_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 82933280,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro_0.1.20_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.20-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 94513374,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.20-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 94822340,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.20-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 91359377,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.20-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 85489215,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.19",
    "tag": "v0.1.19",
@@ -234,6 +413,16 @@
        "html": "The third-party notices now name the libraries inside the bundled java-debug jar.",
        "text": "The third-party notices now name the libraries inside the bundled java-debug jar.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -241,7 +430,7 @@
    "counts": {
     "new": 8,
     "improved": 20,
-    "fixed": 2,
+    "fixed": 4,
     "hood": 0,
     "limits": 0
    },
@@ -371,13 +560,23 @@
        "html": "Development builds take much less disk space.",
        "text": "Development builds take much less disk space.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
    ],
    "counts": {
     "new": 8,
-    "improved": 3,
+    "improved": 5,
     "fixed": 0,
     "hood": 0,
     "limits": 0
@@ -569,6 +768,16 @@
        "html": "Several window tests that failed only under heavy machine load are stable now.",
        "text": "Several window tests that failed only under heavy machine load are stable now.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -576,7 +785,7 @@
    "counts": {
     "new": 17,
     "improved": 2,
-    "fixed": 3,
+    "fixed": 5,
     "hood": 0,
     "limits": 0
    },
@@ -754,6 +963,16 @@
        "html": "Linux and macOS: the whole test suite is green on both systems.",
        "text": "Linux and macOS: the whole test suite is green on both systems.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -761,7 +980,7 @@
    "counts": {
     "new": 16,
     "improved": 2,
-    "fixed": 3,
+    "fixed": 5,
     "hood": 0,
     "limits": 0
    },
@@ -878,6 +1097,16 @@
        "html": "The macOS app now carries the Maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.",
        "text": "The macOS app now carries the Maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -885,7 +1114,7 @@
    "counts": {
     "new": 6,
     "improved": 2,
-    "fixed": 4,
+    "fixed": 6,
     "hood": 0,
     "limits": 0
    },
@@ -986,6 +1215,16 @@
        "html": "Programs started from Run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.",
        "text": "Programs started from Run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -993,7 +1232,7 @@
    "counts": {
     "new": 9,
     "improved": 0,
-    "fixed": 1,
+    "fixed": 3,
     "hood": 0,
     "limits": 0
    },
@@ -1074,6 +1313,16 @@
        "html": "The settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.",
        "text": "The settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -1081,7 +1330,7 @@
    "counts": {
     "new": 4,
     "improved": 0,
-    "fixed": 2,
+    "fixed": 4,
     "hood": 0,
     "limits": 0
    },
@@ -2047,6 +2296,16 @@
        "html": "Settings and data may move between versions.",
        "text": "Settings and data may move between versions.",
        "lead": null
+      },
+      {
+       "html": "---",
+       "text": "---",
+       "para": true
+      },
+      {
+       "html": "License: GPL-3.0-or-later. Arro is free and open-source software; see <a href=\"https://github.com/PabloSensei/arro/blob/main/LICENSE\">LICENSE</a>.",
+       "text": "License: GPL-3.0-or-later. Arro is free and open-source software; see LICENSE.",
+       "para": true
       }
      ]
     }
@@ -2056,7 +2315,7 @@
     "improved": 0,
     "fixed": 0,
     "hood": 0,
-    "limits": 3
+    "limits": 5
    },
    "assets": [
     {

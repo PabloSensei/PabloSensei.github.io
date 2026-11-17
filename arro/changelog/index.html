@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>20</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.19</span>, from <span data-arro-date>17 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>21</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.20</span>, from <span data-arro-date>17 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,57 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.19" data-version="0.1.19" data-total="30">
+    <article class="release is-latest" id="v0.1.20" data-version="0.1.20" data-total="17">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.20" aria-label="Link to Arro 0.1.20">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.20</h2>
+        <p class="rel-meta"><time datetime="2026-11-17T19:54:00Z">17 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.20">Release page</a></p>
+      </header>
+      <p class="rel-summary">Arro is now free and open-source software under the GNU GPL, version 3 or later. This release also brings a Git window with a Log like IntelliJ IDEA's, the IntelliJ New UI icon set, a review of AI agent edits right in the editor, Maven that downloads itself, Java postfix templates, a much better Markdown preview and a long list of editor fixes.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Open source <span class="count">1</span></h3>
+        <ul>
+          <li data-text="arro is licensed under gpl-3.0-or-later, every version including the earlier ones. use it for anything, study and change it, share it; whoever shares a changed version shares its source too. every build carries the license as license.txt."><strong>Arro is licensed under GPL-3.0-or-later</strong>, every version including the earlier ones. Use it for anything, study and change it, share it; whoever shares a changed version shares its source too. Every build carries the license as <code>LICENSE.txt</code>.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">7</span></h3>
+        <ul>
+          <li data-text="git window like intellij idea's. alt+9 opens the git window with local changes and log tabs. the log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (&quot;in n branches&quot;) on the right. double-click a file to see its diff. long histories load page by page. the git button moved to the lower group of the left stripe."><strong>Git window like IntelliJ IDEA's.</strong> Alt+9 opens the Git window with <strong>Local Changes</strong> and <strong>Log</strong> tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (&quot;In N branches&quot;) on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.</li>
+          <li data-text="intellij new ui icons. settings → appearance → icons: choose arro or intellij new ui; the whole window switches at once, in every theme. your own icon set is a folder in icons of the settings folder."><strong>IntelliJ New UI icons.</strong> Settings → Appearance → <strong>Icons</strong>: choose <strong>Arro</strong> or <strong>IntelliJ New UI</strong>; the whole window switches at once, in every theme. Your own icon set is a folder in <code>icons</code> of the settings folder.</li>
+          <li data-text="review ai agent edits in the editor. a file the agent changed shows each change next to the line numbers and on the scrollbar. click a mark to see the old text and accept or reject that change; ctrl+z undoes a reject. a bar above the editor offers accept all, reject all and review. the editor and the ai sessions panel stay in sync. binary files can be rolled back too."><strong>Review AI agent edits in the editor.</strong> A file the agent changed shows each change next to the line numbers and on the scrollbar. Click a mark to see the old text and <strong>Accept</strong> or <strong>Reject</strong> that change; Ctrl+Z undoes a reject. A bar above the editor offers <strong>Accept All</strong>, <strong>Reject All</strong> and <strong>Review</strong>. The editor and the AI Sessions panel stay in sync. Binary files can be rolled back too.</li>
+          <li data-text="ask ai from the editor. ctrl+alt+shift+a or the editor menu sends the selection to the ai panel with your question."><strong>Ask AI from the editor.</strong> Ctrl+Alt+Shift+A or the editor menu sends the selection to the AI panel with your question.</li>
+          <li data-text="maven that downloads itself. a project without mvnw and without maven on the path no longer fails: arro offers download maven (the latest maven 3.9 from maven central, checksum verified, kept in arro's data folder) or choose maven home…. settings → build tools → maven picks the home: the wrapper, a path, the downloaded copy or path. nothing is written to the system path; a checkbox adds it to arro's terminals."><strong>Maven that downloads itself.</strong> A project without <code>mvnw</code> and without Maven on the PATH no longer fails: Arro offers <strong>Download Maven</strong> (the latest Maven 3.9 from Maven Central, checksum verified, kept in Arro's data folder) or <strong>Choose Maven home…</strong>. Settings → Build Tools → Maven picks the home: the wrapper, a path, the downloaded copy or PATH. Nothing is written to the system PATH; a checkbox adds it to Arro's terminals.</li>
+          <li data-text="java postfix templates like intellij idea's. .var, .field, .if, .else, .not, .null, .nn, .for, .fori, .forr, .iter, .while, .try, .twr, .return, .throw, .sout, .soutv, .serr, .par, .cast, .new, .lambda, .opt, .stream, .switch, .synchronized, .format, .arg and .inst. each appears only where it fits (.for on arrays and collections, .not on booleans), tab expands it, and when the expression is ambiguous you pick it from a list."><strong>Java postfix templates like IntelliJ IDEA's.</strong> <code>.var</code>, <code>.field</code>, <code>.if</code>, <code>.else</code>, <code>.not</code>, <code>.null</code>, <code>.nn</code>, <code>.for</code>, <code>.fori</code>, <code>.forr</code>, <code>.iter</code>, <code>.while</code>, <code>.try</code>, <code>.twr</code>, <code>.return</code>, <code>.throw</code>, <code>.sout</code>, <code>.soutv</code>, <code>.serr</code>, <code>.par</code>, <code>.cast</code>, <code>.new</code>, <code>.lambda</code>, <code>.opt</code>, <code>.stream</code>, <code>.switch</code>, <code>.synchronized</code>, <code>.format</code>, <code>.arg</code> and <code>.inst</code>. Each appears only where it fits (<code>.for</code> on arrays and collections, <code>.not</code> on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.</li>
+          <li data-text="project window toolbar. new, select opened file (alt+f1), expand all, collapse all, view options with always select opened file, and hide."><strong>Project window toolbar.</strong> New, <strong>Select Opened File</strong> (Alt+F1), <strong>Expand All</strong>, <strong>Collapse All</strong>, view options with <strong>Always Select Opened File</strong>, and Hide.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">6</span></h3>
+        <ul>
+          <li data-text="markdown preview like intellij idea's. html comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing match idea, and code blocks are highlighted by their language. tables size their columns to the content and wrap; &lt;details&gt; folds; reference links [text][ref] work; nested lists get their own markers."><strong>Markdown preview like IntelliJ IDEA's.</strong> HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing match IDEA, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <code>&lt;details&gt;</code> folds; reference links <code>[text][ref]</code> work; nested lists get their own markers.</li>
+          <li data-text="git branches popup no longer flickers under the mouse, and branches… from the vcs menu (alt+\`) opens it under the branch name in the title bar."><strong>Git branches popup</strong> no longer flickers under the mouse, and <strong>Branches…</strong> from the VCS menu (Alt+\`) opens it under the branch name in the title bar.</li>
+          <li data-text="tabs: opening a file or switching tabs scrolls the tab strip so the active tab is always visible."><strong>Tabs:</strong> opening a file or switching tabs scrolls the tab strip so the active tab is always visible.</li>
+          <li data-text="editor gutter like intellij idea: click zones for change marks and fold arrows, parameter info and documentation placed and sized as in idea, and an alt+enter preview of the fix."><strong>Editor gutter like IntelliJ IDEA:</strong> click zones for change marks and fold arrows, Parameter Info and documentation placed and sized as in IDEA, and an Alt+Enter preview of the fix.</li>
+          <li data-text="settings show the theme actually in use, and javadoc labels in completion documentation sit on their own lines."><strong>Settings</strong> show the theme actually in use, and Javadoc labels in completion documentation sit on their own lines.</li>
+          <li data-text="stripe icons are all grey now, and the usages window has its icon."><strong>Stripe icons</strong> are all grey now, and the Usages window has its icon.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the hide button of tool windows disappeared under the mouse and did not react to clicks.">The <strong>Hide</strong> button of tool windows disappeared under the mouse and did not react to clicks.</li>
+          <li data-text="deleting a saved database password that was no longer in the keychain showed an error on linux and macos.">Deleting a saved database password that was no longer in the keychain showed an error on Linux and macOS.</li>
+          <li data-text="the keyboard test no longer depends on the system keyboard layout.">The keyboard test no longer depends on the system keyboard layout.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.19" data-version="0.1.19" data-total="32">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.19" aria-label="Link to Arro 0.1.19">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.19</h2>
-        <p class="rel-meta"><time datetime="2026-11-17T09:10:25Z">17 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.19">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-17T09:10:25Z">17 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.19">Release page</a></p>
       </header>
       <p class="rel-summary">Faster completion and navigation, themes you can pick and write yourself, a Git branches popup like IntelliJ IDEA's, highlighting for sixteen more languages, database drivers that download themselves, a lot of editor polish, and the first piece of the AI agent panel back in the build.</p>
       <section class="rel-group" data-kind="new">
@@ -127,15 +173,17 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="fixed">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">2</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">4</span></h3>
         <ul>
           <li data-text="dragging the last tab of a split editor group to another group no longer crashes arro.">Dragging the last tab of a split editor group to another group no longer crashes Arro.</li>
           <li data-text="the third-party notices now name the libraries inside the bundled java-debug jar.">The third-party notices now name the libraries inside the bundled java-debug jar.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
 
-    <article class="release" id="v0.1.18" data-version="0.1.18" data-total="11">
+    <article class="release" id="v0.1.18" data-version="0.1.18" data-total="13">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.18" aria-label="Link to Arro 0.1.18">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.18</h2>
@@ -156,16 +204,18 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="improved">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">3</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Improved <span class="count">5</span></h3>
         <ul>
           <li data-text="on windows and macos the system spell checker runs on one dedicated thread. on macos each request gets its own autorelease pool, and arro falls back to hunspell when no english dictionary is installed.">On Windows and macOS the system spell checker runs on one dedicated thread. On macOS each request gets its own autorelease pool, and Arro falls back to hunspell when no English dictionary is installed.</li>
           <li data-text="the class diagram and the sequence diagram share the same pan, zoom and fit.">The class diagram and the sequence diagram share the same pan, zoom and fit.</li>
           <li data-text="development builds take much less disk space.">Development builds take much less disk space.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
 
-    <article class="release" id="v0.1.17" data-version="0.1.17" data-total="22">
+    <article class="release" id="v0.1.17" data-version="0.1.17" data-total="24">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.17" aria-label="Link to Arro 0.1.17">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.17</h2>
@@ -202,16 +252,18 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="fixed">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">5</span></h3>
         <ul>
           <li data-text="the editor context menu has its separator before copy path again.">The editor context menu has its separator before Copy Path again.</li>
           <li data-text="file → exit asks about unsaved edits made in the resource bundle table for files without a tab, names them, and saves or drops them as chosen.">File → Exit asks about unsaved edits made in the Resource Bundle table for files without a tab, names them, and saves or drops them as chosen.</li>
           <li data-text="several window tests that failed only under heavy machine load are stable now.">Several window tests that failed only under heavy machine load are stable now.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
 
-    <article class="release" id="v0.1.16" data-version="0.1.16" data-total="21">
+    <article class="release" id="v0.1.16" data-version="0.1.16" data-total="23">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.16" aria-label="Link to Arro 0.1.16">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.16</h2>
@@ -247,16 +299,18 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="fixed">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">5</span></h3>
         <ul>
           <li data-text="typing in a large merge result no longer eats memory: the editor counts the widest line once per frame and caches it.">Typing in a large merge result no longer eats memory: the editor counts the widest line once per frame and caches it.</li>
           <li data-text="the debugger adapter closes cleanly when its last session ends.">The debugger adapter closes cleanly when its last session ends.</li>
           <li data-text="linux and macos: the whole test suite is green on both systems.">Linux and macOS: the whole test suite is green on both systems.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
 
-    <article class="release" id="v0.1.15" data-version="0.1.15" data-total="12">
+    <article class="release" id="v0.1.15" data-version="0.1.15" data-total="14">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.15" aria-label="Link to Arro 0.1.15">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.15</h2>
@@ -282,17 +336,19 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="fixed">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">4</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">6</span></h3>
         <ul>
           <li data-text="on linux and macos, saving a read-only file replaced it silently; it now fails as on windows.">On Linux and macOS, saving a read-only file replaced it silently; it now fails as on Windows.</li>
           <li data-text="field watchpoints now stop on the real java debugger; they used to stay unverified.">Field watchpoints now stop on the real Java debugger; they used to stay unverified.</li>
           <li data-text="one file no longer opens in two tabs when its path is typed in another case (windows, macos).">One file no longer opens in two tabs when its path is typed in another case (Windows, macOS).</li>
           <li data-text="the macos app now carries the maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.">The macOS app now carries the Maven extension and the test listener it was missing, and finds them, the language servers and the notices inside the bundle.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
 
-    <article class="release" id="v0.1.14" data-version="0.1.14" data-total="10">
+    <article class="release" id="v0.1.14" data-version="0.1.14" data-total="12">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.14" aria-label="Link to Arro 0.1.14">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.14</h2>
@@ -314,14 +370,16 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="fixed">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">1</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
         <ul>
           <li data-text="programs started from run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.">Programs started from Run configurations and builds could leave console programs running after they stopped, when those programs escaped the process job; they now end with their owner, while window programs you started stay open.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
 
-    <article class="release" id="v0.1.13" data-version="0.1.13" data-total="6">
+    <article class="release" id="v0.1.13" data-version="0.1.13" data-total="8">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.13" aria-label="Link to Arro 0.1.13">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.13</h2>
@@ -338,10 +396,12 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="fixed">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">2</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">4</span></h3>
         <ul>
           <li data-text="the caret was missing in many text fields, among them the commit message, new file and rename prompts, the merge conflict message, the git log filter, change signature, copy class, the settings fields, keymap search, templates, go to custom region, the start screen and the run and debug console input. all of them now show the caret and the selection, and the commit message shows each line on its own row."><strong>The caret was missing in many text fields</strong>, among them the commit message, New File and Rename prompts, the merge conflict message, the Git log filter, Change Signature, Copy Class, the Settings fields, Keymap search, templates, Go to Custom Region, the start screen and the Run and Debug console input. All of them now show the caret and the selection, and the commit message shows each line on its own row.</li>
           <li data-text="the settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.">The settings file and the plugin switches are written atomically, so a crash in the middle of a save no longer leaves a cut-off settings file.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
@@ -651,11 +711,13 @@
         </ul>
       </section>
       <section class="rel-group" data-kind="limits">
-        <h3><span class="kind-mark" aria-hidden="true"></span>Known limitations <span class="count">3</span></h3>
+        <h3><span class="kind-mark" aria-hidden="true"></span>Known limitations <span class="count">5</span></h3>
         <ul>
           <li data-text="windows 11 x86-64 only.">Windows 11 x86-64 only.</li>
           <li data-text="the ai agent panel is not in this version yet.">The AI agent panel is not in this version yet.</li>
           <li data-text="settings and data may move between versions.">Settings and data may move between versions.</li>
+          <li data-text="---">---</li>
+          <li data-text="license: gpl-3.0-or-later. arro is free and open-source software; see license.">License: GPL-3.0-or-later. Arro is free and open-source software; see <a href="https://github.com/PabloSensei/arro/blob/main/LICENSE">LICENSE</a>.</li>
         </ul>
       </section>
     </article>
