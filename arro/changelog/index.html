@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>22</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.21</span>, from <span data-arro-date>18 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>23</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.22</span>, from <span data-arro-date>18 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,55 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.21" data-version="0.1.21" data-total="27">
+    <article class="release is-latest" id="v0.1.22" data-version="0.1.22" data-total="20">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.22" aria-label="Link to Arro 0.1.22">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.22</h2>
+        <p class="rel-meta"><time datetime="2026-11-18T19:49:38Z">18 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.22">Release page</a></p>
+      </header>
+      <p class="rel-summary">Agents can now debug, not just read and run: they set breakpoints, start a test under the debugger and look at the stack and variables, all in Arro's own Debug window. Errors go to an agent from where you see them, with <strong>Fix with AI</strong>. The AI Sessions window got simpler, shows who is connected over MCP, and lets you select and copy text. The SQL console can format, expand templates and run <code>.sql</code> files.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>AI agents <span class="count">9</span></h3>
+        <ul>
+          <li data-text="the debugger over mcp. agents can set and remove breakpoints (with conditions and log messages), start a test or a run configuration under the debugger (with your permission), wait for a stop, read the stack and the variables, evaluate an expression and step. everything shows in the debug window and the editor, and you can continue or stop the session yourself."><strong>The debugger over MCP.</strong> Agents can set and remove breakpoints (with conditions and log messages), start a test or a run configuration under the debugger (with your permission), wait for a stop, read the stack and the variables, evaluate an expression and step. Everything shows in the Debug window and the editor, and you can continue or stop the session yourself.</li>
+          <li data-text="fix with ai. the last row of alt+enter on an error, the menu of a row in problems, and the menu of a failed test send the problem to the agent: the file and line, the message, the code around it or the stack. on an exception in the run console, explain with ai asks why it happened. the rows go away when ai features are off in settings."><strong>Fix with AI.</strong> The last row of Alt+Enter on an error, the menu of a row in Problems, and the menu of a failed test send the problem to the agent: the file and line, the message, the code around it or the stack. On an exception in the Run console, <strong>Explain with AI</strong> asks why it happened. The rows go away when AI features are off in Settings.</li>
+          <li data-text="connected agents. a new agents tab in ai sessions lists every mcp client of the project, its calls with arguments, result and time, and what it may do for the session. revoke takes back &quot;allow for this session&quot;, disconnect closes the client's session. the status bar shows how many agents are connected and when one is running a build, tests or an edit."><strong>Connected agents.</strong> A new <strong>Agents</strong> tab in AI Sessions lists every MCP client of the project, its calls with arguments, result and time, and what it may do for the session. <strong>Revoke</strong> takes back &quot;Allow for this session&quot;, <strong>Disconnect</strong> closes the client's session. The status bar shows how many agents are connected and when one is running a build, tests or an edit.</li>
+          <li data-text="a simpler ai sessions window."><strong>A simpler AI Sessions window.</strong></li>
+          <li data-text="one new session button with a menu of agents instead of a row of buttons.">One <strong>New Session</strong> button with a menu of agents instead of a row of buttons.</li>
+          <li data-text="chat, terminal and changes look like tabs, with counts."><strong>Chat</strong>, <strong>Terminal</strong> and <strong>Changes</strong> look like tabs, with counts.</li>
+          <li data-text="the notes about api keys and sandboxes moved into the tooltips of the agents.">The notes about API keys and sandboxes moved into the tooltips of the agents.</li>
+          <li data-text="text in the session's terminal and in the changes diff can be selected and copied. drag to select; shift+drag works even when the agent takes the mouse.">Text in the session's terminal and in the Changes diff can be selected and copied. Drag to select; Shift+drag works even when the agent takes the mouse.</li>
+          <li data-text="changes tab. the changes tab scrolls through long diffs. add ide tools to agents.md says what it did right next to the button, and the file shows up in changes at once."><strong>Changes tab.</strong> The Changes tab scrolls through long diffs. <strong>Add IDE tools to AGENTS.md</strong> says what it did right next to the button, and the file shows up in Changes at once.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">7</span></h3>
+        <ul>
+          <li data-text="sql console, step 3."><strong>SQL console, step 3.</strong></li>
+          <li data-text="reformat code (ctrl+alt+l) for sql in the console and in .sql files, with keyword case in settings."><strong>Reformat Code</strong> (Ctrl+Alt+L) for SQL in the console and in <code>.sql</code> files, with keyword case in Settings.</li>
+          <li data-text="live templates sel, selw, ins, upd, del and cnt.">Live templates <code>sel</code>, <code>selw</code>, <code>ins</code>, <code>upd</code>, <code>del</code> and <code>cnt</code>.</li>
+          <li data-text="a data source picker on .sql files of the project, ctrl+enter for the statement under the caret.">A data source picker on <code>.sql</code> files of the project, Ctrl+Enter for the statement under the caret.</li>
+          <li data-text="run sql script runs the whole file with a result tab per statement. it stops at the first error, or keeps going if you choose so in settings."><strong>Run SQL Script</strong> runs the whole file with a result tab per statement. It stops at the first error, or keeps going if you choose so in Settings.</li>
+          <li data-text="menus taller than the window fit the window and scroll, with the arrow keys, home and end following the selection."><strong>Menus taller than the window</strong> fit the window and scroll, with the arrow keys, Home and End following the selection.</li>
+          <li data-text="analyze stack trace shows the frames of the project at once and the library frames when the java server answers. if the server is not ready, it says so."><strong>Analyze Stack Trace</strong> shows the frames of the project at once and the library frames when the Java server answers. If the server is not ready, it says so.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">4</span></h3>
+        <ul>
+          <li data-text="stop now cancels a run that is still being prepared (building, resolving the classpath), so the program does not start after you stopped it.">Stop now cancels a run that is still being prepared (building, resolving the classpath), so the program does not start after you stopped it.</li>
+          <li data-text="closing a window no longer hangs when the claude code bridge cannot reach its own port.">Closing a window no longer hangs when the Claude Code bridge cannot reach its own port.</li>
+          <li data-text="arro no longer copies the text of every open file on each keystroke for the mcp tools; tools read the text when they ask.">Arro no longer copies the text of every open file on each keystroke for the MCP tools; tools read the text when they ask.</li>
+          <li data-text="tool archives whose folders have no permission bits unpack on linux and macos.">Tool archives whose folders have no permission bits unpack on Linux and macOS.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.21" data-version="0.1.21" data-total="27">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.21" aria-label="Link to Arro 0.1.21">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.21</h2>
-        <p class="rel-meta"><time datetime="2026-11-18T13:53:50Z">18 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.21">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-18T13:53:50Z">18 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.21">Release page</a></p>
       </header>
       <p class="rel-summary">AI agents now work with Arro, not around it. Claude Code, Codex, Cursor or any MCP client can connect to the open project with one command. They can read diagnostics, usages and the project structure, propose edits you review hunk by hunk, and build and run tests with your permission. This release also brings an SQL console like DataGrip's, Gradle that downloads itself, and a Console tab in the Git window.</p>
       <section class="rel-group" data-kind="improved">

@@ -1,63 +1,251 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-18T13:54:16.760Z",
+ "generatedAt": "2026-11-18T19:50:13.484Z",
  "latest": {
-  "version": "0.1.21",
-  "tag": "v0.1.21",
-  "date": "2026-11-18T13:53:50Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.21",
+  "version": "0.1.22",
+  "tag": "v0.1.22",
+  "date": "2026-11-18T19:49:38Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.22",
   "assets": [
    {
-    "name": "arro-0.1.21-windows-x86_64.zip",
+    "name": "arro-0.1.22-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 85872176,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-windows-x86_64.zip"
+    "size": 86024829,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.21_amd64.deb",
+    "name": "arro_0.1.22_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 84828770,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro_0.1.21_amd64.deb"
+    "size": 85047444,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro_0.1.22_amd64.deb"
    },
    {
-    "name": "arro-0.1.21-1.x86_64.rpm",
+    "name": "arro-0.1.22-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 97308995,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-1.x86_64.rpm"
+    "size": 97518814,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.21-linux-x86_64.tar.gz",
+    "name": "arro-0.1.22-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 97657139,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-linux-x86_64.tar.gz"
+    "size": 97866817,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.21-macos-aarch64.dmg",
+    "name": "arro-0.1.22-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 92217915,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-macos-aarch64.dmg"
+    "size": 92470183,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.21-macos-aarch64.zip",
+    "name": "arro-0.1.22-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 86379340,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-macos-aarch64.zip"
+    "size": 86604162,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.22",
+   "tag": "v0.1.22",
+   "date": "2026-11-18T19:49:38Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.22",
+   "prerelease": false,
+   "summary": [
+    "Agents can now debug, not just read and run: they set breakpoints, start a test under the debugger and look at the stack and variables, all in Arro's own Debug window. Errors go to an agent from where you see them, with <strong>Fix with AI</strong>. The AI Sessions window got simpler, shows who is connected over MCP, and lets you select and copy text. The SQL console can format, expand templates and run <code>.sql</code> files."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "AI agents",
+     "items": [
+      {
+       "html": "<strong>The debugger over MCP.</strong> Agents can set and remove breakpoints (with conditions and log messages), start a test or a run configuration under the debugger (with your permission), wait for a stop, read the stack and the variables, evaluate an expression and step. Everything shows in the Debug window and the editor, and you can continue or stop the session yourself.",
+       "text": "The debugger over MCP. Agents can set and remove breakpoints (with conditions and log messages), start a test or a run configuration under the debugger (with your permission), wait for a stop, read the stack and the variables, evaluate an expression and step. Everything shows in the Debug window and the editor, and you can continue or stop the session yourself.",
+       "lead": "The debugger over MCP"
+      },
+      {
+       "html": "<strong>Fix with AI.</strong> The last row of Alt+Enter on an error, the menu of a row in Problems, and the menu of a failed test send the problem to the agent: the file and line, the message, the code around it or the stack. On an exception in the Run console, <strong>Explain with AI</strong> asks why it happened. The rows go away when AI features are off in Settings.",
+       "text": "Fix with AI. The last row of Alt+Enter on an error, the menu of a row in Problems, and the menu of a failed test send the problem to the agent: the file and line, the message, the code around it or the stack. On an exception in the Run console, Explain with AI asks why it happened. The rows go away when AI features are off in Settings.",
+       "lead": "Fix with AI"
+      },
+      {
+       "html": "<strong>Connected agents.</strong> A new <strong>Agents</strong> tab in AI Sessions lists every MCP client of the project, its calls with arguments, result and time, and what it may do for the session. <strong>Revoke</strong> takes back &quot;Allow for this session&quot;, <strong>Disconnect</strong> closes the client's session. The status bar shows how many agents are connected and when one is running a build, tests or an edit.",
+       "text": "Connected agents. A new Agents tab in AI Sessions lists every MCP client of the project, its calls with arguments, result and time, and what it may do for the session. Revoke takes back \"Allow for this session\", Disconnect closes the client's session. The status bar shows how many agents are connected and when one is running a build, tests or an edit.",
+       "lead": "Connected agents"
+      },
+      {
+       "html": "<strong>A simpler AI Sessions window.</strong>",
+       "text": "A simpler AI Sessions window.",
+       "lead": "A simpler AI Sessions window"
+      },
+      {
+       "html": "One <strong>New Session</strong> button with a menu of agents instead of a row of buttons.",
+       "text": "One New Session button with a menu of agents instead of a row of buttons.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Chat</strong>, <strong>Terminal</strong> and <strong>Changes</strong> look like tabs, with counts.",
+       "text": "Chat, Terminal and Changes look like tabs, with counts.",
+       "lead": "Chat"
+      },
+      {
+       "html": "The notes about API keys and sandboxes moved into the tooltips of the agents.",
+       "text": "The notes about API keys and sandboxes moved into the tooltips of the agents.",
+       "lead": null
+      },
+      {
+       "html": "Text in the session's terminal and in the Changes diff can be selected and copied. Drag to select; Shift+drag works even when the agent takes the mouse.",
+       "text": "Text in the session's terminal and in the Changes diff can be selected and copied. Drag to select; Shift+drag works even when the agent takes the mouse.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Changes tab.</strong> The Changes tab scrolls through long diffs. <strong>Add IDE tools to AGENTS.md</strong> says what it did right next to the button, and the file shows up in Changes at once.",
+       "text": "Changes tab. The Changes tab scrolls through long diffs. Add IDE tools to AGENTS.md says what it did right next to the button, and the file shows up in Changes at once.",
+       "lead": "Changes tab"
+      }
+     ]
+    },
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>SQL console, step 3.</strong>",
+       "text": "SQL console, step 3.",
+       "lead": "SQL console, step 3"
+      },
+      {
+       "html": "<strong>Reformat Code</strong> (Ctrl+Alt+L) for SQL in the console and in <code>.sql</code> files, with keyword case in Settings.",
+       "text": "Reformat Code (Ctrl+Alt+L) for SQL in the console and in .sql files, with keyword case in Settings.",
+       "lead": "Reformat Code"
+      },
+      {
+       "html": "Live templates <code>sel</code>, <code>selw</code>, <code>ins</code>, <code>upd</code>, <code>del</code> and <code>cnt</code>.",
+       "text": "Live templates sel, selw, ins, upd, del and cnt.",
+       "lead": null
+      },
+      {
+       "html": "A data source picker on <code>.sql</code> files of the project, Ctrl+Enter for the statement under the caret.",
+       "text": "A data source picker on .sql files of the project, Ctrl+Enter for the statement under the caret.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Run SQL Script</strong> runs the whole file with a result tab per statement. It stops at the first error, or keeps going if you choose so in Settings.",
+       "text": "Run SQL Script runs the whole file with a result tab per statement. It stops at the first error, or keeps going if you choose so in Settings.",
+       "lead": "Run SQL Script"
+      },
+      {
+       "html": "<strong>Menus taller than the window</strong> fit the window and scroll, with the arrow keys, Home and End following the selection.",
+       "text": "Menus taller than the window fit the window and scroll, with the arrow keys, Home and End following the selection.",
+       "lead": "Menus taller than the window"
+      },
+      {
+       "html": "<strong>Analyze Stack Trace</strong> shows the frames of the project at once and the library frames when the Java server answers. If the server is not ready, it says so.",
+       "text": "Analyze Stack Trace shows the frames of the project at once and the library frames when the Java server answers. If the server is not ready, it says so.",
+       "lead": "Analyze Stack Trace"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "Stop now cancels a run that is still being prepared (building, resolving the classpath), so the program does not start after you stopped it.",
+       "text": "Stop now cancels a run that is still being prepared (building, resolving the classpath), so the program does not start after you stopped it.",
+       "lead": null
+      },
+      {
+       "html": "Closing a window no longer hangs when the Claude Code bridge cannot reach its own port.",
+       "text": "Closing a window no longer hangs when the Claude Code bridge cannot reach its own port.",
+       "lead": null
+      },
+      {
+       "html": "Arro no longer copies the text of every open file on each keystroke for the MCP tools; tools read the text when they ask.",
+       "text": "Arro no longer copies the text of every open file on each keystroke for the MCP tools; tools read the text when they ask.",
+       "lead": null
+      },
+      {
+       "html": "Tool archives whose folders have no permission bits unpack on Linux and macOS.",
+       "text": "Tool archives whose folders have no permission bits unpack on Linux and macOS.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 7,
+    "improved": 9,
+    "fixed": 4,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.22-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 86024829,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.22_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 85047444,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro_0.1.22_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.22-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 97518814,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.22-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 97866817,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.22-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 92470183,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.22-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 86604162,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.21",
    "tag": "v0.1.21",
