@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>21</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.20</span>, from <span data-arro-date>17 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>22</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.21</span>, from <span data-arro-date>18 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,62 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.20" data-version="0.1.20" data-total="17">
+    <article class="release is-latest" id="v0.1.21" data-version="0.1.21" data-total="27">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.21" aria-label="Link to Arro 0.1.21">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.21</h2>
+        <p class="rel-meta"><time datetime="2026-11-18T13:53:50Z">18 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.21">Release page</a></p>
+      </header>
+      <p class="rel-summary">AI agents now work with Arro, not around it. Claude Code, Codex, Cursor or any MCP client can connect to the open project with one command. They can read diagnostics, usages and the project structure, propose edits you review hunk by hunk, and build and run tests with your permission. This release also brings an SQL console like DataGrip's, Gradle that downloads itself, and a Console tab in the Git window.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>AI agents <span class="count">14</span></h3>
+        <ul>
+          <li data-text="arro over mcp for any agent. while a project is open, arro serves its tools over mcp on the local machine. the new arro-mcp program ships next to arro and finds the running arro from the current folder. settings → tools → ai → mcp server has ready lines with a copy button:"><strong>Arro over MCP for any agent.</strong> While a project is open, Arro serves its tools over MCP on the local machine. The new <code>arro-mcp</code> program ships next to <code>arro</code> and finds the running Arro from the current folder. Settings → Tools → AI → <strong>MCP Server</strong> has ready lines with a Copy button:</li>
+          <li data-text="claude code: claude mcp add arro -- &lt;path&gt;/arro-mcp;">Claude Code: <code>claude mcp add arro -- &lt;path&gt;/arro-mcp</code>;</li>
+          <li data-text="codex: a config.toml snippet;">Codex: a <code>config.toml</code> snippet;</li>
+          <li data-text="any other client: a json snippet.">any other client: a JSON snippet.</li>
+          <li data-text="read tools. agents can ask arro instead of reading files and grepping:"><strong>Read tools.</strong> Agents can ask Arro instead of reading files and grepping:</li>
+          <li data-text="usages of a symbol;">usages of a symbol;</li>
+          <li data-text="type and call hierarchies;">type and call hierarchies;</li>
+          <li data-text="the project structure: modules, source roots, jdk, dependencies;">the project structure: modules, source roots, JDK, dependencies;</li>
+          <li data-text="text search over the index;">text search over the index;</li>
+          <li data-text="a file as the editor sees it, unsaved edits included;">a file as the editor sees it, unsaved edits included;</li>
+          <li data-text="git changes and diffs.">Git changes and diffs.</li>
+          <li data-text="edits you review first. propose_edit shows the agent's change in the editor as hunks with accept, reject and accept all; nothing is written until you decide. rename_symbol renames through the language server with a preview, and organize imports and reformat are there too."><strong>Edits you review first.</strong> <code>propose_edit</code> shows the agent's change in the editor as hunks with <strong>Accept</strong>, <strong>Reject</strong> and <strong>Accept All</strong>; nothing is written until you decide. <code>rename_symbol</code> renames through the language server with a preview, and organize imports and reformat are there too.</li>
+          <li data-text="build, tests and run with your permission. agents can build, run tests (a class, a method, a package or all), and start run configurations and read their output. everything appears in the run and tests windows, marked with the agent's name. each request asks allow once, allow for this session or deny; no answer means no."><strong>Build, tests and run with your permission.</strong> Agents can build, run tests (a class, a method, a package or all), and start run configurations and read their output. Everything appears in the Run and Tests windows, marked with the agent's name. Each request asks <strong>Allow once</strong>, <strong>Allow for this session</strong> or <strong>Deny</strong>; no answer means no.</li>
+          <li data-text="claude code in arro's terminal sees the ide. run claude in arro's terminal and it connects by itself (&quot;claude code connected&quot; in the terminal tabs). it reads arro's diagnostics, including files that are not open, and shows its proposed edits as the same hunk review."><strong>Claude Code in Arro's terminal sees the IDE.</strong> Run <code>claude</code> in Arro's terminal and it connects by itself (&quot;Claude Code connected&quot; in the terminal tabs). It reads Arro's diagnostics, including files that are not open, and shows its proposed edits as the same hunk review.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="new">
+        <h3><span class="kind-mark" aria-hidden="true"></span>New <span class="count">11</span></h3>
+        <ul>
+          <li data-text="sql console like datagrip's."><strong>SQL console like DataGrip's.</strong></li>
+          <li data-text="completion from the source's schema: tables after from and join, columns after an alias, keywords and functions.">Completion from the source's schema: tables after <code>FROM</code> and <code>JOIN</code>, columns after an alias, keywords and functions.</li>
+          <li data-text="unknown tables and columns are underlined.">Unknown tables and columns are underlined.</li>
+          <li data-text="every statement gets its own result tab with its time and row count. a limited result says &quot;500+ rows&quot; and counts only when you ask.">Every statement gets its own result tab with its time and row count. A limited result says &quot;500+ rows&quot; and counts only when you ask.</li>
+          <li data-text="stop (ctrl+f2) cancels a long query."><strong>Stop</strong> (Ctrl+F2) cancels a long query.</li>
+          <li data-text="transactions: auto-commit or manual with commit and rollback.">Transactions: <strong>Auto-commit</strong> or <strong>Manual</strong> with <strong>Commit</strong> and <strong>Rollback</strong>.</li>
+          <li data-text="export to csv, json or sql insert.">Export to CSV, JSON or SQL INSERT.</li>
+          <li data-text="explain plan (alt+shift+e)."><strong>Explain Plan</strong> (Alt+Shift+E).</li>
+          <li data-text="query parameters ?, :name and ${name} ask for values and pass them as real parameters.">Query parameters <code>?</code>, <code>:name</code> and <code>${name}</code> ask for values and pass them as real parameters.</li>
+          <li data-text="gradle that downloads itself. a gradle project without gradlew and without gradle on the path offers download gradle (the latest release from services.gradle.org, checksum verified) or choose gradle home…. arro says so when the downloaded gradle does not run on the project jdk."><strong>Gradle that downloads itself.</strong> A Gradle project without <code>gradlew</code> and without Gradle on the PATH offers <strong>Download Gradle</strong> (the latest release from services.gradle.org, checksum verified) or <strong>Choose Gradle home…</strong>. Arro says so when the downloaded Gradle does not run on the project JDK.</li>
+          <li data-text="git window: console tab. every git command arro ran, with its output; failed ones in red, background ones hidden until you ask. a failed push, pull, commit or update offers show in console."><strong>Git window: Console tab.</strong> Every git command Arro ran, with its output; failed ones in red, background ones hidden until you ask. A failed Push, Pull, Commit or Update offers <strong>Show in Console</strong>.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">2</span></h3>
+        <ul>
+          <li data-text="downloaded maven and gradle keep their executable bits on linux and macos.">Downloaded Maven and Gradle keep their executable bits on Linux and macOS.</li>
+          <li data-text="several flaky window tests (kubernetes, services) are stable now.">Several flaky window tests (Kubernetes, Services) are stable now.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.20" data-version="0.1.20" data-total="17">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.20" aria-label="Link to Arro 0.1.20">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.20</h2>
-        <p class="rel-meta"><time datetime="2026-11-17T19:54:00Z">17 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.20">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-17T19:54:00Z">17 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.20">Release page</a></p>
       </header>
       <p class="rel-summary">Arro is now free and open-source software under the GNU GPL, version 3 or later. This release also brings a Git window with a Log like IntelliJ IDEA's, the IntelliJ New UI icon set, a review of AI agent edits right in the editor, Maven that downloads itself, Java postfix templates, a much better Markdown preview and a long list of editor fixes.</p>
       <section class="rel-group" data-kind="improved">

@@ -1,63 +1,286 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-17T19:54:06.588Z",
+ "generatedAt": "2026-11-18T13:54:16.760Z",
  "latest": {
-  "version": "0.1.20",
-  "tag": "v0.1.20",
-  "date": "2026-11-17T19:54:00Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.20",
+  "version": "0.1.21",
+  "tag": "v0.1.21",
+  "date": "2026-11-18T13:53:50Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.21",
   "assets": [
    {
-    "name": "arro-0.1.20-windows-x86_64.zip",
+    "name": "arro-0.1.21-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 85052759,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-windows-x86_64.zip"
+    "size": 85872176,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.20_amd64.deb",
+    "name": "arro_0.1.21_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 82933280,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro_0.1.20_amd64.deb"
+    "size": 84828770,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro_0.1.21_amd64.deb"
    },
    {
-    "name": "arro-0.1.20-1.x86_64.rpm",
+    "name": "arro-0.1.21-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 94513374,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-1.x86_64.rpm"
+    "size": 97308995,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.20-linux-x86_64.tar.gz",
+    "name": "arro-0.1.21-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 94822340,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-linux-x86_64.tar.gz"
+    "size": 97657139,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.20-macos-aarch64.dmg",
+    "name": "arro-0.1.21-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 91359377,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-macos-aarch64.dmg"
+    "size": 92217915,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.20-macos-aarch64.zip",
+    "name": "arro-0.1.21-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 85489215,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.20/arro-0.1.20-macos-aarch64.zip"
+    "size": 86379340,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.21",
+   "tag": "v0.1.21",
+   "date": "2026-11-18T13:53:50Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.21",
+   "prerelease": false,
+   "summary": [
+    "AI agents now work with Arro, not around it. Claude Code, Codex, Cursor or any MCP client can connect to the open project with one command. They can read diagnostics, usages and the project structure, propose edits you review hunk by hunk, and build and run tests with your permission. This release also brings an SQL console like DataGrip's, Gradle that downloads itself, and a Console tab in the Git window."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "AI agents",
+     "items": [
+      {
+       "html": "<strong>Arro over MCP for any agent.</strong> While a project is open, Arro serves its tools over MCP on the local machine. The new <code>arro-mcp</code> program ships next to <code>arro</code> and finds the running Arro from the current folder. Settings → Tools → AI → <strong>MCP Server</strong> has ready lines with a Copy button:",
+       "text": "Arro over MCP for any agent. While a project is open, Arro serves its tools over MCP on the local machine. The new arro-mcp program ships next to arro and finds the running Arro from the current folder. Settings → Tools → AI → MCP Server has ready lines with a Copy button:",
+       "lead": "Arro over MCP for any agent"
+      },
+      {
+       "html": "Claude Code: <code>claude mcp add arro -- &lt;path&gt;/arro-mcp</code>;",
+       "text": "Claude Code: claude mcp add arro -- <path>/arro-mcp;",
+       "lead": null
+      },
+      {
+       "html": "Codex: a <code>config.toml</code> snippet;",
+       "text": "Codex: a config.toml snippet;",
+       "lead": null
+      },
+      {
+       "html": "any other client: a JSON snippet.",
+       "text": "any other client: a JSON snippet.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Read tools.</strong> Agents can ask Arro instead of reading files and grepping:",
+       "text": "Read tools. Agents can ask Arro instead of reading files and grepping:",
+       "lead": "Read tools"
+      },
+      {
+       "html": "usages of a symbol;",
+       "text": "usages of a symbol;",
+       "lead": null
+      },
+      {
+       "html": "type and call hierarchies;",
+       "text": "type and call hierarchies;",
+       "lead": null
+      },
+      {
+       "html": "the project structure: modules, source roots, JDK, dependencies;",
+       "text": "the project structure: modules, source roots, JDK, dependencies;",
+       "lead": null
+      },
+      {
+       "html": "text search over the index;",
+       "text": "text search over the index;",
+       "lead": null
+      },
+      {
+       "html": "a file as the editor sees it, unsaved edits included;",
+       "text": "a file as the editor sees it, unsaved edits included;",
+       "lead": null
+      },
+      {
+       "html": "Git changes and diffs.",
+       "text": "Git changes and diffs.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Edits you review first.</strong> <code>propose_edit</code> shows the agent's change in the editor as hunks with <strong>Accept</strong>, <strong>Reject</strong> and <strong>Accept All</strong>; nothing is written until you decide. <code>rename_symbol</code> renames through the language server with a preview, and organize imports and reformat are there too.",
+       "text": "Edits you review first. propose_edit shows the agent's change in the editor as hunks with Accept, Reject and Accept All; nothing is written until you decide. rename_symbol renames through the language server with a preview, and organize imports and reformat are there too.",
+       "lead": "Edits you review first"
+      },
+      {
+       "html": "<strong>Build, tests and run with your permission.</strong> Agents can build, run tests (a class, a method, a package or all), and start run configurations and read their output. Everything appears in the Run and Tests windows, marked with the agent's name. Each request asks <strong>Allow once</strong>, <strong>Allow for this session</strong> or <strong>Deny</strong>; no answer means no.",
+       "text": "Build, tests and run with your permission. Agents can build, run tests (a class, a method, a package or all), and start run configurations and read their output. Everything appears in the Run and Tests windows, marked with the agent's name. Each request asks Allow once, Allow for this session or Deny; no answer means no.",
+       "lead": "Build, tests and run with your permission"
+      },
+      {
+       "html": "<strong>Claude Code in Arro's terminal sees the IDE.</strong> Run <code>claude</code> in Arro's terminal and it connects by itself (&quot;Claude Code connected&quot; in the terminal tabs). It reads Arro's diagnostics, including files that are not open, and shows its proposed edits as the same hunk review.",
+       "text": "Claude Code in Arro's terminal sees the IDE. Run claude in Arro's terminal and it connects by itself (\"Claude Code connected\" in the terminal tabs). It reads Arro's diagnostics, including files that are not open, and shows its proposed edits as the same hunk review.",
+       "lead": "Claude Code in Arro's terminal sees the IDE"
+      }
+     ]
+    },
+    {
+     "kind": "new",
+     "title": "New",
+     "items": [
+      {
+       "html": "<strong>SQL console like DataGrip's.</strong>",
+       "text": "SQL console like DataGrip's.",
+       "lead": "SQL console like DataGrip's"
+      },
+      {
+       "html": "Completion from the source's schema: tables after <code>FROM</code> and <code>JOIN</code>, columns after an alias, keywords and functions.",
+       "text": "Completion from the source's schema: tables after FROM and JOIN, columns after an alias, keywords and functions.",
+       "lead": null
+      },
+      {
+       "html": "Unknown tables and columns are underlined.",
+       "text": "Unknown tables and columns are underlined.",
+       "lead": null
+      },
+      {
+       "html": "Every statement gets its own result tab with its time and row count. A limited result says &quot;500+ rows&quot; and counts only when you ask.",
+       "text": "Every statement gets its own result tab with its time and row count. A limited result says \"500+ rows\" and counts only when you ask.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Stop</strong> (Ctrl+F2) cancels a long query.",
+       "text": "Stop (Ctrl+F2) cancels a long query.",
+       "lead": "Stop"
+      },
+      {
+       "html": "Transactions: <strong>Auto-commit</strong> or <strong>Manual</strong> with <strong>Commit</strong> and <strong>Rollback</strong>.",
+       "text": "Transactions: Auto-commit or Manual with Commit and Rollback.",
+       "lead": null
+      },
+      {
+       "html": "Export to CSV, JSON or SQL INSERT.",
+       "text": "Export to CSV, JSON or SQL INSERT.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Explain Plan</strong> (Alt+Shift+E).",
+       "text": "Explain Plan (Alt+Shift+E).",
+       "lead": "Explain Plan"
+      },
+      {
+       "html": "Query parameters <code>?</code>, <code>:name</code> and <code>${name}</code> ask for values and pass them as real parameters.",
+       "text": "Query parameters ?, :name and ${name} ask for values and pass them as real parameters.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Gradle that downloads itself.</strong> A Gradle project without <code>gradlew</code> and without Gradle on the PATH offers <strong>Download Gradle</strong> (the latest release from services.gradle.org, checksum verified) or <strong>Choose Gradle home…</strong>. Arro says so when the downloaded Gradle does not run on the project JDK.",
+       "text": "Gradle that downloads itself. A Gradle project without gradlew and without Gradle on the PATH offers Download Gradle (the latest release from services.gradle.org, checksum verified) or Choose Gradle home…. Arro says so when the downloaded Gradle does not run on the project JDK.",
+       "lead": "Gradle that downloads itself"
+      },
+      {
+       "html": "<strong>Git window: Console tab.</strong> Every git command Arro ran, with its output; failed ones in red, background ones hidden until you ask. A failed Push, Pull, Commit or Update offers <strong>Show in Console</strong>.",
+       "text": "Git window: Console tab. Every git command Arro ran, with its output; failed ones in red, background ones hidden until you ask. A failed Push, Pull, Commit or Update offers Show in Console.",
+       "lead": "Git window: Console tab"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "Downloaded Maven and Gradle keep their executable bits on Linux and macOS.",
+       "text": "Downloaded Maven and Gradle keep their executable bits on Linux and macOS.",
+       "lead": null
+      },
+      {
+       "html": "Several flaky window tests (Kubernetes, Services) are stable now.",
+       "text": "Several flaky window tests (Kubernetes, Services) are stable now.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 11,
+    "improved": 14,
+    "fixed": 2,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.21-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 85872176,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.21_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 84828770,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro_0.1.21_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.21-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 97308995,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.21-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 97657139,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.21-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 92217915,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.21-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 86379340,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.21/arro-0.1.21-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.20",
    "tag": "v0.1.20",
