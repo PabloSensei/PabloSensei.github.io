@@ -1,63 +1,438 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-18T19:50:13.484Z",
+ "generatedAt": "2026-11-19T16:00:22.998Z",
  "latest": {
-  "version": "0.1.22",
-  "tag": "v0.1.22",
-  "date": "2026-11-18T19:49:38Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.22",
+  "version": "0.1.23",
+  "tag": "v0.1.23",
+  "date": "2026-11-19T16:00:09Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.23",
   "assets": [
    {
-    "name": "arro-0.1.22-windows-x86_64.zip",
+    "name": "arro-0.1.23-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 86024829,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-windows-x86_64.zip"
+    "size": 86457040,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.22_amd64.deb",
+    "name": "arro_0.1.23_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 85047444,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro_0.1.22_amd64.deb"
+    "size": 85295420,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro_0.1.23_amd64.deb"
    },
    {
-    "name": "arro-0.1.22-1.x86_64.rpm",
+    "name": "arro-0.1.23-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 97518814,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-1.x86_64.rpm"
+    "size": 97919183,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.22-linux-x86_64.tar.gz",
+    "name": "arro-0.1.23-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 97866817,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-linux-x86_64.tar.gz"
+    "size": 98271585,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.22-macos-aarch64.dmg",
+    "name": "arro-0.1.23-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 92470183,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-macos-aarch64.dmg"
+    "size": 92891138,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.22-macos-aarch64.zip",
+    "name": "arro-0.1.23-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 86604162,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.22/arro-0.1.22-macos-aarch64.zip"
+    "size": 86993710,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.23",
+   "tag": "v0.1.23",
+   "date": "2026-11-19T16:00:09Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.23",
+   "prerelease": false,
+   "summary": [
+    "A big step toward daily work without IDEA. The editor, the find bar and completion behave like IDEA. The diff window got IDEA's toolbar and look. You can commit only some hunks of a file and push from a Push window. The Run and Debug consoles link to sources and can be searched. Alt+F8 opens a real Evaluate window, and Attach to Process lists the running JVMs. Interface scale now works on Linux and macOS too."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Editor",
+     "items": [
+      {
+       "html": "<strong>Soft-Wrap and whitespaces</strong> apply to every editor tab and are remembered.",
+       "text": "Soft-Wrap and whitespaces apply to every editor tab and are remembered.",
+       "lead": "Soft-Wrap and whitespaces"
+      },
+      {
+       "html": "<strong>Paste history</strong> survives a restart.",
+       "text": "Paste history survives a restart.",
+       "lead": "Paste history"
+      },
+      {
+       "html": "<strong>Ctrl+F7</strong> finds usages in the file and F3 walks them.",
+       "text": "Ctrl+F7 finds usages in the file and F3 walks them.",
+       "lead": "Ctrl+F7"
+      },
+      {
+       "html": "<strong>Backspace in the indent</strong> goes back to the previous indent level.",
+       "text": "Backspace in the indent goes back to the previous indent level.",
+       "lead": "Backspace in the indent"
+      },
+      {
+       "html": "<strong>Ctrl+W</strong> grows the selection even where the parser cannot help.",
+       "text": "Ctrl+W grows the selection even where the parser cannot help.",
+       "lead": "Ctrl+W"
+      },
+      {
+       "html": "<strong>Column selection from the keyboard.</strong>",
+       "text": "Column selection from the keyboard.",
+       "lead": "Column selection from the keyboard"
+      },
+      {
+       "html": "<strong>Move Statement and Move Line</strong> work for every caret. Move Statement moves whole statements, members and arguments.",
+       "text": "Move Statement and Move Line work for every caret. Move Statement moves whole statements, members and arguments.",
+       "lead": "Move Statement and Move Line"
+      },
+      {
+       "html": "<strong>Smart Enter</strong> (Ctrl+Shift+Enter) completes the statement like IDEA, on every caret. It also works before a comment and in multi-line headers.",
+       "text": "Smart Enter (Ctrl+Shift+Enter) completes the statement like IDEA, on every caret. It also works before a comment and in multi-line headers.",
+       "lead": "Smart Enter"
+      },
+      {
+       "html": "<strong>The editor menu</strong> has the familiar rows: Folding, Copy Reference, Column Selection Mode.",
+       "text": "The editor menu has the familiar rows: Folding, Copy Reference, Column Selection Mode.",
+       "lead": "The editor menu"
+      },
+      {
+       "html": "<strong>Nested editor splits.</strong> Groups can be split inside splits, have their own dividers, are saved and restored, and can be unsplit.",
+       "text": "Nested editor splits. Groups can be split inside splits, have their own dividers, are saved and restored, and can be unsplit.",
+       "lead": "Nested editor splits"
+      },
+      {
+       "html": "<strong>Refactor → Copy…</strong> is in the menu and works from Refactor This.",
+       "text": "Refactor → Copy… is in the menu and works from Refactor This.",
+       "lead": "Refactor → Copy…"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Completion",
+     "items": [
+      {
+       "html": "<strong>CamelHumps and typos.</strong> <code>StrB</code> finds <code>StringBuilder</code>, and a small typo still finds the name.",
+       "text": "CamelHumps and typos. StrB finds StringBuilder, and a small typo still finds the name.",
+       "lead": "CamelHumps and typos"
+      },
+      {
+       "html": "<strong>Second Ctrl+Space</strong> shows everything the server offers. A third one opens the documentation of the selected row.",
+       "text": "Second Ctrl+Space shows everything the server offers. A third one opens the documentation of the selected row.",
+       "lead": "Second Ctrl+Space"
+      },
+      {
+       "html": "<strong>Usage order.</strong> The rows you pick more often move up.",
+       "text": "Usage order. The rows you pick more often move up.",
+       "lead": "Usage order"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Find",
+     "items": [
+      {
+       "html": "<strong>The find bar</strong> has <strong>In Selection</strong>, a query history that is kept, and <strong>Preserve case</strong> in the file and in Replace in Files.",
+       "text": "The find bar has In Selection, a query history that is kept, and Preserve case in the file and in Replace in Files.",
+       "lead": "The find bar"
+      },
+      {
+       "html": "<strong>Previews.</strong> Find in Files and the palettes show a preview of the file. The breadcrumbs open a list of neighbours.",
+       "text": "Previews. Find in Files and the palettes show a preview of the file. The breadcrumbs open a list of neighbours.",
+       "lead": "Previews"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Diff window",
+     "items": [
+      {
+       "html": "<strong>A toolbar like IDEA:</strong>",
+       "text": "A toolbar like IDEA:",
+       "lead": "A toolbar like IDEA"
+      },
+      {
+       "html": "Previous / Next Difference (Shift+F7 / F7; at the last difference F7 goes to the next file);",
+       "text": "Previous / Next Difference (Shift+F7 / F7; at the last difference F7 goes to the next file);",
+       "lead": null
+      },
+      {
+       "html": "Jump to Source (F4);",
+       "text": "Jump to Source (F4);",
+       "lead": null
+      },
+      {
+       "html": "Previous / Next File (Alt+← / Alt+→) with an <strong>n/m files</strong> counter over the whole change set;",
+       "text": "Previous / Next File (Alt+← / Alt+→) with an n/m files counter over the whole change set;",
+       "lead": null
+      },
+      {
+       "html": "Collapse Unchanged Fragments, a differences counter, and Side-by-side / Unified.",
+       "text": "Collapse Unchanged Fragments, a differences counter, and Side-by-side / Unified.",
+       "lead": null
+      },
+      {
+       "html": "<strong>The gear menu</strong> remembers its options: whitespace mode, highlighting by line, word or character, synchronized scrolling, line numbers, soft wraps, context lines, and <strong>Open in Editor Tab</strong>.",
+       "text": "The gear menu remembers its options: whitespace mode, highlighting by line, word or character, synchronized scrolling, line numbers, soft wraps, context lines, and Open in Editor Tab.",
+       "lead": "The gear menu"
+      },
+      {
+       "html": "<strong>Side headers</strong> show a lock on read-only sides, the revision and the path. Unchanged lines collapse into a clickable &quot;N unchanged lines&quot;.",
+       "text": "Side headers show a lock on read-only sides, the revision and the path. Unchanged lines collapse into a clickable \"N unchanged lines\".",
+       "lead": "Side headers"
+      },
+      {
+       "html": "<strong>Between the panes:</strong> curves connect the hunks, with <code>&gt;&gt;</code>, <code>&lt;&lt;</code> and <code>×</code> on every hunk and both sides' line numbers. The scrollbars carry change marks.",
+       "text": "Between the panes: curves connect the hunks, with >>, << and × on every hunk and both sides' line numbers. The scrollbars carry change marks.",
+       "lead": "Between the panes"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Git",
+     "items": [
+      {
+       "html": "<strong>Partial commit.</strong> In the diff of the Commit window every hunk has a tick. Unticked hunks stay out of the commit and in the working tree.",
+       "text": "Partial commit. In the diff of the Commit window every hunk has a tick. Unticked hunks stay out of the commit and in the working tree.",
+       "lead": "Partial commit"
+      },
+      {
+       "html": "<strong>Push window</strong> (Ctrl+Shift+K):",
+       "text": "Push window (Ctrl+Shift+K):",
+       "lead": "Push window"
+      },
+      {
+       "html": "the commits to push and their files;",
+       "text": "the commits to push and their files;",
+       "lead": null
+      },
+      {
+       "html": "the remote, the target branch and Push tags;",
+       "text": "the remote, the target branch and Push tags;",
+       "lead": null
+      },
+      {
+       "html": "<strong>Force Push</strong> with a warning, done as <code>--force-with-lease</code>;",
+       "text": "Force Push with a warning, done as --force-with-lease;",
+       "lead": "Force Push"
+      },
+      {
+       "html": "a branch without an upstream is pushed with <code>--set-upstream</code>.",
+       "text": "a branch without an upstream is pushed with --set-upstream.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Run and Debug",
+     "items": [
+      {
+       "html": "<strong>Stack frames</strong> in the Run and Debug consoles are links to the sources.",
+       "text": "Stack frames in the Run and Debug consoles are links to the sources.",
+       "lead": "Stack frames"
+      },
+      {
+       "html": "<strong>Console search and filter</strong> with Ctrl+F, case, word and regex, F3 / Shift+F3.",
+       "text": "Console search and filter with Ctrl+F, case, word and regex, F3 / Shift+F3.",
+       "lead": "Console search and filter"
+      },
+      {
+       "html": "<strong>Mute Breakpoints</strong> turns all breakpoints off without removing them.",
+       "text": "Mute Breakpoints turns all breakpoints off without removing them.",
+       "lead": "Mute Breakpoints"
+      },
+      {
+       "html": "<strong>Run and Debug from the test tree:</strong> Run/Debug of a single test or class from its menu, and <strong>Rerun Failed Tests</strong>.",
+       "text": "Run and Debug from the test tree: Run/Debug of a single test or class from its menu, and Rerun Failed Tests.",
+       "lead": "Run and Debug from the test tree"
+      },
+      {
+       "html": "<strong>Evaluate window</strong> (Alt+F8):",
+       "text": "Evaluate window (Alt+F8):",
+       "lead": "Evaluate window"
+      },
+      {
+       "html": "a multi-line expression;",
+       "text": "a multi-line expression;",
+       "lead": null
+      },
+      {
+       "html": "the result as a tree;",
+       "text": "the result as a tree;",
+       "lead": null
+      },
+      {
+       "html": "history;",
+       "text": "history;",
+       "lead": null
+      },
+      {
+       "html": "<strong>Add to Watches</strong>;",
+       "text": "Add to Watches;",
+       "lead": "Add to Watches"
+      },
+      {
+       "html": "the selection taken as the expression.",
+       "text": "the selection taken as the expression.",
+       "lead": null
+      },
+      {
+       "html": "<strong>Attach to Process</strong> lists the running JVMs with a debug port. You can still type <code>host:port</code>.",
+       "text": "Attach to Process lists the running JVMs with a debug port. You can still type host:port.",
+       "lead": "Attach to Process"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Problems and fixes",
+     "items": [
+      {
+       "html": "<strong>Problems</strong> has <strong>Current File</strong> and <strong>Project Errors</strong> tabs. Project errors are grouped by file.",
+       "text": "Problems has Current File and Project Errors tabs. Project errors are grouped by file.",
+       "lead": "Problems"
+      },
+      {
+       "html": "<strong>Fix all '…' in file</strong> in Alt+Enter fixes every case in the file in one edit and one Undo.",
+       "text": "Fix all '…' in file in Alt+Enter fixes every case in the file in one edit and one Undo.",
+       "lead": "Fix all '…' in file"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Project tree",
+     "items": [
+      {
+       "html": "<strong>Compact Middle Packages.</strong> A chain of single-child folders shows as one row: <code>com.example.demo</code> under source roots, <code>a/b/c</code> elsewhere. Toggle it in ⋮ → Tree Appearance.",
+       "text": "Compact Middle Packages. A chain of single-child folders shows as one row: com.example.demo under source roots, a/b/c elsewhere. Toggle it in ⋮ → Tree Appearance.",
+       "lead": "Compact Middle Packages"
+      },
+      {
+       "html": "<strong>Ctrl+drag copies</strong> instead of moving. Java files go through Copy Class.",
+       "text": "Ctrl+drag copies instead of moving. Java files go through Copy Class.",
+       "lead": "Ctrl+drag copies"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Linux and macOS",
+     "items": [
+      {
+       "html": "<strong>Interface scale</strong> grows the whole window, as on Windows.",
+       "text": "Interface scale grows the whole window, as on Windows.",
+       "lead": "Interface scale"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixed",
+     "items": [
+      {
+       "html": "Every icon name the code asks for has a file in both icon sets.",
+       "text": "Every icon name the code asks for has a file in both icon sets.",
+       "lead": null
+      },
+      {
+       "html": "The last section of a Settings page scrolls clear of the buttons.",
+       "text": "The last section of a Settings page scrolls clear of the buttons.",
+       "lead": null
+      },
+      {
+       "html": "The diff gutter no longer crashes when old change marks pointed past the end of the text after a large edit.",
+       "text": "The diff gutter no longer crashes when old change marks pointed past the end of the text after a large edit.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 46,
+    "fixed": 3,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.23-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 86457040,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.23_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 85295420,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro_0.1.23_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.23-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 97919183,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.23-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 98271585,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.23-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 92891138,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.23-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 86993710,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.22",
    "tag": "v0.1.22",

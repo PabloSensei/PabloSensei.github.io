@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>23</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.22</span>, from <span data-arro-date>18 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>24</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.23</span>, from <span data-arro-date>19 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,119 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.22" data-version="0.1.22" data-total="20">
+    <article class="release is-latest" id="v0.1.23" data-version="0.1.23" data-total="49">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.23" aria-label="Link to Arro 0.1.23">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.23</h2>
+        <p class="rel-meta"><time datetime="2026-11-19T16:00:09Z">19 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.23">Release page</a></p>
+      </header>
+      <p class="rel-summary">A big step toward daily work without IDEA. The editor, the find bar and completion behave like IDEA. The diff window got IDEA's toolbar and look. You can commit only some hunks of a file and push from a Push window. The Run and Debug consoles link to sources and can be searched. Alt+F8 opens a real Evaluate window, and Attach to Process lists the running JVMs. Interface scale now works on Linux and macOS too.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor <span class="count">11</span></h3>
+        <ul>
+          <li data-text="soft-wrap and whitespaces apply to every editor tab and are remembered."><strong>Soft-Wrap and whitespaces</strong> apply to every editor tab and are remembered.</li>
+          <li data-text="paste history survives a restart."><strong>Paste history</strong> survives a restart.</li>
+          <li data-text="ctrl+f7 finds usages in the file and f3 walks them."><strong>Ctrl+F7</strong> finds usages in the file and F3 walks them.</li>
+          <li data-text="backspace in the indent goes back to the previous indent level."><strong>Backspace in the indent</strong> goes back to the previous indent level.</li>
+          <li data-text="ctrl+w grows the selection even where the parser cannot help."><strong>Ctrl+W</strong> grows the selection even where the parser cannot help.</li>
+          <li data-text="column selection from the keyboard."><strong>Column selection from the keyboard.</strong></li>
+          <li data-text="move statement and move line work for every caret. move statement moves whole statements, members and arguments."><strong>Move Statement and Move Line</strong> work for every caret. Move Statement moves whole statements, members and arguments.</li>
+          <li data-text="smart enter (ctrl+shift+enter) completes the statement like idea, on every caret. it also works before a comment and in multi-line headers."><strong>Smart Enter</strong> (Ctrl+Shift+Enter) completes the statement like IDEA, on every caret. It also works before a comment and in multi-line headers.</li>
+          <li data-text="the editor menu has the familiar rows: folding, copy reference, column selection mode."><strong>The editor menu</strong> has the familiar rows: Folding, Copy Reference, Column Selection Mode.</li>
+          <li data-text="nested editor splits. groups can be split inside splits, have their own dividers, are saved and restored, and can be unsplit."><strong>Nested editor splits.</strong> Groups can be split inside splits, have their own dividers, are saved and restored, and can be unsplit.</li>
+          <li data-text="refactor → copy… is in the menu and works from refactor this."><strong>Refactor → Copy…</strong> is in the menu and works from Refactor This.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Completion <span class="count">3</span></h3>
+        <ul>
+          <li data-text="camelhumps and typos. strb finds stringbuilder, and a small typo still finds the name."><strong>CamelHumps and typos.</strong> <code>StrB</code> finds <code>StringBuilder</code>, and a small typo still finds the name.</li>
+          <li data-text="second ctrl+space shows everything the server offers. a third one opens the documentation of the selected row."><strong>Second Ctrl+Space</strong> shows everything the server offers. A third one opens the documentation of the selected row.</li>
+          <li data-text="usage order. the rows you pick more often move up."><strong>Usage order.</strong> The rows you pick more often move up.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Find <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the find bar has in selection, a query history that is kept, and preserve case in the file and in replace in files."><strong>The find bar</strong> has <strong>In Selection</strong>, a query history that is kept, and <strong>Preserve case</strong> in the file and in Replace in Files.</li>
+          <li data-text="previews. find in files and the palettes show a preview of the file. the breadcrumbs open a list of neighbours."><strong>Previews.</strong> Find in Files and the palettes show a preview of the file. The breadcrumbs open a list of neighbours.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Diff window <span class="count">8</span></h3>
+        <ul>
+          <li data-text="a toolbar like idea:"><strong>A toolbar like IDEA:</strong></li>
+          <li data-text="previous / next difference (shift+f7 / f7; at the last difference f7 goes to the next file);">Previous / Next Difference (Shift+F7 / F7; at the last difference F7 goes to the next file);</li>
+          <li data-text="jump to source (f4);">Jump to Source (F4);</li>
+          <li data-text="previous / next file (alt+← / alt+→) with an n/m files counter over the whole change set;">Previous / Next File (Alt+← / Alt+→) with an <strong>n/m files</strong> counter over the whole change set;</li>
+          <li data-text="collapse unchanged fragments, a differences counter, and side-by-side / unified.">Collapse Unchanged Fragments, a differences counter, and Side-by-side / Unified.</li>
+          <li data-text="the gear menu remembers its options: whitespace mode, highlighting by line, word or character, synchronized scrolling, line numbers, soft wraps, context lines, and open in editor tab."><strong>The gear menu</strong> remembers its options: whitespace mode, highlighting by line, word or character, synchronized scrolling, line numbers, soft wraps, context lines, and <strong>Open in Editor Tab</strong>.</li>
+          <li data-text="side headers show a lock on read-only sides, the revision and the path. unchanged lines collapse into a clickable &quot;n unchanged lines&quot;."><strong>Side headers</strong> show a lock on read-only sides, the revision and the path. Unchanged lines collapse into a clickable &quot;N unchanged lines&quot;.</li>
+          <li data-text="between the panes: curves connect the hunks, with &gt;&gt;, &lt;&lt; and × on every hunk and both sides' line numbers. the scrollbars carry change marks."><strong>Between the panes:</strong> curves connect the hunks, with <code>&gt;&gt;</code>, <code>&lt;&lt;</code> and <code>×</code> on every hunk and both sides' line numbers. The scrollbars carry change marks.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Git <span class="count">6</span></h3>
+        <ul>
+          <li data-text="partial commit. in the diff of the commit window every hunk has a tick. unticked hunks stay out of the commit and in the working tree."><strong>Partial commit.</strong> In the diff of the Commit window every hunk has a tick. Unticked hunks stay out of the commit and in the working tree.</li>
+          <li data-text="push window (ctrl+shift+k):"><strong>Push window</strong> (Ctrl+Shift+K):</li>
+          <li data-text="the commits to push and their files;">the commits to push and their files;</li>
+          <li data-text="the remote, the target branch and push tags;">the remote, the target branch and Push tags;</li>
+          <li data-text="force push with a warning, done as --force-with-lease;"><strong>Force Push</strong> with a warning, done as <code>--force-with-lease</code>;</li>
+          <li data-text="a branch without an upstream is pushed with --set-upstream.">a branch without an upstream is pushed with <code>--set-upstream</code>.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Run and Debug <span class="count">11</span></h3>
+        <ul>
+          <li data-text="stack frames in the run and debug consoles are links to the sources."><strong>Stack frames</strong> in the Run and Debug consoles are links to the sources.</li>
+          <li data-text="console search and filter with ctrl+f, case, word and regex, f3 / shift+f3."><strong>Console search and filter</strong> with Ctrl+F, case, word and regex, F3 / Shift+F3.</li>
+          <li data-text="mute breakpoints turns all breakpoints off without removing them."><strong>Mute Breakpoints</strong> turns all breakpoints off without removing them.</li>
+          <li data-text="run and debug from the test tree: run/debug of a single test or class from its menu, and rerun failed tests."><strong>Run and Debug from the test tree:</strong> Run/Debug of a single test or class from its menu, and <strong>Rerun Failed Tests</strong>.</li>
+          <li data-text="evaluate window (alt+f8):"><strong>Evaluate window</strong> (Alt+F8):</li>
+          <li data-text="a multi-line expression;">a multi-line expression;</li>
+          <li data-text="the result as a tree;">the result as a tree;</li>
+          <li data-text="history;">history;</li>
+          <li data-text="add to watches;"><strong>Add to Watches</strong>;</li>
+          <li data-text="the selection taken as the expression.">the selection taken as the expression.</li>
+          <li data-text="attach to process lists the running jvms with a debug port. you can still type host:port."><strong>Attach to Process</strong> lists the running JVMs with a debug port. You can still type <code>host:port</code>.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Problems and fixes <span class="count">2</span></h3>
+        <ul>
+          <li data-text="problems has current file and project errors tabs. project errors are grouped by file."><strong>Problems</strong> has <strong>Current File</strong> and <strong>Project Errors</strong> tabs. Project errors are grouped by file.</li>
+          <li data-text="fix all '…' in file in alt+enter fixes every case in the file in one edit and one undo."><strong>Fix all '…' in file</strong> in Alt+Enter fixes every case in the file in one edit and one Undo.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Project tree <span class="count">2</span></h3>
+        <ul>
+          <li data-text="compact middle packages. a chain of single-child folders shows as one row: com.example.demo under source roots, a/b/c elsewhere. toggle it in ⋮ → tree appearance."><strong>Compact Middle Packages.</strong> A chain of single-child folders shows as one row: <code>com.example.demo</code> under source roots, <code>a/b/c</code> elsewhere. Toggle it in ⋮ → Tree Appearance.</li>
+          <li data-text="ctrl+drag copies instead of moving. java files go through copy class."><strong>Ctrl+drag copies</strong> instead of moving. Java files go through Copy Class.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Linux and macOS <span class="count">1</span></h3>
+        <ul>
+          <li data-text="interface scale grows the whole window, as on windows."><strong>Interface scale</strong> grows the whole window, as on Windows.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixed <span class="count">3</span></h3>
+        <ul>
+          <li data-text="every icon name the code asks for has a file in both icon sets.">Every icon name the code asks for has a file in both icon sets.</li>
+          <li data-text="the last section of a settings page scrolls clear of the buttons.">The last section of a Settings page scrolls clear of the buttons.</li>
+          <li data-text="the diff gutter no longer crashes when old change marks pointed past the end of the text after a large edit.">The diff gutter no longer crashes when old change marks pointed past the end of the text after a large edit.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.22" data-version="0.1.22" data-total="20">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.22" aria-label="Link to Arro 0.1.22">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.22</h2>
-        <p class="rel-meta"><time datetime="2026-11-18T19:49:38Z">18 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.22">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-18T19:49:38Z">18 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.22">Release page</a></p>
       </header>
       <p class="rel-summary">Agents can now debug, not just read and run: they set breakpoints, start a test under the debugger and look at the stack and variables, all in Arro's own Debug window. Errors go to an agent from where you see them, with <strong>Fix with AI</strong>. The AI Sessions window got simpler, shows who is connected over MCP, and lets you select and copy text. The SQL console can format, expand templates and run <code>.sql</code> files.</p>
       <section class="rel-group" data-kind="improved">
