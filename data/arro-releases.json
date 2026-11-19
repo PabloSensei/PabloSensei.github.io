@@ -1,6 +1,6 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-19T16:00:22.998Z",
+ "generatedAt": "2026-11-19T17:33:41.980Z",
  "latest": {
   "version": "0.1.23",
   "tag": "v0.1.23",
@@ -65,7 +65,7 @@
    "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.23",
    "prerelease": false,
    "summary": [
-    "A big step toward daily work without IDEA. The editor, the find bar and completion behave like IDEA. The diff window got IDEA's toolbar and look. You can commit only some hunks of a file and push from a Push window. The Run and Debug consoles link to sources and can be searched. Alt+F8 opens a real Evaluate window, and Attach to Process lists the running JVMs. Interface scale now works on Linux and macOS too."
+    "The editor, the find bar and completion got a long list of fixes. The diff window has a new toolbar and look. You can commit only some hunks of a file and push from a Push window. The Run and Debug consoles link to sources and can be searched. Alt+F8 opens a real Evaluate window, and Attach to Process lists the running JVMs. Interface scale now works on Linux and macOS too."
    ],
    "notes": [],
    "sections": [
@@ -109,8 +109,8 @@
        "lead": "Move Statement and Move Line"
       },
       {
-       "html": "<strong>Smart Enter</strong> (Ctrl+Shift+Enter) completes the statement like IDEA, on every caret. It also works before a comment and in multi-line headers.",
-       "text": "Smart Enter (Ctrl+Shift+Enter) completes the statement like IDEA, on every caret. It also works before a comment and in multi-line headers.",
+       "html": "<strong>Smart Enter</strong> (Ctrl+Shift+Enter) completes the statement on every caret. It also works before a comment and in multi-line headers.",
+       "text": "Smart Enter (Ctrl+Shift+Enter) completes the statement on every caret. It also works before a comment and in multi-line headers.",
        "lead": "Smart Enter"
       },
       {
@@ -172,9 +172,9 @@
      "title": "Diff window",
      "items": [
       {
-       "html": "<strong>A toolbar like IDEA:</strong>",
-       "text": "A toolbar like IDEA:",
-       "lead": "A toolbar like IDEA"
+       "html": "<strong>A new toolbar:</strong>",
+       "text": "A new toolbar:",
+       "lead": "A new toolbar"
       },
       {
        "html": "Previous / Next Difference (Shift+F7 / F7; at the last difference F7 goes to the next file);",
@@ -851,7 +851,7 @@
    "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.20",
    "prerelease": false,
    "summary": [
-    "Arro is now free and open-source software under the GNU GPL, version 3 or later. This release also brings a Git window with a Log like IntelliJ IDEA's, the IntelliJ New UI icon set, a review of AI agent edits right in the editor, Maven that downloads itself, Java postfix templates, a much better Markdown preview and a long list of editor fixes."
+    "Arro is now free and open-source software under the GNU GPL, version 3 or later. This release also brings a Git window with a Log, the IntelliJ New UI icon set, a review of AI agent edits right in the editor, Maven that downloads itself, Java postfix templates, a much better Markdown preview and a long list of editor fixes."
    ],
    "notes": [],
    "sections": [
@@ -871,9 +871,9 @@
      "title": "New",
      "items": [
       {
-       "html": "<strong>Git window like IntelliJ IDEA's.</strong> Alt+9 opens the Git window with <strong>Local Changes</strong> and <strong>Log</strong> tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (&quot;In N branches&quot;) on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.",
-       "text": "Git window like IntelliJ IDEA's. Alt+9 opens the Git window with Local Changes and Log tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (\"In N branches\") on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.",
-       "lead": "Git window like IntelliJ IDEA's"
+       "html": "<strong>Git window.</strong> Alt+9 opens the Git window with <strong>Local Changes</strong> and <strong>Log</strong> tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (&quot;In N branches&quot;) on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.",
+       "text": "Git window. Alt+9 opens the Git window with Local Changes and Log tabs. The Log has three parts you can resize: branches and tags with search and favourites on the left, commits with the graph, branch and tag labels and filters by text or hash, branch, user, date and path in the middle, and the changed files of the selected commit as a tree with its details (\"In N branches\") on the right. Double-click a file to see its diff. Long histories load page by page. The Git button moved to the lower group of the left stripe.",
+       "lead": "Git window"
       },
       {
        "html": "<strong>IntelliJ New UI icons.</strong> Settings → Appearance → <strong>Icons</strong>: choose <strong>Arro</strong> or <strong>IntelliJ New UI</strong>; the whole window switches at once, in every theme. Your own icon set is a folder in <code>icons</code> of the settings folder.",
@@ -896,9 +896,9 @@
        "lead": "Maven that downloads itself"
       },
       {
-       "html": "<strong>Java postfix templates like IntelliJ IDEA's.</strong> <code>.var</code>, <code>.field</code>, <code>.if</code>, <code>.else</code>, <code>.not</code>, <code>.null</code>, <code>.nn</code>, <code>.for</code>, <code>.fori</code>, <code>.forr</code>, <code>.iter</code>, <code>.while</code>, <code>.try</code>, <code>.twr</code>, <code>.return</code>, <code>.throw</code>, <code>.sout</code>, <code>.soutv</code>, <code>.serr</code>, <code>.par</code>, <code>.cast</code>, <code>.new</code>, <code>.lambda</code>, <code>.opt</code>, <code>.stream</code>, <code>.switch</code>, <code>.synchronized</code>, <code>.format</code>, <code>.arg</code> and <code>.inst</code>. Each appears only where it fits (<code>.for</code> on arrays and collections, <code>.not</code> on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.",
-       "text": "Java postfix templates like IntelliJ IDEA's. .var, .field, .if, .else, .not, .null, .nn, .for, .fori, .forr, .iter, .while, .try, .twr, .return, .throw, .sout, .soutv, .serr, .par, .cast, .new, .lambda, .opt, .stream, .switch, .synchronized, .format, .arg and .inst. Each appears only where it fits (.for on arrays and collections, .not on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.",
-       "lead": "Java postfix templates like IntelliJ IDEA's"
+       "html": "<strong>Java postfix templates.</strong> <code>.var</code>, <code>.field</code>, <code>.if</code>, <code>.else</code>, <code>.not</code>, <code>.null</code>, <code>.nn</code>, <code>.for</code>, <code>.fori</code>, <code>.forr</code>, <code>.iter</code>, <code>.while</code>, <code>.try</code>, <code>.twr</code>, <code>.return</code>, <code>.throw</code>, <code>.sout</code>, <code>.soutv</code>, <code>.serr</code>, <code>.par</code>, <code>.cast</code>, <code>.new</code>, <code>.lambda</code>, <code>.opt</code>, <code>.stream</code>, <code>.switch</code>, <code>.synchronized</code>, <code>.format</code>, <code>.arg</code> and <code>.inst</code>. Each appears only where it fits (<code>.for</code> on arrays and collections, <code>.not</code> on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.",
+       "text": "Java postfix templates. .var, .field, .if, .else, .not, .null, .nn, .for, .fori, .forr, .iter, .while, .try, .twr, .return, .throw, .sout, .soutv, .serr, .par, .cast, .new, .lambda, .opt, .stream, .switch, .synchronized, .format, .arg and .inst. Each appears only where it fits (.for on arrays and collections, .not on booleans), Tab expands it, and when the expression is ambiguous you pick it from a list.",
+       "lead": "Java postfix templates"
       },
       {
        "html": "<strong>Project window toolbar.</strong> New, <strong>Select Opened File</strong> (Alt+F1), <strong>Expand All</strong>, <strong>Collapse All</strong>, view options with <strong>Always Select Opened File</strong>, and Hide.",
@@ -912,9 +912,9 @@
      "title": "Improved",
      "items": [
       {
-       "html": "<strong>Markdown preview like IntelliJ IDEA's.</strong> HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing match IDEA, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <code>&lt;details&gt;</code> folds; reference links <code>[text][ref]</code> work; nested lists get their own markers.",
-       "text": "Markdown preview like IntelliJ IDEA's. HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing match IDEA, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <details> folds; reference links [text][ref] work; nested lists get their own markers.",
-       "lead": "Markdown preview like IntelliJ IDEA's"
+       "html": "<strong>A better Markdown preview.</strong> HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing are cleaner, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <code>&lt;details&gt;</code> folds; reference links <code>[text][ref]</code> work; nested lists get their own markers.",
+       "text": "A better Markdown preview. HTML comments are hidden, badges stand in one row, paragraphs wrap to the window, headings and spacing are cleaner, and code blocks are highlighted by their language. Tables size their columns to the content and wrap; <details> folds; reference links [text][ref] work; nested lists get their own markers.",
+       "lead": "A better Markdown preview"
       },
       {
        "html": "<strong>Git branches popup</strong> no longer flickers under the mouse, and <strong>Branches…</strong> from the VCS menu (Alt+\\`) opens it under the branch name in the title bar.",
@@ -927,9 +927,9 @@
        "lead": "Tabs"
       },
       {
-       "html": "<strong>Editor gutter like IntelliJ IDEA:</strong> click zones for change marks and fold arrows, Parameter Info and documentation placed and sized as in IDEA, and an Alt+Enter preview of the fix.",
-       "text": "Editor gutter like IntelliJ IDEA: click zones for change marks and fold arrows, Parameter Info and documentation placed and sized as in IDEA, and an Alt+Enter preview of the fix.",
-       "lead": "Editor gutter like IntelliJ IDEA"
+       "html": "<strong>Editor gutter:</strong> click zones for change marks and fold arrows, Parameter Info and documentation placed and sized better, and an Alt+Enter preview of the fix.",
+       "text": "Editor gutter: click zones for change marks and fold arrows, Parameter Info and documentation placed and sized better, and an Alt+Enter preview of the fix.",
+       "lead": "Editor gutter"
       },
       {
        "html": "<strong>Settings</strong> show the theme actually in use, and Javadoc labels in completion documentation sit on their own lines.",
@@ -1030,7 +1030,7 @@
    "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.19",
    "prerelease": false,
    "summary": [
-    "Faster completion and navigation, themes you can pick and write yourself, a Git branches popup like IntelliJ IDEA's, highlighting for sixteen more languages, database drivers that download themselves, a lot of editor polish, and the first piece of the AI agent panel back in the build."
+    "Faster completion and navigation, themes you can pick and write yourself, a Git branches popup, highlighting for sixteen more languages, database drivers that download themselves, a lot of editor polish, and the first piece of the AI agent panel back in the build."
    ],
    "notes": [],
    "sections": [
@@ -1044,9 +1044,9 @@
        "lead": "Themes"
       },
       {
-       "html": "<strong>Git branches popup like IntelliJ IDEA's.</strong> Click the branch name in the title bar: a search field for branches and actions on top, then Update Project, Commit, Push, New Branch, Checkout Tag or Revision and Stash, then Recent, Local, Remote and Tags. Branch names fold into folders by their slashes (<code>feature/auth/login</code>), remote branches group by remote. Star your favourite branches; <code>main</code>, <code>master</code> and <code>develop</code> start as favourites. The arrow on a branch opens Checkout, New Branch from, Compare, Show Diff, Rebase, Merge, Push, Rename and Delete; the keyboard works throughout.",
-       "text": "Git branches popup like IntelliJ IDEA's. Click the branch name in the title bar: a search field for branches and actions on top, then Update Project, Commit, Push, New Branch, Checkout Tag or Revision and Stash, then Recent, Local, Remote and Tags. Branch names fold into folders by their slashes (feature/auth/login), remote branches group by remote. Star your favourite branches; main, master and develop start as favourites. The arrow on a branch opens Checkout, New Branch from, Compare, Show Diff, Rebase, Merge, Push, Rename and Delete; the keyboard works throughout.",
-       "lead": "Git branches popup like IntelliJ IDEA's"
+       "html": "<strong>Git branches popup.</strong> Click the branch name in the title bar: a search field for branches and actions on top, then Update Project, Commit, Push, New Branch, Checkout Tag or Revision and Stash, then Recent, Local, Remote and Tags. Branch names fold into folders by their slashes (<code>feature/auth/login</code>), remote branches group by remote. Star your favourite branches; <code>main</code>, <code>master</code> and <code>develop</code> start as favourites. The arrow on a branch opens Checkout, New Branch from, Compare, Show Diff, Rebase, Merge, Push, Rename and Delete; the keyboard works throughout.",
+       "text": "Git branches popup. Click the branch name in the title bar: a search field for branches and actions on top, then Update Project, Commit, Push, New Branch, Checkout Tag or Revision and Stash, then Recent, Local, Remote and Tags. Branch names fold into folders by their slashes (feature/auth/login), remote branches group by remote. Star your favourite branches; main, master and develop start as favourites. The arrow on a branch opens Checkout, New Branch from, Compare, Show Diff, Rebase, Merge, Push, Rename and Delete; the keyboard works throughout.",
+       "lead": "Git branches popup"
       },
       {
        "html": "<strong>Change marker popup.</strong> Hover or click the green or blue bar next to the line numbers to see the original text with the changed words marked, and to roll the change back, copy it, open the diff or jump to the next change. The scrollbar marks every change in the file. Marks now follow your edits right away, not after a save.",
@@ -1090,9 +1090,9 @@
        "lead": "Completion and navigation are much faster"
       },
       {
-       "html": "<strong>Completion like IntelliJ IDEA.</strong> An exact match of what you typed comes first, then locals and fields, then common <code>java.lang</code> types, so <code>Str</code> gives <code>String</code> first. The list filters in place as you type, scrolls, takes the mouse (click to select, double-click to insert) and PgUp/PgDn/Home/End. Documentation of the selected item loads in the background. Stale requests are cancelled as you type.",
-       "text": "Completion like IntelliJ IDEA. An exact match of what you typed comes first, then locals and fields, then common java.lang types, so Str gives String first. The list filters in place as you type, scrolls, takes the mouse (click to select, double-click to insert) and PgUp/PgDn/Home/End. Documentation of the selected item loads in the background. Stale requests are cancelled as you type.",
-       "lead": "Completion like IntelliJ IDEA"
+       "html": "<strong>Smarter completion.</strong> An exact match of what you typed comes first, then locals and fields, then common <code>java.lang</code> types, so <code>Str</code> gives <code>String</code> first. The list filters in place as you type, scrolls, takes the mouse (click to select, double-click to insert) and PgUp/PgDn/Home/End. Documentation of the selected item loads in the background. Stale requests are cancelled as you type.",
+       "text": "Smarter completion. An exact match of what you typed comes first, then locals and fields, then common java.lang types, so Str gives String first. The list filters in place as you type, scrolls, takes the mouse (click to select, double-click to insert) and PgUp/PgDn/Home/End. Documentation of the selected item loads in the background. Stale requests are cancelled as you type.",
+       "lead": "Smarter completion"
       },
       {
        "html": "<strong>Ctrl+B</strong> jumps at once when there is one target and lists them when there are several; inside the current file it stays in the same tab, and Back returns. &quot;Cannot find declaration&quot; fades by itself.",
@@ -1125,9 +1125,9 @@
        "lead": "Window title bar"
       },
       {
-       "html": "<strong>Alt+Enter like IntelliJ IDEA.</strong> Quick fixes come first with a red bulb, intentions after them with a yellow one, and the change of the selected action is previewed on the right when the language server sends it. The same action is no longer listed twice. With nothing to offer, &quot;No actions available here&quot; fades by itself.",
-       "text": "Alt+Enter like IntelliJ IDEA. Quick fixes come first with a red bulb, intentions after them with a yellow one, and the change of the selected action is previewed on the right when the language server sends it. The same action is no longer listed twice. With nothing to offer, \"No actions available here\" fades by itself.",
-       "lead": "Alt+Enter like IntelliJ IDEA"
+       "html": "<strong>Better Alt+Enter.</strong> Quick fixes come first with a red bulb, intentions after them with a yellow one, and the change of the selected action is previewed on the right when the language server sends it. The same action is no longer listed twice. With nothing to offer, &quot;No actions available here&quot; fades by itself.",
+       "text": "Better Alt+Enter. Quick fixes come first with a red bulb, intentions after them with a yellow one, and the change of the selected action is previewed on the right when the language server sends it. The same action is no longer listed twice. With nothing to offer, \"No actions available here\" fades by itself.",
+       "lead": "Better Alt+Enter"
       },
       {
        "html": "<strong>Selection.</strong> Dragging after a double-click selects whole words, after a triple-click whole lines.",
@@ -1135,8 +1135,8 @@
        "lead": "Selection"
       },
       {
-       "html": "<strong>Ctrl+B on a declaration</strong> lists its usages, or jumps to the only one, as in IntelliJ IDEA.",
-       "text": "Ctrl+B on a declaration lists its usages, or jumps to the only one, as in IntelliJ IDEA.",
+       "html": "<strong>Ctrl+B on a declaration</strong> lists its usages, or jumps to the only one.",
+       "text": "Ctrl+B on a declaration lists its usages, or jumps to the only one.",
        "lead": "Ctrl+B on a declaration"
       },
       {
@@ -1849,13 +1849,13 @@
      "title": "Improved",
      "items": [
       {
-       "html": "<strong>Debug window</strong> rebuilt like IDEA: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.",
-       "text": "Debug window rebuilt like IDEA: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.",
+       "html": "<strong>Debug window</strong> rebuilt: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.",
+       "text": "Debug window rebuilt: an icon toolbar (Rerun, Resume, Pause, Stop, Step Over, Step Into, Step Out, Run to Cursor, Drop Frame, Evaluate, View Breakpoints), Debugger and Console tabs, frames beside Variables and Watch with a movable divider.",
        "lead": "Debug window"
       },
       {
-       "html": "<strong>Services window</strong> rebuilt like IDEA: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.",
-       "text": "Services window rebuilt like IDEA: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.",
+       "html": "<strong>Services window</strong> rebuilt: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.",
+       "text": "Services window rebuilt: containers grouped by compose project with a running counter, icon buttons, logs that start when you select a container or project, Dashboard and Console tabs, a right-click menu (Start, Stop, Restart, Remove, Show Logs, Exec, Copy Container ID; Up, Down, Restart, Stop for a project) and a movable divider.",
        "lead": "Services window"
       }
      ]
@@ -2329,8 +2329,8 @@
        "lead": null
       },
       {
-       "html": "Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor, as in IntelliJ IDEA.",
-       "text": "Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor, as in IntelliJ IDEA.",
+       "html": "Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor.",
+       "text": "Shift+Cmd+Up and Shift+Cmd+Down move the line in the editor.",
        "lead": null
       }
      ]
