@@ -100,7 +100,7 @@
       <li><h3 class="brand">Native and fast</h3><p>Rust from top to bottom and a GPU-rendered UI on GPUI. No Electron, no web view, no JavaScript in the interface.</p></li>
       <li><h3 class="brand">Home for IntelliJ users</h3><p>The same shortcuts (Shift Shift, Ctrl+N, Alt+Enter, Ctrl+Alt+L, Shift+F10), the same menus and the same tool windows. Moving over takes minutes, not weeks.</p></li>
       <li><h3 class="brand">Light</h3><p>The IDE itself stays small. The heavy lifting goes to the Eclipse JDT Language Server, which Arro starts, watches and restarts for you.</p></li>
-      <li><h3 class="brand">AI-native</h3><p>Claude Code, Codex and any MCP client work with Arro, not around it. They read diagnostics, usages and the project structure from the IDE. Their edits come to you as hunks to accept or reject, and they build and run tests only with your permission.</p></li>
+      <li><h3 class="brand">AI-native</h3><p>Claude Code, Codex and any MCP client work with Arro, not around it. They read diagnostics, usages and the project structure from the IDE, set breakpoints and step through a test in Arro’s own debugger. Their edits come to you as hunks to accept or reject, they build and run tests only with your permission, and <strong>Fix with AI</strong> sends an error to an agent from where you see it.</p></li>
       <li><h3 class="brand">Never freezes on a tool</h3><p>Builds, Git, the language server and the debugger all run outside the UI thread. A slow Maven import does not stop typing.</p></li>
     </ul>
   </section>
@@ -120,7 +120,7 @@
         </ul>
       </div>
       <figure class="plate reveal">
-        <img src="/assets/img/arro/completion.webp" width="1600" height="877" alt="Completion with documentation in the Arro editor, Paper theme" decoding="async">
+        <img src="/assets/img/arro/completion.webp" width="1600" height="885" alt="Completion with documentation in the Arro editor, Paper theme" decoding="async">
         <figcaption><b>Completion</b> With documentation, in the Paper theme.</figcaption>
       </figure>
     </div>
@@ -129,10 +129,10 @@
       <div class="reveal">
         <h3>Run, test, debug</h3>
         <p>Run configurations with Before launch steps, compound runs and <code>.env</code> files; gutter run marks for <code>main</code> and tests; a test tree with rerun of failures, auto-test on save and a history of runs.</p>
-        <p style="margin-top:12px">The debugger has breakpoints, stepping, evaluation, hot swap, values inline in the editor, remote JVM attach, marked objects and thousands of virtual threads. A Services window shows every Spring Boot app and main class with its state and port.</p>
+        <p style="margin-top:12px">The debugger has breakpoints, stepping, an Evaluate window, hot swap, values inline in the editor, Attach to Process with the list of running JVMs, remote attach, marked objects and thousands of virtual threads. The Run and Debug consoles link to sources and can be searched. A Services window shows every Spring Boot app and main class with its state and port.</p>
       </div>
       <figure class="plate reveal">
-        <img src="/assets/img/arro/tests.webp" width="1600" height="1000" alt="Test results in the Arro Run window" decoding="async">
+        <img src="/assets/img/arro/tests.webp" width="1600" height="885" alt="Test results in the Arro Run window" decoding="async">
         <figcaption><b>Tests</b> Results in the Run window.</figcaption>
       </figure>
     </div>
@@ -141,10 +141,10 @@
       <div class="reveal">
         <h3>Git, built in</h3>
         <p>A branches popup with search, favourites, branches folded by their slashes, and checkout, merge, rebase, compare and push from one arrow. Change markers next to the line numbers show the original text and roll a change back.</p>
-        <p style="margin-top:12px">Commit, diff, log, shelf and stash, conflict resolution, history of a selection or a method, submodules and local history.</p>
+        <p style="margin-top:12px">A Git window with Local Changes, a Log with the commit graph, filters and the changed files of each commit, and a Git console. A diff window with a toolbar and a file counter, commits of only the hunks you pick, and a Push window with the target branch, tags and force push with lease. Shelf and stash, conflict resolution, history of a selection or a method, submodules and local history.</p>
       </div>
       <figure class="plate reveal">
-        <img src="/assets/img/arro/branches.webp" width="1600" height="877" alt="The Git branches popup in Arro, Nord theme" decoding="async">
+        <img src="/assets/img/arro/branches.webp" width="1600" height="885" alt="The Git branches popup in Arro, Nord theme" decoding="async">
         <figcaption><b>Branches</b> Folded by their slashes, in the Nord theme.</figcaption>
       </figure>
     </div>
@@ -156,7 +156,7 @@
         <p style="margin-top:12px">A theme is a short JSON file that can inherit from another one; an IntelliJ IDEA <code>.icls</code> color scheme imports in one click. Distraction Free, Zen and Presentation modes, and a configurable keymap.</p>
       </div>
       <figure class="plate reveal">
-        <img src="/assets/img/arro/themes.webp" width="1600" height="877" alt="Theme cards in the Arro settings, Mocha theme" decoding="async">
+        <img src="/assets/img/arro/themes.webp" width="1600" height="885" alt="Theme cards in the Arro settings, Mocha theme" decoding="async">
         <figcaption><b>Themes</b> Settings → Appearance, in the Mocha theme.</figcaption>
       </figure>
     </div>
@@ -168,7 +168,7 @@
         <p style="margin-top:12px">An AI Sessions panel runs Claude Code and Codex inside the IDE, and <code>arro-mcp</code> connects any agent to the open project over MCP.</p>
       </div>
       <figure class="plate reveal">
-        <img src="/assets/img/arro/terminal.webp" width="1600" height="877" alt="Split editors and the terminal in Arro, Retro theme" decoding="async">
+        <img src="/assets/img/arro/terminal.webp" width="1600" height="885" alt="Split editors and the terminal in Arro, Retro theme" decoding="async">
         <figcaption><b>Terminal</b> Split editors and a shell, in the Retro theme.</figcaption>
       </figure>
     </div>
@@ -180,7 +180,7 @@
       </section>
       <section>
         <h3>Tools in the window</h3>
-        <p>A database console for JDBC sources with drivers that download themselves and passwords in the system keychain, an HTTP client for <code>.http</code> files that turns pasted cURL into requests, a profiler on Java Flight Recorder, a JShell console, a dependency analyzer, and newer dependency versions marked in build files.</p>
+        <p>An SQL console for JDBC sources with completion, formatting, templates and <code>.sql</code> files, drivers that download themselves and passwords in the system keychain, an HTTP client for <code>.http</code> files that turns pasted cURL into requests, a profiler on Java Flight Recorder, a JShell console, a dependency analyzer, and newer dependency versions marked in build files.</p>
       </section>
       <section>
         <h3>And the rest</h3>
@@ -206,7 +206,7 @@
           <tr><th scope="row">Windows 11 x86-64</th><td><span class="state open"><i></i>Supported</span></td></tr>
           <tr><th scope="row">Linux x86-64</th><td><span class="state preview"><i></i>Preview release</span></td></tr>
           <tr><th scope="row">macOS, Apple silicon</th><td><span class="state preview"><i></i>Preview release</span></td></tr>
-          <tr><th scope="row">AI agents over MCP and the AI Sessions panel (Claude Code, Codex, OpenCode)</th><td><span class="state new"><i></i>New</span></td></tr>
+          <tr><th scope="row">AI agents over MCP (code, run, tests, debugger) and the AI Sessions panel (Claude Code, Codex, OpenCode)</th><td><span class="state new"><i></i>New</span></td></tr>
           <tr><th scope="row">More languages on the same core</th><td><span class="state planned"><i></i>Planned</span></td></tr>
         </tbody>
       </table>
