@@ -1,63 +1,248 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-20T10:17:26.411Z",
+ "generatedAt": "2026-11-20T13:17:09.318Z",
  "latest": {
-  "version": "0.1.24",
-  "tag": "v0.1.24",
-  "date": "2026-11-20T10:17:07Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.24",
+  "version": "0.1.25",
+  "tag": "v0.1.25",
+  "date": "2026-11-20T13:16:56Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.25",
   "assets": [
    {
-    "name": "arro-0.1.24-windows-x86_64.zip",
+    "name": "arro-0.1.25-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 87924197,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-windows-x86_64.zip"
+    "size": 88411820,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.24_amd64.deb",
+    "name": "arro_0.1.25_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 86497124,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro_0.1.24_amd64.deb"
+    "size": 86753986,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro_0.1.25_amd64.deb"
    },
    {
-    "name": "arro-0.1.24-1.x86_64.rpm",
+    "name": "arro-0.1.25-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 99399176,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-1.x86_64.rpm"
+    "size": 99874270,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.24-linux-x86_64.tar.gz",
+    "name": "arro-0.1.25-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 99765054,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-linux-x86_64.tar.gz"
+    "size": 100251863,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.24-macos-aarch64.dmg",
+    "name": "arro-0.1.25-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 94416953,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-macos-aarch64.dmg"
+    "size": 94959579,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.24-macos-aarch64.zip",
+    "name": "arro-0.1.25-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 88380535,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-macos-aarch64.zip"
+    "size": 88856936,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.25",
+   "tag": "v0.1.25",
+   "date": "2026-11-20T13:16:56Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.25",
+   "prerelease": false,
+   "summary": [
+    "A polish release. Every modal window can now be moved, resized and closed with its own button. Commit and Push show changes as a tree, panels and menus got their icons, and Settings uses check boxes and drop-down lists."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Windows",
+     "items": [
+      {
+       "html": "<strong>Every modal window</strong> (Settings, Project Structure, Run/Debug Configurations, Push, refactoring forms, Compare, Merge, Local History, the debugger windows and others) has a title bar with a close button, moves by its title and resizes by any edge or corner. Each window opens where you left it, at the size you left it.",
+       "text": "Every modal window (Settings, Project Structure, Run/Debug Configurations, Push, refactoring forms, Compare, Merge, Local History, the debugger windows and others) has a title bar with a close button, moves by its title and resizes by any edge or corner. Each window opens where you left it, at the size you left it.",
+       "lead": "Every modal window"
+      },
+      {
+       "html": "<strong>A click outside a modal window</strong> no longer closes it by accident.",
+       "text": "A click outside a modal window no longer closes it by accident.",
+       "lead": "A click outside a modal window"
+      },
+      {
+       "html": "<strong>Cancel in Push</strong> closes the window again.",
+       "text": "Cancel in Push closes the window again.",
+       "lead": "Cancel in Push"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Commit and Push",
+     "items": [
+      {
+       "html": "<strong>Changes as a tree:</strong> Changes and Unversioned Files groups with counts, folders with single-child chains joined into one row, file icons, and check boxes on files, folders and groups that show a partial state.",
+       "text": "Changes as a tree: Changes and Unversioned Files groups with counts, folders with single-child chains joined into one row, file icons, and check boxes on files, folders and groups that show a partial state.",
+       "lead": "Changes as a tree"
+      },
+      {
+       "html": "<strong>A toolbar in Commit:</strong> Refresh, Rollback, Show Diff, Expand All, Collapse All.",
+       "text": "A toolbar in Commit: Refresh, Rollback, Show Diff, Expand All, Collapse All.",
+       "lead": "A toolbar in Commit"
+      },
+      {
+       "html": "<strong>The files of Push</strong> are shown as the same tree.",
+       "text": "The files of Push are shown as the same tree.",
+       "lead": "The files of Push"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Icons",
+     "items": [
+      {
+       "html": "<strong>Toolbars</strong> of Git Log and Database use icons with tooltips instead of text buttons.",
+       "text": "Toolbars of Git Log and Database use icons with tooltips instead of text buttons.",
+       "lead": "Toolbars"
+      },
+      {
+       "html": "<strong>File icons</strong> in Find in Files, Find Usages, Structural Search and Problems.",
+       "text": "File icons in Find in Files, Find Usages, Structural Search and Problems.",
+       "lead": "File icons"
+      },
+      {
+       "html": "<strong>Maven and Gradle:</strong> icons for goals, plugins and dependencies. <strong>Run configurations</strong> show the icon of their type.",
+       "text": "Maven and Gradle: icons for goals, plugins and dependencies. Run configurations show the icon of their type.",
+       "lead": "Maven and Gradle"
+      },
+      {
+       "html": "<strong>Menus</strong> show icons for the common actions, with the text of every row aligned.",
+       "text": "Menus show icons for the common actions, with the text of every row aligned.",
+       "lead": "Menus"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Settings and search",
+     "items": [
+      {
+       "html": "<strong>Settings</strong> uses check boxes and drop-down lists instead of On/Off buttons. Long page names are shown in full, and the page list can be widened by its divider.",
+       "text": "Settings uses check boxes and drop-down lists instead of On/Off buttons. Long page names are shown in full, and the page list can be widened by its divider.",
+       "lead": "Settings"
+      },
+      {
+       "html": "<strong>Find in Files</strong> says &quot;Searching…&quot; while the search runs and previews the selected result.",
+       "text": "Find in Files says \"Searching…\" while the search runs and previews the selected result.",
+       "lead": "Find in Files"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Editor and tools",
+     "items": [
+      {
+       "html": "<strong>Local History</strong> takes snapshots every two minutes and before refactorings, reformatting, Optimize Imports and Git operations that rewrite files. Labels, search and &quot;labels only&quot; in the history window.",
+       "text": "Local History takes snapshots every two minutes and before refactorings, reformatting, Optimize Imports and Git operations that rewrite files. Labels, search and \"labels only\" in the history window.",
+       "lead": "Local History"
+      },
+      {
+       "html": "<strong>TODO:</strong> your own patterns and case sensitivity in Settings → Editor → TODO, a pattern filter, and scopes: project, current file, changed files.",
+       "text": "TODO: your own patterns and case sensitivity in Settings → Editor → TODO, a pattern filter, and scopes: project, current file, changed files.",
+       "lead": "TODO"
+      },
+      {
+       "html": "<strong>Run Selection in Terminal</strong> sends the selection or the current line to the terminal. <strong>Ctrl+Enter</strong> in the terminal runs a Maven or Gradle command in the Run window.",
+       "text": "Run Selection in Terminal sends the selection or the current line to the terminal. Ctrl+Enter in the terminal runs a Maven or Gradle command in the Run window.",
+       "lead": "Run Selection in Terminal"
+      },
+      {
+       "html": "<strong>Import Settings from IntelliJ IDEA</strong> (File menu): keymap, editor font, code style, theme and live templates, with a summary of what was imported and what was skipped.",
+       "text": "Import Settings from IntelliJ IDEA (File menu): keymap, editor font, code style, theme and live templates, with a summary of what was imported and what was skipped.",
+       "lead": "Import Settings from IntelliJ IDEA"
+      },
+      {
+       "html": "<strong>Settings → Editor → File Types:</strong> file and folder masks hidden from the project tree and search.",
+       "text": "Settings → Editor → File Types: file and folder masks hidden from the project tree and search.",
+       "lead": "Settings → Editor → File Types"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 17,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.25-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 88411820,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.25_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 86753986,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro_0.1.25_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.25-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 99874270,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.25-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 100251863,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.25-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 94959579,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.25-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 88856936,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.24",
    "tag": "v0.1.24",

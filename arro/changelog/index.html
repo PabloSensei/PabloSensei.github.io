@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>25</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.24</span>, from <span data-arro-date>20 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>26</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.25</span>, from <span data-arro-date>20 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,62 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.24" data-version="0.1.24" data-total="26">
+    <article class="release is-latest" id="v0.1.25" data-version="0.1.25" data-total="17">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.25" aria-label="Link to Arro 0.1.25">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.25</h2>
+        <p class="rel-meta"><time datetime="2026-11-20T13:16:56Z">20 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.25">Release page</a></p>
+      </header>
+      <p class="rel-summary">A polish release. Every modal window can now be moved, resized and closed with its own button. Commit and Push show changes as a tree, panels and menus got their icons, and Settings uses check boxes and drop-down lists.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Windows <span class="count">3</span></h3>
+        <ul>
+          <li data-text="every modal window (settings, project structure, run/debug configurations, push, refactoring forms, compare, merge, local history, the debugger windows and others) has a title bar with a close button, moves by its title and resizes by any edge or corner. each window opens where you left it, at the size you left it."><strong>Every modal window</strong> (Settings, Project Structure, Run/Debug Configurations, Push, refactoring forms, Compare, Merge, Local History, the debugger windows and others) has a title bar with a close button, moves by its title and resizes by any edge or corner. Each window opens where you left it, at the size you left it.</li>
+          <li data-text="a click outside a modal window no longer closes it by accident."><strong>A click outside a modal window</strong> no longer closes it by accident.</li>
+          <li data-text="cancel in push closes the window again."><strong>Cancel in Push</strong> closes the window again.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Commit and Push <span class="count">3</span></h3>
+        <ul>
+          <li data-text="changes as a tree: changes and unversioned files groups with counts, folders with single-child chains joined into one row, file icons, and check boxes on files, folders and groups that show a partial state."><strong>Changes as a tree:</strong> Changes and Unversioned Files groups with counts, folders with single-child chains joined into one row, file icons, and check boxes on files, folders and groups that show a partial state.</li>
+          <li data-text="a toolbar in commit: refresh, rollback, show diff, expand all, collapse all."><strong>A toolbar in Commit:</strong> Refresh, Rollback, Show Diff, Expand All, Collapse All.</li>
+          <li data-text="the files of push are shown as the same tree."><strong>The files of Push</strong> are shown as the same tree.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Icons <span class="count">4</span></h3>
+        <ul>
+          <li data-text="toolbars of git log and database use icons with tooltips instead of text buttons."><strong>Toolbars</strong> of Git Log and Database use icons with tooltips instead of text buttons.</li>
+          <li data-text="file icons in find in files, find usages, structural search and problems."><strong>File icons</strong> in Find in Files, Find Usages, Structural Search and Problems.</li>
+          <li data-text="maven and gradle: icons for goals, plugins and dependencies. run configurations show the icon of their type."><strong>Maven and Gradle:</strong> icons for goals, plugins and dependencies. <strong>Run configurations</strong> show the icon of their type.</li>
+          <li data-text="menus show icons for the common actions, with the text of every row aligned."><strong>Menus</strong> show icons for the common actions, with the text of every row aligned.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Settings and search <span class="count">2</span></h3>
+        <ul>
+          <li data-text="settings uses check boxes and drop-down lists instead of on/off buttons. long page names are shown in full, and the page list can be widened by its divider."><strong>Settings</strong> uses check boxes and drop-down lists instead of On/Off buttons. Long page names are shown in full, and the page list can be widened by its divider.</li>
+          <li data-text="find in files says &quot;searching…&quot; while the search runs and previews the selected result."><strong>Find in Files</strong> says &quot;Searching…&quot; while the search runs and previews the selected result.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor and tools <span class="count">5</span></h3>
+        <ul>
+          <li data-text="local history takes snapshots every two minutes and before refactorings, reformatting, optimize imports and git operations that rewrite files. labels, search and &quot;labels only&quot; in the history window."><strong>Local History</strong> takes snapshots every two minutes and before refactorings, reformatting, Optimize Imports and Git operations that rewrite files. Labels, search and &quot;labels only&quot; in the history window.</li>
+          <li data-text="todo: your own patterns and case sensitivity in settings → editor → todo, a pattern filter, and scopes: project, current file, changed files."><strong>TODO:</strong> your own patterns and case sensitivity in Settings → Editor → TODO, a pattern filter, and scopes: project, current file, changed files.</li>
+          <li data-text="run selection in terminal sends the selection or the current line to the terminal. ctrl+enter in the terminal runs a maven or gradle command in the run window."><strong>Run Selection in Terminal</strong> sends the selection or the current line to the terminal. <strong>Ctrl+Enter</strong> in the terminal runs a Maven or Gradle command in the Run window.</li>
+          <li data-text="import settings from intellij idea (file menu): keymap, editor font, code style, theme and live templates, with a summary of what was imported and what was skipped."><strong>Import Settings from IntelliJ IDEA</strong> (File menu): keymap, editor font, code style, theme and live templates, with a summary of what was imported and what was skipped.</li>
+          <li data-text="settings → editor → file types: file and folder masks hidden from the project tree and search."><strong>Settings → Editor → File Types:</strong> file and folder masks hidden from the project tree and search.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.24" data-version="0.1.24" data-total="26">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.24" aria-label="Link to Arro 0.1.24">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.24</h2>
-        <p class="rel-meta"><time datetime="2026-11-20T10:17:07Z">20 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.24">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-20T10:17:07Z">20 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.24">Release page</a></p>
       </header>
       <p class="rel-summary">More refactorings with forms and one-step Undo, a Type Hierarchy window, Bookmarks and Build windows, MCP tools for the debugger and databases, a fuller Git menu, and many fixes for macOS and Linux. The database console now connects on Linux and macOS.</p>
       <section class="rel-group" data-kind="fixed">
