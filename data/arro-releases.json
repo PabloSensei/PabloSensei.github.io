@@ -1,63 +1,305 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-19T17:33:41.980Z",
+ "generatedAt": "2026-11-20T10:17:26.411Z",
  "latest": {
-  "version": "0.1.23",
-  "tag": "v0.1.23",
-  "date": "2026-11-19T16:00:09Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.23",
+  "version": "0.1.24",
+  "tag": "v0.1.24",
+  "date": "2026-11-20T10:17:07Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.24",
   "assets": [
    {
-    "name": "arro-0.1.23-windows-x86_64.zip",
+    "name": "arro-0.1.24-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 86457040,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-windows-x86_64.zip"
+    "size": 87924197,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.23_amd64.deb",
+    "name": "arro_0.1.24_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 85295420,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro_0.1.23_amd64.deb"
+    "size": 86497124,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro_0.1.24_amd64.deb"
    },
    {
-    "name": "arro-0.1.23-1.x86_64.rpm",
+    "name": "arro-0.1.24-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 97919183,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-1.x86_64.rpm"
+    "size": 99399176,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.23-linux-x86_64.tar.gz",
+    "name": "arro-0.1.24-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 98271585,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-linux-x86_64.tar.gz"
+    "size": 99765054,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.23-macos-aarch64.dmg",
+    "name": "arro-0.1.24-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 92891138,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-macos-aarch64.dmg"
+    "size": 94416953,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.23-macos-aarch64.zip",
+    "name": "arro-0.1.24-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 86993710,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.23/arro-0.1.23-macos-aarch64.zip"
+    "size": 88380535,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.24",
+   "tag": "v0.1.24",
+   "date": "2026-11-20T10:17:07Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.24",
+   "prerelease": false,
+   "summary": [
+    "More refactorings with forms and one-step Undo, a Type Hierarchy window, Bookmarks and Build windows, MCP tools for the debugger and databases, a fuller Git menu, and many fixes for macOS and Linux. The database console now connects on Linux and macOS."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "fixed",
+     "title": "Fixes",
+     "items": [
+      {
+       "html": "<strong>Database on Linux and macOS.</strong> The database helper failed with &quot;Could not find or load main class ide.db.Helper&quot;. The classpath of the helper, JShell and long run classpaths now point at their jars correctly on Unix.",
+       "text": "Database on Linux and macOS. The database helper failed with \"Could not find or load main class ide.db.Helper\". The classpath of the helper, JShell and long run classpaths now point at their jars correctly on Unix.",
+       "lead": "Database on Linux and macOS"
+      },
+      {
+       "html": "<strong>Gradle import.</strong> A failed reimport stays visible until a new import, a clean script or a restart; an older OK status no longer hides it.",
+       "text": "Gradle import. A failed reimport stays visible until a new import, a clean script or a restart; an older OK status no longer hides it.",
+       "lead": "Gradle import"
+      },
+      {
+       "html": "<strong>A failed project import</strong> shows its cause, Open Settings, Reload Project and Show Log, and the status bar says the import failed. Gradle keeps a daemon registry per JVM, so a removed JDK no longer stops imports.",
+       "text": "A failed project import shows its cause, Open Settings, Reload Project and Show Log, and the status bar says the import failed. Gradle keeps a daemon registry per JVM, so a removed JDK no longer stops imports.",
+       "lead": "A failed project import"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Refactoring",
+     "items": [
+      {
+       "html": "<strong>Move (F6).</strong> On a static member it opens Move Members with a target type and project suggestions. On an instance method it opens Move Instance Method with the parameters and fields it can move to. Each move is one step of Undo.",
+       "text": "Move (F6). On a static member it opens Move Members with a target type and project suggestions. On an instance method it opens Move Instance Method with the parameters and fields it can move to. Each move is one step of Undo.",
+       "lead": "Move (F6)"
+      },
+      {
+       "html": "<strong>Pull Members Up, Push Members Down, Extract Superclass, Introduce Parameter Object</strong> — forms with members, targets, &quot;make abstract&quot;, conflicts and Preview, in the Refactor menu and Refactor This.",
+       "text": "Pull Members Up, Push Members Down, Extract Superclass, Introduce Parameter Object — forms with members, targets, \"make abstract\", conflicts and Preview, in the Refactor menu and Refactor This.",
+       "lead": "Pull Members Up, Push Members Down, Extract Superclass, Introduce Parameter Object"
+      },
+      {
+       "html": "<strong>Extract</strong> asks for the name in place, picks the expression, and replaces this or all occurrences. Extract Method takes a visibility.",
+       "text": "Extract asks for the name in place, picks the expression, and replaces this or all occurrences. Extract Method takes a visibility.",
+       "lead": "Extract"
+      },
+      {
+       "html": "<strong>A refactoring over many files</strong> is one step of Undo and Redo, including closed and created files.",
+       "text": "A refactoring over many files is one step of Undo and Redo, including closed and created files.",
+       "lead": "A refactoring over many files"
+      },
+      {
+       "html": "<strong>Alt+Insert</strong> offers only what fits the class, with &quot;Nothing to generate&quot; when nothing does; Constructor works in a class without fields.",
+       "text": "Alt+Insert offers only what fits the class, with \"Nothing to generate\" when nothing does; Constructor works in a class without fields.",
+       "lead": "Alt+Insert"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Navigation and windows",
+     "items": [
+      {
+       "html": "<strong>Type Hierarchy (Ctrl+H):</strong> Type, Supertypes and Subtypes views, each level loaded on expand, a Scope of All, Production or Test.",
+       "text": "Type Hierarchy (Ctrl+H): Type, Supertypes and Subtypes views, each level loaded on expand, a Scope of All, Production or Test.",
+       "lead": "Type Hierarchy (Ctrl+H)"
+      },
+      {
+       "html": "<strong>Bookmarks window (Alt+2):</strong> groups, files and lines in a tree, descriptions, speed search; groups are saved with the project.",
+       "text": "Bookmarks window (Alt+2): groups, files and lines in a tree, descriptions, speed search; groups are saved with the project.",
+       "lead": "Bookmarks window (Alt+2)"
+      },
+      {
+       "html": "<strong>Build window:</strong> the last build as a tree of files with errors and warnings beside the raw output. Build Module, Recompile, Rebuild Project and Generate Sources are in the Build menu.",
+       "text": "Build window: the last build as a tree of files with errors and warnings beside the raw output. Build Module, Recompile, Rebuild Project and Generate Sources are in the Build menu.",
+       "lead": "Build window"
+      },
+      {
+       "html": "<strong>Build profiles:</strong> Maven profiles of every module and Gradle properties; every build, test run and import uses them.",
+       "text": "Build profiles: Maven profiles of every module and Gradle properties; every build, test run and import uses them.",
+       "lead": "Build profiles"
+      },
+      {
+       "html": "<strong>Project Structure</strong> has a Modules page with nested modules, folders and dependencies. The language level of the project and of each module is edited in its build file.",
+       "text": "Project Structure has a Modules page with nested modules, folders and dependencies. The language level of the project and of each module is edited in its build file.",
+       "lead": "Project Structure"
+      },
+      {
+       "html": "<strong>Reformat Code on folders</strong> of the project tree, with Optimize imports and Only changed files, one Undo and a progress with Cancel. Inspect Code takes the selected folder, and its results can be exported.",
+       "text": "Reformat Code on folders of the project tree, with Optimize imports and Only changed files, one Undo and a progress with Cancel. Inspect Code takes the selected folder, and its results can be exported.",
+       "lead": "Reformat Code on folders"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Spring",
+     "items": [
+      {
+       "html": "<strong>Ctrl+B on a configuration key</strong> goes to the field, record component or setter of its class; Ctrl+B in <code>${...}</code> of <code>@Value</code> goes to the key. Alt+F7 on a key finds its usages. Keys in superclasses are found too.",
+       "text": "Ctrl+B on a configuration key goes to the field, record component or setter of its class; Ctrl+B in ${...} of @Value goes to the key. Alt+F7 on a key finds its usages. Keys in superclasses are found too.",
+       "lead": "Ctrl+B on a configuration key"
+      },
+      {
+       "html": "<strong>Beans</strong> are in View | Tool Windows.",
+       "text": "Beans are in View | Tool Windows.",
+       "lead": "Beans"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Git",
+     "items": [
+      {
+       "html": "<strong>The Git menu</strong> has Annotate, Rebase, Cherry-pick, Revert, Reset, Shelve and Unshelve, grey where they do not apply.",
+       "text": "The Git menu has Annotate, Rebase, Cherry-pick, Revert, Reset, Shelve and Unshelve, grey where they do not apply.",
+       "lead": "The Git menu"
+      },
+      {
+       "html": "<strong>Cherry-pick of several log rows</strong>, oldest first. <strong>Compare Revisions</strong> of two commits. The log can be filtered by any path.",
+       "text": "Cherry-pick of several log rows, oldest first. Compare Revisions of two commits. The log can be filtered by any path.",
+       "lead": "Cherry-pick of several log rows"
+      },
+      {
+       "html": "<strong>Blame</strong> with a label on every line, Today/Yesterday dates and commit tints that fade with age; the line-number gutter has its own menu.",
+       "text": "Blame with a label on every line, Today/Yesterday dates and commit tints that fade with age; the line-number gutter has its own menu.",
+       "lead": "Blame"
+      },
+      {
+       "html": "<strong>Git Log changed files</strong> show folders as folders, file icons, change colours, and a rename as one row.",
+       "text": "Git Log changed files show folders as folders, file icons, change colours, and a rename as one row.",
+       "lead": "Git Log changed files"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "MCP and agents",
+     "items": [
+      {
+       "html": "<strong>MCP tools under the names and parameters agents already know</strong>: analysis, symbol info, run configurations, files, reformat, apply_patch, rename, search, terminal, git status.",
+       "text": "MCP tools under the names and parameters agents already know: analysis, symbol info, run configurations, files, reformat, apply_patch, rename, search, terminal, git status.",
+       "lead": "MCP tools under the names and parameters agents already know"
+      },
+      {
+       "html": "<strong>Debugger tools (13 <code>xdebug_*</code>)</strong>: sessions, threads, stack, values by path, evaluate, set variable, run to line, breakpoints owned by the agent or the user. Breakpoints set by an agent are painted apart in the gutter.",
+       "text": "Debugger tools (13 xdebug_): sessions, threads, stack, values by path, evaluate, set variable, run to line, breakpoints owned by the agent or the user. Breakpoints set by an agent are painted apart in the gutter.",
+       "lead": "Debugger tools (13 xdebug_)"
+      },
+      {
+       "html": "<strong>Database tools (14)</strong> with CSV results.",
+       "text": "Database tools (14) with CSV results.",
+       "lead": "Database tools (14)"
+      },
+      {
+       "html": "<strong>MCP Server settings</strong>: Enable with a confirmation, client auto-configuration (global and project, with a backup and Remove), manual HTTP/Stdio/SSE configs, Exposed Tools.",
+       "text": "MCP Server settings: Enable with a confirmation, client auto-configuration (global and project, with a backup and Remove), manual HTTP/Stdio/SSE configs, Exposed Tools.",
+       "lead": "MCP Server settings"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "macOS and Linux",
+     "items": [
+      {
+       "html": "<strong>macOS:</strong> Cmd+W closes the editor tab, Settings shows Cmd+comma, the terminal takes Cmd keys and leaves Control to the shell, zsh, bash and fish start as login shells, full screen follows the window. The mouse position follows the interface scale.",
+       "text": "macOS: Cmd+W closes the editor tab, Settings shows Cmd+comma, the terminal takes Cmd keys and leaves Control to the shell, zsh, bash and fish start as login shells, full screen follows the window. The mouse position follows the interface scale.",
+       "lead": "macOS"
+      },
+      {
+       "html": "<strong>Linux and macOS:</strong> a Maven or Gradle wrapper without the execute bit gets it, with a line in the build output. JDKs are found in /Library/Java and Homebrew. JDK paths keep their case on Linux.",
+       "text": "Linux and macOS: a Maven or Gradle wrapper without the execute bit gets it, with a line in the build output. JDKs are found in /Library/Java and Homebrew. JDK paths keep their case on Linux.",
+       "lead": "Linux and macOS"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 23,
+    "fixed": 3,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.24-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 87924197,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.24_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 86497124,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro_0.1.24_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.24-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 99399176,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.24-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 99765054,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.24-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 94416953,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.24-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 88380535,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.24/arro-0.1.24-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.23",
    "tag": "v0.1.23",

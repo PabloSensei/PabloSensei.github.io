@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>24</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.23</span>, from <span data-arro-date>19 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>25</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.24</span>, from <span data-arro-date>20 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,81 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.23" data-version="0.1.23" data-total="49">
+    <article class="release is-latest" id="v0.1.24" data-version="0.1.24" data-total="26">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.24" aria-label="Link to Arro 0.1.24">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.24</h2>
+        <p class="rel-meta"><time datetime="2026-11-20T10:17:07Z">20 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.24">Release page</a></p>
+      </header>
+      <p class="rel-summary">More refactorings with forms and one-step Undo, a Type Hierarchy window, Bookmarks and Build windows, MCP tools for the debugger and databases, a fuller Git menu, and many fixes for macOS and Linux. The database console now connects on Linux and macOS.</p>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixes <span class="count">3</span></h3>
+        <ul>
+          <li data-text="database on linux and macos. the database helper failed with &quot;could not find or load main class ide.db.helper&quot;. the classpath of the helper, jshell and long run classpaths now point at their jars correctly on unix."><strong>Database on Linux and macOS.</strong> The database helper failed with &quot;Could not find or load main class ide.db.Helper&quot;. The classpath of the helper, JShell and long run classpaths now point at their jars correctly on Unix.</li>
+          <li data-text="gradle import. a failed reimport stays visible until a new import, a clean script or a restart; an older ok status no longer hides it."><strong>Gradle import.</strong> A failed reimport stays visible until a new import, a clean script or a restart; an older OK status no longer hides it.</li>
+          <li data-text="a failed project import shows its cause, open settings, reload project and show log, and the status bar says the import failed. gradle keeps a daemon registry per jvm, so a removed jdk no longer stops imports."><strong>A failed project import</strong> shows its cause, Open Settings, Reload Project and Show Log, and the status bar says the import failed. Gradle keeps a daemon registry per JVM, so a removed JDK no longer stops imports.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Refactoring <span class="count">5</span></h3>
+        <ul>
+          <li data-text="move (f6). on a static member it opens move members with a target type and project suggestions. on an instance method it opens move instance method with the parameters and fields it can move to. each move is one step of undo."><strong>Move (F6).</strong> On a static member it opens Move Members with a target type and project suggestions. On an instance method it opens Move Instance Method with the parameters and fields it can move to. Each move is one step of Undo.</li>
+          <li data-text="pull members up, push members down, extract superclass, introduce parameter object — forms with members, targets, &quot;make abstract&quot;, conflicts and preview, in the refactor menu and refactor this."><strong>Pull Members Up, Push Members Down, Extract Superclass, Introduce Parameter Object</strong> — forms with members, targets, &quot;make abstract&quot;, conflicts and Preview, in the Refactor menu and Refactor This.</li>
+          <li data-text="extract asks for the name in place, picks the expression, and replaces this or all occurrences. extract method takes a visibility."><strong>Extract</strong> asks for the name in place, picks the expression, and replaces this or all occurrences. Extract Method takes a visibility.</li>
+          <li data-text="a refactoring over many files is one step of undo and redo, including closed and created files."><strong>A refactoring over many files</strong> is one step of Undo and Redo, including closed and created files.</li>
+          <li data-text="alt+insert offers only what fits the class, with &quot;nothing to generate&quot; when nothing does; constructor works in a class without fields."><strong>Alt+Insert</strong> offers only what fits the class, with &quot;Nothing to generate&quot; when nothing does; Constructor works in a class without fields.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Navigation and windows <span class="count">6</span></h3>
+        <ul>
+          <li data-text="type hierarchy (ctrl+h): type, supertypes and subtypes views, each level loaded on expand, a scope of all, production or test."><strong>Type Hierarchy (Ctrl+H):</strong> Type, Supertypes and Subtypes views, each level loaded on expand, a Scope of All, Production or Test.</li>
+          <li data-text="bookmarks window (alt+2): groups, files and lines in a tree, descriptions, speed search; groups are saved with the project."><strong>Bookmarks window (Alt+2):</strong> groups, files and lines in a tree, descriptions, speed search; groups are saved with the project.</li>
+          <li data-text="build window: the last build as a tree of files with errors and warnings beside the raw output. build module, recompile, rebuild project and generate sources are in the build menu."><strong>Build window:</strong> the last build as a tree of files with errors and warnings beside the raw output. Build Module, Recompile, Rebuild Project and Generate Sources are in the Build menu.</li>
+          <li data-text="build profiles: maven profiles of every module and gradle properties; every build, test run and import uses them."><strong>Build profiles:</strong> Maven profiles of every module and Gradle properties; every build, test run and import uses them.</li>
+          <li data-text="project structure has a modules page with nested modules, folders and dependencies. the language level of the project and of each module is edited in its build file."><strong>Project Structure</strong> has a Modules page with nested modules, folders and dependencies. The language level of the project and of each module is edited in its build file.</li>
+          <li data-text="reformat code on folders of the project tree, with optimize imports and only changed files, one undo and a progress with cancel. inspect code takes the selected folder, and its results can be exported."><strong>Reformat Code on folders</strong> of the project tree, with Optimize imports and Only changed files, one Undo and a progress with Cancel. Inspect Code takes the selected folder, and its results can be exported.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Spring <span class="count">2</span></h3>
+        <ul>
+          <li data-text="ctrl+b on a configuration key goes to the field, record component or setter of its class; ctrl+b in ${...} of @value goes to the key. alt+f7 on a key finds its usages. keys in superclasses are found too."><strong>Ctrl+B on a configuration key</strong> goes to the field, record component or setter of its class; Ctrl+B in <code>${...}</code> of <code>@Value</code> goes to the key. Alt+F7 on a key finds its usages. Keys in superclasses are found too.</li>
+          <li data-text="beans are in view | tool windows."><strong>Beans</strong> are in View | Tool Windows.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Git <span class="count">4</span></h3>
+        <ul>
+          <li data-text="the git menu has annotate, rebase, cherry-pick, revert, reset, shelve and unshelve, grey where they do not apply."><strong>The Git menu</strong> has Annotate, Rebase, Cherry-pick, Revert, Reset, Shelve and Unshelve, grey where they do not apply.</li>
+          <li data-text="cherry-pick of several log rows, oldest first. compare revisions of two commits. the log can be filtered by any path."><strong>Cherry-pick of several log rows</strong>, oldest first. <strong>Compare Revisions</strong> of two commits. The log can be filtered by any path.</li>
+          <li data-text="blame with a label on every line, today/yesterday dates and commit tints that fade with age; the line-number gutter has its own menu."><strong>Blame</strong> with a label on every line, Today/Yesterday dates and commit tints that fade with age; the line-number gutter has its own menu.</li>
+          <li data-text="git log changed files show folders as folders, file icons, change colours, and a rename as one row."><strong>Git Log changed files</strong> show folders as folders, file icons, change colours, and a rename as one row.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>MCP and agents <span class="count">4</span></h3>
+        <ul>
+          <li data-text="mcp tools under the names and parameters agents already know: analysis, symbol info, run configurations, files, reformat, apply_patch, rename, search, terminal, git status."><strong>MCP tools under the names and parameters agents already know</strong>: analysis, symbol info, run configurations, files, reformat, apply_patch, rename, search, terminal, git status.</li>
+          <li data-text="debugger tools (13 xdebug_): sessions, threads, stack, values by path, evaluate, set variable, run to line, breakpoints owned by the agent or the user. breakpoints set by an agent are painted apart in the gutter."><strong>Debugger tools (13 <code>xdebug_*</code>)</strong>: sessions, threads, stack, values by path, evaluate, set variable, run to line, breakpoints owned by the agent or the user. Breakpoints set by an agent are painted apart in the gutter.</li>
+          <li data-text="database tools (14) with csv results."><strong>Database tools (14)</strong> with CSV results.</li>
+          <li data-text="mcp server settings: enable with a confirmation, client auto-configuration (global and project, with a backup and remove), manual http/stdio/sse configs, exposed tools."><strong>MCP Server settings</strong>: Enable with a confirmation, client auto-configuration (global and project, with a backup and Remove), manual HTTP/Stdio/SSE configs, Exposed Tools.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>macOS and Linux <span class="count">2</span></h3>
+        <ul>
+          <li data-text="macos: cmd+w closes the editor tab, settings shows cmd+comma, the terminal takes cmd keys and leaves control to the shell, zsh, bash and fish start as login shells, full screen follows the window. the mouse position follows the interface scale."><strong>macOS:</strong> Cmd+W closes the editor tab, Settings shows Cmd+comma, the terminal takes Cmd keys and leaves Control to the shell, zsh, bash and fish start as login shells, full screen follows the window. The mouse position follows the interface scale.</li>
+          <li data-text="linux and macos: a maven or gradle wrapper without the execute bit gets it, with a line in the build output. jdks are found in /library/java and homebrew. jdk paths keep their case on linux."><strong>Linux and macOS:</strong> a Maven or Gradle wrapper without the execute bit gets it, with a line in the build output. JDKs are found in /Library/Java and Homebrew. JDK paths keep their case on Linux.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.23" data-version="0.1.23" data-total="49">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.23" aria-label="Link to Arro 0.1.23">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.23</h2>
-        <p class="rel-meta"><time datetime="2026-11-19T16:00:09Z">19 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.23">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-19T16:00:09Z">19 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.23">Release page</a></p>
       </header>
       <p class="rel-summary">The editor, the find bar and completion got a long list of fixes. The diff window has a new toolbar and look. You can commit only some hunks of a file and push from a Push window. The Run and Debug consoles link to sources and can be searched. Alt+F8 opens a real Evaluate window, and Attach to Process lists the running JVMs. Interface scale now works on Linux and macOS too.</p>
       <section class="rel-group" data-kind="improved">
