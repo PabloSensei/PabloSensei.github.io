@@ -1,63 +1,213 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-20T13:17:09.318Z",
+ "generatedAt": "2026-11-20T14:55:35.746Z",
  "latest": {
-  "version": "0.1.25",
-  "tag": "v0.1.25",
-  "date": "2026-11-20T13:16:56Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.25",
+  "version": "0.1.26",
+  "tag": "v0.1.26",
+  "date": "2026-11-20T14:55:33Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.26",
   "assets": [
    {
-    "name": "arro-0.1.25-windows-x86_64.zip",
+    "name": "arro-0.1.26-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 88411820,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-windows-x86_64.zip"
+    "size": 88572807,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.25_amd64.deb",
+    "name": "arro_0.1.26_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 86753986,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro_0.1.25_amd64.deb"
+    "size": 86975650,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro_0.1.26_amd64.deb"
    },
    {
-    "name": "arro-0.1.25-1.x86_64.rpm",
+    "name": "arro-0.1.26-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 99874270,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-1.x86_64.rpm"
+    "size": 100039447,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.25-linux-x86_64.tar.gz",
+    "name": "arro-0.1.26-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 100251863,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-linux-x86_64.tar.gz"
+    "size": 100412337,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.25-macos-aarch64.dmg",
+    "name": "arro-0.1.26-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 94959579,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-macos-aarch64.dmg"
+    "size": 95119278,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.25-macos-aarch64.zip",
+    "name": "arro-0.1.26-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 88856936,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.25/arro-0.1.25-macos-aarch64.zip"
+    "size": 89001980,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.26",
+   "tag": "v0.1.26",
+   "date": "2026-11-20T14:55:33Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.26",
+   "prerelease": false,
+   "summary": [
+    "More polish. Database connections get their own window, Run/Debug Configurations is organised by type, the search windows move and resize, and dialogs and tool windows look the same everywhere."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Database",
+     "items": [
+      {
+       "html": "<strong>Data Sources and Drivers</strong> is a modal window: connections on the left with product icons, the form on the right. Host, port and database build the URL and are filled back from it. <strong>Test Connection</strong> answers with the server version or the error. OK, Cancel and Apply.",
+       "text": "Data Sources and Drivers is a modal window: connections on the left with product icons, the form on the right. Host, port and database build the URL and are filled back from it. Test Connection answers with the server version or the error. OK, Cancel and Apply.",
+       "lead": "Data Sources and Drivers"
+      },
+      {
+       "html": "<strong>+</strong> opens a new connection; F4, a double click or <strong>Properties</strong> opens an existing one for editing.",
+       "text": "+ opens a new connection; F4, a double click or Properties opens an existing one for editing.",
+       "lead": "+"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Run/Debug Configurations",
+     "items": [
+      {
+       "html": "<strong>A tree by configuration type</strong> with icons and counts, and a toolbar on top: Add New Configuration with search by typing, Remove, Copy, Save as Project File, Move Up/Down, Sort. Alt+Insert, Ctrl+D and Delete work in the list.",
+       "text": "A tree by configuration type with icons and counts, and a toolbar on top: Add New Configuration with search by typing, Remove, Copy, Save as Project File, Move Up/Down, Sort. Alt+Insert, Ctrl+D and Delete work in the list.",
+       "lead": "A tree by configuration type"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Project tree",
+     "items": [
+      {
+       "html": "<strong>New</strong> is one submenu (Java Class, File, Directory, Package…), also on Alt+Insert.",
+       "text": "New is one submenu (Java Class, File, Directory, Package…), also on Alt+Insert.",
+       "lead": "New"
+      },
+      {
+       "html": "<strong>New Java Class</strong> lets you pick Class, Interface, Record, Enum or Annotation under the name field.",
+       "text": "New Java Class lets you pick Class, Interface, Record, Enum or Annotation under the name field.",
+       "lead": "New Java Class"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Windows",
+     "items": [
+      {
+       "html": "<strong>Find in Files, Search Everywhere, Recent Locations, Bookmarks and Show Usages</strong> move by their top row and resize by any edge or corner, and open where you left them. Find in Files can be pinned so a click outside does not close it.",
+       "text": "Find in Files, Search Everywhere, Recent Locations, Bookmarks and Show Usages move by their top row and resize by any edge or corner, and open where you left them. Find in Files can be pinned so a click outside does not close it.",
+       "lead": "Find in Files, Search Everywhere, Recent Locations, Bookmarks and Show Usages"
+      },
+      {
+       "html": "<strong>One row of buttons in every dialog:</strong> OK, Cancel, Apply in the same order and height, the main button highlighted and grey while there is nothing to do. Enter presses the main button and Escape cancels.",
+       "text": "One row of buttons in every dialog: OK, Cancel, Apply in the same order and height, the main button highlighted and grey while there is nothing to do. Enter presses the main button and Escape cancels.",
+       "lead": "One row of buttons in every dialog"
+      },
+      {
+       "html": "<strong>Tool window headers</strong> look the same everywhere: title and tabs on the left, actions, Options (⋮) and Hide on the right. Empty Database, Services and Bookmarks windows offer the action to start with.",
+       "text": "Tool window headers look the same everywhere: title and tabs on the left, actions, Options (⋮) and Hide on the right. Empty Database, Services and Bookmarks windows offer the action to start with.",
+       "lead": "Tool window headers"
+      }
+     ]
+    },
+    {
+     "kind": "fixed",
+     "title": "Fixes",
+     "items": [
+      {
+       "html": "<strong>Build through MCP:</strong> a build that fails very quickly now reports its compile errors instead of &quot;the run did not start&quot;.",
+       "text": "Build through MCP: a build that fails very quickly now reports its compile errors instead of \"the run did not start\".",
+       "lead": "Build through MCP"
+      },
+      {
+       "html": "<strong>Parameter Info:</strong> the overload picked with Ctrl+Up/Down is no longer replaced by a late answer of the language server, and the active parameter follows the caret.",
+       "text": "Parameter Info: the overload picked with Ctrl+Up/Down is no longer replaced by a late answer of the language server, and the active parameter follows the caret.",
+       "lead": "Parameter Info"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 8,
+    "fixed": 2,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.26-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 88572807,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.26_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 86975650,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro_0.1.26_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.26-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 100039447,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.26-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 100412337,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.26-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 95119278,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.26-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 89001980,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.25",
    "tag": "v0.1.25",

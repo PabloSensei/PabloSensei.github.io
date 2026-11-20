@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>26</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.25</span>, from <span data-arro-date>20 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>27</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.26</span>, from <span data-arro-date>20 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,55 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.25" data-version="0.1.25" data-total="17">
+    <article class="release is-latest" id="v0.1.26" data-version="0.1.26" data-total="10">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.26" aria-label="Link to Arro 0.1.26">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.26</h2>
+        <p class="rel-meta"><time datetime="2026-11-20T14:55:33Z">20 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.26">Release page</a></p>
+      </header>
+      <p class="rel-summary">More polish. Database connections get their own window, Run/Debug Configurations is organised by type, the search windows move and resize, and dialogs and tool windows look the same everywhere.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Database <span class="count">2</span></h3>
+        <ul>
+          <li data-text="data sources and drivers is a modal window: connections on the left with product icons, the form on the right. host, port and database build the url and are filled back from it. test connection answers with the server version or the error. ok, cancel and apply."><strong>Data Sources and Drivers</strong> is a modal window: connections on the left with product icons, the form on the right. Host, port and database build the URL and are filled back from it. <strong>Test Connection</strong> answers with the server version or the error. OK, Cancel and Apply.</li>
+          <li data-text="+ opens a new connection; f4, a double click or properties opens an existing one for editing."><strong>+</strong> opens a new connection; F4, a double click or <strong>Properties</strong> opens an existing one for editing.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Run/Debug Configurations <span class="count">1</span></h3>
+        <ul>
+          <li data-text="a tree by configuration type with icons and counts, and a toolbar on top: add new configuration with search by typing, remove, copy, save as project file, move up/down, sort. alt+insert, ctrl+d and delete work in the list."><strong>A tree by configuration type</strong> with icons and counts, and a toolbar on top: Add New Configuration with search by typing, Remove, Copy, Save as Project File, Move Up/Down, Sort. Alt+Insert, Ctrl+D and Delete work in the list.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Project tree <span class="count">2</span></h3>
+        <ul>
+          <li data-text="new is one submenu (java class, file, directory, package…), also on alt+insert."><strong>New</strong> is one submenu (Java Class, File, Directory, Package…), also on Alt+Insert.</li>
+          <li data-text="new java class lets you pick class, interface, record, enum or annotation under the name field."><strong>New Java Class</strong> lets you pick Class, Interface, Record, Enum or Annotation under the name field.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Windows <span class="count">3</span></h3>
+        <ul>
+          <li data-text="find in files, search everywhere, recent locations, bookmarks and show usages move by their top row and resize by any edge or corner, and open where you left them. find in files can be pinned so a click outside does not close it."><strong>Find in Files, Search Everywhere, Recent Locations, Bookmarks and Show Usages</strong> move by their top row and resize by any edge or corner, and open where you left them. Find in Files can be pinned so a click outside does not close it.</li>
+          <li data-text="one row of buttons in every dialog: ok, cancel, apply in the same order and height, the main button highlighted and grey while there is nothing to do. enter presses the main button and escape cancels."><strong>One row of buttons in every dialog:</strong> OK, Cancel, Apply in the same order and height, the main button highlighted and grey while there is nothing to do. Enter presses the main button and Escape cancels.</li>
+          <li data-text="tool window headers look the same everywhere: title and tabs on the left, actions, options (⋮) and hide on the right. empty database, services and bookmarks windows offer the action to start with."><strong>Tool window headers</strong> look the same everywhere: title and tabs on the left, actions, Options (⋮) and Hide on the right. Empty Database, Services and Bookmarks windows offer the action to start with.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="fixed">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Fixes <span class="count">2</span></h3>
+        <ul>
+          <li data-text="build through mcp: a build that fails very quickly now reports its compile errors instead of &quot;the run did not start&quot;."><strong>Build through MCP:</strong> a build that fails very quickly now reports its compile errors instead of &quot;the run did not start&quot;.</li>
+          <li data-text="parameter info: the overload picked with ctrl+up/down is no longer replaced by a late answer of the language server, and the active parameter follows the caret."><strong>Parameter Info:</strong> the overload picked with Ctrl+Up/Down is no longer replaced by a late answer of the language server, and the active parameter follows the caret.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.25" data-version="0.1.25" data-total="17">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.25" aria-label="Link to Arro 0.1.25">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.25</h2>
-        <p class="rel-meta"><time datetime="2026-11-20T13:16:56Z">20 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.25">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-20T13:16:56Z">20 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.25">Release page</a></p>
       </header>
       <p class="rel-summary">A polish release. Every modal window can now be moved, resized and closed with its own button. Commit and Push show changes as a tree, panels and menus got their icons, and Settings uses check boxes and drop-down lists.</p>
       <section class="rel-group" data-kind="improved">
