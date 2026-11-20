@@ -1,63 +1,176 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-20T14:55:35.746Z",
+ "generatedAt": "2026-11-20T17:52:25.460Z",
  "latest": {
-  "version": "0.1.26",
-  "tag": "v0.1.26",
-  "date": "2026-11-20T14:55:33Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.26",
+  "version": "0.1.27",
+  "tag": "v0.1.27",
+  "date": "2026-11-20T17:52:15Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.27",
   "assets": [
    {
-    "name": "arro-0.1.26-windows-x86_64.zip",
+    "name": "arro-0.1.27-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 88572807,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-windows-x86_64.zip"
+    "size": 88635065,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.26_amd64.deb",
+    "name": "arro_0.1.27_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 86975650,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro_0.1.26_amd64.deb"
+    "size": 86976772,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro_0.1.27_amd64.deb"
    },
    {
-    "name": "arro-0.1.26-1.x86_64.rpm",
+    "name": "arro-0.1.27-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 100039447,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-1.x86_64.rpm"
+    "size": 100094336,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.26-linux-x86_64.tar.gz",
+    "name": "arro-0.1.27-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 100412337,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-linux-x86_64.tar.gz"
+    "size": 100457830,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.26-macos-aarch64.dmg",
+    "name": "arro-0.1.27-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 95119278,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-macos-aarch64.dmg"
+    "size": 95227856,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.26-macos-aarch64.zip",
+    "name": "arro-0.1.27-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 89001980,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.26/arro-0.1.26-macos-aarch64.zip"
+    "size": 89107637,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.27",
+   "tag": "v0.1.27",
+   "date": "2026-11-20T17:52:15Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.27",
+   "prerelease": false,
+   "summary": [
+    "Text fields now work with the mouse everywhere."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Text fields",
+     "items": [
+      {
+       "html": "<strong>Click</strong> places the caret, <strong>drag</strong> selects, <strong>Shift+click</strong> extends the selection, <strong>double click</strong> selects a word and <strong>triple click</strong> the whole field. The pointer is an I-beam over a field.",
+       "text": "Click places the caret, drag selects, Shift+click extends the selection, double click selects a word and triple click the whole field. The pointer is an I-beam over a field.",
+       "lead": "Click"
+      },
+      {
+       "html": "<strong>Right click</strong> opens Cut, Copy, Paste and Select All; Escape closes the menu.",
+       "text": "Right click opens Cut, Copy, Paste and Select All; Escape closes the menu.",
+       "lead": "Right click"
+      },
+      {
+       "html": "This works in every field: editor Find and Replace, Settings values (the caret lands on the first click), Find in Files, Search Everywhere, the Commit message, Git Log filters, Push, Database filters and forms, refactoring and dialog forms, Run/Debug Configurations, the terminal search and the consoles.",
+       "text": "This works in every field: editor Find and Replace, Settings values (the caret lands on the first click), Find in Files, Search Everywhere, the Commit message, Git Log filters, Push, Database filters and forms, refactoring and dialog forms, Run/Debug Configurations, the terminal search and the consoles.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Passwords",
+     "items": [
+      {
+       "html": "<strong>Password fields</strong> of the Database window and of Data Sources show dots and never put the password on the clipboard: Copy and Cut do nothing there.",
+       "text": "Password fields of the Database window and of Data Sources show dots and never put the password on the clipboard: Copy and Cut do nothing there.",
+       "lead": "Password fields"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "About",
+     "items": [
+      {
+       "html": "The About window shows only the version, the channel, the build and the license.",
+       "text": "The About window shows only the version, the channel, the build and the license.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 5,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.27-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 88635065,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.27_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 86976772,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro_0.1.27_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.27-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 100094336,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.27-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 100457830,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.27-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 95227856,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.27-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 89107637,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.27/arro-0.1.27-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.26",
    "tag": "v0.1.26",
