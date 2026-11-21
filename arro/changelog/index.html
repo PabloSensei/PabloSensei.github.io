@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>28</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.27</span>, from <span data-arro-date>20 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>29</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.28</span>, from <span data-arro-date>21 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,84 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.27" data-version="0.1.27" data-total="5">
+    <article class="release is-latest" id="v0.1.28" data-version="0.1.28" data-total="29">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.28" aria-label="Link to Arro 0.1.28">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.28</h2>
+        <p class="rel-meta"><time datetime="2026-11-21T11:58:44Z">21 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.28">Release page</a></p>
+      </header>
+      <p class="rel-summary">Rename now edits the name right in the code, every dialog moves, resizes and closes the same way, forms line up, and the search windows learned scopes.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor <span class="count">5</span></h3>
+        <ul>
+          <li data-text="rename in place: shift+f6 frames the name and its uses in the file, typing changes them all at once, enter renames across the project, escape puts the old name back. an invalid name turns the frame red; shift+f6 again opens the dialog with options."><strong>Rename in place</strong>: Shift+F6 frames the name and its uses in the file, typing changes them all at once, Enter renames across the project, Escape puts the old name back. An invalid name turns the frame red; Shift+F6 again opens the dialog with options.</li>
+          <li data-text="file structure and structure show signatures with parameter and return types, field types and visibility icons, so overloads are easy to tell apart."><strong>File Structure and Structure</strong> show signatures with parameter and return types, field types and visibility icons, so overloads are easy to tell apart.</li>
+          <li data-text="generate (alt+insert) keeps getter, setter and implement methods in the list and says in the status bar when there is nothing to generate."><strong>Generate</strong> (Alt+Insert) keeps Getter, Setter and Implement Methods in the list and says in the status bar when there is nothing to generate.</li>
+          <li data-text="completion after a dot lists the members of the type first and the postfix templates after them; before an existing identifier it shows members only."><strong>Completion after a dot</strong> lists the members of the type first and the postfix templates after them; before an existing identifier it shows members only.</li>
+          <li data-text="while the project imports, quick documentation, parameter info, go to declaration and the hierarchies say they wait for the language server, find usages runs by itself once the server is ready, alt+enter and completion say the results are incomplete and completion offers the words of the file. rename in place and generate work without the server too."><strong>While the project imports</strong>, Quick Documentation, Parameter Info, Go to Declaration and the hierarchies say they wait for the language server, Find Usages runs by itself once the server is ready, Alt+Enter and completion say the results are incomplete and completion offers the words of the file. Rename in place and Generate work without the server too.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Dialogs and forms <span class="count">6</span></h3>
+        <ul>
+          <li data-text="every modal window drags by its header, resizes from its edges and closes with x and escape; import settings and the find usages options joined the shared frame. position and size are remembered per window."><strong>Every modal window</strong> drags by its header, resizes from its edges and closes with X and Escape; Import Settings and the Find Usages options joined the shared frame. Position and size are remembered per window.</li>
+          <li data-text="forms (data sources, run/debug configurations, project structure, refactorings, push, new project, settings) keep their labels in one column and their fields at one height."><strong>Forms</strong> (Data Sources, Run/Debug Configurations, Project Structure, refactorings, Push, New Project, Settings) keep their labels in one column and their fields at one height.</li>
+          <li data-text="read-only values such as the repository path in settings can be selected and copied."><strong>Read-only values</strong> such as the repository path in Settings can be selected and copied.</li>
+          <li data-text="project structure picks the sdk and the language level from lists."><strong>Project Structure</strong> picks the SDK and the language level from lists.</li>
+          <li data-text="unchecked boxes have a visible border in every theme, empty fields in settings show their frame, and settings opens larger on big screens."><strong>Unchecked boxes</strong> have a visible border in every theme, empty fields in Settings show their frame, and Settings opens larger on big screens.</li>
+          <li data-text="keymap is a tree of editor actions, main menu, tool windows, debugger actions and other; search by name or by shortcut opens the matching groups. numeric keypad keys are named numpad 1, numpad + and so on."><strong>Keymap</strong> is a tree of Editor Actions, Main Menu, Tool Windows, Debugger Actions and Other; search by name or by shortcut opens the matching groups. Numeric keypad keys are named NumPad 1, NumPad + and so on.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Search <span class="count">2</span></h3>
+        <ul>
+          <li data-text="find in files searches the whole project, a module, a directory, open files or changed files, with a file mask. ctrl+enter opens the results in the find window as a tree of files and matches."><strong>Find in Files</strong> searches the whole project, a module, a directory, open files or changed files, with a file mask. Ctrl+Enter opens the results in the Find window as a tree of files and matches.</li>
+          <li data-text="find action writes shortcuts as the menus do (ctrl+z, not ctrl-z), shows the main shortcut of each command and lists commands by name with their icons; commands that open a tool window show that window's icon."><strong>Find Action</strong> writes shortcuts as the menus do (Ctrl+Z, not ctrl-z), shows the main shortcut of each command and lists commands by name with their icons; commands that open a tool window show that window's icon.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Tool windows <span class="count">9</span></h3>
+        <ul>
+          <li data-text="headers of coverage, endpoints, beans, performance, selection history and local history match the other tool windows; commit and shelf tabs sit in the header row."><strong>Headers</strong> of Coverage, Endpoints, Beans, Performance, Selection History and Local History match the other tool windows; Commit and Shelf tabs sit in the header row.</li>
+          <li data-text="move to in the ⋮ menu moves a tool window to the left, right or bottom stripe, and the project remembers it there."><strong>Move to</strong> in the ⋮ menu moves a tool window to the left, right or bottom stripe, and the project remembers it there.</li>
+          <li data-text="empty states: run offers add configuration, debug offers debug, coverage offers run with coverage; endpoints and beans say why they are empty."><strong>Empty states</strong>: Run offers Add configuration, Debug offers Debug, Coverage offers Run with Coverage; Endpoints and Beans say why they are empty.</li>
+          <li data-text="icons in todo, local history and bookmarks rows; bookmarks show their mnemonic on the icon."><strong>Icons</strong> in TODO, Local History and Bookmarks rows; bookmarks show their mnemonic on the icon.</li>
+          <li data-text="database no longer shows a blank square above an empty table."><strong>Database</strong> no longer shows a blank square above an empty table.</li>
+          <li data-text="find action finds data sources… and opens the data sources window."><strong>Find Action</strong> finds Data Sources… and opens the Data Sources window.</li>
+          <li data-text="run and debug with a chosen configuration and nothing running offer run 'name' or debug 'name' with the shortcut, and edit configurations."><strong>Run and Debug</strong> with a chosen configuration and nothing running offer Run 'name' or Debug 'name' with the shortcut, and Edit Configurations.</li>
+          <li data-text="breakpoints (ctrl+shift+f8) is a tree of line, method, field and exception breakpoints with checkboxes, and the properties of the selected one on the right: condition, log message, suspend, pass count. it works without a debug session."><strong>Breakpoints</strong> (Ctrl+Shift+F8) is a tree of line, method, field and exception breakpoints with checkboxes, and the properties of the selected one on the right: condition, log message, suspend, pass count. It works without a debug session.</li>
+          <li data-text="mcp server settings no longer hang on reading… when the page opens."><strong>MCP Server</strong> settings no longer hang on Reading… when the page opens.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Git <span class="count">2</span></h3>
+        <ul>
+          <li data-text="commit, push and diff checkboxes show a check mark when on."><strong>Commit, Push and diff checkboxes</strong> show a check mark when on.</li>
+          <li data-text="change trees keep a gap between icon and name; the empty commit message shows a hint; push shows a missing upstream next to the branch."><strong>Change trees</strong> keep a gap between icon and name; the empty commit message shows a hint; Push shows a missing upstream next to the branch.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor and terminal <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the caret stays in sight at the bottom of the editor, also when usage hints sit above methods; rename opens above a line at the bottom."><strong>The caret stays in sight</strong> at the bottom of the editor, also when usage hints sit above methods; <strong>Rename</strong> opens above a line at the bottom.</li>
+          <li data-text="mouse wheel scrolls the history of the terminal and of ai sessions; shift+wheel always scrolls the history; shift+page up/down scroll a page."><strong>Mouse wheel</strong> scrolls the history of the Terminal and of AI Sessions; Shift+wheel always scrolls the history; Shift+Page Up/Down scroll a page.</li>
+          <li data-text="settings tree: keymap follows appearance; database, ai and mcp server sit under tools."><strong>Settings tree</strong>: Keymap follows Appearance; Database, AI and MCP Server sit under Tools.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Java <span class="count">2</span></h3>
+        <ul>
+          <li data-text="after an update of arro, the language server drops its old configuration cache, so gradle projects keep importing."><strong>After an update of Arro</strong>, the language server drops its old configuration cache, so Gradle projects keep importing.</li>
+          <li data-text="the first gradle import of a project repeats by itself when the language server has not yet unpacked its init script, and the project opens. the notice about the first attempt may still show; close it, the project is imported."><strong>The first Gradle import</strong> of a project repeats by itself when the language server has not yet unpacked its init script, and the project opens. The notice about the first attempt may still show; close it, the project is imported.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.27" data-version="0.1.27" data-total="5">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.27" aria-label="Link to Arro 0.1.27">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.27</h2>
-        <p class="rel-meta"><time datetime="2026-11-20T17:52:15Z">20 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.27">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-20T17:52:15Z">20 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.27">Release page</a></p>
       </header>
       <p class="rel-summary">Text fields now work with the mouse everywhere.</p>
       <section class="rel-group" data-kind="improved">
