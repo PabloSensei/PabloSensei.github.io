@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bowyer · one native window for every AI coding agent you run</title>
+<meta name="description" content="Bowyer is a native, open-source app that gathers every Claude Code, Codex, OpenCode and DeepSeek session, on your computer and over SSH, into one searchable tree: the conversation, the context window, the cost, the changed files, and new turns from the window. Written in Rust with a GPU-rendered UI. Free for Windows, Linux and macOS.">
+<link rel="canonical" href="https://pablosensei.github.io/bowyer/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paweł Januszko">
+<meta property="og:title" content="Bowyer · one native window for every AI coding agent you run">
+<meta property="og:description" content="Every Claude Code, Codex, OpenCode and DeepSeek session, local and over SSH, in one fast native window. Context, cost, diffs and new turns. Windows, Linux and macOS.">
+<meta property="og:url" content="https://pablosensei.github.io/bowyer/">
+<meta property="og:image" content="https://pablosensei.github.io/assets/og/bowyer.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f14" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/bowyer/icon-256.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/bowyer/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>(function(){var d=document.documentElement;d.className=d.className.replace("no-js","js")+(document.visibilityState==="visible"?" motion":"");try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Bowyer","applicationCategory":"DeveloperApplication","operatingSystem":"Windows 11, Linux, macOS","description":"One native window for every AI coding agent you run: Claude Code, Codex, OpenCode and DeepSeek sessions, local and over SSH.","url":"https://pablosensei.github.io/bowyer/","downloadUrl":"https://github.com/PabloSensei/bowyer/releases/latest","author":{"@type":"Person","name":"Paweł Januszko","url":"https://pablosensei.github.io/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script src="/assets/js/boxes.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar sticky">
+  <div class="wrap">
+    <a class="mark" href="/"><i aria-hidden="true"></i>Paweł Januszko</a>
+    <nav class="topnav" aria-label="Bowyer">
+        <a href="/bowyer/" aria-current="page">Bowyer</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/PabloSensei/bowyer">Source <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colours"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="arro-hero" aria-labelledby="bowyer-h">
+    <div class="wrap">
+      <div>
+        <h1 class="brand" id="bowyer-h">Bowyer</h1>
+        <p class="lede">One native window for every AI coding agent you run. <span>Claude Code, Codex, OpenCode and DeepSeek sessions, on this computer and over SSH, in one searchable tree.</span></p>
+        <div class="dl-cta">
+          <a class="btn btn--arro" href="https://github.com/PabloSensei/bowyer/releases/latest" data-download-primary>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8.5M4.4 7 8 10.6 11.6 7M2.8 13.6h10.4"/></svg>
+            <span>Download for <span data-os-name>your system</span></span>
+          </a>
+          <p class="meta">Free · version <span class="mono">0.1.0</span> · <a href="#download">All systems</a> · <a href="https://github.com/PabloSensei/bowyer">Source on GitHub</a></p>
+        </div>
+        <p class="edition"><strong>Preview edition.</strong> Bowyer is young: expect rough edges and breaking changes between versions. Bug reports are very welcome.</p>
+      </div>
+<figure class="box" data-product="bowyer" style="--i:0">
+  <div class="box-stage">
+    <div class="box-floor" aria-hidden="true"></div>
+    <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="Bowyer box. Arrow keys turn it, Enter turns it over.">
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="bowyer"></canvas><div class="front-type"><div><div class="pname brand">Bowyer</div><div class="ptag">Every AI coding agent, one window</div></div><div></div><div class="pfor">For Windows, Linux and&nbsp;macOS</div><span class="sticker"><small>Free</small><span class="mono">0.1.0</span></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">Bowyer</div><ul class="checks"><li>Every session in one tree</li><li>Context and cost at a glance</li><li>Local and over SSH</li></ul><p class="reqline"><b>Requires</b> Windows 11, Linux, macOS · an AI coding agent</p><div class="barcode"><svg data-barcode="BOWYER"></svg><span>BOWYER 0.1.0</span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">Bowyer</span><span class="mono">0.1.0</span></div></div>
+      <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Rust · GPUI</span></div></div>
+      <div class="face top" aria-hidden="true"><img src="/assets/img/bowyer/icon-256.png" alt=""></div>
+      <div class="face bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+  <figcaption class="box-caption">
+    <button class="turn-btn" type="button" aria-pressed="false"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 2.5v3h-3"/></svg> Turn over</button>
+  </figcaption>
+</figure>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="shot-wrap">
+      <figure class="plate reveal">
+        <div class="shot">
+            <img src="/assets/img/bowyer/hero.webp" width="1600" height="877" alt="Bowyer in the Dark theme: the session tree groups three agent sessions under the Claude Code session that started them, the conversation shows folded tool calls and a code block, and the side panel shows the context window, the session cost and the changed files" fetchpriority="high">
+            <span class="callout l" style="--x:1.6%;--y:7.8%;--d:0s;--out:min(150px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Search it all</span></span>
+            <span class="callout l" style="--x:20.2%;--y:13.7%;--d:.2s;--out:min(150px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Your turn</span></span>
+            <span class="callout l" style="--x:3.4%;--y:21.4%;--d:.4s;--out:min(150px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Agents nested</span></span>
+            <span class="callout r" style="--x:98%;--y:27%;--d:.1s;--out:min(220px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Context, split</span></span>
+            <span class="callout r" style="--x:98%;--y:43.3%;--d:.3s;--out:min(220px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Cost and cache</span></span>
+            <span class="callout r" style="--x:98%;--y:66%;--d:.5s;--out:min(220px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Changed files</span></span>
+          </div>
+          <figcaption><b>Sessions</b> Three agents folded under the Claude Code session that started them, with its context, cost and changes beside the chat.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section class="section wrap" aria-labelledby="why-h">
+    <h2 class="h-section reveal" id="why-h" style="margin-bottom:20px">Why Bowyer</h2>
+    <ul class="claims reveal">
+      <li><h3 class="brand">Every agent, one place</h3><p>Claude Code, Codex, OpenCode and DeepSeek each keep their history in their own folder, their own format and their own terminal. Bowyer reads all of them and shows every session you ever ran, on this machine and on your servers, in one tree you can search as you type.</p></li>
+      <li><h3 class="brand">Native and fast</h3><p>Rust from top to bottom and a GPU-rendered UI on GPUI, the same foundation as Arro. No Electron, no web view. Hundreds of sessions load in a moment.</p></li>
+      <li><h3 class="brand">Your files stay yours</h3><p>Bowyer only reads what the agents write. Folders, pins, names and notes live in its own database, and your agents keep working exactly as before, with or without the window open.</p></li>
+      <li><h3 class="brand">See what it costs</h3><p>The context window split by what fills it, token totals, cost at API prices, and a countdown for the prompt cache, so you know when compacting pays off and when a pause will make the next turn expensive.</p></li>
+      <li><h3 class="brand">Keep going from the window</h3><p>Type a message and the agent runs the turn in the background, here or on an SSH host. The answer streams in, and permission prompts and questions arrive as buttons instead of a terminal you first have to find.</p></li>
+    </ul>
+  </section>
+
+  <section class="section wrap" id="features" aria-labelledby="features-h">
+    <div class="section-head reveal">
+      <h2 class="h-section" id="features-h">What it does</h2>
+      <p>Reads the sessions of Claude Code and OpenCode every day, Codex and DeepSeek Harness too, on this computer and on any host you reach over SSH.</p>
+    </div>
+
+    <div class="feature">
+      <div class="reveal">
+        <h3>Every session in one tree</h3>
+        <p>Grouped by project, environment or agent, with your own folders, drag and drop, pins, renames and four sort orders. Sub-agent and worktree sessions fold under the session that started them; long projects show the latest ten and a <i>Show more</i>; one button collapses everything.</p>
+        <p>Sessions running in a terminal elsewhere show <i>working</i>, <i>waiting</i> or <i>your turn</i>, and the taskbar flashes when one needs you. <kbd>Ctrl+K</kbd> searches titles, prompts, folders and the whole conversation text.</p>
+        <ul class="chips">
+          <li>Claude Code</li><li>OpenCode</li><li>Codex</li><li>DeepSeek Harness</li><li>SSH hosts</li><li>Full-text search</li>
+        </ul>
+      </div>
+      <figure class="plate reveal">
+        <div class="fit"><img src="/assets/img/bowyer/tree.webp" width="580" height="585" alt="The session tree: shop-api with a Claude Code session and three agent sessions nested under it, then web-dashboard and infra-scripts" decoding="async"></div>
+        <figcaption><b>Tree</b> Agents under their lead, live state on the right.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature flip">
+      <div class="reveal">
+        <h3>A chat, not a terminal dump</h3>
+        <p>Markdown, highlighted code with Copy and Run, folded thinking, and tool calls folded into one line per run that opens into the commands, their output and the diffs. Background task notices shrink to a short line.</p>
+        <p>Paste screenshots, drop files, <code>/</code> for commands and skills, <code>@</code> for files of the session's folder. Claude Code and OpenCode ask before a command or an edit their settings don't allow, right in the window, and Claude's questions come with their choices and a field for your own answer.</p>
+      </div>
+      <figure class="plate reveal">
+        <div class="fit"><img src="/assets/img/bowyer/chat-light.webp" width="1100" height="822" alt="A conversation in the Light theme with folded thinking, a one-line summary of seven tool calls, highlighted Rust code and a follow-up turn" decoding="async"></div>
+        <figcaption><b>Conversation</b> Seven tool calls in one line, in the Light theme.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="reveal">
+        <h3>What a session holds</h3>
+        <p>Environment, folder, Git branch and model. The context window split by what fills it, for Claude Code exactly as Claude counts it: system prompt, tools, MCP servers, skills and messages.</p>
+        <p>Token totals, cost at API prices per call, the price of the next turn and of a compaction at the current cache state, and how long the prompt cache stays warm. Every file the session changed, as a tree, and every command and sub-agent it ran.</p>
+      </div>
+      <figure class="plate reveal">
+        <div class="fit"><img src="/assets/img/bowyer/session.webp" width="392" height="1125" alt="The Session panel: context of 51k tokens out of 1M split into six parts, session cost of $0.227 with a warm prompt cache, token totals, changed files and commands" decoding="async"></div>
+        <figcaption><b>Session</b> Context, cost and cache, changed files.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature flip">
+      <div class="reveal">
+        <h3>Files, Git and a terminal</h3>
+        <p>A Files tab with the folder's tree and a preview of text and pictures, here or over SSH. A Changes tab with staged and unstaged files, diffs by hunk with Stage, Unstage and Discard, commit, fetch, pull, push and branch switching.</p>
+        <p>A built-in terminal (<kbd>Ctrl+`</kbd>) opens in the session's folder, locally or on the SSH host, so resuming a session never starts with hunting for the right window.</p>
+      </div>
+      <figure class="plate reveal">
+        <div class="fit"><img src="/assets/img/bowyer/diff.webp" width="1100" height="840" alt="A diff of checkout.rs in the Changes tab, with Stage and Discard for the hunk" decoding="async"></div>
+        <figcaption><b>Changes</b> A hunk ready to stage or discard.</figcaption>
+      </figure>
+    </div>
+
+    <div class="groups reveal" style="margin-top:clamp(40px,6vw,72px)">
+      <section>
+        <h3>SSH hosts</h3>
+        <p>Add <code>user@host</code> with a key of its own; the connection is checked before it is saved. Sessions, files, Git, the terminal and new turns work on the host as they do here.</p>
+      </section>
+      <section>
+        <h3>Memory for your agents</h3>
+        <p><code>bowyer mcp</code> is an MCP server: an agent searches and reads past sessions of the project and keeps notes there, instead of carrying them in its context. Switch it off everywhere or for one project.</p>
+      </section>
+      <section>
+        <h3>And the rest</h3>
+        <p>MCP servers and plugins of each agent at a glance, seven themes and your own, English and Russian, all settings on one page, a notification area icon on Windows, and updates from a signed feed that install only when you click.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="status-h">
+    <div class="status reveal">
+      <header>
+        <h2 id="status-h">What works today</h2>
+        <p>From the project README</p>
+      </header>
+      <table>
+        <caption class="visually-hidden">State of each area of Bowyer</caption>
+        <tbody>
+          <tr><th scope="row">Session tree, search, conversation view</th><td><span class="state open"><i></i>Works every day</span></td></tr>
+          <tr><th scope="row">Claude Code: history, live turns, permissions, plugins</th><td><span class="state open"><i></i>Works</span></td></tr>
+          <tr><th scope="row">OpenCode: history, live turns over the Agent Client Protocol</th><td><span class="state open"><i></i>Works</span></td></tr>
+          <tr><th scope="row">Codex, DeepSeek Harness</th><td><span class="state new"><i></i>Written, untested</span></td></tr>
+          <tr><th scope="row">SSH hosts: sessions, files, Git, terminal, live turns</th><td><span class="state open"><i></i>Works</span></td></tr>
+          <tr><th scope="row">Memory MCP server, signed updates</th><td><span class="state new"><i></i>New</span></td></tr>
+          <tr><th scope="row">Windows 11 x86-64</th><td><span class="state open"><i></i>Supported</span></td></tr>
+          <tr><th scope="row">Linux x86-64</th><td><span class="state preview"><i></i>Preview release</span></td></tr>
+          <tr><th scope="row">macOS, Apple silicon</th><td><span class="state preview"><i></i>Preview release</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section wrap" id="download" aria-labelledby="download-h">
+    <div class="section-head reveal">
+      <h2 class="h-section" id="download-h">Download <span class="mono ver-small">0.1.0</span></h2>
+      <p>Free. Every file has a <code>.sha256</code> checksum next to it on the <a href="https://github.com/PabloSensei/bowyer/releases/latest">release page</a>. Bowyer does not bundle the agents: install Claude Code, Codex, OpenCode or DeepSeek Harness the usual way, and Bowyer finds their sessions.</p>
+    </div>
+    <div class="coupon reveal"><div class="downloads">
+    <!-- bowyer-downloads:start -->
+      <div class="dl-os" data-os="windows">
+        <h3>Windows</h3>
+        <ul>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.0/bowyer_0.1.0_x64-setup.exe"><span class="dl-label">Windows 11 · x86-64 · installer</span><span class="dl-file">bowyer_0.1.0_x64-setup.exe</span><span class="dl-size">8 MB</span></a></li>
+        </ul>
+      </div>
+      <div class="dl-os" data-os="linux">
+        <h3>Linux</h3>
+        <ul>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.0/bowyer_0.1.0_amd64.deb"><span class="dl-label">Debian, Ubuntu · .deb</span><span class="dl-file">bowyer_0.1.0_amd64.deb</span><span class="dl-size">17 MB</span></a></li>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.0/bowyer_0.1.0_x86_64.AppImage"><span class="dl-label">Any glibc 2.35+ distro · AppImage</span><span class="dl-file">bowyer_0.1.0_x86_64.AppImage</span><span class="dl-size">17 MB</span></a></li>
+        </ul>
+      </div>
+      <div class="dl-os" data-os="macos">
+        <h3>macOS</h3>
+        <ul>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.0/Bowyer_0.1.0_aarch64.dmg"><span class="dl-label">Apple silicon · .dmg</span><span class="dl-file">Bowyer_0.1.0_aarch64.dmg</span><span class="dl-size">11 MB</span></a></li>
+        </ul>
+      </div>
+    <!-- bowyer-downloads:end -->
+    </div></div>
+    <p style="margin-top:20px;color:var(--ink-2)">The Windows installer sets Bowyer up for the current user, without administrator rights; it is not code-signed yet, so SmartScreen may ask you to choose <b>More info</b>, then <b>Run anyway</b>. Linux needs glibc 2.35 or newer (Ubuntu 22.04, Debian 12, Fedora 36 or later). The macOS app is not notarized: Control-click it, choose <b>Open</b> and confirm the first time.</p>
+  </section>
+
+  <section class="section wrap" aria-labelledby="licence-h">
+    <div class="two-col">
+      <div class="prose reveal">
+        <h2 class="h-section" id="licence-h" style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Licence and support</h2>
+        <p>Bowyer is free software, licensed under the <a href="https://github.com/PabloSensei/bowyer/blob/main/LICENSE">GNU General Public License, version 3 or later</a>. You may use it for any purpose, study and change it, and share it, changed or not; whoever shares a changed version shares its source under the same licence.</p>
+        <p>Bowyer is free. If it saves you time, you can support its development through <a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a>. Found a problem? <a href="https://github.com/PabloSensei/bowyer/issues/new">Open an issue</a>.</p>
+      </div>
+      <div class="prose reveal">
+        <h2 class="label" style="margin-top:12px">Standing on the work of others</h2>
+        <p><a href="https://github.com/zed-industries/zed">GPUI</a> by Zed Industries for the UI, <a href="https://github.com/alacritty/alacritty">alacritty_terminal</a> for the terminal, <a href="https://sqlite.org">SQLite</a> for the library and search, <a href="https://github.com/crabnebula-dev/cargo-packager">cargo-packager</a> for the installers, <a href="https://lucide.dev">Lucide</a> for icon shapes, and the Inter and JetBrains Mono fonts. Much of the window's foundation comes from <a href="/arro/">Arro</a>.</p>
+        <p><a href="https://github.com/PabloSensei/bowyer">Source on GitHub</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Paweł Januszko</h2>
+      <div class="barcode"><svg data-barcode="PABLOSENSEI" aria-hidden="true"></svg><span>Rust &amp; Java · native desktop tools</span></div>
+      <small>© 2026 Paweł Januszko. Box art is drawn by your browser. Set in Archivo and JetBrains Mono.</small>
+    </div>
+    <div>
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/arro/">Arro</a></li>
+        <li><a href="/arro/changelog/">Arro changelog</a></li>
+        <li><a href="/arro/help/">Arro help</a></li>
+        <li><a href="/arro/roadmap/">Arro roadmap</a></li>
+        <li><a href="/bowyer/">Bowyer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elsewhere</h2>
+      <ul>
+        <li><a href="https://github.com/PabloSensei">GitHub</a></li>
+        <li><a href="https://github.com/PabloSensei/arro">Arro source</a></li>
+        <li><a href="https://github.com/PabloSensei/bowyer">Bowyer source</a></li>
+        <li><a href="https://github.com/sponsors/PabloSensei">GitHub Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -167,6 +167,67 @@
       }
       ctx.globalAlpha = 1;
     },
+
+    bowyer(ctx, w, h, t) {
+      ctx.fillStyle = "#ede6d5";
+      ctx.fillRect(0, 0, w, h);
+      // a target low on the front; the name keeps the top
+      const cx = w * 0.64, cy = h * 0.7, R = w * 0.4;
+      [[1, "#141518"], [0.8, "#ede6d5"], [0.62, "#141518"], [0.44, "#ede6d5"], [0.26, "#d55611"]].forEach(([k, c]) => {
+        ctx.fillStyle = c;
+        ctx.beginPath();
+        ctx.arc(cx, cy, R * k, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      const lw = Math.max(1.5, w / 95);
+      // an arrow from its tail to the point where it sits in the target
+      const arrow = (x1, y1, x2, y2, feather) => {
+        const a = Math.atan2(y2 - y1, x2 - x1);
+        ctx.strokeStyle = "#141518";
+        ctx.lineWidth = lw;
+        ctx.lineCap = "round";
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+        ctx.fillStyle = feather;
+        const f = w * 0.07;
+        for (let i = 0; i < 2; i++) {
+          const bx = x1 + Math.cos(a) * f * (0.15 + i * 0.55), by = y1 + Math.sin(a) * f * (0.15 + i * 0.55);
+          for (const side of [-1, 1]) {
+            ctx.beginPath();
+            ctx.moveTo(bx, by);
+            ctx.lineTo(bx + Math.cos(a) * f * 0.5, by + Math.sin(a) * f * 0.5);
+            ctx.lineTo(bx - Math.cos(a + side * 0.9) * f * 0.42, by - Math.sin(a + side * 0.9) * f * 0.42);
+            ctx.closePath();
+            ctx.fill();
+          }
+        }
+      };
+      // every agent's arrow has landed: one per harness
+      arrow(w * 0.06, h * 0.48, cx - R * 0.08, cy - R * 0.05, "#d55611");
+      arrow(w * 0.02, h * 0.62, cx - R * 0.3, cy + R * 0.12, "#141518");
+      arrow(w * 0.1, h * 0.9, cx - R * 0.12, cy + R * 0.28, "#d55611");
+      // and one more on its way, until it lands too
+      const p = (t * 0.45) % 1;
+      if (p < 0.7) {
+        const k = p / 0.7;
+        const tipX = -w * 0.1 + (cx + R * 0.1 + w * 0.1) * k;
+        const tipY = h * 0.55 + (cy - R * 0.2 - h * 0.55) * k;
+        const len = w * 0.4;
+        const a = Math.atan2(cy - R * 0.2 - h * 0.55, cx + R * 0.1 + w * 0.1);
+        arrow(tipX - Math.cos(a) * len, tipY - Math.sin(a) * len, tipX, tipY, "#ffffff");
+        ctx.fillStyle = "#141518";
+        ctx.beginPath();
+        ctx.moveTo(tipX + Math.cos(a) * lw * 3, tipY + Math.sin(a) * lw * 3);
+        ctx.lineTo(tipX - Math.cos(a - 0.5) * lw * 3, tipY - Math.sin(a - 0.5) * lw * 3);
+        ctx.lineTo(tipX - Math.cos(a + 0.5) * lw * 3, tipY - Math.sin(a + 0.5) * lw * 3);
+        ctx.closePath();
+        ctx.fill();
+      } else {
+        arrow(w * 0.12, h * 0.55 + (cy - h * 0.55) * 0.2, cx + R * 0.1, cy - R * 0.2, "#ffffff");
+      }
+    },
   };
 
   function paint(canvas, t) {

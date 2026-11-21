@@ -70,14 +70,14 @@ Then open <http://localhost:8000>.
 
 ## Open Graph images
 
-`assets/og/home.png` and `assets/og/arro.png` are rendered from `scripts/og.html` with a local
+`assets/og/home.png`, `assets/og/arro.png` and `assets/og/bowyer.png` are rendered from `scripts/og.html` with a local
 server running on port 8000 and any Chromium browser:
 
 ```sh
 msedge --headless=new --hide-scrollbars --window-size=1200,630 --virtual-time-budget=6000 --screenshot=assets/og/home.png "http://localhost:8000/scripts/og.html?p=home"
 ```
 
-Use `?p=arro` for the Arro image.
+Use `?p=arro` for the Arro image and `?p=bowyer` for the Bowyer one.
 
 ## Fonts and licences
 

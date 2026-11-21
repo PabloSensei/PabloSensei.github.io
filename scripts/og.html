@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- Open Graph image template. Not published (scripts/ is excluded).
-     Render: see README, "Open Graph images". ?p=home or ?p=arro -->
+     Render: see README, "Open Graph images". ?p=home, ?p=arro or ?p=bowyer -->
 <html lang="en" data-theme="light" class="js">
 <head>
 <meta charset="utf-8">
@@ -23,6 +23,8 @@
   .arro-og .big canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
   .arro-og .big b { position: absolute; left: 24px; top: 18px; font-size: 76px; color: #fff; font-weight: 900; font-style: italic; font-variation-settings: "wdth" 125; }
   .arro-og h1 { font-size: 150px; }
+  .bowyer-og h1 { font-size: 124px; }
+  .bowyer-og .big b { font-size: 60px; color: #141518; }
   .tag { display: inline-flex; margin-top: 28px; padding: 10px 18px; border-radius: 999px; background: var(--ink); color: var(--paper); font-size: 22px; font-weight: 800; }
 </style>
 </head>
@@ -35,6 +37,10 @@
     og.className = "og arro-og";
     og.innerHTML = `<div><h1 class="brand">Arro</h1><p class="sub">A native Java IDE written in Rust. <em>IntelliJ-style shortcuts, a GPU-rendered UI, a fraction of the memory.</em></p><span class="tag">Free · Windows · Linux · macOS</span></div>
       <div class="big"><canvas data-art="arro" data-t="2.2"></canvas><b>Arro</b></div>`;
+  } else if (p === "bowyer") {
+    og.className = "og arro-og bowyer-og";
+    og.innerHTML = `<div><h1 class="brand">Bowyer</h1><p class="sub">Every AI coding agent, one native window. <em>Claude Code, Codex, OpenCode and DeepSeek sessions, local and over SSH.</em></p><span class="tag">Free · Windows · Linux · macOS</span></div>
+      <div class="big"><canvas data-art="bowyer" data-t="0.6"></canvas><b>Bowyer</b></div>`;
   } else {
     og.className = "og";
     og.innerHTML = `<div><h1 class="brand">Paweł<span class="l2">Januszko</span></h1><p class="sub">Rust &amp; Java · native desktop tools and local AI. <em>Arro, dictate, Tunetop, AI Translator.</em></p></div>
