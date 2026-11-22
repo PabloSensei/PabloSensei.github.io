@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>29</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.28</span>, from <span data-arro-date>21 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>30</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.29</span>, from <span data-arro-date>22 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,75 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.28" data-version="0.1.28" data-total="29">
+    <article class="release is-latest" id="v0.1.29" data-version="0.1.29" data-total="25">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.29" aria-label="Link to Arro 0.1.29">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.29</h2>
+        <p class="rel-meta"><time datetime="2026-11-22T09:50:06Z">22 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.29">Release page</a></p>
+      </header>
+      <p class="rel-summary">Java projects import cleanly on the first start after an update, the debugger shows where the program stopped, and the terminal reads the prompt line reliably.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Java <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the first gradle import after an update or on a fresh cache repeats once by itself when the language server has not yet unpacked its init script, without an error notice; a notice left from a failed import closes once an import succeeds."><strong>The first Gradle import</strong> after an update or on a fresh cache repeats once by itself when the language server has not yet unpacked its init script, without an error notice; a notice left from a failed import closes once an import succeeds.</li>
+          <li data-text="after an update of arro, the language server starts with a fresh project model, so a project opened after a long break imports its dependencies again instead of building tests without them."><strong>After an update of Arro</strong>, the language server starts with a fresh project model, so a project opened after a long break imports its dependencies again instead of building tests without them.</li>
+          <li data-text="errors in sources go to problems as diagnostics and no longer show up as a failed import."><strong>Errors in sources</strong> go to Problems as diagnostics and no longer show up as a failed import.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor <span class="count">11</span></h3>
+        <ul>
+          <li data-text="alt+enter opened while the project imports fills in the server's actions once the server is ready, without closing the list."><strong>Alt+Enter</strong> opened while the project imports fills in the server's actions once the server is ready, without closing the list.</li>
+          <li data-text="rename in place keeps going when the language server is busy and cancels only when the server says the name cannot be renamed."><strong>Rename in place</strong> keeps going when the language server is busy and cancels only when the server says the name cannot be renamed.</li>
+          <li data-text="the structure tool window shows the declarations of the active file right after it opens, also when other tool windows were opened first and after the editor tabs are restored."><strong>The Structure tool window</strong> shows the declarations of the active file right after it opens, also when other tool windows were opened first and after the editor tabs are restored.</li>
+          <li data-text="the «no usages» hint no longer appears over tests and other members that a framework calls by itself."><strong>The «no usages» hint</strong> no longer appears over tests and other members that a framework calls by itself.</li>
+          <li data-text="find usages shows the line of code of each usage with the match highlighted, grouped by file. a search that answers late no longer takes the place of a tool window opened after it, and the root of the call hierarchy opens expanded."><strong>Find Usages</strong> shows the line of code of each usage with the match highlighted, grouped by file. A search that answers late no longer takes the place of a tool window opened after it, and the root of the call hierarchy opens expanded.</li>
+          <li data-text="find in files and replace in files fill their height and preview the selected match under the list; file rows show the name and the folder."><strong>Find in Files and Replace in Files</strong> fill their height and preview the selected match under the list; file rows show the name and the folder.</li>
+          <li data-text="surround with (ctrl+alt+t) lists the full set — if, if/else, while, do/while, for, try/catch, try/finally, try/catch/finally, synchronized, runnable, { } — with a key for each entry. ctrl+j on a word that is no abbreviation lists every template of the place."><strong>Surround With</strong> (Ctrl+Alt+T) lists the full set — if, if/else, while, do/while, for, try/catch, try/finally, try/catch/finally, synchronized, Runnable, { } — with a key for each entry. <strong>Ctrl+J</strong> on a word that is no abbreviation lists every template of the place.</li>
+          <li data-text="ctrl+− on the line of a method header folds that method, and collapse all folds every method body."><strong>Ctrl+−</strong> on the line of a method header folds that method, and <strong>Collapse All</strong> folds every method body.</li>
+          <li data-text="find usages shows that the search is running until the server answers, and highlights only the name of the symbol in each line."><strong>Find Usages</strong> shows that the search is running until the server answers, and highlights only the name of the symbol in each line.</li>
+          <li data-text="change signature picks the visibility from a list, labels the type, name and default value columns, and previews the new signature as you edit."><strong>Change Signature</strong> picks the visibility from a list, labels the Type, Name and Default value columns, and previews the new signature as you edit.</li>
+          <li data-text="find action finds the items of the new menu, such as class, package or directory, and runs them in the folder of the active file."><strong>Find Action</strong> finds the items of the New menu, such as Class, Package or Directory, and runs them in the folder of the active file.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Debugger <span class="count">6</span></h3>
+        <ul>
+          <li data-text="a stop at a breakpoint, after a step or on an exception brings the debugger tab to front with the top frame selected, opens the file of the frame and highlights the line the program stopped on. a step moves the highlight; resume and the end of the session remove it."><strong>A stop</strong> at a breakpoint, after a step or on an exception brings the Debugger tab to front with the top frame selected, opens the file of the frame and highlights the line the program stopped on. A step moves the highlight; Resume and the end of the session remove it.</li>
+          <li data-text="variables open the local variables of the selected frame at once, and their values show at the end of the lines of the method in the editor."><strong>Variables</strong> open the local variables of the selected frame at once, and their values show at the end of the lines of the method in the editor.</li>
+          <li data-text="the debug console shows the colors of the program output instead of escape codes."><strong>The Debug console</strong> shows the colors of the program output instead of escape codes.</li>
+          <li data-text="frames show their place as method:line, class (package), with frames of the runtime and of libraries in grey, including classes the language server opens from the jdk."><strong>Frames</strong> show their place as <code>method:line, Class (package)</code>, with frames of the runtime and of libraries in grey, including classes the language server opens from the JDK.</li>
+          <li data-text="while the project builds before a debug launch, the console is in front and the header says building. a failed build keeps the console in front with the exit code and shows a notice; a step no longer switches the window to the console."><strong>While the project builds</strong> before a debug launch, the Console is in front and the header says Building. A failed build keeps the Console in front with the exit code and shows a notice; a step no longer switches the window to the Console.</li>
+          <li data-text="the debug console follows the output to the last line like the run console and keeps its place when you scroll up."><strong>The Debug console</strong> follows the output to the last line like the Run console and keeps its place when you scroll up.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Tests <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the run mark of a test opens a menu with run, debug, run with coverage and modify run configuration."><strong>The run mark of a test</strong> opens a menu with Run, Debug, Run with Coverage and Modify Run Configuration.</li>
+          <li data-text="enter in the test results window opens the first test."><strong>Enter</strong> in the test results window opens the first test.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Terminal <span class="count">1</span></h3>
+        <ul>
+          <li data-text="ctrl+enter on a build command and the mcp setup bar read the prompt line also while the shell redraws it with a hidden cursor."><strong>Ctrl+Enter</strong> on a build command and the MCP setup bar read the prompt line also while the shell redraws it with a hidden cursor.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Reliability <span class="count">2</span></h3>
+        <ul>
+          <li data-text="a second start of arro on linux and macos no longer mistakes a socket left by a crashed instance for a running one."><strong>A second start of Arro</strong> on Linux and macOS no longer mistakes a socket left by a crashed instance for a running one.</li>
+          <li data-text="processes started by arro end together with it even when arro exits right after starting them.">Processes started by Arro end together with it even when Arro exits right after starting them.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.28" data-version="0.1.28" data-total="29">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.28" aria-label="Link to Arro 0.1.28">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.28</h2>
-        <p class="rel-meta"><time datetime="2026-11-21T11:58:44Z">21 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.28">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-21T11:58:44Z">21 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.28">Release page</a></p>
       </header>
       <p class="rel-summary">Rename now edits the name right in the code, every dialog moves, resizes and closes the same way, forms line up, and the search windows learned scopes.</p>
       <section class="rel-group" data-kind="improved">
