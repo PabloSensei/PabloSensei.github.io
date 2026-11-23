@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>30</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.29</span>, from <span data-arro-date>22 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>31</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.30</span>, from <span data-arro-date>23 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,118 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.29" data-version="0.1.29" data-total="25">
+    <article class="release is-latest" id="v0.1.30" data-version="0.1.30" data-total="43">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.30" aria-label="Link to Arro 0.1.30">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.30</h2>
+        <p class="rel-meta"><time datetime="2026-11-23T11:38:48Z">23 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.30">Release page</a></p>
+      </header>
+      <p class="rel-summary">Navigation remembers where you were: Recent Locations, the Switcher and Recent Files keep their lists across restarts.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Navigation <span class="count">8</span></h3>
+        <ul>
+          <li data-text="recent locations (ctrl+shift+e) always opens its window, with the place of the caret first. opening a file, jumping to a declaration or an implementation and starting find usages record a place, and the list comes back after a restart. the line of each place is read again when the window opens, and places in deleted files drop out."><strong>Recent Locations</strong> (Ctrl+Shift+E) always opens its window, with the place of the caret first. Opening a file, jumping to a declaration or an implementation and starting Find Usages record a place, and the list comes back after a restart. The line of each place is read again when the window opens, and places in deleted files drop out.</li>
+          <li data-text="the switcher (ctrl+tab) shows tool windows on the left and every open tab on the right, also the tabs restored at start, ordered by last use, and starts on the previous file. left and right move between the columns, and typing filters both. recent files (ctrl+e) survives a restart. all file rows show the folder with the same separators."><strong>The Switcher</strong> (Ctrl+Tab) shows tool windows on the left and every open tab on the right, also the tabs restored at start, ordered by last use, and starts on the previous file. Left and Right move between the columns, and typing filters both. Recent Files (Ctrl+E) survives a restart. All file rows show the folder with the same separators.</li>
+          <li data-text="select in (alt+f1) opens a numbered menu: project view, structure, explorer, terminal, commit for a changed file and git log."><strong>Select In</strong> (Alt+F1) opens a numbered menu: Project View, Structure, Explorer, Terminal, Commit for a changed file and Git Log.</li>
+          <li data-text="go to test (ctrl+shift+t) names the class it chooses for and the number found, and lists each test with its icon and folder. go to super method (ctrl+u) on a method that overrides nothing says «no super method found»."><strong>Go to Test</strong> (Ctrl+Shift+T) names the class it chooses for and the number found, and lists each test with its icon and folder. Go to Super Method (Ctrl+U) on a method that overrides nothing says «No super method found».</li>
+          <li data-text="recent changes (alt+shift+c) lists the latest changes of the project from local history; enter opens the history on that version."><strong>Recent Changes</strong> (Alt+Shift+C) lists the latest changes of the project from Local History; Enter opens the history on that version.</li>
+          <li data-text="go to implementation (ctrl+alt+b) on a method nothing implements says «no implementations found» at the caret instead of jumping to the declaration."><strong>Go to Implementation</strong> (Ctrl+Alt+B) on a method nothing implements says «No implementations found» at the caret instead of jumping to the declaration.</li>
+          <li data-text="go to line (ctrl+g) opens with the caret's line and column, selected, so a number typed at once replaces it."><strong>Go to Line</strong> (Ctrl+G) opens with the caret's line and column, selected, so a number typed at once replaces it.</li>
+          <li data-text="go to class, file and symbol (ctrl+n, ctrl+shift+n) list names that begin with the query first, then the starts of words, then the rest; letters scattered through a name show only when nothing better matches. sources come before tests, shorter names first, and the matched letters are marked in the accent colour."><strong>Go to Class, File and Symbol</strong> (Ctrl+N, Ctrl+Shift+N) list names that begin with the query first, then the starts of words, then the rest; letters scattered through a name show only when nothing better matches. Sources come before tests, shorter names first, and the matched letters are marked in the accent colour.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Code generation <span class="count">2</span></h3>
+        <ul>
+          <li data-text="generate (alt+insert) lists only what it generates. sort members and add final modifiers moved to the code menu, after optimize imports."><strong>Generate</strong> (Alt+Insert) lists only what it generates. Sort Members and Add final Modifiers moved to the Code menu, after Optimize Imports.</li>
+          <li data-text="override methods (ctrl+o) names each group by its short type with arguments, such as jparepository&lt;owner, integer&gt;, with the package in grey. return types keep their type arguments: list&lt;owner&gt;, optional&lt;s&gt;, page&lt;owner&gt;."><strong>Override Methods</strong> (Ctrl+O) names each group by its short type with arguments, such as <code>JpaRepository&lt;Owner, Integer&gt;</code>, with the package in grey. Return types keep their type arguments: <code>List&lt;Owner&gt;</code>, <code>Optional&lt;S&gt;</code>, <code>Page&lt;Owner&gt;</code>.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor <span class="count">14</span></h3>
+        <ul>
+          <li data-text="quick documentation (ctrl+q) wraps a long header beside its buttons instead of running under them. for a local variable or a parameter the header shows the declaration, with the method it belongs to as a short grey line, such as in ownercontroller.processfindform()."><strong>Quick Documentation</strong> (Ctrl+Q) wraps a long header beside its buttons instead of running under them. For a local variable or a parameter the header shows the declaration, with the method it belongs to as a short grey line, such as <code>in OwnerController.processFindForm()</code>.</li>
+          <li data-text="completion after a dot lists the members of the expression's type first, in bold, then those of its supertypes, with the methods of object at the end."><strong>Completion</strong> after a dot lists the members of the expression's type first, in bold, then those of its supertypes, with the methods of <code>Object</code> at the end.</li>
+          <li data-text="alt+enter lists the fixes and intentions for the caret, and does not offer to inline a method of a library. generating getters, tostring() and the like moved to generate (alt+insert), and an empty list says «no intentions available»."><strong>Alt+Enter</strong> lists the fixes and intentions for the caret, and does not offer to inline a method of a library. Generating getters, <code>toString()</code> and the like moved to Generate (Alt+Insert), and an empty list says «No intentions available».</li>
+          <li data-text="quick definition (ctrl+shift+i) shows the definition with syntax colours, its own indentation and line numbers apart from the code, under a header with the file name and its folder; f4 opens it, and the popup scrolls and resizes."><strong>Quick Definition</strong> (Ctrl+Shift+I) shows the definition with syntax colours, its own indentation and line numbers apart from the code, under a header with the file name and its folder; F4 opens it, and the popup scrolls and resizes.</li>
+          <li data-text="find in files marks the matched part of a line without a gap, and the preview marks every match, the selected one brighter. the same marking is used in find usages, search everywhere and the branch tree of git log."><strong>Find in Files</strong> marks the matched part of a line without a gap, and the preview marks every match, the selected one brighter. The same marking is used in Find Usages, Search Everywhere and the branch tree of Git Log.</li>
+          <li data-text="find (ctrl+f) keeps its field compact, with the case, word and regex switches inside it and the match count right after it."><strong>Find</strong> (Ctrl+F) keeps its field compact, with the case, word and regex switches inside it and the match count right after it.</li>
+          <li data-text="introduce variable (ctrl+alt+v) with several expressions around the caret first asks which one to extract, and offers to replace occurrences only when there is more than one. the list shows each expression as it is written in the file. a late answer of the server no longer opens the name after escape or a move of the caret."><strong>Introduce Variable</strong> (Ctrl+Alt+V) with several expressions around the caret first asks which one to extract, and offers to replace occurrences only when there is more than one. The list shows each expression as it is written in the file. A late answer of the server no longer opens the name after Escape or a move of the caret.</li>
+          <li data-text="the name field of an extraction opens above the line when there is no room below it."><strong>The name field of an extraction</strong> opens above the line when there is no room below it.</li>
+          <li data-text="type info (ctrl+shift+p) shows the type of the expression at the caret, such as page&lt;owner&gt;."><strong>Type Info</strong> (Ctrl+Shift+P) shows the type of the expression at the caret, such as <code>Page&lt;Owner&gt;</code>.</li>
+          <li data-text="insert live template (ctrl+j) lists the abbreviation first and its description in grey, offers only the templates that fit the place in the code, and filters as you type."><strong>Insert Live Template</strong> (Ctrl+J) lists the abbreviation first and its description in grey, offers only the templates that fit the place in the code, and filters as you type.</li>
+          <li data-text="new scratch file lists the languages by name with their icons, the language of the current file first, and filters as you type."><strong>New Scratch File</strong> lists the languages by name with their icons, the language of the current file first, and filters as you type.</li>
+          <li data-text="change signature (ctrl+f6) offers only the visibility the declaration allows: public for a method of an interface, private for a constructor of an enum."><strong>Change Signature</strong> (Ctrl+F6) offers only the visibility the declaration allows: public for a method of an interface, private for a constructor of an enum.</li>
+          <li data-text="the caret after a jump: the status bar and rename (shift+f6) see the new place at once."><strong>The caret after a jump</strong>: the status bar and Rename (Shift+F6) see the new place at once.</li>
+          <li data-text="refactor this (ctrl+alt+shift+t) has a heading and lists the refactorings in groups: the name, the extractions, the hierarchy, the rest. the server's refactorings take their place in those groups, and rename is selected first."><strong>Refactor This</strong> (Ctrl+Alt+Shift+T) has a heading and lists the refactorings in groups: the name, the extractions, the hierarchy, the rest. The server's refactorings take their place in those groups, and Rename is selected first.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Git <span class="count">3</span></h3>
+        <ul>
+          <li data-text="amend puts the whole message of the last commit into the field. when the amended commit was already pushed, commit and push asks before a force push with lease."><strong>Amend</strong> puts the whole message of the last commit into the field. When the amended commit was already pushed, Commit and Push asks before a force push with lease.</li>
+          <li data-text="git log shows the hash, the author and the date of the selected commit, and its message once."><strong>Git Log</strong> shows the hash, the author and the date of the selected commit, and its message once.</li>
+          <li data-text="the commit window leaves files git does not track yet unticked until you tick them, so a commit takes only the changes you chose. the count beside the buttons counts ticked files, and commit waits until at least one is ticked. the header shows its commit and shelf tabs without repeating the title."><strong>The Commit window</strong> leaves files Git does not track yet unticked until you tick them, so a commit takes only the changes you chose. The count beside the buttons counts ticked files, and Commit waits until at least one is ticked. The header shows its Commit and Shelf tabs without repeating the title.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Problems <span class="count">1</span></h3>
+        <ul>
+          <li data-text="the problems window names every kind it lists, such as «problems (10 typos)», or says «no problems». the current file tab shows the file once, with its problems under it and the line number on each row."><strong>The Problems window</strong> names every kind it lists, such as «Problems (10 typos)», or says «No problems». The Current File tab shows the file once, with its problems under it and the line number on each row.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Find Action and Settings <span class="count">3</span></h3>
+        <ul>
+          <li data-text="find action (ctrl+shift+a) opens tool windows by their names, such as todo, database, services or problems, with the window first in the list. matches rank by kind: the exact name, its start, the starts of words, then the rest. letters scattered through a name show only when nothing better matches."><strong>Find Action</strong> (Ctrl+Shift+A) opens tool windows by their names, such as TODO, Database, Services or Problems, with the window first in the list. Matches rank by kind: the exact name, its start, the starts of words, then the rest. Letters scattered through a name show only when nothing better matches.</li>
+          <li data-text="the search in settings opens the page that holds the match and selects it in the tree. a page you chose stays while it still matches. the matching words are marked on the page, and a query that finds nothing says so."><strong>The search in Settings</strong> opens the page that holds the match and selects it in the tree. A page you chose stays while it still matches. The matching words are marked on the page, and a query that finds nothing says so.</li>
+          <li data-text="editor → font holds the editor's font, size and line height, with a sample of code that follows the changes at once. system settings → updates holds the update check. appearance keeps the theme, the interface scale and the window options."><strong>Editor → Font</strong> holds the editor's font, size and line height, with a sample of code that follows the changes at once. <strong>System Settings → Updates</strong> holds the update check. Appearance keeps the theme, the interface scale and the window options.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Run configurations <span class="count">1</span></h3>
+        <ul>
+          <li data-text="run/debug configurations list before launch once, with its buttons in the heading row. modify options opens a menu that shows or hides the extra fields, such as the environment file. a field that holds a value always shows."><strong>Run/Debug Configurations</strong> list Before launch once, with its buttons in the heading row. <strong>Modify options</strong> opens a menu that shows or hides the extra fields, such as the environment file. A field that holds a value always shows.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Keyboard <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the search fields of tool windows keep only typing and editing keys. ctrl+shift+a, ctrl+e, alt+1 and the other window shortcuts work from them too. this covers endpoints, git log, find usages, run, database and local history."><strong>The search fields of tool windows</strong> keep only typing and editing keys. Ctrl+Shift+A, Ctrl+E, Alt+1 and the other window shortcuts work from them too. This covers Endpoints, Git Log, Find Usages, Run, Database and Local History.</li>
+          <li data-text="escape in the terminal moves the focus back to the editor and leaves the terminal open; a full-screen program such as vim keeps its escape, and a setting in tools → terminal turns this off. alt+1 and the other window shortcuts work from the terminal."><strong>Escape in the Terminal</strong> moves the focus back to the editor and leaves the terminal open; a full-screen program such as vim keeps its Escape, and a setting in Tools → Terminal turns this off. Alt+1 and the other window shortcuts work from the terminal.</li>
+          <li data-text="escape in a dialog closes its open list or menu first, and the dialog only on the next press, so edits in the dialog stay. this covers run/debug configurations, settings, project structure and change signature."><strong>Escape in a dialog</strong> closes its open list or menu first, and the dialog only on the next press, so edits in the dialog stay. This covers Run/Debug Configurations, Settings, Project Structure and Change Signature.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Tool windows <span class="count">3</span></h3>
+        <ul>
+          <li data-text="services lists the kubernetes contexts and switches between them even while the cluster does not answer. it shows a cluster that does not answer, or docker that is not running, as one folded row. the full reason is in its tooltip, and selecting the row shows the reason with a retry button."><strong>Services</strong> lists the Kubernetes contexts and switches between them even while the cluster does not answer. It shows a cluster that does not answer, or Docker that is not running, as one folded row. The full reason is in its tooltip, and selecting the row shows the reason with a Retry button.</li>
+          <li data-text="call hierarchy has the scope switch (all, production, test) and the expand and collapse buttons of type hierarchy."><strong>Call Hierarchy</strong> has the Scope switch (All, Production, Test) and the expand and collapse buttons of Type Hierarchy.</li>
+          <li data-text="database gives its two copy buttons, for the cell and the row, icons of their own; they wait until a cell is selected. build says once that nothing was built yet and names the key to build. endpoints labels its count, such as «17 endpoints» or «1 of 3 endpoints»."><strong>Database</strong> gives its two copy buttons, for the cell and the row, icons of their own; they wait until a cell is selected. <strong>Build</strong> says once that nothing was built yet and names the key to build. <strong>Endpoints</strong> labels its count, such as «17 endpoints» or «1 of 3 endpoints».</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Notifications <span class="count">1</span></h3>
+        <ul>
+          <li data-text="notifications carry a level — information, warning or error — with an icon for each. information that needs no answer closes by itself after a few seconds; warnings and errors, such as a failed build, import, save or git command, stay until you close them.">Notifications carry a level — information, warning or error — with an icon for each. Information that needs no answer closes by itself after a few seconds; warnings and errors, such as a failed build, import, save or Git command, stay until you close them.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>More <span class="count">4</span></h3>
+        <ul>
+          <li data-text="lists in problems, todo, find usages and method hierarchy keep line numbers and paths in a column at the right edge; a file in find usages shows its folder and the count after its name."><strong>Lists in Problems, TODO, Find Usages and Method Hierarchy</strong> keep line numbers and paths in a column at the right edge; a file in Find Usages shows its folder and the count after its name.</li>
+          <li data-text="amend without ticked files rewrites only the message of the last commit; commit becomes available once the message changes."><strong>Amend</strong> without ticked files rewrites only the message of the last commit; Commit becomes available once the message changes.</li>
+          <li data-text="file structure (ctrl+f12) shows a method's name and signature without a gap; the reformat file dialog is titled with the file's name."><strong>File Structure</strong> (Ctrl+F12) shows a method's name and signature without a gap; the Reformat File dialog is titled with the file's name.</li>
+          <li data-text="file icons for properties, archives, images, gradle scripts, csv, editorconfig, manifests, patches and more."><strong>File icons</strong> for properties, archives, images, Gradle scripts, CSV, EditorConfig, manifests, patches and more.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.29" data-version="0.1.29" data-total="25">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.29" aria-label="Link to Arro 0.1.29">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.29</h2>
-        <p class="rel-meta"><time datetime="2026-11-22T09:50:06Z">22 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.29">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-22T09:50:06Z">22 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.29">Release page</a></p>
       </header>
       <p class="rel-summary">Java projects import cleanly on the first start after an update, the debugger shows where the program stopped, and the terminal reads the prompt line reliably.</p>
       <section class="rel-group" data-kind="improved">

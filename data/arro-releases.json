@@ -1,63 +1,414 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-22T09:50:22.033Z",
+ "generatedAt": "2026-11-23T11:38:58.662Z",
  "latest": {
-  "version": "0.1.29",
-  "tag": "v0.1.29",
-  "date": "2026-11-22T09:50:06Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.29",
+  "version": "0.1.30",
+  "tag": "v0.1.30",
+  "date": "2026-11-23T11:38:48Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.30",
   "assets": [
    {
-    "name": "arro-0.1.29-windows-x86_64.zip",
+    "name": "arro-0.1.30-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 88909826,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.29/arro-0.1.29-windows-x86_64.zip"
+    "size": 89283709,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.29_amd64.deb",
+    "name": "arro_0.1.30_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 87161356,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.29/arro_0.1.29_amd64.deb"
+    "size": 87389392,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro_0.1.30_amd64.deb"
    },
    {
-    "name": "arro-0.1.29-1.x86_64.rpm",
+    "name": "arro-0.1.30-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 100419450,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.29/arro-0.1.29-1.x86_64.rpm"
+    "size": 100739179,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.29-linux-x86_64.tar.gz",
+    "name": "arro-0.1.30-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 100798792,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.29/arro-0.1.29-linux-x86_64.tar.gz"
+    "size": 101123303,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.29-macos-aarch64.dmg",
+    "name": "arro-0.1.30-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 95568039,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.29/arro-0.1.29-macos-aarch64.dmg"
+    "size": 95890735,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.29-macos-aarch64.zip",
+    "name": "arro-0.1.30-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 89410759,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.29/arro-0.1.29-macos-aarch64.zip"
+    "size": 89709840,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.30",
+   "tag": "v0.1.30",
+   "date": "2026-11-23T11:38:48Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.30",
+   "prerelease": false,
+   "summary": [
+    "Navigation remembers where you were: Recent Locations, the Switcher and Recent Files keep their lists across restarts."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Navigation",
+     "items": [
+      {
+       "html": "<strong>Recent Locations</strong> (Ctrl+Shift+E) always opens its window, with the place of the caret first. Opening a file, jumping to a declaration or an implementation and starting Find Usages record a place, and the list comes back after a restart. The line of each place is read again when the window opens, and places in deleted files drop out.",
+       "text": "Recent Locations (Ctrl+Shift+E) always opens its window, with the place of the caret first. Opening a file, jumping to a declaration or an implementation and starting Find Usages record a place, and the list comes back after a restart. The line of each place is read again when the window opens, and places in deleted files drop out.",
+       "lead": "Recent Locations"
+      },
+      {
+       "html": "<strong>The Switcher</strong> (Ctrl+Tab) shows tool windows on the left and every open tab on the right, also the tabs restored at start, ordered by last use, and starts on the previous file. Left and Right move between the columns, and typing filters both. Recent Files (Ctrl+E) survives a restart. All file rows show the folder with the same separators.",
+       "text": "The Switcher (Ctrl+Tab) shows tool windows on the left and every open tab on the right, also the tabs restored at start, ordered by last use, and starts on the previous file. Left and Right move between the columns, and typing filters both. Recent Files (Ctrl+E) survives a restart. All file rows show the folder with the same separators.",
+       "lead": "The Switcher"
+      },
+      {
+       "html": "<strong>Select In</strong> (Alt+F1) opens a numbered menu: Project View, Structure, Explorer, Terminal, Commit for a changed file and Git Log.",
+       "text": "Select In (Alt+F1) opens a numbered menu: Project View, Structure, Explorer, Terminal, Commit for a changed file and Git Log.",
+       "lead": "Select In"
+      },
+      {
+       "html": "<strong>Go to Test</strong> (Ctrl+Shift+T) names the class it chooses for and the number found, and lists each test with its icon and folder. Go to Super Method (Ctrl+U) on a method that overrides nothing says «No super method found».",
+       "text": "Go to Test (Ctrl+Shift+T) names the class it chooses for and the number found, and lists each test with its icon and folder. Go to Super Method (Ctrl+U) on a method that overrides nothing says «No super method found».",
+       "lead": "Go to Test"
+      },
+      {
+       "html": "<strong>Recent Changes</strong> (Alt+Shift+C) lists the latest changes of the project from Local History; Enter opens the history on that version.",
+       "text": "Recent Changes (Alt+Shift+C) lists the latest changes of the project from Local History; Enter opens the history on that version.",
+       "lead": "Recent Changes"
+      },
+      {
+       "html": "<strong>Go to Implementation</strong> (Ctrl+Alt+B) on a method nothing implements says «No implementations found» at the caret instead of jumping to the declaration.",
+       "text": "Go to Implementation (Ctrl+Alt+B) on a method nothing implements says «No implementations found» at the caret instead of jumping to the declaration.",
+       "lead": "Go to Implementation"
+      },
+      {
+       "html": "<strong>Go to Line</strong> (Ctrl+G) opens with the caret's line and column, selected, so a number typed at once replaces it.",
+       "text": "Go to Line (Ctrl+G) opens with the caret's line and column, selected, so a number typed at once replaces it.",
+       "lead": "Go to Line"
+      },
+      {
+       "html": "<strong>Go to Class, File and Symbol</strong> (Ctrl+N, Ctrl+Shift+N) list names that begin with the query first, then the starts of words, then the rest; letters scattered through a name show only when nothing better matches. Sources come before tests, shorter names first, and the matched letters are marked in the accent colour.",
+       "text": "Go to Class, File and Symbol (Ctrl+N, Ctrl+Shift+N) list names that begin with the query first, then the starts of words, then the rest; letters scattered through a name show only when nothing better matches. Sources come before tests, shorter names first, and the matched letters are marked in the accent colour.",
+       "lead": "Go to Class, File and Symbol"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Code generation",
+     "items": [
+      {
+       "html": "<strong>Generate</strong> (Alt+Insert) lists only what it generates. Sort Members and Add final Modifiers moved to the Code menu, after Optimize Imports.",
+       "text": "Generate (Alt+Insert) lists only what it generates. Sort Members and Add final Modifiers moved to the Code menu, after Optimize Imports.",
+       "lead": "Generate"
+      },
+      {
+       "html": "<strong>Override Methods</strong> (Ctrl+O) names each group by its short type with arguments, such as <code>JpaRepository&lt;Owner, Integer&gt;</code>, with the package in grey. Return types keep their type arguments: <code>List&lt;Owner&gt;</code>, <code>Optional&lt;S&gt;</code>, <code>Page&lt;Owner&gt;</code>.",
+       "text": "Override Methods (Ctrl+O) names each group by its short type with arguments, such as JpaRepository<Owner, Integer>, with the package in grey. Return types keep their type arguments: List<Owner>, Optional<S>, Page<Owner>.",
+       "lead": "Override Methods"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Editor",
+     "items": [
+      {
+       "html": "<strong>Quick Documentation</strong> (Ctrl+Q) wraps a long header beside its buttons instead of running under them. For a local variable or a parameter the header shows the declaration, with the method it belongs to as a short grey line, such as <code>in OwnerController.processFindForm()</code>.",
+       "text": "Quick Documentation (Ctrl+Q) wraps a long header beside its buttons instead of running under them. For a local variable or a parameter the header shows the declaration, with the method it belongs to as a short grey line, such as in OwnerController.processFindForm().",
+       "lead": "Quick Documentation"
+      },
+      {
+       "html": "<strong>Completion</strong> after a dot lists the members of the expression's type first, in bold, then those of its supertypes, with the methods of <code>Object</code> at the end.",
+       "text": "Completion after a dot lists the members of the expression's type first, in bold, then those of its supertypes, with the methods of Object at the end.",
+       "lead": "Completion"
+      },
+      {
+       "html": "<strong>Alt+Enter</strong> lists the fixes and intentions for the caret, and does not offer to inline a method of a library. Generating getters, <code>toString()</code> and the like moved to Generate (Alt+Insert), and an empty list says «No intentions available».",
+       "text": "Alt+Enter lists the fixes and intentions for the caret, and does not offer to inline a method of a library. Generating getters, toString() and the like moved to Generate (Alt+Insert), and an empty list says «No intentions available».",
+       "lead": "Alt+Enter"
+      },
+      {
+       "html": "<strong>Quick Definition</strong> (Ctrl+Shift+I) shows the definition with syntax colours, its own indentation and line numbers apart from the code, under a header with the file name and its folder; F4 opens it, and the popup scrolls and resizes.",
+       "text": "Quick Definition (Ctrl+Shift+I) shows the definition with syntax colours, its own indentation and line numbers apart from the code, under a header with the file name and its folder; F4 opens it, and the popup scrolls and resizes.",
+       "lead": "Quick Definition"
+      },
+      {
+       "html": "<strong>Find in Files</strong> marks the matched part of a line without a gap, and the preview marks every match, the selected one brighter. The same marking is used in Find Usages, Search Everywhere and the branch tree of Git Log.",
+       "text": "Find in Files marks the matched part of a line without a gap, and the preview marks every match, the selected one brighter. The same marking is used in Find Usages, Search Everywhere and the branch tree of Git Log.",
+       "lead": "Find in Files"
+      },
+      {
+       "html": "<strong>Find</strong> (Ctrl+F) keeps its field compact, with the case, word and regex switches inside it and the match count right after it.",
+       "text": "Find (Ctrl+F) keeps its field compact, with the case, word and regex switches inside it and the match count right after it.",
+       "lead": "Find"
+      },
+      {
+       "html": "<strong>Introduce Variable</strong> (Ctrl+Alt+V) with several expressions around the caret first asks which one to extract, and offers to replace occurrences only when there is more than one. The list shows each expression as it is written in the file. A late answer of the server no longer opens the name after Escape or a move of the caret.",
+       "text": "Introduce Variable (Ctrl+Alt+V) with several expressions around the caret first asks which one to extract, and offers to replace occurrences only when there is more than one. The list shows each expression as it is written in the file. A late answer of the server no longer opens the name after Escape or a move of the caret.",
+       "lead": "Introduce Variable"
+      },
+      {
+       "html": "<strong>The name field of an extraction</strong> opens above the line when there is no room below it.",
+       "text": "The name field of an extraction opens above the line when there is no room below it.",
+       "lead": "The name field of an extraction"
+      },
+      {
+       "html": "<strong>Type Info</strong> (Ctrl+Shift+P) shows the type of the expression at the caret, such as <code>Page&lt;Owner&gt;</code>.",
+       "text": "Type Info (Ctrl+Shift+P) shows the type of the expression at the caret, such as Page<Owner>.",
+       "lead": "Type Info"
+      },
+      {
+       "html": "<strong>Insert Live Template</strong> (Ctrl+J) lists the abbreviation first and its description in grey, offers only the templates that fit the place in the code, and filters as you type.",
+       "text": "Insert Live Template (Ctrl+J) lists the abbreviation first and its description in grey, offers only the templates that fit the place in the code, and filters as you type.",
+       "lead": "Insert Live Template"
+      },
+      {
+       "html": "<strong>New Scratch File</strong> lists the languages by name with their icons, the language of the current file first, and filters as you type.",
+       "text": "New Scratch File lists the languages by name with their icons, the language of the current file first, and filters as you type.",
+       "lead": "New Scratch File"
+      },
+      {
+       "html": "<strong>Change Signature</strong> (Ctrl+F6) offers only the visibility the declaration allows: public for a method of an interface, private for a constructor of an enum.",
+       "text": "Change Signature (Ctrl+F6) offers only the visibility the declaration allows: public for a method of an interface, private for a constructor of an enum.",
+       "lead": "Change Signature"
+      },
+      {
+       "html": "<strong>The caret after a jump</strong>: the status bar and Rename (Shift+F6) see the new place at once.",
+       "text": "The caret after a jump: the status bar and Rename (Shift+F6) see the new place at once.",
+       "lead": "The caret after a jump"
+      },
+      {
+       "html": "<strong>Refactor This</strong> (Ctrl+Alt+Shift+T) has a heading and lists the refactorings in groups: the name, the extractions, the hierarchy, the rest. The server's refactorings take their place in those groups, and Rename is selected first.",
+       "text": "Refactor This (Ctrl+Alt+Shift+T) has a heading and lists the refactorings in groups: the name, the extractions, the hierarchy, the rest. The server's refactorings take their place in those groups, and Rename is selected first.",
+       "lead": "Refactor This"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Git",
+     "items": [
+      {
+       "html": "<strong>Amend</strong> puts the whole message of the last commit into the field. When the amended commit was already pushed, Commit and Push asks before a force push with lease.",
+       "text": "Amend puts the whole message of the last commit into the field. When the amended commit was already pushed, Commit and Push asks before a force push with lease.",
+       "lead": "Amend"
+      },
+      {
+       "html": "<strong>Git Log</strong> shows the hash, the author and the date of the selected commit, and its message once.",
+       "text": "Git Log shows the hash, the author and the date of the selected commit, and its message once.",
+       "lead": "Git Log"
+      },
+      {
+       "html": "<strong>The Commit window</strong> leaves files Git does not track yet unticked until you tick them, so a commit takes only the changes you chose. The count beside the buttons counts ticked files, and Commit waits until at least one is ticked. The header shows its Commit and Shelf tabs without repeating the title.",
+       "text": "The Commit window leaves files Git does not track yet unticked until you tick them, so a commit takes only the changes you chose. The count beside the buttons counts ticked files, and Commit waits until at least one is ticked. The header shows its Commit and Shelf tabs without repeating the title.",
+       "lead": "The Commit window"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Problems",
+     "items": [
+      {
+       "html": "<strong>The Problems window</strong> names every kind it lists, such as «Problems (10 typos)», or says «No problems». The Current File tab shows the file once, with its problems under it and the line number on each row.",
+       "text": "The Problems window names every kind it lists, such as «Problems (10 typos)», or says «No problems». The Current File tab shows the file once, with its problems under it and the line number on each row.",
+       "lead": "The Problems window"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Find Action and Settings",
+     "items": [
+      {
+       "html": "<strong>Find Action</strong> (Ctrl+Shift+A) opens tool windows by their names, such as TODO, Database, Services or Problems, with the window first in the list. Matches rank by kind: the exact name, its start, the starts of words, then the rest. Letters scattered through a name show only when nothing better matches.",
+       "text": "Find Action (Ctrl+Shift+A) opens tool windows by their names, such as TODO, Database, Services or Problems, with the window first in the list. Matches rank by kind: the exact name, its start, the starts of words, then the rest. Letters scattered through a name show only when nothing better matches.",
+       "lead": "Find Action"
+      },
+      {
+       "html": "<strong>The search in Settings</strong> opens the page that holds the match and selects it in the tree. A page you chose stays while it still matches. The matching words are marked on the page, and a query that finds nothing says so.",
+       "text": "The search in Settings opens the page that holds the match and selects it in the tree. A page you chose stays while it still matches. The matching words are marked on the page, and a query that finds nothing says so.",
+       "lead": "The search in Settings"
+      },
+      {
+       "html": "<strong>Editor → Font</strong> holds the editor's font, size and line height, with a sample of code that follows the changes at once. <strong>System Settings → Updates</strong> holds the update check. Appearance keeps the theme, the interface scale and the window options.",
+       "text": "Editor → Font holds the editor's font, size and line height, with a sample of code that follows the changes at once. System Settings → Updates holds the update check. Appearance keeps the theme, the interface scale and the window options.",
+       "lead": "Editor → Font"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Run configurations",
+     "items": [
+      {
+       "html": "<strong>Run/Debug Configurations</strong> list Before launch once, with its buttons in the heading row. <strong>Modify options</strong> opens a menu that shows or hides the extra fields, such as the environment file. A field that holds a value always shows.",
+       "text": "Run/Debug Configurations list Before launch once, with its buttons in the heading row. Modify options opens a menu that shows or hides the extra fields, such as the environment file. A field that holds a value always shows.",
+       "lead": "Run/Debug Configurations"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Keyboard",
+     "items": [
+      {
+       "html": "<strong>The search fields of tool windows</strong> keep only typing and editing keys. Ctrl+Shift+A, Ctrl+E, Alt+1 and the other window shortcuts work from them too. This covers Endpoints, Git Log, Find Usages, Run, Database and Local History.",
+       "text": "The search fields of tool windows keep only typing and editing keys. Ctrl+Shift+A, Ctrl+E, Alt+1 and the other window shortcuts work from them too. This covers Endpoints, Git Log, Find Usages, Run, Database and Local History.",
+       "lead": "The search fields of tool windows"
+      },
+      {
+       "html": "<strong>Escape in the Terminal</strong> moves the focus back to the editor and leaves the terminal open; a full-screen program such as vim keeps its Escape, and a setting in Tools → Terminal turns this off. Alt+1 and the other window shortcuts work from the terminal.",
+       "text": "Escape in the Terminal moves the focus back to the editor and leaves the terminal open; a full-screen program such as vim keeps its Escape, and a setting in Tools → Terminal turns this off. Alt+1 and the other window shortcuts work from the terminal.",
+       "lead": "Escape in the Terminal"
+      },
+      {
+       "html": "<strong>Escape in a dialog</strong> closes its open list or menu first, and the dialog only on the next press, so edits in the dialog stay. This covers Run/Debug Configurations, Settings, Project Structure and Change Signature.",
+       "text": "Escape in a dialog closes its open list or menu first, and the dialog only on the next press, so edits in the dialog stay. This covers Run/Debug Configurations, Settings, Project Structure and Change Signature.",
+       "lead": "Escape in a dialog"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Tool windows",
+     "items": [
+      {
+       "html": "<strong>Services</strong> lists the Kubernetes contexts and switches between them even while the cluster does not answer. It shows a cluster that does not answer, or Docker that is not running, as one folded row. The full reason is in its tooltip, and selecting the row shows the reason with a Retry button.",
+       "text": "Services lists the Kubernetes contexts and switches between them even while the cluster does not answer. It shows a cluster that does not answer, or Docker that is not running, as one folded row. The full reason is in its tooltip, and selecting the row shows the reason with a Retry button.",
+       "lead": "Services"
+      },
+      {
+       "html": "<strong>Call Hierarchy</strong> has the Scope switch (All, Production, Test) and the expand and collapse buttons of Type Hierarchy.",
+       "text": "Call Hierarchy has the Scope switch (All, Production, Test) and the expand and collapse buttons of Type Hierarchy.",
+       "lead": "Call Hierarchy"
+      },
+      {
+       "html": "<strong>Database</strong> gives its two copy buttons, for the cell and the row, icons of their own; they wait until a cell is selected. <strong>Build</strong> says once that nothing was built yet and names the key to build. <strong>Endpoints</strong> labels its count, such as «17 endpoints» or «1 of 3 endpoints».",
+       "text": "Database gives its two copy buttons, for the cell and the row, icons of their own; they wait until a cell is selected. Build says once that nothing was built yet and names the key to build. Endpoints labels its count, such as «17 endpoints» or «1 of 3 endpoints».",
+       "lead": "Database"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Notifications",
+     "items": [
+      {
+       "html": "Notifications carry a level — information, warning or error — with an icon for each. Information that needs no answer closes by itself after a few seconds; warnings and errors, such as a failed build, import, save or Git command, stay until you close them.",
+       "text": "Notifications carry a level — information, warning or error — with an icon for each. Information that needs no answer closes by itself after a few seconds; warnings and errors, such as a failed build, import, save or Git command, stay until you close them.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "More",
+     "items": [
+      {
+       "html": "<strong>Lists in Problems, TODO, Find Usages and Method Hierarchy</strong> keep line numbers and paths in a column at the right edge; a file in Find Usages shows its folder and the count after its name.",
+       "text": "Lists in Problems, TODO, Find Usages and Method Hierarchy keep line numbers and paths in a column at the right edge; a file in Find Usages shows its folder and the count after its name.",
+       "lead": "Lists in Problems, TODO, Find Usages and Method Hierarchy"
+      },
+      {
+       "html": "<strong>Amend</strong> without ticked files rewrites only the message of the last commit; Commit becomes available once the message changes.",
+       "text": "Amend without ticked files rewrites only the message of the last commit; Commit becomes available once the message changes.",
+       "lead": "Amend"
+      },
+      {
+       "html": "<strong>File Structure</strong> (Ctrl+F12) shows a method's name and signature without a gap; the Reformat File dialog is titled with the file's name.",
+       "text": "File Structure (Ctrl+F12) shows a method's name and signature without a gap; the Reformat File dialog is titled with the file's name.",
+       "lead": "File Structure"
+      },
+      {
+       "html": "<strong>File icons</strong> for properties, archives, images, Gradle scripts, CSV, EditorConfig, manifests, patches and more.",
+       "text": "File icons for properties, archives, images, Gradle scripts, CSV, EditorConfig, manifests, patches and more.",
+       "lead": "File icons"
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 43,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.30-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 89283709,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.30_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 87389392,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro_0.1.30_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.30-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 100739179,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.30-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 101123303,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.30-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 95890735,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.30-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 89709840,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.29",
    "tag": "v0.1.29",
