@@ -1,63 +1,251 @@
 {
  "repo": "PabloSensei/arro",
- "generatedAt": "2026-11-23T11:38:58.662Z",
+ "generatedAt": "2026-11-23T20:41:23.487Z",
  "latest": {
-  "version": "0.1.30",
-  "tag": "v0.1.30",
-  "date": "2026-11-23T11:38:48Z",
-  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.30",
+  "version": "0.1.31",
+  "tag": "v0.1.31",
+  "date": "2026-11-23T20:41:16Z",
+  "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.31",
   "assets": [
    {
-    "name": "arro-0.1.30-windows-x86_64.zip",
+    "name": "arro-0.1.31-windows-x86_64.zip",
     "os": "windows",
     "label": "Windows 11 · x86-64 · zip",
     "order": 0,
-    "size": 89283709,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-windows-x86_64.zip"
+    "size": 89324892,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-windows-x86_64.zip"
    },
    {
-    "name": "arro_0.1.30_amd64.deb",
+    "name": "arro_0.1.31_amd64.deb",
     "os": "linux",
     "label": "Debian, Ubuntu · .deb",
     "order": 1,
-    "size": 87389392,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro_0.1.30_amd64.deb"
+    "size": 87602468,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro_0.1.31_amd64.deb"
    },
    {
-    "name": "arro-0.1.30-1.x86_64.rpm",
+    "name": "arro-0.1.31-1.x86_64.rpm",
     "os": "linux",
     "label": "Fedora, RHEL, openSUSE · .rpm",
     "order": 2,
-    "size": 100739179,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-1.x86_64.rpm"
+    "size": 100848335,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-1.x86_64.rpm"
    },
    {
-    "name": "arro-0.1.30-linux-x86_64.tar.gz",
+    "name": "arro-0.1.31-linux-x86_64.tar.gz",
     "os": "linux",
     "label": "Any glibc 2.35+ distro · tar.gz",
     "order": 3,
-    "size": 101123303,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-linux-x86_64.tar.gz"
+    "size": 101228368,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-linux-x86_64.tar.gz"
    },
    {
-    "name": "arro-0.1.30-macos-aarch64.dmg",
+    "name": "arro-0.1.31-macos-aarch64.dmg",
     "os": "macos",
     "label": "Apple silicon · .dmg",
     "order": 4,
-    "size": 95890735,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-macos-aarch64.dmg"
+    "size": 96763626,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-macos-aarch64.dmg"
    },
    {
-    "name": "arro-0.1.30-macos-aarch64.zip",
+    "name": "arro-0.1.31-macos-aarch64.zip",
     "os": "macos",
     "label": "Apple silicon · zip",
     "order": 5,
-    "size": 89709840,
-    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.30/arro-0.1.30-macos-aarch64.zip"
+    "size": 89794988,
+    "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-macos-aarch64.zip"
    }
   ]
  },
  "releases": [
+  {
+   "version": "0.1.31",
+   "tag": "v0.1.31",
+   "date": "2026-11-23T20:41:16Z",
+   "url": "https://github.com/PabloSensei/arro/releases/tag/v0.1.31",
+   "prerelease": false,
+   "summary": [
+    "The data grid of a database table selects like a spreadsheet, and Arro tells you what it does when memory runs low."
+   ],
+   "notes": [],
+   "sections": [
+    {
+     "kind": "improved",
+     "title": "Database",
+     "items": [
+      {
+       "html": "<strong>The data grid</strong> selects cells by dragging, Shift+click and Ctrl+click; dragging past an edge scrolls. A click on a column header selects the column, a click on a row number selects the row, and the corner or Ctrl+A selects everything. Ctrl+C copies the selection as tab-separated text, with the column names first when whole columns are selected; a right click inside the selection keeps it for the copy menu.",
+       "text": "The data grid selects cells by dragging, Shift+click and Ctrl+click; dragging past an edge scrolls. A click on a column header selects the column, a click on a row number selects the row, and the corner or Ctrl+A selects everything. Ctrl+C copies the selection as tab-separated text, with the column names first when whole columns are selected; a right click inside the selection keeps it for the copy menu.",
+       "lead": "The data grid"
+      },
+      {
+       "html": "Rows are numbered on the left, continuing across pages. Column names are bold, and sorting moved to an icon in the header and to its menu.",
+       "text": "Rows are numbered on the left, continuing across pages. Column names are bold, and sorting moved to an icon in the header and to its menu.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Memory",
+     "items": [
+      {
+       "html": "The language server stops for low memory only after memory stays low for 30 seconds. When it stops, a notification shows the free and total memory and the limits, with <strong>Start Anyway</strong>, <strong>Memory Settings…</strong> and <strong>Don't Stop on This Machine</strong>. A click on the status line opens it again.",
+       "text": "The language server stops for low memory only after memory stays low for 30 seconds. When it stops, a notification shows the free and total memory and the limits, with Start Anyway, Memory Settings… and Don't Stop on This Machine. A click on the status line opens it again.",
+       "lead": null
+      },
+      {
+       "html": "On a virtual machine, whose memory the host may add on demand, Arro warns once instead of stopping the server.",
+       "text": "On a virtual machine, whose memory the host may add on demand, Arro warns once instead of stopping the server.",
+       "lead": null
+      },
+      {
+       "html": "A new <strong>Memory</strong> page in Settings holds the low-memory check, its limits and the maximum heap of the language server.",
+       "text": "A new Memory page in Settings holds the low-memory check, its limits and the maximum heap of the language server.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Build tools",
+     "items": [
+      {
+       "html": "<strong>Gradle</strong> has a Distribution choice: Wrapper, Local installation or Downloaded by Arro, and a switch to download the wrapper distribution automatically into the Gradle user home.",
+       "text": "Gradle has a Distribution choice: Wrapper, Local installation or Downloaded by Arro, and a switch to download the wrapper distribution automatically into the Gradle user home.",
+       "lead": "Gradle"
+      },
+      {
+       "html": "<strong>Maven</strong> Home is the same kind of list: Wrapper, Local installation with a folder picker, or Downloaded by Arro. A path saved by an earlier version reads as Local installation.",
+       "text": "Maven Home is the same kind of list: Wrapper, Local installation with a folder picker, or Downloaded by Arro. A path saved by an earlier version reads as Local installation.",
+       "lead": "Maven"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Settings",
+     "items": [
+      {
+       "html": "Searching Settings opens the page whose name matches the query first, then pages whose setting titles match, then pages that match by a hint. Searching «memory» opens Memory.",
+       "text": "Searching Settings opens the page whose name matches the query first, then pages whose setting titles match, then pages that match by a hint. Searching «memory» opens Memory.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Language server",
+     "items": [
+      {
+       "html": "<strong>Show Log</strong> after a failed import opens the messages of the language server, with the import error and its stack trace, instead of the raw output of the JVM.",
+       "text": "Show Log after a failed import opens the messages of the language server, with the import error and its stack trace, instead of the raw output of the JVM.",
+       "lead": "Show Log"
+      },
+      {
+       "html": "On Java 24 and newer the server starts without the <code>sun.misc.Unsafe</code> warnings.",
+       "text": "On Java 24 and newer the server starts without the sun.misc.Unsafe warnings.",
+       "lead": null
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Refactoring",
+     "items": [
+      {
+       "html": "<strong>Extract Constant, Introduce Variable and Introduce Parameter</strong> suggest names from the expression with the real language server too: on <code>5</code> passed as a page size Extract Constant offers <code>PAGE_SIZE</code>, not <code>_5</code>, and the others a name after the parameter, not <code>i</code>.",
+       "text": "Extract Constant, Introduce Variable and Introduce Parameter suggest names from the expression with the real language server too: on 5 passed as a page size Extract Constant offers PAGE_SIZE, not _5, and the others a name after the parameter, not i.",
+       "lead": "Extract Constant, Introduce Variable and Introduce Parameter"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Find",
+     "items": [
+      {
+       "html": "<strong>Find in Files</strong> marks only the matched part of a word in the preview.",
+       "text": "Find in Files marks only the matched part of a word in the preview.",
+       "lead": "Find in Files"
+      }
+     ]
+    },
+    {
+     "kind": "improved",
+     "title": "Editor and history",
+     "items": [
+      {
+       "html": "Local History, Recent Changes and test run history write relative times the same way: «Yesterday» instead of «1 days ago», then dates.",
+       "text": "Local History, Recent Changes and test run history write relative times the same way: «Yesterday» instead of «1 days ago», then dates.",
+       "lead": null
+      },
+      {
+       "html": "A note at the caret on the last visible line no longer covers the breadcrumbs.",
+       "text": "A note at the caret on the last visible line no longer covers the breadcrumbs.",
+       "lead": null
+      }
+     ]
+    }
+   ],
+   "counts": {
+    "new": 0,
+    "improved": 14,
+    "fixed": 0,
+    "hood": 0,
+    "limits": 0
+   },
+   "assets": [
+    {
+     "name": "arro-0.1.31-windows-x86_64.zip",
+     "os": "windows",
+     "label": "Windows 11 · x86-64 · zip",
+     "order": 0,
+     "size": 89324892,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-windows-x86_64.zip"
+    },
+    {
+     "name": "arro_0.1.31_amd64.deb",
+     "os": "linux",
+     "label": "Debian, Ubuntu · .deb",
+     "order": 1,
+     "size": 87602468,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro_0.1.31_amd64.deb"
+    },
+    {
+     "name": "arro-0.1.31-1.x86_64.rpm",
+     "os": "linux",
+     "label": "Fedora, RHEL, openSUSE · .rpm",
+     "order": 2,
+     "size": 100848335,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-1.x86_64.rpm"
+    },
+    {
+     "name": "arro-0.1.31-linux-x86_64.tar.gz",
+     "os": "linux",
+     "label": "Any glibc 2.35+ distro · tar.gz",
+     "order": 3,
+     "size": 101228368,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-linux-x86_64.tar.gz"
+    },
+    {
+     "name": "arro-0.1.31-macos-aarch64.dmg",
+     "os": "macos",
+     "label": "Apple silicon · .dmg",
+     "order": 4,
+     "size": 96763626,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-macos-aarch64.dmg"
+    },
+    {
+     "name": "arro-0.1.31-macos-aarch64.zip",
+     "os": "macos",
+     "label": "Apple silicon · zip",
+     "order": 5,
+     "size": 89794988,
+     "url": "https://github.com/PabloSensei/arro/releases/download/v0.1.31/arro-0.1.31-macos-aarch64.zip"
+    }
+   ]
+  },
   {
    "version": "0.1.30",
    "tag": "v0.1.30",

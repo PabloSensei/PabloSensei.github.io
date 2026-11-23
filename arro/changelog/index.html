@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>31</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.30</span>, from <span data-arro-date>23 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>32</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.31</span>, from <span data-arro-date>23 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,74 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.30" data-version="0.1.30" data-total="43">
+    <article class="release is-latest" id="v0.1.31" data-version="0.1.31" data-total="14">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.31" aria-label="Link to Arro 0.1.31">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.31</h2>
+        <p class="rel-meta"><time datetime="2026-11-23T20:41:16Z">23 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.31">Release page</a></p>
+      </header>
+      <p class="rel-summary">The data grid of a database table selects like a spreadsheet, and Arro tells you what it does when memory runs low.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Database <span class="count">2</span></h3>
+        <ul>
+          <li data-text="the data grid selects cells by dragging, shift+click and ctrl+click; dragging past an edge scrolls. a click on a column header selects the column, a click on a row number selects the row, and the corner or ctrl+a selects everything. ctrl+c copies the selection as tab-separated text, with the column names first when whole columns are selected; a right click inside the selection keeps it for the copy menu."><strong>The data grid</strong> selects cells by dragging, Shift+click and Ctrl+click; dragging past an edge scrolls. A click on a column header selects the column, a click on a row number selects the row, and the corner or Ctrl+A selects everything. Ctrl+C copies the selection as tab-separated text, with the column names first when whole columns are selected; a right click inside the selection keeps it for the copy menu.</li>
+          <li data-text="rows are numbered on the left, continuing across pages. column names are bold, and sorting moved to an icon in the header and to its menu.">Rows are numbered on the left, continuing across pages. Column names are bold, and sorting moved to an icon in the header and to its menu.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Memory <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the language server stops for low memory only after memory stays low for 30 seconds. when it stops, a notification shows the free and total memory and the limits, with start anyway, memory settings… and don't stop on this machine. a click on the status line opens it again.">The language server stops for low memory only after memory stays low for 30 seconds. When it stops, a notification shows the free and total memory and the limits, with <strong>Start Anyway</strong>, <strong>Memory Settings…</strong> and <strong>Don't Stop on This Machine</strong>. A click on the status line opens it again.</li>
+          <li data-text="on a virtual machine, whose memory the host may add on demand, arro warns once instead of stopping the server.">On a virtual machine, whose memory the host may add on demand, Arro warns once instead of stopping the server.</li>
+          <li data-text="a new memory page in settings holds the low-memory check, its limits and the maximum heap of the language server.">A new <strong>Memory</strong> page in Settings holds the low-memory check, its limits and the maximum heap of the language server.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Build tools <span class="count">2</span></h3>
+        <ul>
+          <li data-text="gradle has a distribution choice: wrapper, local installation or downloaded by arro, and a switch to download the wrapper distribution automatically into the gradle user home."><strong>Gradle</strong> has a Distribution choice: Wrapper, Local installation or Downloaded by Arro, and a switch to download the wrapper distribution automatically into the Gradle user home.</li>
+          <li data-text="maven home is the same kind of list: wrapper, local installation with a folder picker, or downloaded by arro. a path saved by an earlier version reads as local installation."><strong>Maven</strong> Home is the same kind of list: Wrapper, Local installation with a folder picker, or Downloaded by Arro. A path saved by an earlier version reads as Local installation.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Settings <span class="count">1</span></h3>
+        <ul>
+          <li data-text="searching settings opens the page whose name matches the query first, then pages whose setting titles match, then pages that match by a hint. searching «memory» opens memory.">Searching Settings opens the page whose name matches the query first, then pages whose setting titles match, then pages that match by a hint. Searching «memory» opens Memory.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Language server <span class="count">2</span></h3>
+        <ul>
+          <li data-text="show log after a failed import opens the messages of the language server, with the import error and its stack trace, instead of the raw output of the jvm."><strong>Show Log</strong> after a failed import opens the messages of the language server, with the import error and its stack trace, instead of the raw output of the JVM.</li>
+          <li data-text="on java 24 and newer the server starts without the sun.misc.unsafe warnings.">On Java 24 and newer the server starts without the <code>sun.misc.Unsafe</code> warnings.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Refactoring <span class="count">1</span></h3>
+        <ul>
+          <li data-text="extract constant, introduce variable and introduce parameter suggest names from the expression with the real language server too: on 5 passed as a page size extract constant offers page_size, not _5, and the others a name after the parameter, not i."><strong>Extract Constant, Introduce Variable and Introduce Parameter</strong> suggest names from the expression with the real language server too: on <code>5</code> passed as a page size Extract Constant offers <code>PAGE_SIZE</code>, not <code>_5</code>, and the others a name after the parameter, not <code>i</code>.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Find <span class="count">1</span></h3>
+        <ul>
+          <li data-text="find in files marks only the matched part of a word in the preview."><strong>Find in Files</strong> marks only the matched part of a word in the preview.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor and history <span class="count">2</span></h3>
+        <ul>
+          <li data-text="local history, recent changes and test run history write relative times the same way: «yesterday» instead of «1 days ago», then dates.">Local History, Recent Changes and test run history write relative times the same way: «Yesterday» instead of «1 days ago», then dates.</li>
+          <li data-text="a note at the caret on the last visible line no longer covers the breadcrumbs.">A note at the caret on the last visible line no longer covers the breadcrumbs.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.30" data-version="0.1.30" data-total="43">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.30" aria-label="Link to Arro 0.1.30">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.30</h2>
-        <p class="rel-meta"><time datetime="2026-11-23T11:38:48Z">23 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.30">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-23T11:38:48Z">23 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.30">Release page</a></p>
       </header>
       <p class="rel-summary">Navigation remembers where you were: Recent Locations, the Switcher and Recent Files keep their lists across restarts.</p>
       <section class="rel-group" data-kind="improved">

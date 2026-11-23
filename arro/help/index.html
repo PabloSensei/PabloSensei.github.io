@@ -48,7 +48,7 @@
     <canvas data-art="arro" data-t="4.1" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Help</h1>
-      <p class="lede">Install Arro, open your first project, and find your way around. If you know IntelliJ IDEA, most of it will feel familiar. Written for Arro <span class="mono" data-arro-version>0.1.30</span>.</p>
+      <p class="lede">Install Arro, open your first project, and find your way around. If you know IntelliJ IDEA, most of it will feel familiar. Written for Arro <span class="mono" data-arro-version>0.1.31</span>.</p>
     </div>
   </section>
 
@@ -85,7 +85,7 @@
           <div role="tabpanel" id="install-windows" aria-labelledby="tab-win" tabindex="0">
             <h3>Windows 11, x86-64</h3>
             <ol class="stations">
-              <li>Download <code>arro-<span data-arro-version>0.1.30</span>-windows-x86_64.zip</code>.</li>
+              <li>Download <code>arro-<span data-arro-version>0.1.31</span>-windows-x86_64.zip</code>.</li>
               <li>Unpack it into a folder you can write to, so Arro can update itself there later.</li>
               <li>Run <code>arro.exe</code> and open a folder with a Maven or Gradle project.</li>
             </ol>
@@ -97,16 +97,16 @@
             <p>Arro needs glibc 2.35 or newer: Ubuntu 22.04, Debian 12, Fedora 36 or a later release.</p>
             <h3>Debian and Ubuntu: the package</h3>
             <ol class="stations">
-              <li>Download <code>arro_<span data-arro-version>0.1.30</span>_amd64.deb</code>.</li>
+              <li>Download <code>arro_<span data-arro-version>0.1.31</span>_amd64.deb</code>.</li>
               <li>Install it from the download folder:
-                <pre class="cmd"><code>sudo apt install ./arro_<span data-arro-version>0.1.30</span>_amd64.deb</code></pre>
+                <pre class="cmd"><code>sudo apt install ./arro_<span data-arro-version>0.1.31</span>_amd64.deb</code></pre>
               </li>
               <li>Start Arro from the application menu, or run <code>arro</code>.</li>
             </ol>
             <p>The package puts Arro in <code>/opt/arro</code>, adds <code>arro</code> to the path and a shortcut to the application menu. A newer version installs the same way. Arro cannot update a package installation by itself, so its update notice opens the release page.</p>
             <h3>Other distributions: the archive</h3>
             <ol class="stations">
-              <li>Unpack <code>arro-<span data-arro-version>0.1.30</span>-linux-x86_64.tar.gz</code>, for example into <code>~/opt</code>.</li>
+              <li>Unpack <code>arro-<span data-arro-version>0.1.31</span>-linux-x86_64.tar.gz</code>, for example into <code>~/opt</code>.</li>
               <li>Run <code>./arro</code> from that folder.</li>
               <li>For a shortcut in the application menu, run <code>./install.sh</code> and answer its question. It writes only to <code>~/.local/share</code> of your user; nothing is installed automatically.</li>
             </ol>
@@ -116,7 +116,7 @@
           <div role="tabpanel" id="install-macos" aria-labelledby="tab-mac" tabindex="0">
             <h3>macOS, Apple silicon</h3>
             <ol class="stations">
-              <li>Open <code>arro-<span data-arro-version>0.1.30</span>-macos-aarch64.dmg</code> and drag <strong>Arro</strong> into Applications. The <code>.zip</code> of the same bundle works too; it is what the built-in updater uses.</li>
+              <li>Open <code>arro-<span data-arro-version>0.1.31</span>-macos-aarch64.dmg</code> and drag <strong>Arro</strong> into Applications. The <code>.zip</code> of the same bundle works too; it is what the built-in updater uses.</li>
               <li>The build is signed ad hoc, not notarized, so Gatekeeper stops the first start. Control-click <code>Arro.app</code>, choose <strong>Open</strong> and confirm, or run:
                 <pre class="cmd"><code>xattr -dr com.apple.quarantine /Applications/Arro.app</code></pre>
               </li>
