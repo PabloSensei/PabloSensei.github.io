@@ -94,9 +94,9 @@
   <div class="box-stage">
     <div class="box-floor" aria-hidden="true"></div>
     <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="dictate box. Arrow keys turn it, Enter turns it over.">
-      <div class="face front" aria-hidden="true"><canvas class="art" data-art="dictate"></canvas><div class="front-type"><div><div class="pname brand">dictate</div><div class="ptag">Offline push-to-talk dictation</div></div><div></div><div class="pfor">For Windows 10 · 11</div><span class="sticker"><small>No</small><small>network</small></span></div></div>
-      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">dictate</div><ul class="checks"><li>Whisper on your own GPU</li><li>Types into any app</li><li>About 100 languages</li></ul><p class="reqline"><b>Requires</b> Windows 10 or 11 · NVIDIA RTX or any AVX2 CPU</p><div class="barcode"><svg data-barcode="DICTATE"></svg><span>DICTATE 0.1.0</span></div></div></div>
-      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">dictate</span><span class="mono">0.1.0</span></div></div>
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="dictate"></canvas><div class="front-type"><div><div class="pname brand">dictate</div><div class="ptag">Offline push-to-talk dictation</div></div><div></div><div class="pfor">For Windows · macOS · Linux</div><span class="sticker"><small>Fully</small><small>offline</small></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">dictate</div><ul class="checks"><li>Whisper on your own GPU</li><li>Types into any app</li><li>About 100 languages</li></ul><p class="reqline"><b>Requires</b> Windows 10 or 11 · macOS 11+ · Linux X11</p><div class="barcode"><svg data-barcode="DICTATE"></svg><span>DICTATE 0.3.0</span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">dictate</span><span class="mono">0.3.0</span></div></div>
       <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Rust · whisper.cpp</span></div></div>
       <div class="face top" aria-hidden="true"><img src="/assets/img/projects/dictate-logo.svg" alt=""></div>
       <div class="face bottom" aria-hidden="true"></div>
@@ -200,19 +200,19 @@
     <div class="wrap">
       <div class="reveal">
         <div class="spread-id"><img src="/assets/img/projects/dictate-logo.svg" width="64" height="64" alt=""><h2 class="brand" id="dictate-h">dictate</h2></div>
-        <p class="kind">Rust · whisper.cpp · CUDA · MIT licence</p>
+        <p class="kind">Rust · whisper.cpp · CUDA · Metal · MIT licence</p>
         <p class="pitch">Private, offline push-to-talk dictation. Hold a key, speak, let go: the text is typed into whatever app you are in.</p>
         <div class="panel"><ul class="checks">
-          <li><span><strong>No network code at all.</strong> Block it in the firewall and it keeps working.</span></li>
+          <li><span><strong>Your voice never leaves the computer.</strong> No network code of its own; the only request is an optional update check through the system curl. Block it in the firewall and dictation keeps working.</span></li>
           <li><span><strong>About 0.16 s</strong> to recognise a five-second phrase on an RTX 4070 Ti with Whisper large-v3-turbo, measured by the author.</span></li>
-          <li><span>One exe, about 4,500 lines of Rust you can read in an evening. Voice activity detection, vocabulary hints, autocorrect rules.</span></li>
+          <li><span>Windows, plus macOS and Linux in beta. Voice activity detection, vocabulary hints, autocorrect rules, a choice of microphone, one-click updates.</span></li>
         </ul></div>
-        <p class="links"><a class="primary" href="https://github.com/PabloSensei/dictate">Repository <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a><a href="https://github.com/PabloSensei/dictate/releases/latest">Download 0.1.0</a></p>
+        <p class="links"><a class="primary" href="https://github.com/PabloSensei/dictate">Repository <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 11 11 5M6.2 5H11v4.8"/></svg></a><a href="https://github.com/PabloSensei/dictate/releases/latest">Download 0.3.0</a></p>
       </div>
       <div class="side reveal">
-        <figure class="plate"><div class="fit"><img src="/assets/img/projects/dictate-settings.webp" width="751" height="994" alt="dictate settings window with Controls, Recognition and Interface sections" decoding="async"></div><figcaption><b>Settings</b> Shortcut, hold or toggle, model hint, live text.</figcaption></figure>
+        <figure class="plate"><div class="fit"><img src="/assets/img/projects/dictate-settings.webp" width="910" height="682" alt="dictate settings window: shortcut, mode and microphone" decoding="async"></div><figcaption><b>Settings</b> Shortcut, hold or toggle, microphone, live text.</figcaption></figure>
         <div class="meta-row">
-          <div class="requires"><p class="req-head">System requirements</p><dl><dt>System</dt><dd>Windows 10 or 11</dd><dt>Hardware</dt><dd>NVIDIA RTX 20 series or newer for the CUDA build, or any x64 CPU with AVX2</dd><dt>Network</dt><dd>None</dd></dl></div>
+          <div class="requires"><p class="req-head">System requirements</p><dl><dt>System</dt><dd>Windows 10 or 11; macOS 11+ and Linux with X11 in beta</dd><dt>Hardware</dt><dd>NVIDIA RTX 20 series or newer for the CUDA build, any x64 CPU with AVX2, or an Apple Silicon or Intel Mac</dd><dt>Network</dt><dd>Only for the optional update check</dd></dl></div>
           <span class="sticker"><small>Works</small><small>offline</small></span>
         </div>
       </div>
