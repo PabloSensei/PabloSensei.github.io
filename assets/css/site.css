@@ -378,6 +378,7 @@ p { margin: 0; text-wrap: pretty; }
 .plate .fit { position: relative; aspect-ratio: 16 / 10; background: var(--paper-2); overflow: hidden; border-radius: 2px; }
 /* the whole picture, scaled into the well: a percentage max-height does not resolve here */
 .plate .fit img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.plate video { display: block; width: 100%; height: auto; border-radius: 2px; background: #100e19; }
 .plate figcaption { padding: 8px 4px 2px; font-size: 0.86rem; color: var(--ink-2); }
 .plate figcaption b { color: var(--ink); font-weight: 800; margin-right: 0.4em; }
 

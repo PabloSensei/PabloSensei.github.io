@@ -55,17 +55,16 @@
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8.5M4.4 7 8 10.6 11.6 7M2.8 13.6h10.4"/></svg>
             <span>Download for <span data-os-name>your system</span></span>
           </a>
-          <p class="meta">Free · version <span class="mono">0.1.5</span> · <a href="#download">All systems</a> · <a href="https://github.com/PabloSensei/bowyer">Source on GitHub</a></p>
+          <p class="meta">Free · version <span class="mono">0.1.9</span> · <a href="#download">All systems</a> · <a href="https://github.com/PabloSensei/bowyer">Source on GitHub</a></p>
         </div>
-        <p class="edition"><strong>Preview edition.</strong> Bowyer is young: expect rough edges and breaking changes between versions. Bug reports are very welcome.</p>
       </div>
 <figure class="box" data-product="bowyer" style="--i:0">
   <div class="box-stage">
     <div class="box-floor" aria-hidden="true"></div>
     <div class="box-turn" tabindex="0" role="group" aria-roledescription="3D box" aria-label="Bowyer box. Arrow keys turn it, Enter turns it over.">
-      <div class="face front" aria-hidden="true"><canvas class="art" data-art="bowyer"></canvas><div class="front-type"><div><div class="pname brand">Bowyer</div><div class="ptag">Every AI coding agent, one window</div></div><div></div><div class="pfor">For Windows, Linux and&nbsp;macOS</div><span class="sticker"><small>Free</small><span class="mono">0.1.5</span></span></div></div>
-      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">Bowyer</div><ul class="checks"><li>Every session in one tree</li><li>Context and cost at a glance</li><li>Local and over SSH</li></ul><p class="reqline"><b>Requires</b> Windows 11, Linux, macOS · an AI coding agent</p><div class="barcode"><svg data-barcode="BOWYER"></svg><span>BOWYER 0.1.5</span></div></div></div>
-      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">Bowyer</span><span class="mono">0.1.5</span></div></div>
+      <div class="face front" aria-hidden="true"><canvas class="art" data-art="bowyer"></canvas><div class="front-type"><div><div class="pname brand">Bowyer</div><div class="ptag">Every AI coding agent, one window</div></div><div></div><div class="pfor">For Windows, Linux and&nbsp;macOS</div><span class="sticker"><small>Free</small><span class="mono">0.1.9</span></span></div></div>
+      <div class="face back" aria-hidden="true"><div class="back-inner"><div class="bname brand">Bowyer</div><ul class="checks"><li>Every session in one tree</li><li>Context and cost at a glance</li><li>Local and over SSH</li></ul><p class="reqline"><b>Requires</b> Windows 11, Linux, macOS · an AI coding agent</p><div class="barcode"><svg data-barcode="BOWYER"></svg><span>BOWYER 0.1.9</span></div></div></div>
+      <div class="face right spine" aria-hidden="true"><div class="stack"><span class="sname">Bowyer</span><span class="mono">0.1.9</span></div></div>
       <div class="face left spine" aria-hidden="true"><div class="stack"><span class="sname">Rust · GPUI</span></div></div>
       <div class="face top" aria-hidden="true"><img src="/assets/img/bowyer/icon-256.png" alt=""></div>
       <div class="face bottom" aria-hidden="true"></div>
@@ -82,7 +81,7 @@
     <div class="shot-wrap">
       <figure class="plate reveal">
         <div class="shot">
-            <img src="/assets/img/bowyer/hero.webp" width="1600" height="882" alt="Bowyer in the Dark theme: the session tree groups sessions by environment, agent and project with three agent sessions under the Claude Code session that started them, the conversation shows folded tool calls above a composer with its own model and effort, and the side panel shows folding sections for the context window, plan limits, the session cost and the changed files" fetchpriority="high">
+            <img src="/assets/img/bowyer/hero.webp" width="1600" height="882" alt="Bowyer in the Nightfall theme: the session tree groups sessions by environment, agent and project, each with its agent's pixel critter, with three agent sessions under the Claude Code session that started them, the conversation shows folded tool calls above a composer with its own model and effort, and the side panel shows folding sections for the context window, plan limits, the session cost and the changed files" fetchpriority="high">
             <span class="callout l" style="--x:1.6%;--y:7.8%;--d:0s;--out:min(150px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Search it all</span></span>
             <span class="callout l" style="--x:20.2%;--y:13.7%;--d:.2s;--out:min(150px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Your turn</span></span>
             <span class="callout l" style="--x:3.4%;--y:21.4%;--d:.4s;--out:min(150px,calc((100vw - 1061px) / 2 - 16px))" aria-hidden="true"><i></i><span>Agents nested</span></span>
@@ -95,11 +94,29 @@
     </div>
   </div>
 
+  <section class="section wrap" aria-labelledby="move-h">
+    <div class="section-head reveal">
+      <h2 class="h-section" id="move-h">See it at work</h2>
+      <p>Two short recordings of the real window, on invented sessions.</p>
+    </div>
+    <div class="shot-wrap" style="margin-top:0">
+      <figure class="plate reveal">
+        <video src="/assets/img/bowyer/mission-control.mp4" poster="/assets/img/bowyer/mission-control.webp" width="1600" height="1000" autoplay loop muted playsinline preload="metadata" aria-label="Mission control: six Claude Code and Codex agents stream their tool calls in a grid of cards; one card asks to run a command and pulses, Allow once is clicked on the card, then a Codex card opens its session and the grid comes back with every card in its place"></video>
+        <figcaption><b>Mission control</b> Every agent at work in one grid. <kbd>Ctrl+Shift+M</kbd> opens up to nine live cards with each agent's log, context, pace and cost; a card that waits for you pulses, and a permission question is answered right on the card.</figcaption>
+      </figure>
+      <figure class="plate reveal" style="margin-top:clamp(28px,4vw,48px)">
+        <video src="/assets/img/bowyer/speed-and-search.mp4" poster="/assets/img/bowyer/speed-and-search.webp" width="1600" height="994" autoplay loop muted playsinline preload="metadata" aria-label="Bowyer starts in 0.40 seconds with 788 sessions in the tree, opens a 400 MB session in about a second, then finds seven sessions of three agents as the words webhook retry are typed, each with the sentence where they matched"></video>
+        <figcaption><b>Fast to open, quick to find</b> A tree of almost 800 sessions in 0.4 seconds, a 400 MB session in about a second, and <kbd>Ctrl+K</kbd> search across every agent's conversations as you type, with the matching sentence under each result.</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section class="section wrap" aria-labelledby="why-h">
     <h2 class="h-section reveal" id="why-h" style="margin-bottom:20px">Why Bowyer</h2>
     <ul class="claims reveal">
       <li><h3 class="brand">Every agent, one place</h3><p>Claude Code, Codex, OpenCode and DeepSeek each keep their history in their own folder, their own format and their own terminal. Bowyer reads all of them and shows every session you ever ran, on this machine and on your servers, in one tree you can search as you type.</p></li>
       <li><h3 class="brand">Native and fast</h3><p>Rust from top to bottom and a GPU-rendered UI on GPUI, the same foundation as Arro. No Electron, no web view. Hundreds of sessions load in a moment.</p></li>
+      <li><h3 class="brand">Watch them all at once</h3><p>Mission control lays every running agent out in a grid of live cards: what each one is doing, how full its context is and what its turn costs. Answer a permission question on the card, or click it to jump into the session.</p></li>
       <li><h3 class="brand">Your files stay yours</h3><p>Bowyer only reads what the agents write. Folders, pins, names and notes live in its own database, and your agents keep working exactly as before, with or without the window open.</p></li>
       <li><h3 class="brand">See what it costs</h3><p>The context window split by what fills it, token totals, cost at API prices, and a countdown for the prompt cache, so you know when compacting pays off and when a pause will make the next turn expensive. For a Claude subscription, the five-hour and weekly limits; for an API key, this month's spending.</p></li>
       <li><h3 class="brand">Keep going from the window</h3><p>Type a message and the agent runs the turn in the background, here or on an SSH host. Every session has its own turn, composer, model and effort, so several run at once. The answer streams in, and permission prompts and questions arrive as buttons instead of a terminal you first have to find.</p></li>
@@ -116,7 +133,7 @@
       <div class="reveal">
         <h3>Every session in one tree</h3>
         <p>Grouped by environment, agent and project, or by any one of them, with your own folders, drag and drop, pins, renames and four sort orders. Sub-agent and worktree sessions fold under the session that started them, and so do sessions Claude's desktop app started separately; long projects show the latest ten and a <i>Show more</i>; one button collapses everything. A session you no longer need goes to a trash folder, and both side panels hide into thin stripes at the edges.</p>
-        <p>Sessions running in a terminal elsewhere show <i>working</i>, <i>waiting</i> or <i>your turn</i>, and the taskbar flashes when one needs you. <kbd>Ctrl+K</kbd> searches titles, prompts, folders and the whole conversation text.</p>
+        <p>Sessions running in a terminal elsewhere show <i>working</i>, <i>waiting</i> or <i>your turn</i>, and the taskbar flashes when one needs you. <kbd>Ctrl+K</kbd> searches titles, prompts, folders and the whole conversation text, and shows the sentence where your words matched. Each agent has a pixel critter of its own, so you tell them apart at a glance.</p>
         <ul class="chips">
           <li>Claude Code</li><li>OpenCode</li><li>Codex</li><li>DeepSeek Harness</li><li>SSH hosts</li><li>Full-text search</li>
         </ul>
@@ -130,7 +147,7 @@
     <div class="feature flip">
       <div class="reveal">
         <h3>A chat, not a terminal dump</h3>
-        <p>Markdown, highlighted code with Copy and Run, folded thinking, and tool calls folded into one line per run that opens into the commands, their output and the diffs. Background task notices shrink to a short line, and so does the long summary an agent writes when it compacts the context.</p>
+        <p>Markdown, highlighted code with Copy and Run, folded thinking, and tool calls folded into one line per run that opens into the commands, their output and the diffs. Background task notices shrink to a short line, and so do what a hook told the model and the long summary an agent writes when it compacts the context.</p>
         <p>Paste screenshots, drop files, <code>/</code> for commands and skills, <code>@</code> for files of the session's folder. Claude Code and OpenCode ask before a command or an edit their settings don't allow, right in the window, and Claude's questions come with their choices and a field for your own answer.</p>
         <p>Send another prompt while a turn runs and it goes next. The view stays where you read while new text arrives. A prompt that never reached the model can be deleted, and the session goes on from the answer before it.</p>
       </div>
@@ -175,7 +192,7 @@
       </section>
       <section>
         <h3>And the rest</h3>
-        <p>MCP servers and plugins of each agent at a glance, seven themes and your own, eight languages, all settings in one dialog, a notification area icon on Windows and Linux, a question before quitting with sessions still running, and updates from a signed feed that install only when you click.</p>
+        <p>MCP servers and plugins of each agent at a glance, eight themes (the newest is the violet Nightfall) and your own, eight languages, all settings in one dialog, a notification area icon on Windows and Linux, a question before quitting with sessions still running, and updates from a signed feed that install only when you click.</p>
       </section>
     </div>
   </section>
@@ -190,6 +207,7 @@
         <caption class="visually-hidden">State of each area of Bowyer</caption>
         <tbody>
           <tr><th scope="row">Session tree, search, conversation view</th><td><span class="state open"><i></i>Works every day</span></td></tr>
+          <tr><th scope="row">Mission control</th><td><span class="state new"><i></i>New</span></td></tr>
           <tr><th scope="row">Claude Code: history, live turns, permissions, plugins</th><td><span class="state open"><i></i>Works</span></td></tr>
           <tr><th scope="row">OpenCode: history, live turns over the Agent Client Protocol</th><td><span class="state open"><i></i>Works</span></td></tr>
           <tr><th scope="row">Codex, DeepSeek Harness</th><td><span class="state new"><i></i>Written, untested</span></td></tr>
@@ -206,7 +224,7 @@
 
   <section class="section wrap" id="download" aria-labelledby="download-h">
     <div class="section-head reveal">
-      <h2 class="h-section" id="download-h">Download <span class="mono ver-small">0.1.5</span></h2>
+      <h2 class="h-section" id="download-h">Download <span class="mono ver-small">0.1.9</span></h2>
       <p>Free. Every file has a <code>.sha256</code> checksum next to it on the <a href="https://github.com/PabloSensei/bowyer/releases/latest">release page</a>. Bowyer does not bundle the agents: install Claude Code, Codex, OpenCode or DeepSeek Harness the usual way, and Bowyer finds their sessions.</p>
     </div>
     <div class="coupon reveal"><div class="downloads">
@@ -214,20 +232,20 @@
       <div class="dl-os" data-os="windows">
         <h3>Windows</h3>
         <ul>
-          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.5/bowyer_0.1.5_x64-setup.exe"><span class="dl-label">Windows 11 · x86-64 · installer</span><span class="dl-file">bowyer_0.1.5_x64-setup.exe</span><span class="dl-size">8 MB</span></a></li>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.9/bowyer_0.1.9_x64-setup.exe"><span class="dl-label">Windows 11 · x86-64 · installer</span><span class="dl-file">bowyer_0.1.9_x64-setup.exe</span><span class="dl-size">9 MB</span></a></li>
         </ul>
       </div>
       <div class="dl-os" data-os="linux">
         <h3>Linux</h3>
         <ul>
-          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.5/bowyer_0.1.5_amd64.deb"><span class="dl-label">Debian, Ubuntu · .deb</span><span class="dl-file">bowyer_0.1.5_amd64.deb</span><span class="dl-size">18 MB</span></a></li>
-          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.5/bowyer_0.1.5_x86_64.AppImage"><span class="dl-label">Any glibc 2.35+ distro · AppImage</span><span class="dl-file">bowyer_0.1.5_x86_64.AppImage</span><span class="dl-size">17 MB</span></a></li>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.9/bowyer_0.1.9_amd64.deb"><span class="dl-label">Debian, Ubuntu · .deb</span><span class="dl-file">bowyer_0.1.9_amd64.deb</span><span class="dl-size">19 MB</span></a></li>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.9/bowyer_0.1.9_x86_64.AppImage"><span class="dl-label">Any glibc 2.35+ distro · AppImage</span><span class="dl-file">bowyer_0.1.9_x86_64.AppImage</span><span class="dl-size">19 MB</span></a></li>
         </ul>
       </div>
       <div class="dl-os" data-os="macos">
         <h3>macOS</h3>
         <ul>
-          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.5/Bowyer_0.1.5_aarch64.dmg"><span class="dl-label">Apple silicon · .dmg</span><span class="dl-file">Bowyer_0.1.5_aarch64.dmg</span><span class="dl-size">11 MB</span></a></li>
+          <li><a class="dl" href="https://github.com/PabloSensei/bowyer/releases/download/v0.1.9/Bowyer_0.1.9_aarch64.dmg"><span class="dl-label">Apple silicon · .dmg</span><span class="dl-file">Bowyer_0.1.9_aarch64.dmg</span><span class="dl-size">12 MB</span></a></li>
         </ul>
       </div>
     <!-- bowyer-downloads:end -->
