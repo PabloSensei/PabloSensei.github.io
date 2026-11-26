@@ -49,7 +49,7 @@
     <canvas data-art="arro" data-t="1.2" aria-hidden="true"></canvas>
     <div class="wrap">
       <h1 class="brand" id="page-h">Changelog</h1>
-      <p class="lede">All <span data-arro-count>32</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.31</span>, from <span data-arro-date>23 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
+      <p class="lede">All <span data-arro-count>33</span> releases of Arro, newest first. The latest is <span class="mono" data-arro-version>0.1.32</span>, from <span data-arro-date>26 Nov 2026</span>. Search the notes, or pick the kinds of change you care about.</p>
     </div>
   </section>
 
@@ -81,11 +81,119 @@
 
     <div class="releases" id="releases">
     <!-- releases:start -->
-    <article class="release is-latest" id="v0.1.31" data-version="0.1.31" data-total="14">
+    <article class="release is-latest" id="v0.1.32" data-version="0.1.32" data-total="34">
+      <header class="rel-head">
+        <a class="rel-anchor" href="#v0.1.32" aria-label="Link to Arro 0.1.32">#</a>
+        <h2><span class="rel-name">Arro</span> 0.1.32</h2>
+        <p class="rel-meta"><time datetime="2026-11-26T21:25:04Z">26 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.32">Release page</a></p>
+      </header>
+      <p class="rel-summary">Run configurations of IntelliJ IDEA come over with your project, the Run/Debug Configurations window gets a compact new layout, and a release of safety and care: Arro asks before it runs the build of a project it has not seen, keeps your text and settings out of harm's way, and gets a violet dark theme, Nightfall.</p>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Run configurations <span class="count">4</span></h3>
+        <ul>
+          <li data-text="run configurations of intellij idea in .idea/runconfigurations, .run/.run.xml and .idea/workspace.xml are found when a trusted project opens: a notification offers import or not now, and run | import run configurations from intellij idea… imports them any time. application, spring boot, junit, remote jvm debug, maven, gradle and compound configurations come over with their vm options, arguments, environment, working directory, profiles and build before launch; $project_dir$ and the other path macros are expanded. the summary lists what was imported, what already existed and what kinds arro does not run yet."><strong>Run configurations of IntelliJ IDEA</strong> in <code>.idea/runConfigurations</code>, <code>.run/*.run.xml</code> and <code>.idea/workspace.xml</code> are found when a trusted project opens: a notification offers <strong>Import</strong> or <strong>Not Now</strong>, and <strong>Run | Import Run Configurations from IntelliJ IDEA…</strong> imports them any time. Application, Spring Boot, JUnit, Remote JVM Debug, Maven, Gradle and Compound configurations come over with their VM options, arguments, environment, working directory, profiles and Build before launch; <code>$PROJECT_DIR$</code> and the other path macros are expanded. The summary lists what was imported, what already existed and what kinds Arro does not run yet.</li>
+          <li data-text="junit is a configuration kind: a test class, method or package with vm options, environment and working directory, run and debugged in the tests window."><strong>JUnit</strong> is a configuration kind: a test class, method or package with VM options, environment and working directory, run and debugged in the Tests window.</li>
+          <li data-text="the run list holds your configurations, the temporary ones from gutter runs and the spring boot applications of the project, not every class with a main method. a project without configurations shows add configuration….">The run list holds your configurations, the temporary ones from gutter runs and the Spring Boot applications of the project, not every class with a <code>main</code> method. A project without configurations shows <strong>Add Configuration…</strong>.</li>
+          <li data-text="the run/debug configurations window is compact: the jre and the module in one row, vm options, main class and program arguments with hints inside the fields, modify options (alt+m) to show the optional fields, options as chips, and a run / debug button next to ok. the jre you pick is the one the configuration starts on.">The <strong>Run/Debug Configurations</strong> window is compact: the JRE and the module in one row, VM options, main class and program arguments with hints inside the fields, <strong>Modify options</strong> (Alt+M) to show the optional fields, options as chips, and a <strong>Run / Debug</strong> button next to OK. The JRE you pick is the one the configuration starts on.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Projects you have not trusted yet <span class="count">2</span></h3>
+        <ul>
+          <li data-text="opening a project arro has not seen before asks trust and open project? first. trust project opens it as before; preview in safe mode opens it for reading, search and git, while no maven or gradle wrapper, build script, compiler plugin or language server runs. the status line says so and has a trust project… link that starts the build and the language server without reopening the window.">Opening a project Arro has not seen before asks <strong>Trust and Open Project?</strong> first. <strong>Trust Project</strong> opens it as before; <strong>Preview in Safe Mode</strong> opens it for reading, search and Git, while no Maven or Gradle wrapper, build script, compiler plugin or language server runs. The status line says so and has a <strong>Trust Project…</strong> link that starts the build and the language server without reopening the window.</li>
+          <li data-text="a checkbox trusts every project in the parent folder at once. projects from your recent projects list, new projects and clones are trusted already. file | forget trust takes it back.">A checkbox trusts every project in the parent folder at once. Projects from your Recent Projects list, new projects and clones are trusted already. <strong>File | Forget Trust</strong> takes it back.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Themes <span class="count">1</span></h3>
+        <ul>
+          <li data-text="nightfall, a violet dark theme, joins the built-in themes. bowyer uses the same one."><strong>Nightfall</strong>, a violet dark theme, joins the built-in themes. Bowyer uses the same one.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Editor <span class="count">5</span></h3>
+        <ul>
+          <li data-text="a file that holds characters its encoding cannot store is not saved with question marks any more: a notification offers save as utf-8 or cancel.">A file that holds characters its encoding cannot store is not saved with question marks any more: a notification offers <strong>Save as UTF-8</strong> or <strong>Cancel</strong>.</li>
+          <li data-text="saving goes through a temporary file of its own, one save of a file at a time, and a symbolic link keeps pointing at its target.">Saving goes through a temporary file of its own, one save of a file at a time, and a symbolic link keeps pointing at its target.</li>
+          <li data-text="in replace with regular expressions, <!-- releases:start -->x means group 1 followed by x, as in java; $ is a dollar sign.">In Replace with regular expressions, <code><!-- releases:start -->x</code> means group 1 followed by <code>x</code>, as in Java; <code>$</code> is a dollar sign.</li>
+          <li data-text="detecting the indent of a file skips the  lines of javadoc, so a class with long comments no longer gets an indent of 8.">Detecting the indent of a file skips the <code>*</code> lines of Javadoc, so a class with long comments no longer gets an indent of 8.</li>
+          <li data-text="a block copied from the middle of a line and pasted at another indent keeps its shape; tab pads by the columns you see, for each caret on its own; tab after a typed closing bracket indents instead of jumping; typing with an input method and several carets leaves no pieces behind.">A block copied from the middle of a line and pasted at another indent keeps its shape; Tab pads by the columns you see, for each caret on its own; Tab after a typed closing bracket indents instead of jumping; typing with an input method and several carets leaves no pieces behind.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Find and Replace in Files <span class="count">1</span></h3>
+        <ul>
+          <li data-text="replace in files with in selection replaces only inside the selection, and open files with unsaved edits are changed in the editor, not on disk. a regular expression no longer replaces across lines that the search did not match.">Replace in Files with <strong>In Selection</strong> replaces only inside the selection, and open files with unsaved edits are changed in the editor, not on disk. A regular expression no longer replaces across lines that the search did not match.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Settings <span class="count">1</span></h3>
+        <ul>
+          <li data-text="a settings.json with an error is no longer overwritten: arro says on which line the error is, offers open settings.json, and keeps your changes in memory until the file is fixed. a wrong value of one setting resets only that setting, and keys arro does not know survive a save.">A <code>settings.json</code> with an error is no longer overwritten: Arro says on which line the error is, offers <strong>Open settings.json</strong>, and keeps your changes in memory until the file is fixed. A wrong value of one setting resets only that setting, and keys Arro does not know survive a save.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Git <span class="count">4</span></h3>
+        <ul>
+          <li data-text="during a rebase, accept yours and accept theirs take the side they name, and the merge window says which side is your commit.">During a rebase, <strong>Accept Yours</strong> and <strong>Accept Theirs</strong> take the side they name, and the merge window says which side is your commit.</li>
+          <li data-text="revert of one file from a commit reverts that commit's changes in the file, after a question and a local history snapshot, instead of resetting the file to the commit's parent."><strong>Revert</strong> of one file from a commit reverts that commit's changes in the file, after a question and a Local History snapshot, instead of resetting the file to the commit's parent.</li>
+          <li data-text="unshelving part of a shelf with delete after keeps the files you did not apply. rollback, shelve and unshelve save open files first and reload only the files they change.">Unshelving part of a shelf with <strong>Delete after</strong> keeps the files you did not apply. Rollback, Shelve and Unshelve save open files first and reload only the files they change.</li>
+          <li data-text="passwords in remote urls are hidden in the git console, and branch and path names that start with - are never read as options.">Passwords in remote URLs are hidden in the Git console, and branch and path names that start with <code>-</code> are never read as options.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Project tree and Local History <span class="count">2</span></h3>
+        <ul>
+          <li data-text="cut and paste saves the moved files first. a delete that cannot go to the recycle bin asks before it deletes for good. renaming a file only by case works.">Cut and Paste saves the moved files first. A delete that cannot go to the Recycle Bin asks before it deletes for good. Renaming a file only by case works.</li>
+          <li data-text="local history skips the folders the project excludes, does not follow links out of the project, and when it trims old versions, the history of your sources goes last.">Local History skips the folders the project excludes, does not follow links out of the project, and when it trims old versions, the history of your sources goes last.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Database <span class="count">3</span></h3>
+        <ul>
+          <li data-text="editing or deleting a row that changed in the database, or that matches more than one row, saves nothing and says why; a table without a key can take new rows only. submitting with an open console transaction asks whether to commit both.">Editing or deleting a row that changed in the database, or that matches more than one row, saves nothing and says why; a table without a key can take new rows only. Submitting with an open console transaction asks whether to commit both.</li>
+          <li data-text="changing the host, port or kind of a data source forgets its saved password, and url options that run scripts on connect are refused. a password typed into the url goes to the system keychain.">Changing the host, port or kind of a data source forgets its saved password, and URL options that run scripts on connect are refused. A password typed into the URL goes to the system keychain.</li>
+          <li data-text="copy as insert copies only the selected cells."><strong>Copy as INSERT</strong> copies only the selected cells.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Language server <span class="count">2</span></h3>
+        <ul>
+          <li data-text="projects in folders with non-ascii names, such as cyrillic or (1), get their diagnostics. restarting the server replays every open file, and closing the window shuts the server down cleanly.">Projects in folders with non-ASCII names, such as Cyrillic or <code>(1)</code>, get their diagnostics. Restarting the server replays every open file, and closing the window shuts the server down cleanly.</li>
+          <li data-text="two syncs of one project at the same time no longer fail with a &quot;cache&quot; error at startup.">Two syncs of one project at the same time no longer fail with a &quot;cache&quot; error at startup.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Debugger and processes <span class="count">4</span></h3>
+        <ul>
+          <li data-text="a refused attach ends the debug session with the adapter's message instead of hanging, and stop works while a session starts.">A refused attach ends the debug session with the adapter's message instead of hanging, and <strong>Stop</strong> works while a session starts.</li>
+          <li data-text="listing jvms and dumping threads no longer flash a console window.">Listing JVMs and dumping threads no longer flash a console window.</li>
+          <li data-text="ctrl+enter in the terminal runs mvn or gradle from your path, not a file of the same name in the project; a wrapper runs when you write ./mvnw."><strong>Ctrl+Enter</strong> in the terminal runs <code>mvn</code> or <code>gradle</code> from your PATH, not a file of the same name in the project; a wrapper runs when you write <code>./mvnw</code>.</li>
+          <li data-text="commands that docker and kubernetes type into the terminal are quoted for the shell of that tab, powershell included.">Commands that Docker and Kubernetes type into the terminal are quoted for the shell of that tab, PowerShell included.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>AI agents <span class="count">2</span></h3>
+        <ul>
+          <li data-text="each external mcp client gets its own session, so &quot;allow for this session&quot; applies to that client only, and revoking access clears every client's approvals.">Each external MCP client gets its own session, so &quot;Allow for this session&quot; applies to that client only, and revoking access clears every client's approvals.</li>
+          <li data-text="file paths of agent tools stay inside the project: a link that leads outside is refused.">File paths of agent tools stay inside the project: a link that leads outside is refused.</li>
+        </ul>
+      </section>
+      <section class="rel-group" data-kind="improved">
+        <h3><span class="kind-mark" aria-hidden="true"></span>Privacy <span class="count">3</span></h3>
+        <ul>
+          <li data-text="the value of a kubernetes secret copied to the clipboard stays out of the windows clipboard history and cloud sync.">The value of a Kubernetes secret copied to the clipboard stays out of the Windows clipboard history and cloud sync.</li>
+          <li data-text="crash dumps leave out the data segments of the process.">Crash dumps leave out the data segments of the process.</li>
+          <li data-text="only your own account can talk to a running arro window.">Only your own account can talk to a running Arro window.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article class="release" id="v0.1.31" data-version="0.1.31" data-total="14">
       <header class="rel-head">
         <a class="rel-anchor" href="#v0.1.31" aria-label="Link to Arro 0.1.31">#</a>
         <h2><span class="rel-name">Arro</span> 0.1.31</h2>
-        <p class="rel-meta"><time datetime="2026-11-23T20:41:16Z">23 November 2026</time> <span class="tag-latest">Latest</span> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.31">Release page</a></p>
+        <p class="rel-meta"><time datetime="2026-11-23T20:41:16Z">23 November 2026</time> · <a href="https://github.com/PabloSensei/arro/releases/tag/v0.1.31">Release page</a></p>
       </header>
       <p class="rel-summary">The data grid of a database table selects like a spreadsheet, and Arro tells you what it does when memory runs low.</p>
       <section class="rel-group" data-kind="improved">
